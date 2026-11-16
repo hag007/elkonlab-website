@@ -1,3 +1,8 @@
 # Rare variant analysis
 
 Rare variants (typically carried by fewer than 1% of people) are too rare to test one at a time, so they are usually analysed in aggregate: gene-based burden and variance-component tests (such as SKAT, ACAT and STAAR) combine the variants in a gene or region, grouped into masks such as predicted loss-of-function or damaging missense variants scored by tools like AlphaMissense or REVEL. With large exome and genome sequencing cohorts, the field is extending these tests to non-coding variants in regulatory elements, splice sites and UTRs, using functional annotations to decide which variants to include, and measuring how much rare variation contributes to complex-trait heritability.
+
+```{raw} html
+<div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Rare variant analysis"></div>
+<script src="../_static/library/whatsnew.js"></script>
+```

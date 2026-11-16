@@ -1,12 +1,14 @@
-// "What's new?" on the landing page: papers published in the last data-days days (30 by default), newest first.
-// Computed in the viewer's browser from papers.json, so the window stays current between rebuilds.
-// <div id="whats-new" data-days="30" data-fallback="3"> ; with no new papers it shows the latest few instead.
+// "What's new?" on the landing pages: papers published in the last data-days days (90 by default), newest first,
+// at most data-max of them (10). Computed in the viewer's browser from papers.json, so the window stays current
+// between rebuilds. <div id="whats-new" data-days="90" data-max="10" data-fallback="3" [data-folder="<topic>"]>;
+// data-folder limits it to one topic. With no new papers it shows the latest few instead.
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
   const base = document.currentScript.src.replace(/whatsnew\.js.*$/, "");
   const site = base.replace(/_static\/library\/$/, "");
-  const days = +root.dataset.days || 30, fallback = +root.dataset.fallback || 3;
+  const days = +root.dataset.days || 90, max = +root.dataset.max || 10, fallback = +root.dataset.fallback || 3;
+  const topic = root.dataset.folder || "";
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const slug = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "topic";
   const DAY = 864e5;
@@ -24,7 +26,7 @@
     const fresh = Date.now() - date < 2 * DAY;
     const authors = p.authors.length > 2 ? p.authors[0] + " et al." : p.authors.join(", ");
     const preprint = p.badges.some(b => b.label === "Preprint");
-    const topics = p.folders.filter(f => f !== "Unfiled").map(f =>
+    const topics = p.folders.filter(f => f !== "Unfiled" && f !== topic).map(f =>
       `<a class="pl-badge wn-topic wn-c${color[f] ?? 0}" href="${site}topics/${slug(f)}/papers.html">${esc(f.split("/").pop())}</a>`).join("");
     const title = p.doi ? `<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title);
     return `<li class="wn-item">
@@ -38,13 +40,14 @@
 
   fetch(base + "papers.json").then(r => r.json()).then(papers => {
     [...new Set(papers.flatMap(p => p.folders))].filter(f => f !== "Unfiled").sort().forEach((f, i) => color[f] = i % 8);
-    const dated = papers.filter(p => /^\d{4}-\d{2}-\d{2}$/.test(p.pub_date || ""))
+    const dated = papers.filter(p => (!topic || p.folders.includes(topic)) && /^\d{4}-\d{2}-\d{2}$/.test(p.pub_date || ""))
       .sort((a, b) => b.pub_date.localeCompare(a.pub_date));
     const cutoff = Date.now() - days * DAY;
     const recent = dated.filter(p => new Date(p.pub_date + "T00:00:00") >= cutoff && new Date(p.pub_date) <= Date.now() + DAY);
-    const list = recent.length ? recent : dated.slice(0, fallback);
+    const list = recent.length ? recent.slice(0, max) : dated.slice(0, fallback);
     root.innerHTML = `<div class="wn-bar"><span class="wn-pulse"></span><b>What's new?</b>
-        <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days`
+        <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +
+                                               (recent.length > max ? ` · showing the latest ${max}` : "")
                                               : `Nothing published in the last ${days} days · latest papers`}</span></div>
       <ul class="wn-list">${list.map(item).join("")}</ul>`;
   }).catch(() => { root.textContent = ""; });
