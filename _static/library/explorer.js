@@ -7,8 +7,13 @@
   const base = document.currentScript.src.replace(/explorer\.js.*$/, "");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const locked = root.dataset.folder || "";
-  const state = { q: "", folder: locked || new URLSearchParams(location.search).get("folder") || "", badges: new Set(), sort: "" };
+  const state = { q: "", folder: locked || new URLSearchParams(location.search).get("folder") || "", badges: new Set(), sort: "",
+                  author: "", journal: "", yFrom: "", yTo: "", minIf: "" };
+  const yearOf = (p) => +String(p.pub_date || p.year || "").slice(0, 4) || 0;
+  const lastName = (a) => (a || "").trim().split(/\s+/).pop().toLowerCase();
+  const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   let papers = [];
+  const uid = Math.random().toString(36).slice(2, 8);  // unique datalist id
 
   // Field weights for ranking, like the server app's full-text search.
   const FIELDS = [["title", 10], ["authorsText", 3], ["summary", 4], ["abstract", 2], ["badgeText", 5], ["source", 1]];
@@ -74,12 +79,21 @@
 
   function render() {
     const terms = words(state.q);
+    const author = norm(state.author.trim());
     let list = papers.filter(p => (!state.folder || p.folders.includes(state.folder)) &&
-      [...state.badges].every(l => p.badges.some(b => b.label === l)));
+      [...state.badges].every(l => p.badges.some(b => b.label === l)) &&
+      (!author || p.authors.some(a => norm(a).includes(author))) &&
+      (!state.journal || p.source === state.journal) &&
+      (!state.yFrom || yearOf(p) >= +state.yFrom) && (!state.yTo || yearOf(p) <= +state.yTo) &&
+      (!state.minIf || (p.impact ?? -1) >= +state.minIf));
     if (terms.length) list = list.map(p => [score(p, terms), p]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).map(x => x[1]);
-    if (state.sort === "date" || (!terms.length && !state.sort)) list.sort((a, b) => String(b.pub_date || b.year).localeCompare(String(a.pub_date || a.year)));
+    const date = (p) => String(p.pub_date || p.year || "");
+    if (state.sort === "date" || (!terms.length && !state.sort)) list.sort((a, b) => date(b).localeCompare(date(a)));
+    if (state.sort === "oldest") list.sort((a, b) => date(a).localeCompare(date(b)));
     if (state.sort === "impact") list.sort((a, b) => (b.impact ?? -1) - (a.impact ?? -1));
     if (state.sort === "title") list.sort((a, b) => a.title.localeCompare(b.title));
+    if (state.sort === "author") list.sort((a, b) => lastName(a.authors[0]).localeCompare(lastName(b.authors[0])) || date(b).localeCompare(date(a)));
+    if (state.sort === "journal") list.sort((a, b) => (a.source || "").localeCompare(b.source || "") || date(b).localeCompare(date(a)));
 
     const folders = {}, badges = {};
     for (const p of papers) {
@@ -92,29 +106,68 @@
     root.querySelector(".pl-folders").innerHTML = locked ? "" : "<b>Topics</b>" +
       Object.entries(folders).map(([f, n]) => folderBadge(f, ` ${n}`)).join("");
     root.querySelector(".pl-badgefacets").innerHTML = "<b>Badges</b>" + badgeList.map(b => badge(b, ` ${b.n}`)).join("");
-    const filters = [locked ? "" : state.folder, ...state.badges].filter(Boolean);
+    const years = state.yFrom || state.yTo ? (state.yFrom === state.yTo ? state.yFrom : `${state.yFrom || "…"}–${state.yTo || "…"}`) : "";
+    const filters = [locked ? "" : state.folder, ...state.badges, state.author && `author “${state.author.trim()}”`,
+                     state.journal, years, state.minIf && `IF ≥ ${state.minIf}`].filter(Boolean);
     root.querySelector(".pl-count").textContent = `${list.length} paper${list.length === 1 ? "" : "s"}` +
       (state.q ? ` matching “${state.q}”` : "") + (filters.length ? ` · filtered by ${filters.join(", ")}` : "");
+    root.querySelector(".pl-clear").hidden = !(state.q || filters.length);
     root.querySelector(".pl-list").innerHTML = list.map(p => card(p, terms)).join("") || "<p>No papers found.</p>";
   }
 
   root.innerHTML = `<div class="pl-bar">
       <input type="search" placeholder="${locked ? "Search papers in this topic…" : "Search titles, authors, summaries, abstracts…"}" aria-label="Search papers">
-      <select aria-label="Sort"><option value="">Relevance / newest</option><option value="date">Newest first</option>
-        <option value="impact">Impact factor</option><option value="title">Title</option></select>
+      <label class="pl-sort">Sort <select data-key="sort" aria-label="Sort">
+        <option value="">Relevance / newest</option><option value="date">Newest first</option><option value="oldest">Oldest first</option>
+        <option value="impact">Impact factor (high → low)</option><option value="title">Title (A → Z)</option>
+        <option value="author">First author (A → Z)</option><option value="journal">Journal (A → Z)</option></select></label>
+    </div>
+    <div class="pl-filters">
+      <label>Author <input type="search" data-key="author" list="pl-authors-${uid}" placeholder="any author" aria-label="Filter by author"></label>
+      <datalist id="pl-authors-${uid}"></datalist>
+      <label>Journal <select data-key="journal" aria-label="Filter by journal"><option value="">All</option></select></label>
+      <label>Year <select data-key="yFrom" aria-label="From year"><option value="">from</option></select>
+        – <select data-key="yTo" aria-label="To year"><option value="">to</option></select></label>
+      <label>Impact factor <select data-key="minIf" aria-label="Minimum impact factor"><option value="">any</option>
+        ${[3, 5, 7, 10, 20, 40].map(v => `<option value="${v}">≥ ${v}</option>`).join("")}</select></label>
+      <button type="button" class="pl-clear" hidden>Clear all</button>
     </div>
     <div class="pl-facets pl-folders"></div><div class="pl-facets pl-badgefacets"></div>
     <div class="pl-count"></div><div class="pl-list"></div>`;
 
+  // Fill the author, journal and year choices from this list's papers (one topic on topic pages).
+  function fillChoices() {
+    const scope = locked ? papers.filter(p => p.folders.includes(locked)) : papers;
+    const opts = (vals) => vals.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+    const journals = [...new Set(scope.map(p => p.source).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+    const years = [...new Set(scope.map(yearOf).filter(Boolean))].sort((a, b) => b - a);
+    const authors = [...new Set(scope.flatMap(p => p.authors))].sort((a, b) => lastName(a).localeCompare(lastName(b)));
+    root.querySelector('[data-key="journal"]').insertAdjacentHTML("beforeend", opts(journals));
+    root.querySelector('[data-key="yFrom"]').insertAdjacentHTML("beforeend", opts(years));
+    root.querySelector('[data-key="yTo"]').insertAdjacentHTML("beforeend", opts(years));
+    root.querySelector("datalist").innerHTML = opts(authors);
+  }
+
   let timer;
-  root.querySelector("input").addEventListener("input", e => { clearTimeout(timer); timer = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 150); });
-  root.querySelector("select").addEventListener("change", e => { state.sort = e.target.value; render(); });
+  const searchBox = root.querySelector(".pl-bar input");
+  searchBox.addEventListener("input", e => { clearTimeout(timer); timer = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 150); });
+  root.querySelectorAll("[data-key]").forEach(el => el.addEventListener(el.tagName === "SELECT" ? "change" : "input", e => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { state[el.dataset.key] = e.target.value; render(); }, el.tagName === "SELECT" ? 0 : 150);
+  }));
+  root.querySelector(".pl-clear").addEventListener("click", () => {
+    Object.assign(state, { q: "", author: "", journal: "", yFrom: "", yTo: "", minIf: "", folder: locked || "" });
+    state.badges.clear();
+    searchBox.value = "";
+    root.querySelectorAll(".pl-filters [data-key]").forEach(el => el.value = "");
+    render();
+  });
   root.addEventListener("click", e => {
     const b = e.target.closest("[data-badge]"), f = e.target.closest("[data-folder]");
     if (b) { const l = b.dataset.badge; state.badges.has(l) ? state.badges.delete(l) : state.badges.add(l); render(); }
     else if (f && !locked) { state.folder = state.folder === f.dataset.folder ? "" : f.dataset.folder; render(); }
   });
 
-  fetch(base + "papers.json").then(r => r.json()).then(data => { papers = data.map(prepare); render(); })
+  fetch(base + "papers.json").then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); })
     .catch(() => { root.querySelector(".pl-list").textContent = "Could not load the paper list."; });
 })();
