@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>References &#8212; Paper Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="_static/library/library.css?v=94e4106c" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'references';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="_static/library/explorer.js?v=fd79ec06"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Explore" href="explore.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Paper Library</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Paper Library
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="topics/prs.html">PRS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="topics/prs/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/prs/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/prs/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="topics/rare-variant-analysis.html">Rare variant analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="topics/rare-variant-analysis/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/rare-variant-analysis/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/rare-variant-analysis/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="topics/single-cell-eqtl.html">Single-cell eQTL</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="topics/single-cell-eqtl/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/single-cell-eqtl/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/single-cell-eqtl/papers.html">Papers</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="explore.html">Explore</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/references.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>References</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prs">PRS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rare-variant-analysis">Rare variant analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-eqtl">Single-cell eQTL</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h1>
+<p>78 papers. <a class="reference download internal" download="" href="_downloads/487ef943a298e2bc8a7ef0ad965478f3/references.bib"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">as</span> <span class="pre">BibTeX</span></code></a></p>
+<section id="prs">
+<h2>PRS<a class="headerlink" href="#prs" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>R Alemu, AS Young, DJ Benjamin, et al.. Dissecting the Predictive Accuracy of Polygenic Indexes for Behavioral Phenotypes Across Genetic Ancestries. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1101/2025.09.11.675704">10.1101/2025.09.11.675704</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41929168/">41929168</a></p></li>
+<li><p>J Baierl, JP Tyrer, PH Lai, et al.. S4-multi: Enhancing polygenic score prediction in ancestrally diverse populations. <em>HGG Adv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1016/j.xhgg.2025.100551">10.1016/j.xhgg.2025.100551</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41311062/">41311062</a></p></li>
+<li><p>D Bonet, J Yang, T Hastie, et al.. Biobank-Scale Polygenic Prediction in Admixed Populations Using Local Ancestry via the Group Lasso. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.03.14.711808">10.64898/2026.03.14.711808</a></p></li>
+<li><p>T Chen, H Zhang, R Mazumder, et al.. SPLENDID incorporates continuous genetic ancestry in biobank-scale data to improve polygenic risk prediction across diverse populations. <em>Nat Methods</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41592-026-03235-2">10.1038/s41592-026-03235-2</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42736360/">42736360</a></p></li>
+<li><p>X Chen, F Wang, H Zhao, et al.. Comprehensive benchmarking single and multi ancestry polygenic score methods with the PGS-hub platform. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-68599-7">10.1038/s41467-026-68599-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41580418/">41580418</a></p></li>
+<li><p>YJ Huang, N Kurniansyah, MO Goodman, et al.. Admixture-informed polygenic risk reporting using the ePRS framework. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-72457-x">10.1038/s41467-026-72457-x</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42062286/">42062286</a></p></li>
+<li><p>H Levi, Q Wang, MK Bolla, et al.. PRANA: A Deep Learning Method for Adapting Polygenic Risk Scores to Diverse Ethnic Groups. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.07.12.26357860">10.64898/2026.07.12.26357860</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42523604/">42523604</a></p></li>
+<li><p>M Lin, CH Arehart, SNK Walker, et al.. The landscape of polygenic score prediction accuracy and transportability across the phenome in ancestrally diverse populations. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.10.08.26365087">10.64898/2026.10.08.26365087</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42926702/">42926702</a></p></li>
+<li><p>MM Momin, X Zhou, M Ahmed, et al.. Cross-Ancestry Polygenic Prediction: Comparing Methods and Assessing Transferability Across Traits. <em>Genet Epidemiol</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1002/gepi.70029">10.1002/gepi.70029</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41562222/">41562222</a></p></li>
+<li><p>F Ockerman, BD Chen, Q Sun, et al.. An efficient LASSO framework for admixture-aware polygenic scores. <em>HGG Adv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1016/j.xhgg.2026.100628">10.1016/j.xhgg.2026.100628</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42157490/">42157490</a></p></li>
+<li><p>O Pain. Leveraging global genetics resources to enhance polygenic prediction across ancestrally diverse populations. <em>HGG Adv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1016/j.xhgg.2025.100482">10.1016/j.xhgg.2025.100482</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40684263/">40684263</a></p></li>
+<li><p>Y Ruan, R Bhukar, A Patel, et al.. DiscoDivas: Leveraging genetic-ancestry continuum information to interpolate PRS for admixed populations. <em>Am J Hum Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2026.05.006">10.1016/j.ajhg.2026.05.006</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42235505/">42235505</a></p></li>
+<li><p>Yunfeng Ruan, Yen Feng Lin, Yen Chen Anne Feng, et al.. Improving polygenic prediction in ancestrally diverse populations. <em>Nature Genetics 2022 54:5</em>. 2022. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-022-01054-7">10.1038/s41588-022-01054-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/35513724/">35513724</a></p></li>
+<li><p>Y Tanigawa, M Kellis. GeneSIS: enhancing transferability of polygenic scores with variant-level gene-by-sex interaction effects. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.09.14.751452">10.64898/2026.09.14.751452</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42779975/">42779975</a></p></li>
+<li><p>X Tian, T Fabiha, WF Li, et al.. PRISM: ancestry-aware integration of tissue-specific genomic annotations enhances the transferability of polygenic scores. <em>bioRxiv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1101/2025.11.13.688144">10.1101/2025.11.13.688144</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41292742/">41292742</a></p></li>
+<li><p>K Tsuo, Z Shi, T Ge, et al.. All of Us diversity and scale yield context-dependent improvements in polygenic prediction. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02734-4">10.1038/s41588-026-02734-4</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42736379/">42736379</a></p></li>
+<li><p>C Wang, H Wu, Z Zhu, et al.. Scalable penalized regression boosts accuracy and computational efficiency for single- and cross-ancestry polygenic prediction. <em>Research Square</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.21203/rs.3.rs-10235713/v1">10.21203/rs.3.rs-10235713/v1</a></p></li>
+<li><p>J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-72185-2">10.1038/s41467-026-72185-2</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42031785/">42031785</a></p></li>
+<li><p>H Wu, P Pérez-Rodríguez, M Boehnke, et al.. Improving polygenic score prediction for underrepresented groups through transfer learning. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-68696-7">10.1038/s41467-026-68696-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41577700/">41577700</a></p></li>
+<li><p>L Xu, Y Dong, X Zeng, et al.. MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02637-4">10.1038/s41588-026-02637-4</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42265311/">42265311</a></p></li>
+<li><p>G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. <em>Am J Hum Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2025.06.010">10.1016/j.ajhg.2025.06.010</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40633541/">40633541</a></p></li>
+</ol>
+</section>
+<section id="rare-variant-analysis">
+<h2>Rare variant analysis<a class="headerlink" href="#rare-variant-analysis" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Matthew Aguirre, Flaviyan Jerome Irudayanathan, Maggie Crow, et al.. Systematic assessment of machine learning-based variant annotation methods for rare variant association testing. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.03.18.712715">10.64898/2026.03.18.712715</a></p></li>
+<li><p>Debraj Bose, Christian Fuchsberger, Michael Boehnke. Rare-variant association studies: When are aggregation tests more powerful than single-variant tests?. <em>Am J Hum Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2025.07.002">10.1016/j.ajhg.2025.07.002</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40738106/">40738106</a></p></li>
+<li><p>Eric Van Buren, Yi Zhang, Xihao Li, et al.. cellSTAAR: incorporating single-cell-sequencing-based functional data to boost power in rare variant association testing of noncoding regions. <em>Nat Methods</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41592-025-02919-5">10.1038/s41592-025-02919-5</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41476111/">41476111</a></p></li>
+<li><p>Elaine Gy Chew, Zhehao Liu, Zheng Li, et al.. Exome sequencing in Asian populations identifies low-frequency and rare coding variation influencing Parkinson’s disease risk. <em>Nat Aging</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s43587-024-00760-7">10.1038/s43587-024-00760-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/39572736/">39572736</a></p></li>
+<li><p>Sophie L Chick, Peter Holmans, Darren Cameron, et al.. Whole-exome sequencing analysis identifies risk genes for schizophrenia. <em>Nat Commun</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-025-62429-y">10.1038/s41467-025-62429-y</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40753099/">40753099</a></p></li>
+<li><p>Brian Clarke, Eva Holtkamp, Hakime Öztürk, et al.. Integration of variant annotations using deep set networks boosts rare variant association testing. <em>Nat Genet</em>. 2024. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-024-01919-z">10.1038/s41588-024-01919-z</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/39322779/">39322779</a></p></li>
+<li><p>UK Biobank Whole-Genome Sequencing Consortium. Whole-genome sequencing of 490,640 UK Biobank participants. <em>Nature</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-025-09272-9">10.1038/s41586-025-09272-9</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40770095/">40770095</a></p></li>
+<li><p>Yidan Cui, Shiyang Ma, Yuxin Yuan, et al.. SurvSTAAR: A Powerful Statistical Framework for Rare Variant Analysis of Time-to-Event Traits in Large-Scale Whole-Genome Sequencing Studies. <em>J Am Stat Assoc</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1080/01621459.2025.2606388">10.1080/01621459.2025.2606388</a></p></li>
+<li><p>Ditte Demontis, Jinjie Duan, Yu-Han H Hsu, et al.. Rare genetic variants confer a high risk of ADHD and implicate neuronal biology. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-025-09702-8">10.1038/s41586-025-09702-8</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41224997/">41224997</a></p></li>
+<li><p>Yue-Ting Deng, Bang-Sheng Wu, Liu Yang, et al.. Large-scale whole-exome sequencing of neuropsychiatric diseases and traits in 350,770 adults. <em>Nat Hum Behav</em>. 2024. doi: <a class="reference external" href="https://doi.org/10.1038/s41562-024-01861-4">10.1038/s41562-024-01861-4</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/38589703/">38589703</a></p></li>
+<li><p>Eilidh Fenner, Peter Holmans, Michael C O’Donovan, et al.. Analysis of rare coding variants in schizophrenia-associated genes and generalised cognition in the UK Biobank. <em>Mol Psychiatry</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41380-026-03601-8">10.1038/s41380-026-03601-8</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41963674/">41963674</a></p></li>
+<li><p>Aimee L Hanson, Gareth J Griffith, Si Fang, et al.. Evaluating confounding in rare variant genome wide association studies. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-73776-9">10.1038/s41467-026-73776-9</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42215513/">42215513</a></p></li>
+<li><p>Gareth Hawkes, Kartik Chundru, Leigh Jackson, et al.. Whole-genome sequencing analysis identifies rare, large-effect noncoding variants and regulatory regions associated with circulating protein levels. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-025-02095-4">10.1038/s41588-025-02095-4</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/39994471/">39994471</a></p></li>
+<li><p>Gareth Hawkes, Robin N Beaumont, Zilin Li, et al.. Whole-genome sequencing in 333,100 individuals reveals rare non-coding single variant and aggregate associations with height. <em>Nat Commun</em>. 2024. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-024-52579-w">10.1038/s41467-024-52579-w</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/39362880/">39362880</a></p></li>
+<li><p>Paul J Hop, Dongbing Lai, Pamela J Keagle, et al.. Systematic rare variant analyses identify RAB32 as a susceptibility gene for familial Parkinson’s disease. <em>Nat Genet</em>. 2024. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-024-01787-7">10.1038/s41588-024-01787-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/38858457/">38858457</a></p></li>
+<li><p>Kangcheng Hou, Hui Li, Emily Nason, et al.. Functional architecture of rare protein coding variation across 786,871 exomes. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.10.16.26365771">10.64898/2026.10.16.26365771</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42996062/">42996062</a></p></li>
+<li><p>Tyler A Joseph, Joelle Mbatchou, Arkopravo Ghosh, et al.. Computationally efficient meta-analysis of gene-based tests using summary statistics in large-scale genetic studies. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-025-02390-0">10.1038/s41588-025-02390-0</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41225158/">41225158</a></p></li>
+<li><p>Yohhan Kumarasinghe, Jacob Williams, Yuxin Yuan, et al.. MetaSTAARlite: an all-in-one tool for biobank-scale whole-genome sequencing meta-analysis. <em>Nat Comput Sci</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s43588-026-00995-x">10.1038/s43588-026-00995-x</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42236576/">42236576</a></p></li>
+<li><p>Zilin Li, Xihao Li, Hufeng Zhou, et al.. A framework for detecting noncoding rare-variant associations of large-scale whole-genome sequencing studies. <em>Nat Methods</em>. 2022. doi: <a class="reference external" href="https://doi.org/10.1038/s41592-022-01640-x">10.1038/s41592-022-01640-x</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/36303018/">36303018</a></p></li>
+<li><p>Xihao Li, Zilin Li, Hufeng Zhou, et al.. Dynamic incorporation of multiple in silico functional annotations empowers rare variant association analysis of large whole-genome sequencing studies at scale. <em>Nat Genet</em>. 2020. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-020-0676-4">10.1038/s41588-020-0676-4</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/32839606/">32839606</a></p></li>
+<li><p>Wenhan Lu, Robert J Carroll, Matthew Solomonson, et al.. Systematic common and rare variant association testing in 392,030 whole genomes in All of Us. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.05.08.26350964">10.64898/2026.05.08.26350964</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42180372/">42180372</a></p></li>
+<li><p>Mary B Makarious, Julie Lake, Vanessa Pitz, et al.. Large-scale rare variant burden testing in Parkinson’s disease. <em>Brain</em>. 2023. doi: <a class="reference external" href="https://doi.org/10.1093/brain/awad214">10.1093/brain/awad214</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/37348876/">37348876</a></p></li>
+<li><p>Shreya Menon, Adam Turner, Serena Chang, et al.. Massive-scale single-nucleus multi-omics identifies novel rare noncoding drivers of Parkinson’s disease. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.03.05.709922">10.64898/2026.03.05.709922</a></p></li>
+<li><p>Trang Nguyen, Ryan Koesterer, Poeya Haydarlou, et al.. Empirically determined baseline masking strategies and other considerations for gene-level burden tests. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02597-9">10.1038/s41588-026-02597-9</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42104092/">42104092</a></p></li>
+<li><p>Duncan S Palmer, Barney Hill, Sam Hodgson, et al.. The Biobank Rare Variant consortium powers the discovery of rare genetic associations through global collaboration. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.05.21.26353759">10.64898/2026.05.21.26353759</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42238450/">42238450</a></p></li>
+<li><p>Keona Pang, Nazia Pathan, Ann Le, et al.. A heritability-optimized method for functional prioritization of rare coding variants in complex traits. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02766-w">10.1038/s41588-026-02766-w</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42834204/">42834204</a></p></li>
+<li><p>Eunjae Park, Kisung Nam, Seokho Jeong, et al.. Scalable and accurate rare variant meta-analysis with Meta-SAIGE. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-025-02403-y">10.1038/s41588-025-02403-y</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41266648/">41266648</a></p></li>
+<li><p>Vanessa Pitz, Mary B Makarious, Sara Bandres-Ciga, et al.. Analysis of rare Parkinson’s disease variants in millions of people. <em>NPJ Parkinsons Dis</em>. 2024. doi: <a class="reference external" href="https://doi.org/10.1038/s41531-023-00608-8">10.1038/s41531-023-00608-8</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/38191580/">38191580</a></p></li>
+<li><p>Diogo M Ribeiro, Robin J Hofmeister, Simone Rubinacci, et al.. Noncoding rare variant associations with blood traits in 166,740 UK Biobank genomes. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-025-02288-x">10.1038/s41588-025-02288-x</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40770577/">40770577</a></p></li>
+<li><p>Jeremy Schwartzentruber, Petko Fiziev, Jeremy McRae, et al.. Flexibly Modeling Rare Variant Pathogenicity Improves Gene Discovery for Complex Traits. <em>bioRxiv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1101/2025.11.04.686320">10.1101/2025.11.04.686320</a></p></li>
+<li><p>Tarjinder Singh, James T R Walters, Mandy Johnstone, et al.. The contribution of rare variants to risk of schizophrenia in individuals with and without intellectual disability. <em>Nat Genet</em>. 2017. doi: <a class="reference external" href="https://doi.org/10.1038/ng.3903">10.1038/ng.3903</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/28650482/">28650482</a></p></li>
+<li><p>Shuang Song, Xihao Li, Hufeng Zhou, et al.. Scalable and accurate rare-variant association tests for whole genome sequencing time-to-event analysis in large biobanks. <em>Proc Natl Acad Sci U S A</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1073/pnas.2525288123">10.1073/pnas.2525288123</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41758668/">41758668</a></p></li>
+<li><p>Thomas P Spargo, Chloe F Sands, Isabella R Juan, et al.. Haploinsufficiency of ITSN1 is associated with a substantial increased risk of Parkinson’s disease. <em>Cell Rep</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1016/j.celrep.2025.115355">10.1016/j.celrep.2025.115355</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40056900/">40056900</a></p></li>
+<li><p>Jeffrey P Spence, Hakhamanesh Mostafavi, Mineto Ota, et al.. Specificity, length and luck drive gene rankings in association studies. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-025-09703-7">10.1038/s41586-025-09703-7</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41193809/">41193809</a></p></li>
+<li><p>Pierrick Wainschtein, Yuanxiang Zhang, Jeremy Schwartzentruber, et al.. Estimation and mapping of the missing heritability of human phenotypes. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-025-09720-6">10.1038/s41586-025-09720-6</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41225014/">41225014</a></p></li>
+<li><p>Belinda Wang, Matthew N Tran, Sheng Wang, et al.. Whole-exome sequencing in individuals with obsessive-compulsive disorder and chronic tic disorders identifies 36 large-effect risk genes. <em>Nat Neurosci</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41593-026-02419-5">10.1038/s41593-026-02419-5</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42680906/">42680906</a></p></li>
+<li><p>Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.03.24.26349148">10.64898/2026.03.24.26349148</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41929321/">41929321</a></p></li>
+</ol>
+</section>
+<section id="single-cell-eqtl">
+<h2>Single-cell eQTL<a class="headerlink" href="#single-cell-eqtl" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Tobi Alegbe, Bradley T Harris, Laura Fachal, et al.. Cell-type-resolved genetic variation shapes inflammatory bowel disease risk. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-026-10627-z">10.1038/s41586-026-10627-z</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42236949/">42236949</a></p></li>
+<li><p>Jose Alquicira-Hernandez, Elizabeth Dorans, Yoshihiko Tomofuji, et al.. Efficient genome-wide mapping of reproducible, context-dependent eQTLs at single-cell resolution. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.08.25.747138">10.64898/2026.08.25.747138</a></p></li>
+<li><p>Minhui Chen, Xinpei Wang, Lena Krockenberger, et al.. Cell-type-specific eQTLs underlie the genetic architecture of complex traits. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-026-10577-6">10.1038/s41586-026-10577-6</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42649298/">42649298</a></p></li>
+<li><p>Anna S E Cuomo, Eleanor Spenceley, Hope A Tanudisastro, et al.. Rare and common genetic variants shape single-cell immune gene expression. <em>Nature</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41586-026-10721-2">10.1038/s41586-026-10721-2</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42951973/">42951973</a></p></li>
+<li><p>Alexander Haglund, Verena Zuber, Maya Abouzeid, et al.. Cell state-dependent allelic effects and contextual Mendelian randomization analysis for human brain phenotypes. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-024-02050-9">10.1038/s41588-024-02050-9</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/39794547/">39794547</a></p></li>
+<li><p>Beomjin Jang, Kailash Bp, Alex Tokolyi, et al.. A meta-analysis of single-nucleus expression quantitative trait loci linking genetic risk to brain disorders. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02541-x">10.1038/s41588-026-02541-x</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41857317/">41857317</a></p></li>
+<li><p>Masahiro Kanai, Toni Delorey, Jarno Honkanen, et al.. Population-scale multiome immune cell atlas reveals complex disease drivers. <em>medRxiv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1101/2025.11.25.25340489">10.1101/2025.11.25.25340489</a></p></li>
+<li><p>Daniel Kaptijn, Lieke Michielsen, Drew Neavin, et al.. Federated single-cell QTL meta-analysis reveals novel disease mechanisms. <em>bioRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.01.20.700519">10.64898/2026.01.20.700519</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41648178/">41648178</a></p></li>
+<li><p>Lena Krockenberger, Andrew Lu, Mike Thompson, et al.. FastGxC: Fast and powerful context-specific eQTL mapping in bulk and single-cell data. <em>Cell Genom</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1016/j.xgen.2026.101250">10.1016/j.xgen.2026.101250</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42155441/">42155441</a></p></li>
+<li><p>Sungbeen Lee, Zane Hamdan, Sommer Huntress, et al.. A large-scale single cell map of primary and conditional regulatory variation in the human brain. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.05.30.26354534">10.64898/2026.05.30.26354534</a></p></li>
+<li><p>Chen Lin, Yingxin Lin, Wenxuan Li, et al.. Leveraging cell-type specificity and similarity improves single-cell eQTL fine-mapping. <em>Nat Commun</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41467-026-72176-3">10.1038/s41467-026-72176-3</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42020412/">42020412</a></p></li>
+<li><p>Yijia Christiana Liu, Anna S E Cuomo, Yi Huang, et al.. Scalable context-dependent single-cell eQTL mapping reveals disease-relevant regulatory variation beyond static models. <em>medRxiv</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.64898/2026.08.13.26360300">10.64898/2026.08.13.26360300</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42780159/">42780159</a></p></li>
+<li><p>Jonathan Mitchel, Sumaiya Nazeen, Xinyuan Wang, et al.. A single-cell genetic colocalization test improves power and resolves disease-mediating cell types. <em>bioRxiv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1101/2025.10.10.681685">10.1101/2025.10.10.681685</a></p></li>
+<li><p>Guanghao Qi, Eardi Lila, Zhicheng Ji, et al.. Transcriptome-wide association studies at cell-state level using single-cell eQTL data. <em>Cell Genom</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1016/j.xgen.2025.101060">10.1016/j.xgen.2025.101060</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41187759/">41187759</a></p></li>
+<li><p>Cristian Valencia, Aparna Nathan, Joyce B Kang, et al.. Modeling heterogeneity in single-cell perturbation states enhances detection of response eQTLs. <em>Nat Genet</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-025-02344-6">10.1038/s41588-025-02344-6</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41116018/">41116018</a></p></li>
+<li><p>Arushi Varshney, Nandini Manickam, Peter Orchard, et al.. Population-scale single-nucleus multi-omic profiling of skeletal muscle reveals extensive context-specific genetic regulation. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02786-6">10.1038/s41588-026-02786-6</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42951906/">42951906</a></p></li>
+<li><p>Martijn Vochteloo, Anoek Kooijmans, Joost Bakker, et al.. High cell-type specificity of eQTLs revealed by single-nucleus analyses of brain and blood. <em>bioRxiv</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1101/2025.11.26.689911">10.1101/2025.11.26.689911</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/41394650/">41394650</a></p></li>
+<li><p>Lida Wang, Havell Markus, Dieyi Chen, et al.. An atlas of single-cell eQTLs dissects autoimmune disease genes and identifies novel drug classes for treatment. <em>Cell Genom</em>. 2025. doi: <a class="reference external" href="https://doi.org/10.1016/j.xgen.2025.100820">10.1016/j.xgen.2025.100820</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/40154479/">40154479</a></p></li>
+<li><p>Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02830-5">10.1038/s41588-026-02830-5</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/43009566/">43009566</a></p></li>
+<li><p>Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. <em>Nat Genet</em>. 2026. doi: <a class="reference external" href="https://doi.org/10.1038/s41588-026-02798-2">10.1038/s41588-026-02798-2</a> PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/42995228/">42995228</a></p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="explore.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Explore</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prs">PRS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rare-variant-analysis">Rare variant analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-eqtl">Single-cell eQTL</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Hagai Levi
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
