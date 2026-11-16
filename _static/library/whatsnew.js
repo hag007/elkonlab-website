@@ -1,6 +1,6 @@
 // "What's new?" on the landing page: papers published in the last data-days days (30 by default), newest first.
-// Computed in the viewer's browser from papers.json, so "last week" stays current between rebuilds.
-// <div id="whats-new" data-days="7" data-fallback="3"> ; with no new papers it shows the latest few instead.
+// Computed in the viewer's browser from papers.json, so the window stays current between rebuilds.
+// <div id="whats-new" data-days="30" data-fallback="3"> ; with no new papers it shows the latest few instead.
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
