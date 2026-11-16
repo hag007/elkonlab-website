@@ -58,3 +58,32 @@ html[data-theme="dark"] {
 #paper-explorer details[open] summary::before { content: "− "; }
 #paper-explorer details p { font-size: 0.92em; }
 #paper-explorer .pl-links a { margin-right: 14px; }
+
+/* "What's new?" on the landing page */
+:root { --wn-accent: #dc2626; }
+html[data-theme="dark"] { --wn-accent: #f87171; }
+#whats-new { margin: 1.2em 0 1.6em; border: 1px solid var(--pst-color-border); border-left: 4px solid var(--wn-accent);
+  border-radius: 10px; background: var(--pst-color-surface); overflow: hidden; }
+#whats-new:empty { display: none; }
+#whats-new .wn-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 14px;
+  border-bottom: 1px solid var(--pst-color-border); }
+#whats-new .wn-bar b { font-size: 1.1em; }
+#whats-new .wn-sub { color: var(--pst-color-text-muted); font-size: 0.9em; }
+#whats-new .wn-pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--wn-accent);
+  box-shadow: 0 0 0 0 var(--wn-accent); animation: wn-pulse 1.8s infinite; flex: none; }
+@keyframes wn-pulse { 0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, .5); } 70% { box-shadow: 0 0 0 9px rgba(220, 38, 38, 0); }
+                      100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); } }
+@media (prefers-reduced-motion: reduce) { #whats-new .wn-pulse { animation: none; } }
+#whats-new .wn-list { list-style: none; margin: 0; padding: 0; }
+#whats-new .wn-item { padding: 12px 14px; border-bottom: 1px solid var(--pst-color-border); margin: 0; }
+#whats-new .wn-item:last-child { border-bottom: 0; }
+#whats-new .wn-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8em; }
+#whats-new .wn-tag { text-transform: uppercase; letter-spacing: .06em; font-weight: 700; padding: 1px 7px; border-radius: 4px;
+  border: 1px solid var(--wn-accent); color: var(--wn-accent); }
+#whats-new .wn-tag.hot { background: var(--wn-accent); color: #fff; }
+#whats-new .wn-when { color: var(--pst-color-text-muted); }
+#whats-new .wn-title { font-weight: 600; font-size: 1.05em; margin: 4px 0; line-height: 1.35; }
+#whats-new .wn-gist { margin: 4px 0 6px; }
+#whats-new .wn-foot { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 0.85em; }
+#whats-new .wn-authors { color: var(--pst-color-text-muted); margin-right: 4px; }
+#whats-new a.pl-badge { text-decoration: none; }
