@@ -98,3 +98,24 @@ html[data-theme="dark"] { --wn-accent: #f87171; }
 #paper-explorer .pl-clear { margin-left: auto; font-size: 0.85em; padding: 3px 10px; border-radius: 8px; cursor: pointer;
   border: 1px solid var(--pst-color-border); background: transparent; color: var(--pst-color-primary); }
 @media (max-width: 600px) { #paper-explorer .pl-filters label { flex: 1 1 100%; } #paper-explorer .pl-clear { margin-left: 0; } }
+
+/* Topic badges on the landing page: one colour per topic, dark ink on a light tint (light mode) and the
+   reverse in dark mode, all well above WCAG AA contrast. */
+#whats-new .wn-topic { font-weight: 600; font-size: 12.5px; border: 1px solid var(--wn-ink); background: var(--wn-bg); color: var(--wn-ink); }
+#whats-new .wn-topic:hover { background: var(--wn-ink); color: var(--wn-bg); }
+.wn-c0 { --wn-bg: #dbeafe; --wn-ink: #1e3a8a; }  /* blue */
+.wn-c1 { --wn-bg: #dcfce7; --wn-ink: #14532d; }  /* green */
+.wn-c2 { --wn-bg: #f3e8ff; --wn-ink: #581c87; }  /* purple */
+.wn-c3 { --wn-bg: #fef3c7; --wn-ink: #78350f; }  /* amber */
+.wn-c4 { --wn-bg: #ccfbf1; --wn-ink: #134e4a; }  /* teal */
+.wn-c5 { --wn-bg: #fce7f3; --wn-ink: #831843; }  /* pink */
+.wn-c6 { --wn-bg: #ffedd5; --wn-ink: #7c2d12; }  /* orange */
+.wn-c7 { --wn-bg: #e2e8f0; --wn-ink: #0f172a; }  /* slate */
+html[data-theme="dark"] .wn-c0 { --wn-bg: #172554; --wn-ink: #bfdbfe; }
+html[data-theme="dark"] .wn-c1 { --wn-bg: #052e16; --wn-ink: #bbf7d0; }
+html[data-theme="dark"] .wn-c2 { --wn-bg: #3b0764; --wn-ink: #e9d5ff; }
+html[data-theme="dark"] .wn-c3 { --wn-bg: #451a03; --wn-ink: #fde68a; }
+html[data-theme="dark"] .wn-c4 { --wn-bg: #042f2e; --wn-ink: #99f6e4; }
+html[data-theme="dark"] .wn-c5 { --wn-bg: #500724; --wn-ink: #fbcfe8; }
+html[data-theme="dark"] .wn-c6 { --wn-bg: #431407; --wn-ink: #fed7aa; }
+html[data-theme="dark"] .wn-c7 { --wn-bg: #0f172a; --wn-ink: #e2e8f0; }

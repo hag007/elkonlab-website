@@ -16,13 +16,16 @@
     return d <= 0 ? "today" : d === 1 ? "yesterday" : `${d} days ago`;
   }
 
+  // One colour per topic (topics in alphabetical order over the whole library, so each keeps its colour).
+  const color = {};
+
   function item(p) {
     const date = new Date(p.pub_date + "T00:00:00");
     const fresh = Date.now() - date < 2 * DAY;
     const authors = p.authors.length > 2 ? p.authors[0] + " et al." : p.authors.join(", ");
     const preprint = p.badges.some(b => b.label === "Preprint");
     const topics = p.folders.filter(f => f !== "Unfiled").map(f =>
-      `<a class="pl-badge pl-k-folder" href="${site}topics/${slug(f)}/papers.html">${esc(f.split("/").pop())}</a>`).join("");
+      `<a class="pl-badge wn-topic wn-c${color[f] ?? 0}" href="${site}topics/${slug(f)}/papers.html">${esc(f.split("/").pop())}</a>`).join("");
     const title = p.doi ? `<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title);
     return `<li class="wn-item">
       <div class="wn-head"><span class="wn-tag${fresh ? " hot" : ""}">${fresh ? "Breaking" : preprint ? "New preprint" : "New paper"}</span>
@@ -34,6 +37,7 @@
   }
 
   fetch(base + "papers.json").then(r => r.json()).then(papers => {
+    [...new Set(papers.flatMap(p => p.folders))].filter(f => f !== "Unfiled").sort().forEach((f, i) => color[f] = i % 8);
     const dated = papers.filter(p => /^\d{4}-\d{2}-\d{2}$/.test(p.pub_date || ""))
       .sort((a, b) => b.pub_date.localeCompare(a.pub_date));
     const cutoff = Date.now() - days * DAY;
