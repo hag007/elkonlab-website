@@ -114,7 +114,7 @@
 19. Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02830-5](https://doi.org/10.1038/s41588-026-02830-5) PMID: [43009566](https://pubmed.ncbi.nlm.nih.gov/43009566/)
 20. Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02798-2](https://doi.org/10.1038/s41588-026-02798-2) PMID: [42995228](https://pubmed.ncbi.nlm.nih.gov/42995228/)
 
-## ZZ Test collection
+## ZZ Test collection renamed
 
 1. Yunfeng Ruan, Yen Feng Lin, Yen Chen Anne Feng, et al.. Improving polygenic prediction in ancestrally diverse populations. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01054-7](https://doi.org/10.1038/s41588-022-01054-7) PMID: [35513724](https://pubmed.ncbi.nlm.nih.gov/35513724/)
 2. K Tsuo, Z Shi, T Ge, et al.. All of Us diversity and scale yield context-dependent improvements in polygenic prediction. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02734-4](https://doi.org/10.1038/s41588-026-02734-4) PMID: [42736379](https://pubmed.ncbi.nlm.nih.gov/42736379/)
