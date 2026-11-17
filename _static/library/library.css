@@ -119,3 +119,10 @@ html[data-theme="dark"] .wn-c4 { --wn-bg: #042f2e; --wn-ink: #99f6e4; }
 html[data-theme="dark"] .wn-c5 { --wn-bg: #500724; --wn-ink: #fbcfe8; }
 html[data-theme="dark"] .wn-c6 { --wn-bg: #431407; --wn-ink: #fed7aa; }
 html[data-theme="dark"] .wn-c7 { --wn-bg: #0f172a; --wn-ink: #e2e8f0; }
+
+/* PDF links (served by the password-protected library server) */
+#paper-explorer .pl-links a.pl-pdf { font-weight: 600; }
+#paper-explorer .pl-links a.pl-addpdf { color: var(--pst-color-text-muted); border: 1px dashed var(--pst-color-border);
+  border-radius: 6px; padding: 0 6px; text-decoration: none; }
+#paper-explorer .pl-links a.pl-addpdf:hover { color: var(--pst-color-primary); border-color: var(--pst-color-primary); }
+#whats-new .wn-pdf { font-size: 0.85em; font-weight: 600; margin-left: auto; }
