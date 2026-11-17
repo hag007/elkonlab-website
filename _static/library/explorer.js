@@ -64,9 +64,17 @@
     const hl = p.badges.filter(b => b.kind === "highlight"), rest = p.badges.filter(b => b.kind !== "highlight");
     // PDFs and supplementary files live on the password-protected library server.
     const filesLink = (p) => `${p.files_url}?back=${encodeURIComponent(location.href)}`;  // the files page links back here
-    const srv = (href, cls, text, title) => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${title}">${text}</a>`;
+    const srv = (href, cls, text, title) => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${text}</a>`;
+    // One link per supplementary file: "Supplementary · xlsx", or "Supp. 1 · pdf", "Supp. 2 · xlsx"… (full name on hover).
+    const suppLinks = (p, cls) => {
+      const s = p.supp || [], ext = (n) => ((n.match(/\.([A-Za-z0-9]{1,5})$/) || [])[1] || "file").toLowerCase();
+      const out = s.slice(0, 4).map((f, i) => srv(f.url, cls, `📎 ${s.length === 1 ? "Supplementary" : `Supp. ${i + 1}`} · ${ext(f.name)}`,
+                                                   `${f.name} (library server, password)`));
+      if (s.length > 4) out.push(srv(filesLink(p), cls, `+${s.length - 4} more`, "All supplementary files (password)"));
+      return out.join("");
+    };
     const links = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
-                   p.n_supp && srv(filesLink(p), "pl-pdf", `Supplementary (${p.n_supp}) 🔒`, "Supplementary files on the library server (password)"),
+                   suppLinks(p, "pl-supp"),
                    p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-addpdf", "Edit files", "Replace the PDF or add supplementary files (password)")
                                              : srv(filesLink(p), "pl-addpdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
                    p.doi &&`<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">DOI</a>`,

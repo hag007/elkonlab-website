@@ -128,3 +128,7 @@ html[data-theme="dark"] .wn-c7 { --wn-bg: #0f172a; --wn-ink: #e2e8f0; }
 #whats-new .wn-files { margin-left: auto; display: inline-flex; gap: 12px; align-items: center; }
 #whats-new .wn-pdf { font-size: 0.85em; font-weight: 600; }
 #whats-new .wn-edit { font-size: 0.85em; color: var(--pst-color-text-muted); }
+
+/* Supplementary file links next to the PDF */
+#paper-explorer .pl-links a.pl-supp { white-space: nowrap; }
+#whats-new .wn-supp { font-size: 0.85em; white-space: nowrap; }
