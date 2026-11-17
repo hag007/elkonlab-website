@@ -35,5 +35,12 @@ using the topic's description and keywords.
   <p>Statistical fine mapping of GWAS SNPs, function annotation etc.</p>
   <div class="pl-kw"><span class="pl-badge wn-topic wn-c0">Sei</span><span class="pl-badge wn-topic wn-c0">SuSiE</span><span class="pl-badge wn-topic wn-c0">IMPACT-DL</span><span class="pl-badge wn-topic wn-c0">LDSC</span><span class="pl-badge wn-topic wn-c0">fine-mapping</span><span class="pl-badge wn-topic wn-c0">functional annotations</span></div>
 </section>
+<section class="pl-topic">
+  <h3><a href="topics/zz-test-collection.html">ZZ Test collection</a><a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/9560dfe3-31f7-46a6-a92f-4facdd69c7b6/papers" target="_blank" rel="noopener"
+     title="Add or remove this topic's papers (library server, password)">Manage papers 🔒</a></h3>
+  <div class="pl-meta">2 papers · last scanned 2026-11-17 · daily scan off</div>
+  <p><em>Imported from Mendeley; its description is being written.</em></p>
+  <div class="pl-kw"><span class="pl-meta">No keywords yet.</span></div>
+</section>
 </div>
 ```
