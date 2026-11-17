@@ -4,5 +4,5 @@ Polygenic risk scores (PRS) sum the small effects of many genetic variants, esti
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="PRS"></div>
-<script src="../_static/library/whatsnew.js?v=309d27d9"></script>
+<script src="../_static/library/whatsnew.js?v=fe9d93f6"></script>
 ```

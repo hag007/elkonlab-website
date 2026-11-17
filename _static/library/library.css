@@ -74,7 +74,16 @@ html[data-theme="dark"] { --wn-accent: #f87171; }
   border-bottom: 1px solid var(--pst-color-border); }
 #whats-new .wn-bar b { font-size: 1.1em; }
 #whats-new .wn-sub { color: var(--pst-color-text-muted); font-size: 0.9em; }
-#whats-new .wn-updated { margin-left: auto; color: var(--pst-color-text-muted); font-size: 0.85em; white-space: nowrap; }
+#whats-new .wn-status { margin-left: auto; display: inline-flex; flex-wrap: wrap; gap: 4px 12px; align-items: center;
+  justify-content: flex-end; font-size: 0.85em; }
+#whats-new .wn-updated { color: var(--pst-color-text-muted); white-space: nowrap; }
+#whats-new .wn-scan[hidden] { display: none; }
+#whats-new .wn-scan.running { color: var(--pst-color-primary); font-weight: 600; }
+#whats-new .wn-scan.running a { font-weight: 400; margin-left: 4px; }
+#whats-new .wn-scan.idle a { color: var(--pst-color-text-muted); }
+#whats-new .wn-spin { display: inline-block; animation: wn-spin 1.4s linear infinite; }
+@keyframes wn-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { #whats-new .wn-spin { animation: none; } }
 #whats-new .wn-pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--wn-accent);
   box-shadow: 0 0 0 0 var(--wn-accent); animation: wn-pulse 1.8s infinite; flex: none; }
 @keyframes wn-pulse { 0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, .5); } 70% { box-shadow: 0 0 0 9px rgba(220, 38, 38, 0); }

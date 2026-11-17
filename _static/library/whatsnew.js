@@ -77,16 +77,40 @@
         <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +
                                                (recent.length > max ? ` · showing the latest ${max}` : "")
                                               : `Nothing published in the last ${days} days · latest papers`}</span>
-        <span class="wn-updated"></span></div>
+        <span class="wn-status"><span class="wn-scan" hidden></span><span class="wn-updated"></span></span></div>
       <ul class="wn-list">${list.map(item).join("")}</ul>`;
-    // "Last updated": when the library was last synced (written by the site build).
+    // "Last updated" (when the library was last synced) and, while a scan runs, "Scanning <topic>…".
+    // Both come from updated.json, which the server publishes when a scan starts and with every rebuild.
     fetch(base + "updated.json", { cache: "no-cache" }).then(r => r.json()).then(u => {
-      if (!u.last_sync) return;
-      const d = new Date(u.last_sync * 1000);
-      const el = root.querySelector(".wn-updated");
-      el.textContent = "Last updated " + d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) +
-        ", " + d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-      el.title = d.toString();
+      const time = (d) => d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+      if (u.last_sync) {
+        const d = new Date(u.last_sync * 1000), el = root.querySelector(".wn-updated");
+        el.textContent = "Last updated " + d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) +
+          ", " + time(d);
+        el.title = d.toString();
+      }
+      const scan = u.scan || {}, started = new Date(scan.topic_started || scan.run_started || 0);
+      const live = u.server ? `<a href="${esc(u.server)}/topics#status" target="_blank" rel="noopener"
+          title="The scan's live progress (library server, password)">Live status 🔒</a>` : "";
+      const el = root.querySelector(".wn-scan");
+      // A scan older than 3 hours is not running any more (its end was not published).
+      if (!scan.running || Date.now() - started > 3 * 3600e3) {
+        el.hidden = !live;
+        el.className = "wn-scan idle";
+        el.innerHTML = live.replace("Live status", "Scan status");
+        return;
+      }
+      const draw = () => {
+        const min = Math.max(0, Math.round((Date.now() - started) / 60000));
+        const what = scan.topic ? `“${esc(scan.topic)}”` : "topics";
+        const more = (scan.queue || []).length ? ` (+${scan.queue.length} more)` : "";
+        el.innerHTML = `<span class="wn-spin" aria-hidden="true">⟳</span> Scanning ${what}${more}… started ${time(started)}
+          (${min < 1 ? "just now" : `${min} min ago`}) ${live}`;
+      };
+      el.hidden = false;
+      el.className = "wn-scan running";
+      draw();
+      setInterval(draw, 30000);
     }).catch(() => {});
   }).catch(() => { root.textContent = ""; });
 })();
