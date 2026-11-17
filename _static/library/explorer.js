@@ -82,11 +82,13 @@
           <a class="pl-dd-all" href="${esc(p.supp_zip)}" rel="noopener"><span>⬇ Download all (.zip)</span>
           <span class="pl-dd-size">${size(s.reduce((t, f) => t + (f.size || 0), 0))}</span></a></div></details>`;
     };
-    const links = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
+    // Footer like the landing page's cards: outside links on the left, the paper's files on the right.
+    const files = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
                    suppLinks(p),
-                   p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-addpdf", "Edit files", "Replace the PDF or add supplementary files (password)")
-                                             : srv(filesLink(p), "pl-addpdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
-                   p.doi &&`<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">DOI</a>`,
+                   p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
+                                             : srv(filesLink(p), "pl-pdf", "+ Add PDF", "Upload a PDF on the library server (password)"))
+                  ].filter(Boolean).join("");
+    const links = [p.doi &&`<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">DOI</a>`,
                    p.pmid && `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed</a>`,
                    p.arxiv && `<a href="https://arxiv.org/abs/${esc(p.arxiv)}" target="_blank" rel="noopener">arXiv</a>`].filter(Boolean).join("");
     const snip = snippet(p.abstract, terms);
@@ -97,7 +99,7 @@
       <p>${esc(p.summary)}</p>
       ${snip ? `<p class="pl-snip">${snip}</p>` : ""}
       ${p.abstract ? `<details><summary>Abstract</summary><p>${esc(p.abstract)}</p></details>` : ""}
-      <div class="pl-links">${links}</div>
+      <div class="pl-links"><span class="pl-ext">${links}</span><span class="pl-files">${files}</span></div>
     </div>`;
   }
 
