@@ -25,5 +25,11 @@ using the topic's description and keywords.
   <p>Rare variant association analysis: gene-based burden and variance-component tests (SKAT, ACAT, STAAR and successors), masks of loss-of-function and damaging missense variants (AlphaMissense, REVEL, CADD), non-coding rare-variant interpretation in whole-genome sequencing, rare-variant meta-analysis, and large exome/WGS rare-variant studies of complex and neuropsychiatric/neurodegenerative disease.</p>
   <div class="pl-kw"><span class="pl-badge wn-topic wn-c1">rare variant association</span><span class="pl-badge wn-topic wn-c1">burden test</span><span class="pl-badge wn-topic wn-c1">SKAT</span><span class="pl-badge wn-topic wn-c1">ACAT</span><span class="pl-badge wn-topic wn-c1">STAAR</span><span class="pl-badge wn-topic wn-c1">loss-of-function</span><span class="pl-badge wn-topic wn-c1">missense</span><span class="pl-badge wn-topic wn-c1">AlphaMissense</span><span class="pl-badge wn-topic wn-c1">non-coding rare variants</span><span class="pl-badge wn-topic wn-c1">whole-genome sequencing</span><span class="pl-badge wn-topic wn-c1">exome sequencing</span><span class="pl-badge wn-topic wn-c1">rare-variant meta-analysis</span></div>
 </section>
+<section class="pl-topic">
+  <h3>Fine mapping</h3>
+  <div class="pl-meta">0 papers · not scanned yet · daily scan on</div>
+  <p>Statistical fine mapping of GWAS SNPs, function annotation etc.</p>
+  <div class="pl-kw"><span class="pl-badge wn-topic wn-c7">Sei</span><span class="pl-badge wn-topic wn-c7">SuSiE</span><span class="pl-badge wn-topic wn-c7">IMPACT-DL</span><span class="pl-badge wn-topic wn-c7">LDSC</span><span class="pl-badge wn-topic wn-c7">fine-mapping</span><span class="pl-badge wn-topic wn-c7">functional annotations</span></div>
+</section>
 </div>
 ```
