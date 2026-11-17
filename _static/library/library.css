@@ -184,3 +184,9 @@ a.pl-edit-topics:hover { background: var(--pst-color-primary); color: var(--pst-
 @media (min-width: 1200px) {
   .bd-main .bd-content:has(.bd-sidebar-secondary) .bd-article-container { max-width: calc(100% - var(--pst-sidebar-secondary)); }
 }
+
+/* "Manage papers" links (library server) */
+.pl-manage { margin: 0 0 4px; }
+.pl-manage a, a.pl-manage-link { font-weight: 600; font-size: 0.9em; }
+.pl-topic h3 { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.pl-topic h3 a.pl-manage-link { margin-left: auto; font-size: 0.8em; }
