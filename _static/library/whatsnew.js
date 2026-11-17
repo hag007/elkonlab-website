@@ -76,7 +76,17 @@
     root.innerHTML = `<div class="wn-bar"><span class="wn-pulse"></span><b>What's new?</b>
         <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +
                                                (recent.length > max ? ` · showing the latest ${max}` : "")
-                                              : `Nothing published in the last ${days} days · latest papers`}</span></div>
+                                              : `Nothing published in the last ${days} days · latest papers`}</span>
+        <span class="wn-updated"></span></div>
       <ul class="wn-list">${list.map(item).join("")}</ul>`;
+    // "Last updated": when the library was last synced (written by the site build).
+    fetch(base + "updated.json", { cache: "no-cache" }).then(r => r.json()).then(u => {
+      if (!u.last_sync) return;
+      const d = new Date(u.last_sync * 1000);
+      const el = root.querySelector(".wn-updated");
+      el.textContent = "Last updated " + d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) +
+        ", " + d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+      el.title = d.toString();
+    }).catch(() => {});
   }).catch(() => { root.textContent = ""; });
 })();

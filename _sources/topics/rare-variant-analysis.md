@@ -4,5 +4,5 @@ Rare variants (typically carried by fewer than 1% of people) are too rare to tes
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Rare variant analysis"></div>
-<script src="../_static/library/whatsnew.js?v=91dd7270"></script>
+<script src="../_static/library/whatsnew.js?v=309d27d9"></script>
 ```
