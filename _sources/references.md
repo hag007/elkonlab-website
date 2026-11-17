@@ -1,6 +1,6 @@
 # References
 
-78 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+79 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## PRS
 
@@ -64,7 +64,8 @@
 34. Jeffrey P Spence, Hakhamanesh Mostafavi, Mineto Ota, et al.. Specificity, length and luck drive gene rankings in association studies. *Nature*. 2026. doi: [10.1038/s41586-025-09703-7](https://doi.org/10.1038/s41586-025-09703-7) PMID: [41193809](https://pubmed.ncbi.nlm.nih.gov/41193809/)
 35. Pierrick Wainschtein, Yuanxiang Zhang, Jeremy Schwartzentruber, et al.. Estimation and mapping of the missing heritability of human phenotypes. *Nature*. 2026. doi: [10.1038/s41586-025-09720-6](https://doi.org/10.1038/s41586-025-09720-6) PMID: [41225014](https://pubmed.ncbi.nlm.nih.gov/41225014/)
 36. Belinda Wang, Matthew N Tran, Sheng Wang, et al.. Whole-exome sequencing in individuals with obsessive-compulsive disorder and chronic tic disorders identifies 36 large-effect risk genes. *Nat Neurosci*. 2026. doi: [10.1038/s41593-026-02419-5](https://doi.org/10.1038/s41593-026-02419-5) PMID: [42680906](https://pubmed.ncbi.nlm.nih.gov/42680906/)
-37. Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. *medRxiv*. 2026. doi: [10.64898/2026.03.24.26349148](https://doi.org/10.64898/2026.03.24.26349148) PMID: [41929321](https://pubmed.ncbi.nlm.nih.gov/41929321/)
+37. Yuchen Yang, Eden Martin, Lindsay Farrer, et al.. Joint Analysis of Common Regulatory and Rare Coding Variants for Improved Power in Kernel Association Tests. *bioRxiv*. 2026. doi: [10.64898/2026.11.11.765949](https://doi.org/10.64898/2026.11.11.765949)
+38. Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. *medRxiv*. 2026. doi: [10.64898/2026.03.24.26349148](https://doi.org/10.64898/2026.03.24.26349148) PMID: [41929321](https://pubmed.ncbi.nlm.nih.gov/41929321/)
 
 ## Single-cell eQTL
 
