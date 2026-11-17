@@ -4,6 +4,12 @@
 (function () {
   const root = document.getElementById("paper-explorer");
   if (!root) return;
+  if (!window.plDropdowns) {
+    window.plDropdowns = true;
+    document.addEventListener("click", (e) => document.querySelectorAll("details.pl-dd[open]").forEach(d => {
+      if (!d.contains(e.target)) d.open = false;
+    }));
+  }
   const base = document.currentScript.src.replace(/explorer\.js.*$/, "");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const locked = root.dataset.folder || "";
@@ -65,16 +71,17 @@
     // PDFs and supplementary files live on the password-protected library server.
     const filesLink = (p) => `${p.files_url}?back=${encodeURIComponent(location.href)}`;  // the files page links back here
     const srv = (href, cls, text, title) => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${text}</a>`;
-    // One link per supplementary file: "Supplementary · xlsx", or "Supp. 1 · pdf", "Supp. 2 · xlsx"… (full name on hover).
-    const suppLinks = (p, cls) => {
-      const s = p.supp || [], ext = (n) => ((n.match(/\.([A-Za-z0-9]{1,5})$/) || [])[1] || "file").toLowerCase();
-      const out = s.slice(0, 4).map((f, i) => srv(f.url, cls, `📎 ${s.length === 1 ? "Supplementary" : `Supp. ${i + 1}`} · ${ext(f.name)}`,
-                                                   `${f.name} (library server, password)`));
-      if (s.length > 4) out.push(srv(filesLink(p), cls, `+${s.length - 4} more`, "All supplementary files (password)"));
-      return out.join("");
+    // Supplementary files: one "Show all files" button that opens a list of the files.
+    const suppLinks = (p) => {
+      const s = p.supp || [];
+      if (!s.length) return "";
+      const size = (n) => n == null ? "" : n > 1048576 ? `${(n / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1024))} KB`;
+      return `<details class="pl-dd"><summary title="Supplementary files (library server, password)">📎 Show all files (${s.length})</summary>
+        <div class="pl-dd-menu">${s.map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">
+          <span class="pl-dd-name">${esc(f.name)}</span><span class="pl-dd-size">${size(f.size)}</span></a>`).join("")}</div></details>`;
     };
     const links = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
-                   suppLinks(p, "pl-supp"),
+                   suppLinks(p),
                    p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-addpdf", "Edit files", "Replace the PDF or add supplementary files (password)")
                                              : srv(filesLink(p), "pl-addpdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
                    p.doi &&`<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">DOI</a>`,
