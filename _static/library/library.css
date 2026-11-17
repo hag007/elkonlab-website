@@ -176,3 +176,11 @@ details.pl-dd .pl-dd-menu a.pl-dd-all { border-top: 1px solid var(--pst-color-bo
 a.pl-edit-topics { display: inline-block; font-weight: 600; padding: 4px 12px; border-radius: 8px; text-decoration: none;
   border: 1px solid var(--pst-color-primary); }
 a.pl-edit-topics:hover { background: var(--pst-color-primary); color: var(--pst-color-background); }
+
+/* Wider pages. The theme caps pages at 88rem and always keeps a 17rem column for "On this page", even on pages
+   without one (like the landing page), which squeezed the "What's new?" header onto two lines. */
+.bd-page-width { max-width: 120rem; }
+.bd-main .bd-content .bd-article-container { max-width: 100%; }
+@media (min-width: 1200px) {
+  .bd-main .bd-content:has(.bd-sidebar-secondary) .bd-article-container { max-width: calc(100% - var(--pst-sidebar-secondary)); }
+}
