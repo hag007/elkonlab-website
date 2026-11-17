@@ -77,7 +77,9 @@
         <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +
                                                (recent.length > max ? ` · showing the latest ${max}` : "")
                                               : `Nothing published in the last ${days} days · latest papers`}</span>
-        <span class="wn-status"><span class="wn-scan" hidden></span><span class="wn-updated"></span></span></div>
+        <span class="wn-status"><a class="wn-alerts" hidden target="_blank" rel="noopener"
+          title="Get an email when new papers arrive">✉ Email alerts</a><span class="wn-scan" hidden></span><span
+          class="wn-updated"></span></span></div>
       <ul class="wn-list">${list.map(item).join("")}</ul>`;
     // "Last updated" (when the library was last synced) and, while a scan runs, "Scanning <topic>…".
     // Both come from updated.json, which the server publishes when a scan starts and with every rebuild.
@@ -88,6 +90,11 @@
         el.textContent = "Last updated " + d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) +
           ", " + time(d);
         el.title = d.toString();
+      }
+      if (u.server) {  // the signup page (on a topic page, with that topic ticked)
+        const a = root.querySelector(".wn-alerts");
+        a.href = `${u.server}/subscribe${topic ? `?topic=${encodeURIComponent(topic)}` : ""}`;
+        a.hidden = false;
       }
       const scan = u.scan || {}, started = new Date(scan.topic_started || scan.run_started || 0);
       const live = u.server ? `<a href="${esc(u.server)}/topics#status" target="_blank" rel="noopener"
