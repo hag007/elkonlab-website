@@ -192,6 +192,7 @@
     else if (f && !locked) { state.folder = state.folder === f.dataset.folder ? "" : f.dataset.folder; render(); }
   });
 
-  fetch(base + "papers.json").then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); })
+  // no-cache: always ask the server whether the list changed (a quick 304 when it did not).
+  fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); })
     .catch(() => { root.querySelector(".pl-list").textContent = "Could not load the paper list."; });
 })();

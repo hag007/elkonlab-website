@@ -65,7 +65,8 @@
     </li>`;
   }
 
-  fetch(base + "papers.json").then(r => r.json()).then(papers => {
+  // no-cache: always ask the server whether the list changed (a quick 304 when it did not).
+  fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(papers => {
     [...new Set(papers.flatMap(p => p.folders))].filter(f => f !== "Unfiled").sort().forEach((f, i) => color[f] = i % 8);
     const dated = papers.filter(p => (!topic || p.folders.includes(topic)) && /^\d{4}-\d{2}-\d{2}$/.test(p.pub_date || ""))
       .sort((a, b) => b.pub_date.localeCompare(a.pub_date));
