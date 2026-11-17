@@ -36,7 +36,7 @@
       <div class="wn-gist">${esc(p.summary)}</div>
       <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}${
         p.pdf_url ? `<a class="wn-pdf" href="${esc(p.pdf_url)}" target="_blank" rel="noopener" title="Opens on the library server (password)">PDF 🔒</a>`
-        : p.upload_url ? `<a class="wn-pdf" href="${esc(p.upload_url)}" target="_blank" rel="noopener" title="Upload a PDF on the library server (password)">+ Add PDF</a>` : ""}</div>
+        : p.files_url && !p.has_pdf ? `<a class="wn-pdf" href="${esc(p.files_url)}" target="_blank" rel="noopener" title="Upload a PDF on the library server (password)">+ Add PDF</a>` : ""}</div>
     </li>`;
   }
 

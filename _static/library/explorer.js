@@ -62,8 +62,12 @@
     const meta = [p.authors.length > 3 ? p.authors.slice(0, 3).join(", ") + " et al." : p.authors.join(", "),
                   p.source, p.pub_date || p.year, p.impact != null ? `IF ≈ ${p.impact}` : ""].filter(Boolean).join(" · ");
     const hl = p.badges.filter(b => b.kind === "highlight"), rest = p.badges.filter(b => b.kind !== "highlight");
-    const links = [p.pdf_url && `<a class="pl-pdf" href="${esc(p.pdf_url)}" target="_blank" rel="noopener" title="Opens on the library server (password)">PDF 🔒</a>`,
-                   p.upload_url && `<a class="pl-addpdf" href="${esc(p.upload_url)}" target="_blank" rel="noopener" title="Upload a PDF on the library server (password)">+ Add PDF</a>`,
+    // PDFs and supplementary files live on the password-protected library server.
+    const srv = (href, cls, text, title) => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${title}">${text}</a>`;
+    const links = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
+                   p.n_supp && srv(p.files_url, "pl-pdf", `Supplementary (${p.n_supp}) 🔒`, "Supplementary files on the library server (password)"),
+                   p.files_url && (p.has_pdf ? srv(p.files_url, "pl-addpdf", "Edit files", "Replace the PDF or add supplementary files (password)")
+                                             : srv(p.files_url, "pl-addpdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
                    p.doi &&`<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">DOI</a>`,
                    p.pmid && `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed</a>`,
                    p.arxiv && `<a href="https://arxiv.org/abs/${esc(p.arxiv)}" target="_blank" rel="noopener">arXiv</a>`].filter(Boolean).join("");
