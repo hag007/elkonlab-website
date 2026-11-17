@@ -21,6 +21,10 @@
   // One colour per topic (topics in alphabetical order over the whole library, so each keeps its colour).
   const color = {};
 
+  // PDFs and supplementary files live on the password-protected library server.
+  const srv = (href, cls, text, title) =>
+    `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${title}">${text}</a>`;
+
   function item(p) {
     const date = new Date(p.pub_date + "T00:00:00");
     const fresh = Date.now() - date < 2 * DAY;
@@ -34,9 +38,12 @@
         <span class="wn-when">${esc(p.source)} · ${ago(date)}</span></div>
       <div class="wn-title">${title}</div>
       <div class="wn-gist">${esc(p.summary)}</div>
-      <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}${
-        p.pdf_url ? `<a class="wn-pdf" href="${esc(p.pdf_url)}" target="_blank" rel="noopener" title="Opens on the library server (password)">PDF 🔒</a>`
-        : p.files_url && !p.has_pdf ? `<a class="wn-pdf" href="${esc(p.files_url)}" target="_blank" rel="noopener" title="Upload a PDF on the library server (password)">+ Add PDF</a>` : ""}</div>
+      <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}<span class="wn-files">${[
+        p.pdf_url && srv(p.pdf_url, "wn-pdf", "PDF 🔒", "Opens on the library server (password)"),
+        p.n_supp && srv(p.files_url, "wn-pdf", `Supplementary (${p.n_supp}) 🔒`, "Supplementary files on the library server (password)"),
+        p.files_url && (p.has_pdf ? srv(p.files_url, "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
+                                  : srv(p.files_url, "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
+      ].filter(Boolean).join("")}</span></div>
     </li>`;
   }
 
