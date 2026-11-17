@@ -156,3 +156,14 @@ details.pl-dd .pl-dd-size { color: var(--pst-color-text-muted); font-size: 0.85e
 #whats-new details.pl-dd .pl-dd-menu { left: auto; right: 0; }
 details.pl-dd .pl-dd-menu a.pl-dd-all { border-top: 1px solid var(--pst-color-border); border-radius: 0 0 6px 6px;
   margin-top: 4px; padding-top: 8px; font-weight: 600; color: var(--pst-color-primary); }
+
+/* Tools > Topics */
+.pl-topics { display: grid; gap: 14px; margin-top: 8px; }
+.pl-topic { border: 1px solid var(--pst-color-border); border-radius: 10px; padding: 12px 14px; background: var(--pst-color-surface); }
+.pl-topic h3 { font-size: 1.1em; margin: 0 0 2px; }
+.pl-topic p { margin: 6px 0 8px; }
+.pl-kw { display: flex; flex-wrap: wrap; gap: 4px; }
+.pl-kw .wn-topic { font-weight: 600; font-size: 12.5px; border: 1px solid var(--wn-ink); background: var(--wn-bg); color: var(--wn-ink); }
+a.pl-edit-topics { display: inline-block; font-weight: 600; padding: 4px 12px; border-radius: 8px; text-decoration: none;
+  border: 1px solid var(--pst-color-primary); }
+a.pl-edit-topics:hover { background: var(--pst-color-primary); color: var(--pst-color-background); }
