@@ -38,7 +38,9 @@
     const size = (n) => n == null ? "" : n > 1048576 ? `${(n / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1024))} KB`;
     return `<details class="pl-dd"><summary title="Supplementary files (library server, password)">📎 Show all files (${s.length})</summary>
       <div class="pl-dd-menu">${s.map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">
-        <span class="pl-dd-name">${esc(f.name)}</span><span class="pl-dd-size">${size(f.size)}</span></a>`).join("")}</div></details>`;
+        <span class="pl-dd-name">${esc(f.name)}</span><span class="pl-dd-size">${size(f.size)}</span></a>`).join("")}
+        <a class="pl-dd-all" href="${esc(p.supp_zip)}" rel="noopener"><span>⬇ Download all (.zip)</span>
+          <span class="pl-dd-size">${size(s.reduce((t, f) => t + (f.size || 0), 0))}</span></a></div></details>`;
   };
 
   function item(p) {
