@@ -22,6 +22,7 @@
   const color = {};
 
   // PDFs and supplementary files live on the password-protected library server.
+  const filesLink = (p) => `${p.files_url}?back=${encodeURIComponent(location.href)}`;  // the files page links back here
   const srv = (href, cls, text, title) =>
     `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${title}">${text}</a>`;
 
@@ -40,9 +41,9 @@
       <div class="wn-gist">${esc(p.summary)}</div>
       <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}<span class="wn-files">${[
         p.pdf_url && srv(p.pdf_url, "wn-pdf", "PDF 🔒", "Opens on the library server (password)"),
-        p.n_supp && srv(p.files_url, "wn-pdf", `Supplementary (${p.n_supp}) 🔒`, "Supplementary files on the library server (password)"),
-        p.files_url && (p.has_pdf ? srv(p.files_url, "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
-                                  : srv(p.files_url, "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
+        p.n_supp && srv(filesLink(p), "wn-pdf", `Supplementary (${p.n_supp}) 🔒`, "Supplementary files on the library server (password)"),
+        p.files_url && (p.has_pdf ? srv(filesLink(p), "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
+                                  : srv(filesLink(p), "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
       ].filter(Boolean).join("")}</span></div>
     </li>`;
   }
