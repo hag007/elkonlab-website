@@ -1,1 +1,1 @@
-{"last_sync": 1794993010.6160343, "scan": {"running": true, "topic": "Methylation", "topic_started": "2026-11-18T11:06:53+02:00", "run_started": "2026-11-18T11:06:53+02:00", "finished": null, "queue": [], "results": []}, "server": "http://rack-shamir6.cs.tau.ac.il:8765"}
+{"last_sync": 1794993104.940305, "scan": {"running": true, "topic": "Methylation", "topic_started": "2026-11-18T11:06:53+02:00", "run_started": "2026-11-18T11:06:53+02:00", "finished": null, "queue": [], "results": []}, "server": "http://rack-shamir6.cs.tau.ac.il:8765"}
