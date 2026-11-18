@@ -5,9 +5,7 @@ using the topic's description and keywords.
 
 ```{raw} html
 <p><a class="pl-edit-topics" href="http://rack-shamir6.cs.tau.ac.il:8765/topics" target="_blank" rel="noopener"
-   title="Add topics, edit descriptions and keywords (library server, password)">✎ Edit topics 🔒</a>
-   <a class="pl-edit-topics" href="http://rack-shamir6.cs.tau.ac.il:8765/subscribe" target="_blank" rel="noopener"
-   title="Get an email when new papers arrive">✉ Email alerts</a></p>
+   title="Add topics, edit descriptions and keywords (library server, password)">✎ Edit topics 🔒</a></p>
 <div class="pl-topics">
 <section class="pl-topic">
   <h3><a href="topics/prs.html">PRS</a><a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/d8da5b58-f29e-405e-97bb-2467f0b240d9/papers" target="_blank" rel="noopener"
