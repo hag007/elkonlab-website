@@ -1,6 +1,6 @@
 # References
 
-113 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+111 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Fine mapping
 
@@ -124,8 +124,3 @@
 21. Y. Wu, J. Ren. A Graded Immune-Cell-Resolved cis-eQTL Mendelian Randomisation Screen Across Systemic Lupus Erythematosus and Related Immune Phenotypes. *Balkan Medical Journal*. 2026. doi: [10.4274/balkanmedj.galenos.2026.2026-9-28](https://doi.org/10.4274/balkanmedj.galenos.2026.2026-9-28) PMID: [43041076](https://pubmed.ncbi.nlm.nih.gov/43041076/)
 22. Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02830-5](https://doi.org/10.1038/s41588-026-02830-5) PMID: [43009566](https://pubmed.ncbi.nlm.nih.gov/43009566/)
 23. Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02798-2](https://doi.org/10.1038/s41588-026-02798-2) PMID: [42995228](https://pubmed.ncbi.nlm.nih.gov/42995228/)
-
-## Unfiled
-
-1. . Improving polygenic prediction in ancestrally diverse populations. **. 2022.
-2. . ZZ unrelated test document about yeast metabolism. **. 2022.
