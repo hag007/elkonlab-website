@@ -1,6 +1,6 @@
 # References
 
-111 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+112 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Fine mapping
 
@@ -48,10 +48,11 @@
 16. X Tian, T Fabiha, WF Li, et al.. PRISM: ancestry-aware integration of tissue-specific genomic annotations enhances the transferability of polygenic scores. *bioRxiv*. 2025. doi: [10.1101/2025.11.13.688144](https://doi.org/10.1101/2025.11.13.688144) PMID: [41292742](https://pubmed.ncbi.nlm.nih.gov/41292742/)
 17. K Tsuo, Z Shi, T Ge, et al.. All of Us diversity and scale yield context-dependent improvements in polygenic prediction. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02734-4](https://doi.org/10.1038/s41588-026-02734-4) PMID: [42736379](https://pubmed.ncbi.nlm.nih.gov/42736379/)
 18. C Wang, H Wu, Z Zhu, et al.. Scalable penalized regression boosts accuracy and computational efficiency for single- and cross-ancestry polygenic prediction. *Research Square*. 2026. doi: [10.21203/rs.3.rs-10235713/v1](https://doi.org/10.21203/rs.3.rs-10235713/v1)
-19. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
-20. H Wu, P Pérez-Rodríguez, M Boehnke, et al.. Improving polygenic score prediction for underrepresented groups through transfer learning. *Nat Commun*. 2026. doi: [10.1038/s41467-026-68696-7](https://doi.org/10.1038/s41467-026-68696-7) PMID: [41577700](https://pubmed.ncbi.nlm.nih.gov/41577700/)
-21. L Xu, Y Dong, X Zeng, et al.. MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02637-4](https://doi.org/10.1038/s41588-026-02637-4) PMID: [42265311](https://pubmed.ncbi.nlm.nih.gov/42265311/)
-22. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
+19. Omer Weissbrod, Masahiro Kanai, Huwenbo Shi, et al.. Leveraging fine-mapping and multipopulation training data to improve cross-population polygenic risk scores. *Nature Genetics 2022 54:4*. 2022. doi: [10.1038/s41588-022-01036-9](https://doi.org/10.1038/s41588-022-01036-9) PMID: [35393596](https://pubmed.ncbi.nlm.nih.gov/35393596/)
+20. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
+21. H Wu, P Pérez-Rodríguez, M Boehnke, et al.. Improving polygenic score prediction for underrepresented groups through transfer learning. *Nat Commun*. 2026. doi: [10.1038/s41467-026-68696-7](https://doi.org/10.1038/s41467-026-68696-7) PMID: [41577700](https://pubmed.ncbi.nlm.nih.gov/41577700/)
+22. L Xu, Y Dong, X Zeng, et al.. MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02637-4](https://doi.org/10.1038/s41588-026-02637-4) PMID: [42265311](https://pubmed.ncbi.nlm.nih.gov/42265311/)
+23. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
 
 ## Rare variant analysis
 
