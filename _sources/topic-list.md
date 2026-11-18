@@ -38,7 +38,7 @@ using the topic's description and keywords.
 <section class="pl-topic">
   <h3><a href="topics/methylation.html">Methylation</a><a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/9880dec6-938b-4dbd-95b9-2035c629578b/papers" target="_blank" rel="noopener"
      title="Add or remove this topic's papers (library server, password)">Manage papers 🔒</a></h3>
-  <div class="pl-meta">20 papers · not scanned yet · daily scan on</div>
+  <div class="pl-meta">20 papers · last scanned 2026-11-18 · daily scan on</div>
   <p>Methylation score</p>
   <div class="pl-kw"><span class="pl-badge wn-topic wn-c1">MRS</span><span class="pl-badge wn-topic wn-c1">ERS</span></div>
 </section>
