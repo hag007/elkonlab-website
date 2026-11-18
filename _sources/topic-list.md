@@ -1,6 +1,6 @@
 # Topics manager
 
-The topics this library follows. Each is a Mendeley collection that is scanned for new papers every day at 07:00,
+The topics this library follows. Each is a Mendeley collection that is scanned for new papers every day at 05:00,
 using the topic's description and keywords.
 
 ```{raw} html
