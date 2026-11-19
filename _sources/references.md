@@ -1,6 +1,6 @@
 # References
 
-245 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+246 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -210,8 +210,9 @@
 30. H Wu, P Pérez-Rodríguez, M Boehnke, et al.. Improving polygenic score prediction for underrepresented groups through transfer learning. *Nat Commun*. 2026. doi: [10.1038/s41467-026-68696-7](https://doi.org/10.1038/s41467-026-68696-7) PMID: [41577700](https://pubmed.ncbi.nlm.nih.gov/41577700/)
 31. L Xu, Y Dong, X Zeng, et al.. MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02637-4](https://doi.org/10.1038/s41588-026-02637-4) PMID: [42265311](https://pubmed.ncbi.nlm.nih.gov/42265311/)
 32. Haoyu Zhang, Jianan Zhan, Jin Jin, et al.. A new method for multiancestry polygenic prediction improves performance across diverse populations. *Nature Genetics*. 2023. doi: [10.1038/s41588-023-01501-z](https://doi.org/10.1038/s41588-023-01501-z) PMID: [37749244](https://pubmed.ncbi.nlm.nih.gov/37749244/)
-33. Zhili Zheng, Shouye Liu, Julia Sidorenko, et al.. Leveraging functional genomic annotations and genome coverage to improve polygenic prediction of complex traits within and between ancestries. *Nat Genet*. 2024. doi: [10.1038/s41588-024-01704-y](https://doi.org/10.1038/s41588-024-01704-y) PMID: [38689000](https://pubmed.ncbi.nlm.nih.gov/38689000/)
-34. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
+33. Zhangchen Zhao, Lars G. Fritsche, Jennifer A. Smith, et al.. The construction of cross-population polygenic risk scores using transfer learning. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.09.010](https://doi.org/10.1016/j.ajhg.2022.09.010) PMID: [36240765](https://pubmed.ncbi.nlm.nih.gov/36240765/)
+34. Zhili Zheng, Shouye Liu, Julia Sidorenko, et al.. Leveraging functional genomic annotations and genome coverage to improve polygenic prediction of complex traits within and between ancestries. *Nat Genet*. 2024. doi: [10.1038/s41588-024-01704-y](https://doi.org/10.1038/s41588-024-01704-y) PMID: [38689000](https://pubmed.ncbi.nlm.nih.gov/38689000/)
+35. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
 
 ## Methylation risk prediction
 
