@@ -1,6 +1,6 @@
 # References
 
-175 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+176 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -203,9 +203,10 @@
 4. Lama Khalaily, Shahar Kasirer, Rotem Domb, et al.. Live imaging and multimodal profiling reveal transdifferentiation of a cochlear supporting cell subpopulation upon Notch inhibition. *Sci. Adv.*. 2026. doi: [10.1126/sciadv.aed3887](https://doi.org/10.1126/sciadv.aed3887) PMID: [42308318](https://pubmed.ncbi.nlm.nih.gov/42308318/)
 5. Tal Koffler-Brill, Shahar Taiber, Alejandro Anaya, et al.. Identification and characterization of key long non-coding RNAs in the mouse cochlea. *RNA Biology*. 2020. doi: [10.1080/15476286.2020.1836456](https://doi.org/10.1080/15476286.2020.1836456) PMID: [33131415](https://pubmed.ncbi.nlm.nih.gov/33131415/)
 6. Constanze Krohs, Mor Bordeynik-Cohen, Naama Messika-Gold, et al.. Expression pattern of cochlear microRNAs in the mammalian auditory hindbrain. *Cell Tissue Res*. 2020. doi: [10.1007/s00441-020-03290-x](https://doi.org/10.1007/s00441-020-03290-x) PMID: [33156384](https://pubmed.ncbi.nlm.nih.gov/33156384/)
-7. Beatrice Milon, Eldad D. Shulman, Kathy S. So, et al.. A cell-type-specific atlas of the inner ear transcriptional response to acoustic trauma. *Cell Reports*. 2021. doi: [10.1016/j.celrep.2021.109758](https://doi.org/10.1016/j.celrep.2021.109758) PMID: [34592158](https://pubmed.ncbi.nlm.nih.gov/34592158/)
-8. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
-9. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
+7. Maggie S. Matern, Beatrice Milon, Erika L. Lipford, et al.. GFI1 functions to repress neuronal gene expression in the developing inner ear hair cells. *Development*. 2020. doi: [10.1242/dev.186015](https://doi.org/10.1242/dev.186015) PMID: [32917668](https://pubmed.ncbi.nlm.nih.gov/32917668/)
+8. Beatrice Milon, Eldad D. Shulman, Kathy S. So, et al.. A cell-type-specific atlas of the inner ear transcriptional response to acoustic trauma. *Cell Reports*. 2021. doi: [10.1016/j.celrep.2021.109758](https://doi.org/10.1016/j.celrep.2021.109758) PMID: [34592158](https://pubmed.ncbi.nlm.nih.gov/34592158/)
+9. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
+10. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
 
 ## Resources: Biobanks
 
