@@ -1,6 +1,6 @@
 # References
 
-138 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+139 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -124,7 +124,8 @@
 
 ## Integrated risk prediction
 
-1. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
+1. Sapir Shemesh, Rinat Bernstein-Molho, Shelley Shoval, et al.. Damaging missense variants in innate immunity genes are associated with earlier age of breast cancer onset in BRCA1 185delAG carriers. *J Med Genet*. 2026. doi: [10.1136/jmg-2025-111394](https://doi.org/10.1136/jmg-2025-111394) PMID: [41916723](https://pubmed.ncbi.nlm.nih.gov/41916723/)
+2. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
 
 ## Polygenic risk prediction
 
