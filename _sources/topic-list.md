@@ -63,5 +63,12 @@ using the topic's description and keywords.
   <p>Genetic risk models that integrate common and rare variants: polygenic scores combined with rare-variant burden (rare coding or non-coding, monogenic pathogenic variants), risk modifiers in carriers of pathogenic variants (e.g. BRCA1/2), and how much such models improve prediction over PRS alone.</p>
   <div class="pl-kw"><span class="pl-badge wn-topic wn-c7">common and rare variants risk prediction</span><span class="pl-badge wn-topic wn-c7">polygenic and monogenic risk</span><span class="pl-badge wn-topic wn-c7">rare variant polygenic score</span><span class="pl-badge wn-topic wn-c7">rare variant burden risk model</span><span class="pl-badge wn-topic wn-c7">integrated genetic risk score</span><span class="pl-badge wn-topic wn-c7">penetrance modifiers</span><span class="pl-badge wn-topic wn-c7">BRCA1 modifiers</span><span class="pl-badge wn-topic wn-c7">polygenic background monogenic carriers</span><span class="pl-badge wn-topic wn-c7">exome polygenic score</span></div>
 </section>
+<section class="pl-topic">
+  <h3>Network analysis<a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/1f9f5d32-4688-424c-bf91-9b42610c48c0/papers" target="_blank" rel="noopener"
+     title="Add or remove this topic's papers (library server, password)">Manage papers 🔒</a></h3>
+  <div class="pl-meta">0 papers · not scanned yet · daily scan on</div>
+  <p>Network-based analysis of omics and GWAS data: active-module identification, network propagation and diffusion, and network-based gene prioritization and enrichment, including how well these methods are calibrated (false discoveries, bias toward high-degree genes).</p>
+  <div class="pl-kw"><span class="pl-badge wn-topic wn-c7">active module identification</span><span class="pl-badge wn-topic wn-c7">network propagation</span><span class="pl-badge wn-topic wn-c7">network diffusion</span><span class="pl-badge wn-topic wn-c7">protein-protein interaction network</span><span class="pl-badge wn-topic wn-c7">gene network</span><span class="pl-badge wn-topic wn-c7">disease module</span><span class="pl-badge wn-topic wn-c7">subnetwork enrichment</span><span class="pl-badge wn-topic wn-c7">network-based gene prioritization</span><span class="pl-badge wn-topic wn-c7">GWAS network analysis</span><span class="pl-badge wn-topic wn-c7">DOMINO</span><span class="pl-badge wn-topic wn-c7">NetWAS</span><span class="pl-badge wn-topic wn-c7">random walk with restart</span></div>
+</section>
 </div>
 ```
