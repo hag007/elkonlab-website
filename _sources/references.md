@@ -1,6 +1,6 @@
 # References
 
-281 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+284 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -317,6 +317,12 @@
 7. Konrad J. Karczewski, Laurent C. Francioli, Grace Tiao, et al.. The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature*. 2020. doi: [10.1038/s41586-020-2308-7](https://doi.org/10.1038/s41586-020-2308-7) PMID: [32461654](https://pubmed.ncbi.nlm.nih.gov/32461654/)
 8. Mitja I. Kurki, Juha Karjalainen, Priit Palta, et al.. FinnGen provides genetic insights from a well-phenotyped isolated population. *Nature*. 2023. doi: [10.1038/s41586-022-05473-8](https://doi.org/10.1038/s41586-022-05473-8) PMID: [36653562](https://pubmed.ncbi.nlm.nih.gov/36653562/)
 9. Akiko Nagai, Makoto Hirata, Yoichiro Kamatani, et al.. Overview of the BioBank Japan Project: Study design and profile. *Journal of Epidemiology*. 2017. doi: [10.1016/j.je.2016.12.005](https://doi.org/10.1016/j.je.2016.12.005) PMID: [28189464](https://pubmed.ncbi.nlm.nih.gov/28189464/)
+
+## Resources: GWASs
+
+1. David V. Conti, Burcu F. Darst, Lilit C. Moss, et al.. Trans-ancestry genome-wide association meta-analysis of prostate cancer identifies new susceptibility loci and informs genetic risk prediction. *Nat Genet*. 2021. doi: [10.1038/s41588-020-00748-0](https://doi.org/10.1038/s41588-020-00748-0) PMID: [33398198](https://pubmed.ncbi.nlm.nih.gov/33398198/)
+2. Kyriaki Michailidou, Sara Lindström, Joe Dennis, et al.. Association analysis identifies 65 new breast cancer risk loci. *Nature*. 2017. doi: [10.1038/nature24284](https://doi.org/10.1038/nature24284) PMID: [29059683](https://pubmed.ncbi.nlm.nih.gov/29059683/)
+3. Loïc Yengo, Sailaja Vedantam, Eirini Marouli, et al.. A saturated map of common genetic variants associated with human height. *Nature*. 2022. doi: [10.1038/s41586-022-05275-y](https://doi.org/10.1038/s41586-022-05275-y) PMID: [36224396](https://pubmed.ncbi.nlm.nih.gov/36224396/)
 
 ## Alternative polyadenylation & RNA regulation
 
