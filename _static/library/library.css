@@ -171,6 +171,9 @@ details.pl-dd .pl-dd-menu a.pl-dd-all { border-top: 1px solid var(--pst-color-bo
 .pl-topic { border: 1px solid var(--pst-color-border); border-radius: 10px; padding: 12px 14px; background: var(--pst-color-surface); }
 .pl-topic h3 { font-size: 1.1em; margin: 0 0 2px; }
 .pl-topic p { margin: 6px 0 8px; }
+.pl-desc ul { margin: 0 0 8px; padding-left: 20px; }
+.pl-desc li { margin: 2px 0; }
+.pl-desc ul ul { margin: 2px 0 4px; font-size: 0.95em; }
 .pl-kw { display: flex; flex-wrap: wrap; gap: 4px; }
 .pl-kw .wn-topic { font-weight: 600; font-size: 12.5px; border: 1px solid var(--wn-ink); background: var(--wn-bg); color: var(--wn-ink); }
 a.pl-edit-topics { display: inline-block; font-weight: 600; padding: 4px 12px; border-radius: 8px; text-decoration: none;
