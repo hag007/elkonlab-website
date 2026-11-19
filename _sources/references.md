@@ -1,6 +1,6 @@
 # References
 
-242 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+243 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -208,7 +208,8 @@
 28. H Wu, P Pérez-Rodríguez, M Boehnke, et al.. Improving polygenic score prediction for underrepresented groups through transfer learning. *Nat Commun*. 2026. doi: [10.1038/s41467-026-68696-7](https://doi.org/10.1038/s41467-026-68696-7) PMID: [41577700](https://pubmed.ncbi.nlm.nih.gov/41577700/)
 29. L Xu, Y Dong, X Zeng, et al.. MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02637-4](https://doi.org/10.1038/s41588-026-02637-4) PMID: [42265311](https://pubmed.ncbi.nlm.nih.gov/42265311/)
 30. Haoyu Zhang, Jianan Zhan, Jin Jin, et al.. A new method for multiancestry polygenic prediction improves performance across diverse populations. *Nature Genetics*. 2023. doi: [10.1038/s41588-023-01501-z](https://doi.org/10.1038/s41588-023-01501-z) PMID: [37749244](https://pubmed.ncbi.nlm.nih.gov/37749244/)
-31. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
+31. Zhili Zheng, Shouye Liu, Julia Sidorenko, et al.. Leveraging functional genomic annotations and genome coverage to improve polygenic prediction of complex traits within and between ancestries. *Nat Genet*. 2024. doi: [10.1038/s41588-024-01704-y](https://doi.org/10.1038/s41588-024-01704-y) PMID: [38689000](https://pubmed.ncbi.nlm.nih.gov/38689000/)
+32. G Zhou, I Yolou, Y Xie, et al.. Leveraging local ancestry and cross-ancestry genetic architecture to improve genetic prediction of complex traits in admixed populations. *Am J Hum Genet*. 2025. doi: [10.1016/j.ajhg.2025.06.010](https://doi.org/10.1016/j.ajhg.2025.06.010) PMID: [40633541](https://pubmed.ncbi.nlm.nih.gov/40633541/)
 
 ## Methylation risk prediction
 
