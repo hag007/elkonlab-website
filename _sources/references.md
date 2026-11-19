@@ -1,6 +1,6 @@
 # References
 
-290 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+293 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -329,6 +329,12 @@
 7. Kyriaki Michailidou, Sara Lindström, Joe Dennis, et al.. Association analysis identifies 65 new breast cancer risk loci. *Nature*. 2017. doi: [10.1038/nature24284](https://doi.org/10.1038/nature24284) PMID: [29059683](https://pubmed.ncbi.nlm.nih.gov/29059683/)
 8. Vassily Trubetskoy, Antonio F. Pardiñas, Ting Qi, et al.. Mapping genomic loci implicates genes and synaptic biology in schizophrenia. *Nature*. 2022. doi: [10.1038/s41586-022-04434-5](https://doi.org/10.1038/s41586-022-04434-5) PMID: [35396580](https://pubmed.ncbi.nlm.nih.gov/35396580/)
 9. Loïc Yengo, Sailaja Vedantam, Eirini Marouli, et al.. A saturated map of common genetic variants associated with human height. *Nature*. 2022. doi: [10.1038/s41586-022-05275-y](https://doi.org/10.1038/s41586-022-05275-y) PMID: [36224396](https://pubmed.ncbi.nlm.nih.gov/36224396/)
+
+## Resources: Atlases
+
+1. The ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. *Nature*. 2012. doi: [10.1038/nature11247](https://doi.org/10.1038/nature11247) PMID: [22955616](https://pubmed.ncbi.nlm.nih.gov/22955616/)
+2. John Lonsdale, Jeffrey Thomas, Mike Salvatore, et al.. The Genotype-Tissue Expression (GTEx) project. *Nat Genet*. 2013. doi: [10.1038/ng.2653](https://doi.org/10.1038/ng.2653) PMID: [23715323](https://pubmed.ncbi.nlm.nih.gov/23715323/)
+3. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
 
 ## Alternative polyadenylation & RNA regulation
 
