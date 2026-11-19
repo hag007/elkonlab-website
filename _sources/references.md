@@ -2,6 +2,13 @@
 
 134 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
+## Functional interpretation of GWAS
+
+1. Hilary K. Finucane, Brendan Bulik-Sullivan, Alexander Gusev, et al.. Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*. 2015. doi: [10.1038/ng.3404](https://doi.org/10.1038/ng.3404) PMID: [26414678](https://pubmed.ncbi.nlm.nih.gov/26414678/)
+2. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
+3. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
+4. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
+
 ## Non-coding variant effect prediction
 
 1. Andrew Bass, Joshua Park, Sach Mukherjee, et al.. Genomic foundation models do not yet boost common variant discovery beyond standard functional annotations. *bioRxiv*. 2026. doi: [10.64898/2026.10.13.758880](https://doi.org/10.64898/2026.10.13.758880)
@@ -13,13 +20,6 @@
 7. Alexander Rakowski, Christoph Lippert. Multiple instance fine-mapping: Predicting causal regulatory variants with a deep sequence model. *PLoS genetics*. 2026. doi: [10.1371/journal.pgen.1012208](https://doi.org/10.1371/journal.pgen.1012208) PMID: [42371957](https://pubmed.ncbi.nlm.nih.gov/42371957/)
 8. Divyanshi Srivastava, Anya Korsakova, Qingbo Wang, et al.. Borzoi-informed fine mapping improves causal variant prioritization in complex trait GWAS. *bioRxiv*. 2025. doi: [10.1101/2025.07.09.663936](https://doi.org/10.1101/2025.07.09.663936)
 9. Michael Sweeney, Hyun Min Kang. Practical utility of sequence-to-omics models for improving the reproducibility of genetic fine-mapping. *bioRxiv*. 2026. doi: [10.64898/2026.02.04.703796](https://doi.org/10.64898/2026.02.04.703796) PMID: [41676556](https://pubmed.ncbi.nlm.nih.gov/41676556/)
-
-## Functional interpretation of GWAS
-
-1. Hilary K. Finucane, Brendan Bulik-Sullivan, Alexander Gusev, et al.. Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*. 2015. doi: [10.1038/ng.3404](https://doi.org/10.1038/ng.3404) PMID: [26414678](https://pubmed.ncbi.nlm.nih.gov/26414678/)
-2. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
-3. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
-4. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
 
 ## Fine mapping
 
