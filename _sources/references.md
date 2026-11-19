@@ -1,6 +1,6 @@
 # References
 
-185 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+186 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -11,8 +11,9 @@
 5. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
 6. David Groenewoud, Avinoam Shye, Ran Elkon. Incorporating regulatory interactions into gene-set analyses for GWAS data: A controlled analysis with the MAGMA tool. *PLoS Comput Biol*. 2022. doi: [10.1371/journal.pcbi.1009908](https://doi.org/10.1371/journal.pcbi.1009908) PMID: [35316269](https://pubmed.ncbi.nlm.nih.gov/35316269/)
 7. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
-8. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
-9. Thomy Margalit, Hagai Levi, Ron Shamir, et al.. Mapping Genetic Risk Associations to Cellular Contexts via Deep Learning and Biological Ontologies. *bioRxiv*. 2026. doi: [10.64898/2026.05.25.726449](https://doi.org/10.64898/2026.05.25.726449)
+8. Christiaan A. de Leeuw, Joris M. Mooij, Tom Heskes, et al.. MAGMA: Generalized Gene-Set Analysis of GWAS Data. *PLoS Comput Biol*. 2015. doi: [10.1371/journal.pcbi.1004219](https://doi.org/10.1371/journal.pcbi.1004219) PMID: [25885710](https://pubmed.ncbi.nlm.nih.gov/25885710/)
+9. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
+10. Thomy Margalit, Hagai Levi, Ron Shamir, et al.. Mapping Genetic Risk Associations to Cellular Contexts via Deep Learning and Biological Ontologies. *bioRxiv*. 2026. doi: [10.64898/2026.05.25.726449](https://doi.org/10.64898/2026.05.25.726449)
 
 ## Non-coding variant effect prediction
 
