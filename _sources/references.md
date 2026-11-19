@@ -2,7 +2,7 @@
 
 134 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
-## PRS
+## Polygenic risk prediction
 
 1. R Alemu, AS Young, DJ Benjamin, et al.. Dissecting the Predictive Accuracy of Polygenic Indexes for Behavioral Phenotypes Across Genetic Ancestries. *bioRxiv*. 2026. doi: [10.1101/2025.09.11.675704](https://doi.org/10.1101/2025.09.11.675704) PMID: [41929168](https://pubmed.ncbi.nlm.nih.gov/41929168/)
 2. J Baierl, JP Tyrer, PH Lai, et al.. S4-multi: Enhancing polygenic score prediction in ancestrally diverse populations. *HGG Adv*. 2026. doi: [10.1016/j.xhgg.2025.100551](https://doi.org/10.1016/j.xhgg.2025.100551) PMID: [41311062](https://pubmed.ncbi.nlm.nih.gov/41311062/)
