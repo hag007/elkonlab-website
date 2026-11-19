@@ -1,6 +1,6 @@
 # References
 
-149 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+150 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -194,3 +194,4 @@
 
 1. Yuval Malka, Ferhat Alkan, Shinyeong Ju, et al.. Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential. *Molecular Cell*. 2022. doi: [10.1016/j.molcel.2022.09.036](https://doi.org/10.1016/j.molcel.2022.09.036) PMID: [36270248](https://pubmed.ncbi.nlm.nih.gov/36270248/)
 2. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
+3. Boris Slobodin, Anat Bahat, Urmila Sehrawat, et al.. Transcription Dynamics Regulate Poly(A) Tails and Expression of the RNA Degradation Machinery to Balance mRNA Levels. *Molecular Cell*. 2020. doi: [10.1016/j.molcel.2020.03.022](https://doi.org/10.1016/j.molcel.2020.03.022) PMID: [32294471](https://pubmed.ncbi.nlm.nih.gov/32294471/)
