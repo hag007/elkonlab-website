@@ -127,7 +127,7 @@
 22. Zikun Yang, Chen Wang, Yuridia Selene Posadas-Garcia, et al.. Fine-mapping in admixed populations using CARMA-X, with applications to Latin American studies. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2025.02.020](https://doi.org/10.1016/j.ajhg.2025.02.020) PMID: [40147449](https://pubmed.ncbi.nlm.nih.gov/40147449/)
 23. Wenmin Zhang, Tianyuan Lu, Robert Sladek, et al.. Robust fine-mapping in the presence of linkage disequilibrium mismatch. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02780-y](https://doi.org/10.1038/s41588-026-02780-y) PMID: [42995229](https://pubmed.ncbi.nlm.nih.gov/42995229/)
 
-## Methylation
+## Methylation risk prediction
 
 1. Alexa Barad, Dennis Khodasevich, Pik Fang Kho, et al.. Leukocyte DNA methylation-based signatures for atherosclerotic cardiovascular disease risk prediction in the Million Veteran Program. *medRxiv*. 2026. doi: [10.64898/2026.08.14.26359154](https://doi.org/10.64898/2026.08.14.26359154)
 2. Sofia Benavides, Hazel Milla, Helena Palma-Gudiel, et al.. Stress-Related Methylation Risk Scores Predict Coronary Heart Disease. *medRxiv*. 2026. doi: [10.64898/2026.07.31.26359423](https://doi.org/10.64898/2026.07.31.26359423) PMID: [42620394](https://pubmed.ncbi.nlm.nih.gov/42620394/)
