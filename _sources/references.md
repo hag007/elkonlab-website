@@ -178,7 +178,7 @@
 23. Zikun Yang, Chen Wang, Yuridia Selene Posadas-Garcia, et al.. Fine-mapping in admixed populations using CARMA-X, with applications to Latin American studies. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2025.02.020](https://doi.org/10.1016/j.ajhg.2025.02.020) PMID: [40147449](https://pubmed.ncbi.nlm.nih.gov/40147449/)
 24. Wenmin Zhang, Tianyuan Lu, Robert Sladek, et al.. Robust fine-mapping in the presence of linkage disequilibrium mismatch. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02780-y](https://doi.org/10.1038/s41588-026-02780-y) PMID: [42995229](https://pubmed.ncbi.nlm.nih.gov/42995229/)
 
-## GWAS and single-cell omics
+## Single-cell omics & GWAS integration
 
 1. Tobi Alegbe, Bradley T Harris, Laura Fachal, et al.. Cell-type-resolved genetic variation shapes inflammatory bowel disease risk. *Nature*. 2026. doi: [10.1038/s41586-026-10627-z](https://doi.org/10.1038/s41586-026-10627-z) PMID: [42236949](https://pubmed.ncbi.nlm.nih.gov/42236949/)
 2. Jose Alquicira-Hernandez, Elizabeth Dorans, Yoshihiko Tomofuji, et al.. Efficient genome-wide mapping of reproducible, context-dependent eQTLs at single-cell resolution. *bioRxiv*. 2026. doi: [10.64898/2026.08.25.747138](https://doi.org/10.64898/2026.08.25.747138)
