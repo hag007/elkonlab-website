@@ -1,6 +1,6 @@
 # References
 
-154 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+156 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -194,8 +194,10 @@
 
 1. Esther E. Creemers, Amira Bawazeer, Alejandro P. Ugalde, et al.. Genome-Wide Polyadenylation Maps Reveal Dynamic mRNA 3′-End Formation in the Failing Human Heart. *Circulation Research*. 2016. doi: [10.1161/circresaha.115.307082](https://doi.org/10.1161/circresaha.115.307082) PMID: [26671978](https://pubmed.ncbi.nlm.nih.gov/26671978/)
 2. Ran Elkon, Alejandro P. Ugalde, Reuven Agami. Alternative cleavage and polyadenylation: extent, regulation and function. *Nat Rev Genet*. 2013. doi: [10.1038/nrg3482](https://doi.org/10.1038/nrg3482) PMID: [23774734](https://pubmed.ncbi.nlm.nih.gov/23774734/)
-3. Yonit Hoffman, Debora Rosa Bublik, Alejandro P. Ugalde, et al.. 3’UTR Shortening Potentiates MicroRNA-Based Repression of Pro-differentiation Genes in Proliferating Human Cells. *PLoS Genet*. 2016. doi: [10.1371/journal.pgen.1005879](https://doi.org/10.1371/journal.pgen.1005879) PMID: [26908102](https://pubmed.ncbi.nlm.nih.gov/26908102/)
-4. Yuval Malka, Ferhat Alkan, Shinyeong Ju, et al.. Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential. *Molecular Cell*. 2022. doi: [10.1016/j.molcel.2022.09.036](https://doi.org/10.1016/j.molcel.2022.09.036) PMID: [36270248](https://pubmed.ncbi.nlm.nih.gov/36270248/)
-5. Adam R. Morris, Arnold Bos, Begoña Diosdado, et al.. Alternative Cleavage and Polyadenylation during Colorectal Cancer Development. *Clinical Cancer Research*. 2012. doi: [10.1158/1078-0432.ccr-12-0543](https://doi.org/10.1158/1078-0432.ccr-12-0543) PMID: [22874640](https://pubmed.ncbi.nlm.nih.gov/22874640/)
-6. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
-7. Boris Slobodin, Anat Bahat, Urmila Sehrawat, et al.. Transcription Dynamics Regulate Poly(A) Tails and Expression of the RNA Degradation Machinery to Balance mRNA Levels. *Molecular Cell*. 2020. doi: [10.1016/j.molcel.2020.03.022](https://doi.org/10.1016/j.molcel.2020.03.022) PMID: [32294471](https://pubmed.ncbi.nlm.nih.gov/32294471/)
+3. Ran Elkon, Jarno Drost, Gijs van Haaften, et al.. E2F mediates enhanced alternative polyadenylation in proliferation. *Genome Biol*. 2012. doi: [10.1186/gb-2012-13-7-r59](https://doi.org/10.1186/gb-2012-13-7-r59) PMID: [22747694](https://pubmed.ncbi.nlm.nih.gov/22747694/)
+4. Yonit Hoffman, Debora Rosa Bublik, Alejandro P. Ugalde, et al.. 3’UTR Shortening Potentiates MicroRNA-Based Repression of Pro-differentiation Genes in Proliferating Human Cells. *PLoS Genet*. 2016. doi: [10.1371/journal.pgen.1005879](https://doi.org/10.1371/journal.pgen.1005879) PMID: [26908102](https://pubmed.ncbi.nlm.nih.gov/26908102/)
+5. Mathias Jenal, Ran Elkon, Fabricio Loayza-Puch, et al.. The Poly(A)-Binding Protein Nuclear 1 Suppresses Alternative Cleavage and Polyadenylation Sites. *Cell*. 2012. doi: [10.1016/j.cell.2012.03.022](https://doi.org/10.1016/j.cell.2012.03.022) PMID: [22502866](https://pubmed.ncbi.nlm.nih.gov/22502866/)
+6. Yuval Malka, Ferhat Alkan, Shinyeong Ju, et al.. Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential. *Molecular Cell*. 2022. doi: [10.1016/j.molcel.2022.09.036](https://doi.org/10.1016/j.molcel.2022.09.036) PMID: [36270248](https://pubmed.ncbi.nlm.nih.gov/36270248/)
+7. Adam R. Morris, Arnold Bos, Begoña Diosdado, et al.. Alternative Cleavage and Polyadenylation during Colorectal Cancer Development. *Clinical Cancer Research*. 2012. doi: [10.1158/1078-0432.ccr-12-0543](https://doi.org/10.1158/1078-0432.ccr-12-0543) PMID: [22874640](https://pubmed.ncbi.nlm.nih.gov/22874640/)
+8. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
+9. Boris Slobodin, Anat Bahat, Urmila Sehrawat, et al.. Transcription Dynamics Regulate Poly(A) Tails and Expression of the RNA Degradation Machinery to Balance mRNA Levels. *Molecular Cell*. 2020. doi: [10.1016/j.molcel.2020.03.022](https://doi.org/10.1016/j.molcel.2020.03.022) PMID: [32294471](https://pubmed.ncbi.nlm.nih.gov/32294471/)
