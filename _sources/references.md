@@ -1,6 +1,6 @@
 # References
 
-275 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+281 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -310,6 +310,13 @@
 
 1. Clare Bycroft, Colin Freeman, Desislava Petkova, et al.. The UK Biobank resource with deep phenotyping and genomic data. *Nature*. 2018. doi: [10.1038/s41586-018-0579-z](https://doi.org/10.1038/s41586-018-0579-z) PMID: [30305743](https://pubmed.ncbi.nlm.nih.gov/30305743/)
 2. UK Biobank Whole-Genome Sequencing Consortium. Whole-genome sequencing of 490,640 UK Biobank participants. *Nature*. 2025. doi: [10.1038/s41586-025-09272-9](https://doi.org/10.1038/s41586-025-09272-9) PMID: [40770095](https://pubmed.ncbi.nlm.nih.gov/40770095/)
+3. The 1000 Genomes Project Consortium, Corresponding authors, Adam Auton, et al.. A global reference for human genetic variation. *Nature*. 2015. doi: [10.1038/nature15393](https://doi.org/10.1038/nature15393) PMID: [26432245](https://pubmed.ncbi.nlm.nih.gov/26432245/)
+4. John Michael Gaziano, John Concato, Mary Brophy, et al.. Million Veteran Program: A mega-biobank to study genetic influences on health and disease. *Journal of Clinical Epidemiology*. 2016. doi: [10.1016/j.jclinepi.2015.09.016](https://doi.org/10.1016/j.jclinepi.2015.09.016) PMID: [26441289](https://pubmed.ncbi.nlm.nih.gov/26441289/)
+5. The All of Us Research Program Genomics Investigators, Manuscript Writing Group, Alexander G. Bick, et al.. Genomic data in the All of Us Research Program. *Nature*. 2024. doi: [10.1038/s41586-023-06957-x](https://doi.org/10.1038/s41586-023-06957-x) PMID: [38374255](https://pubmed.ncbi.nlm.nih.gov/38374255/)
+6. The All of Us Research Program Investigators. The “All of Us” Research Program. *N Engl J Med*. 2019. doi: [10.1056/nejmsr1809937](https://doi.org/10.1056/nejmsr1809937) PMID: [31412182](https://pubmed.ncbi.nlm.nih.gov/31412182/)
+7. Konrad J. Karczewski, Laurent C. Francioli, Grace Tiao, et al.. The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature*. 2020. doi: [10.1038/s41586-020-2308-7](https://doi.org/10.1038/s41586-020-2308-7) PMID: [32461654](https://pubmed.ncbi.nlm.nih.gov/32461654/)
+8. Mitja I. Kurki, Juha Karjalainen, Priit Palta, et al.. FinnGen provides genetic insights from a well-phenotyped isolated population. *Nature*. 2023. doi: [10.1038/s41586-022-05473-8](https://doi.org/10.1038/s41586-022-05473-8) PMID: [36653562](https://pubmed.ncbi.nlm.nih.gov/36653562/)
+9. Akiko Nagai, Makoto Hirata, Yoichiro Kamatani, et al.. Overview of the BioBank Japan Project: Study design and profile. *Journal of Epidemiology*. 2017. doi: [10.1016/j.je.2016.12.005](https://doi.org/10.1016/j.je.2016.12.005) PMID: [28189464](https://pubmed.ncbi.nlm.nih.gov/28189464/)
 
 ## Alternative polyadenylation & RNA regulation
 
