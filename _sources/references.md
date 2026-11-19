@@ -1,6 +1,6 @@
 # References
 
-192 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+193 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -32,6 +32,7 @@
 7. Alexander Rakowski, Christoph Lippert. Multiple instance fine-mapping: Predicting causal regulatory variants with a deep sequence model. *PLoS genetics*. 2026. doi: [10.1371/journal.pgen.1012208](https://doi.org/10.1371/journal.pgen.1012208) PMID: [42371957](https://pubmed.ncbi.nlm.nih.gov/42371957/)
 8. Divyanshi Srivastava, Anya Korsakova, Qingbo Wang, et al.. Borzoi-informed fine mapping improves causal variant prioritization in complex trait GWAS. *bioRxiv*. 2025. doi: [10.1101/2025.07.09.663936](https://doi.org/10.1101/2025.07.09.663936)
 9. Michael Sweeney, Hyun Min Kang. Practical utility of sequence-to-omics models for improving the reproducibility of genetic fine-mapping. *bioRxiv*. 2026. doi: [10.64898/2026.02.04.703796](https://doi.org/10.64898/2026.02.04.703796) PMID: [41676556](https://pubmed.ncbi.nlm.nih.gov/41676556/)
+10. Jian Zhou, Olga G Troyanskaya. Predicting effects of noncoding variants with deep learning–based sequence model. *Nat Methods*. 2015. doi: [10.1038/nmeth.3547](https://doi.org/10.1038/nmeth.3547) PMID: [26301843](https://pubmed.ncbi.nlm.nih.gov/26301843/)
 
 ## Fine mapping
 
