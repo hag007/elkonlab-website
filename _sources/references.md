@@ -1,6 +1,6 @@
 # References
 
-160 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+163 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -179,6 +179,12 @@
 ## Biological network analysis
 
 1. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
+2. Hagai Levi, Ran Elkon, Ron Shamir. DOMINO: a network‐based active module identification algorithm with reduced rate of false calls. *Mol Syst Biol*. 2021. doi: [10.15252/msb.20209593](https://doi.org/10.15252/msb.20209593) PMID: [33471440](https://pubmed.ncbi.nlm.nih.gov/33471440/)
+
+## Enhancers & 3D genome
+
+1. Ran Elkon, Reuven Agami. Two-layer design protects genes from mutations in their enhancers. *Nature*. 2022. doi: [10.1038/d41586-022-02341-3](https://doi.org/10.1038/d41586-022-02341-3) PMID: [36064783](https://pubmed.ncbi.nlm.nih.gov/36064783/)
+2. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
 
 ## Hearing loss genetics
 
