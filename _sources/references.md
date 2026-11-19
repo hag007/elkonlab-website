@@ -2,6 +2,26 @@
 
 134 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
+## Deep learning for non-coding variants
+
+1. Andrew Bass, Joshua Park, Sach Mukherjee, et al.. Genomic foundation models do not yet boost common variant discovery beyond standard functional annotations. *bioRxiv*. 2026. doi: [10.64898/2026.10.13.758880](https://doi.org/10.64898/2026.10.13.758880)
+2. Michael Callahan, Xiang Zhu. SuSiNE: Genetic fine-mapping with signed functional priors and multi-basin ensembling. *bioRxiv*. 2026. doi: [10.64898/2026.07.31.742084](https://doi.org/10.64898/2026.07.31.742084) PMID: [42619938](https://pubmed.ncbi.nlm.nih.gov/42619938/)
+3. Siliangyu Cheng, Artem Kim, Dhrithi Deshpande, et al.. A machine-learning framework to characterize functional disease architectures and prioritize disease variants. *medRxiv*. 2025. doi: [10.1101/2025.10.23.25338598](https://doi.org/10.1101/2025.10.23.25338598) PMID: [41282743](https://pubmed.ncbi.nlm.nih.gov/41282743/)
+4. Byung Hyug Choi, Jaeseung Jeong. Sequence-based variant-effect predictions reveal trait-specific regulatory-layer profiles of complex-trait heritability. *medRxiv*. 2026. doi: [10.64898/2026.10.16.26365786](https://doi.org/10.64898/2026.10.16.26365786)
+5. Shiron Drusinsky, Katherine Pollard. LAMP sheds light on how sequence to function models learn variant effects during post-training. *bioRxiv*. 2026. doi: [10.64898/2026.11.13.766567](https://doi.org/10.64898/2026.11.13.766567)
+6. Hilary K. Finucane, Brendan Bulik-Sullivan, Alexander Gusev, et al.. Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*. 2015. doi: [10.1038/ng.3404](https://doi.org/10.1038/ng.3404) PMID: [26414678](https://pubmed.ncbi.nlm.nih.gov/26414678/)
+7. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
+8. A. Gayoso, A. Mottram, A. Karollus, et al.. AlphaGenome 2 predicts regulatory activity and variant effects across cell states. *bioRxiv*. 2026. doi: [10.64898/2026.11.11.765857](https://doi.org/10.64898/2026.11.11.765857)
+9. Karla Jenkac, Jane Herlihy, Riccardo Farinella, et al.. Computational and experimental strategies for functional validation of non-coding variants in pancreatic cancer. *Functional & Integrative Genomics*. 2026. doi: [10.1007/s10142-026-02116-3](https://doi.org/10.1007/s10142-026-02116-3) PMID: [43040073](https://pubmed.ncbi.nlm.nih.gov/43040073/)
+10. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
+11. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
+12. Zeyun Lu, Xinran Wang, Matthew Carr, et al.. Improved multiancestry fine-mapping identifies cis-regulatory variants underlying molecular traits and disease risk. *Nature genetics*. 2025. doi: [10.1038/s41588-025-02262-7](https://doi.org/10.1038/s41588-025-02262-7) PMID: [40691406](https://pubmed.ncbi.nlm.nih.gov/40691406/)
+13. Alexander Rakowski, Christoph Lippert. Multiple instance fine-mapping: Predicting causal regulatory variants with a deep sequence model. *PLoS genetics*. 2026. doi: [10.1371/journal.pgen.1012208](https://doi.org/10.1371/journal.pgen.1012208) PMID: [42371957](https://pubmed.ncbi.nlm.nih.gov/42371957/)
+14. Michael Sweeney, Hyun Min Kang. Practical utility of sequence-to-omics models for improving the reproducibility of genetic fine-mapping. *bioRxiv*. 2026. doi: [10.64898/2026.02.04.703796](https://doi.org/10.64898/2026.02.04.703796) PMID: [41676556](https://pubmed.ncbi.nlm.nih.gov/41676556/)
+15. Josh Weinstock. Excluded causal variants produce false discoveries in genetic fine-mapping. *medRxiv*. 2026. doi: [10.64898/2026.11.09.26367644](https://doi.org/10.64898/2026.11.09.26367644)
+16. Yang Wu, Zhili Zheng, Loic Thibaut, et al.. Genome-wide fine-mapping improves identification of causal variants. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02549-3](https://doi.org/10.1038/s41588-026-02549-3) PMID: [41912930](https://pubmed.ncbi.nlm.nih.gov/41912930/)
+17. Wenmin Zhang, Tianyuan Lu, Robert Sladek, et al.. Robust fine-mapping in the presence of linkage disequilibrium mismatch. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02780-y](https://doi.org/10.1038/s41588-026-02780-y) PMID: [42995229](https://pubmed.ncbi.nlm.nih.gov/42995229/)
+
 ## Fine mapping
 
 1. Andrew Bass, Joshua Park, Sach Mukherjee, et al.. Genomic foundation models do not yet boost common variant discovery beyond standard functional annotations. *bioRxiv*. 2026. doi: [10.64898/2026.10.13.758880](https://doi.org/10.64898/2026.10.13.758880)
