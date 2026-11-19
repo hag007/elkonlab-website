@@ -1,6 +1,6 @@
 # References
 
-227 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+228 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -154,9 +154,10 @@
 19. Lida Wang, Havell Markus, Dieyi Chen, et al.. An atlas of single-cell eQTLs dissects autoimmune disease genes and identifies novel drug classes for treatment. *Cell Genom*. 2025. doi: [10.1016/j.xgen.2025.100820](https://doi.org/10.1016/j.xgen.2025.100820) PMID: [40154479](https://pubmed.ncbi.nlm.nih.gov/40154479/)
 20. E. G. Woo, K. L. Rhodes, N. M. Gonzales, et al.. Genetic regulation of ALK inhibitor response in diverse human cell types. *bioRxiv*. 2026. doi: [10.64898/2026.11.16.766986](https://doi.org/10.64898/2026.11.16.766986)
 21. Y. Wu, J. Ren. A Graded Immune-Cell-Resolved cis-eQTL Mendelian Randomisation Screen Across Systemic Lupus Erythematosus and Related Immune Phenotypes. *Balkan Medical Journal*. 2026. doi: [10.4274/balkanmedj.galenos.2026.2026-9-28](https://doi.org/10.4274/balkanmedj.galenos.2026.2026-9-28) PMID: [43041076](https://pubmed.ncbi.nlm.nih.gov/43041076/)
-22. Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02830-5](https://doi.org/10.1038/s41588-026-02830-5) PMID: [43009566](https://pubmed.ncbi.nlm.nih.gov/43009566/)
-23. Martin Jinye Zhang, Kangcheng Hou, Kushal K. Dey, et al.. Polygenic enrichment distinguishes disease associations of individual cells in single-cell RNA-seq data. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01167-z](https://doi.org/10.1038/s41588-022-01167-z) PMID: [36050550](https://pubmed.ncbi.nlm.nih.gov/36050550/)
-24. Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02798-2](https://doi.org/10.1038/s41588-026-02798-2) PMID: [42995228](https://pubmed.ncbi.nlm.nih.gov/42995228/)
+22. Fulong Yu, Liam D. Cato, Chen Weng, et al.. Variant to function mapping at single-cell resolution through network propagation. *Nat Biotechnol*. 2022. doi: [10.1038/s41587-022-01341-y](https://doi.org/10.1038/s41587-022-01341-y) PMID: [35668323](https://pubmed.ncbi.nlm.nih.gov/35668323/)
+23. Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02830-5](https://doi.org/10.1038/s41588-026-02830-5) PMID: [43009566](https://pubmed.ncbi.nlm.nih.gov/43009566/)
+24. Martin Jinye Zhang, Kangcheng Hou, Kushal K. Dey, et al.. Polygenic enrichment distinguishes disease associations of individual cells in single-cell RNA-seq data. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01167-z](https://doi.org/10.1038/s41588-022-01167-z) PMID: [36050550](https://pubmed.ncbi.nlm.nih.gov/36050550/)
+25. Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02798-2](https://doi.org/10.1038/s41588-026-02798-2) PMID: [42995228](https://pubmed.ncbi.nlm.nih.gov/42995228/)
 
 ## Integrated risk prediction
 
