@@ -1,6 +1,6 @@
 # References
 
-288 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+290 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -323,10 +323,12 @@
 1. Krishna G. Aragam, Tao Jiang, Anuj Goel, et al.. Discovery and systematic characterization of risk variants and genes for coronary artery disease in over a million participants. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01233-6](https://doi.org/10.1038/s41588-022-01233-6) PMID: [36474045](https://pubmed.ncbi.nlm.nih.gov/36474045/)
 2. Céline Bellenguez, Fahri Küçükali, Iris E. Jansen, et al.. New insights into the genetic etiology of Alzheimer’s disease and related dementias. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01024-z](https://doi.org/10.1038/s41588-022-01024-z) PMID: [35379992](https://pubmed.ncbi.nlm.nih.gov/35379992/)
 3. David V. Conti, Burcu F. Darst, Lilit C. Moss, et al.. Trans-ancestry genome-wide association meta-analysis of prostate cancer identifies new susceptibility loci and informs genetic risk prediction. *Nat Genet*. 2021. doi: [10.1038/s41588-020-00748-0](https://doi.org/10.1038/s41588-020-00748-0) PMID: [33398198](https://pubmed.ncbi.nlm.nih.gov/33398198/)
-4. Anubha Mahajan, Daniel Taliun, Matthias Thurner, et al.. Fine-mapping type 2 diabetes loci to single-variant resolution using high-density imputation and islet-specific epigenome maps. *Nat Genet*. 2018. doi: [10.1038/s41588-018-0241-6](https://doi.org/10.1038/s41588-018-0241-6) PMID: [30297969](https://pubmed.ncbi.nlm.nih.gov/30297969/)
-5. Kyriaki Michailidou, Sara Lindström, Joe Dennis, et al.. Association analysis identifies 65 new breast cancer risk loci. *Nature*. 2017. doi: [10.1038/nature24284](https://doi.org/10.1038/nature24284) PMID: [29059683](https://pubmed.ncbi.nlm.nih.gov/29059683/)
-6. Vassily Trubetskoy, Antonio F. Pardiñas, Ting Qi, et al.. Mapping genomic loci implicates genes and synaptic biology in schizophrenia. *Nature*. 2022. doi: [10.1038/s41586-022-04434-5](https://doi.org/10.1038/s41586-022-04434-5) PMID: [35396580](https://pubmed.ncbi.nlm.nih.gov/35396580/)
-7. Loïc Yengo, Sailaja Vedantam, Eirini Marouli, et al.. A saturated map of common genetic variants associated with human height. *Nature*. 2022. doi: [10.1038/s41586-022-05275-y](https://doi.org/10.1038/s41586-022-05275-y) PMID: [36224396](https://pubmed.ncbi.nlm.nih.gov/36224396/)
+4. Maya Ghoussaini, Edward Mountjoy, Miguel Carmona, et al.. Open Targets Genetics: systematic identification of trait-associated genes using large-scale genetics and functional genomics. *Nucleic Acids Research*. 2020. doi: [10.1093/nar/gkaa840](https://doi.org/10.1093/nar/gkaa840) PMID: [33045747](https://pubmed.ncbi.nlm.nih.gov/33045747/)
+5. Lucia A. Hindorff, Praveen Sethupathy, Heather A. Junkins, et al.. Potential etiologic and functional implications of genome-wide association loci for human diseases and traits. *Proc. Natl. Acad. Sci. U.S.A.*. 2009. doi: [10.1073/pnas.0903103106](https://doi.org/10.1073/pnas.0903103106) PMID: [19474294](https://pubmed.ncbi.nlm.nih.gov/19474294/)
+6. Anubha Mahajan, Daniel Taliun, Matthias Thurner, et al.. Fine-mapping type 2 diabetes loci to single-variant resolution using high-density imputation and islet-specific epigenome maps. *Nat Genet*. 2018. doi: [10.1038/s41588-018-0241-6](https://doi.org/10.1038/s41588-018-0241-6) PMID: [30297969](https://pubmed.ncbi.nlm.nih.gov/30297969/)
+7. Kyriaki Michailidou, Sara Lindström, Joe Dennis, et al.. Association analysis identifies 65 new breast cancer risk loci. *Nature*. 2017. doi: [10.1038/nature24284](https://doi.org/10.1038/nature24284) PMID: [29059683](https://pubmed.ncbi.nlm.nih.gov/29059683/)
+8. Vassily Trubetskoy, Antonio F. Pardiñas, Ting Qi, et al.. Mapping genomic loci implicates genes and synaptic biology in schizophrenia. *Nature*. 2022. doi: [10.1038/s41586-022-04434-5](https://doi.org/10.1038/s41586-022-04434-5) PMID: [35396580](https://pubmed.ncbi.nlm.nih.gov/35396580/)
+9. Loïc Yengo, Sailaja Vedantam, Eirini Marouli, et al.. A saturated map of common genetic variants associated with human height. *Nature*. 2022. doi: [10.1038/s41586-022-05275-y](https://doi.org/10.1038/s41586-022-05275-y) PMID: [36224396](https://pubmed.ncbi.nlm.nih.gov/36224396/)
 
 ## Alternative polyadenylation & RNA regulation
 
