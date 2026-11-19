@@ -1,6 +1,6 @@
 # References
 
-257 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+258 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -247,12 +247,13 @@
 1. Daniel E. Carlin, Samson H. Fong, Yue Qin, et al.. A Fast and Flexible Framework for Network-Assisted Genomic Association. *iScience*. 2019. doi: [10.1016/j.isci.2019.05.025](https://doi.org/10.1016/j.isci.2019.05.025) PMID: [31174177](https://pubmed.ncbi.nlm.nih.gov/31174177/)
 2. Susan Dina Ghiassian, Jörg Menche, Albert-László Barabási. A DIseAse MOdule Detection (DIAMOnD) Algorithm Derived from a Systematic Analysis of Connectivity Patterns of Disease Proteins in the Human Interactome. *PLoS Comput Biol*. 2015. doi: [10.1371/journal.pcbi.1004120](https://doi.org/10.1371/journal.pcbi.1004120) PMID: [25853560](https://pubmed.ncbi.nlm.nih.gov/25853560/)
 3. Casey S Greene, Arjun Krishnan, Aaron K Wong, et al.. Understanding multicellular function and disease with human tissue-specific networks. *Nat Genet*. 2015. doi: [10.1038/ng.3259](https://doi.org/10.1038/ng.3259) PMID: [25915600](https://pubmed.ncbi.nlm.nih.gov/25915600/)
-4. Mark D M Leiserson, Fabio Vandin, Hsin-Ta Wu, et al.. Pan-cancer network analysis identifies combinations of rare somatic mutations across pathways and protein complexes. *Nat Genet*. 2014. doi: [10.1038/ng.3168](https://doi.org/10.1038/ng.3168) PMID: [25501392](https://pubmed.ncbi.nlm.nih.gov/25501392/)
-5. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
-6. Hagai Levi, Ran Elkon, Ron Shamir. DOMINO: a network‐based active module identification algorithm with reduced rate of false calls. *Mol Syst Biol*. 2021. doi: [10.15252/msb.20209593](https://doi.org/10.15252/msb.20209593) PMID: [33471440](https://pubmed.ncbi.nlm.nih.gov/33471440/)
-7. Katja Luck, Dae-Kyum Kim, Luke Lambourne, et al.. A reference map of the human binary protein interactome. *Nature*. 2020. doi: [10.1038/s41586-020-2188-x](https://doi.org/10.1038/s41586-020-2188-x) PMID: [32296183](https://pubmed.ncbi.nlm.nih.gov/32296183/)
-8. B. Snel. STRING: a web-server to retrieve and display the repeatedly occurring neighbourhood of a gene. *Nucleic Acids Research*. 2000. doi: [10.1093/nar/28.18.3442](https://doi.org/10.1093/nar/28.18.3442) PMID: [10982861](https://pubmed.ncbi.nlm.nih.gov/10982861/)
-9. Oron Vanunu, Oded Magger, Eytan Ruppin, et al.. Associating Genes and Protein Complexes with Disease via Network Propagation. *PLoS Comput Biol*. 2010. doi: [10.1371/journal.pcbi.1000641](https://doi.org/10.1371/journal.pcbi.1000641) PMID: [20090828](https://pubmed.ncbi.nlm.nih.gov/20090828/)
+4. Peter Langfelder, Steve Horvath. WGCNA: an R package for weighted correlation network analysis. *BMC Bioinformatics*. 2008. doi: [10.1186/1471-2105-9-559](https://doi.org/10.1186/1471-2105-9-559) PMID: [19114008](https://pubmed.ncbi.nlm.nih.gov/19114008/)
+5. Mark D M Leiserson, Fabio Vandin, Hsin-Ta Wu, et al.. Pan-cancer network analysis identifies combinations of rare somatic mutations across pathways and protein complexes. *Nat Genet*. 2014. doi: [10.1038/ng.3168](https://doi.org/10.1038/ng.3168) PMID: [25501392](https://pubmed.ncbi.nlm.nih.gov/25501392/)
+6. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
+7. Hagai Levi, Ran Elkon, Ron Shamir. DOMINO: a network‐based active module identification algorithm with reduced rate of false calls. *Mol Syst Biol*. 2021. doi: [10.15252/msb.20209593](https://doi.org/10.15252/msb.20209593) PMID: [33471440](https://pubmed.ncbi.nlm.nih.gov/33471440/)
+8. Katja Luck, Dae-Kyum Kim, Luke Lambourne, et al.. A reference map of the human binary protein interactome. *Nature*. 2020. doi: [10.1038/s41586-020-2188-x](https://doi.org/10.1038/s41586-020-2188-x) PMID: [32296183](https://pubmed.ncbi.nlm.nih.gov/32296183/)
+9. B. Snel. STRING: a web-server to retrieve and display the repeatedly occurring neighbourhood of a gene. *Nucleic Acids Research*. 2000. doi: [10.1093/nar/28.18.3442](https://doi.org/10.1093/nar/28.18.3442) PMID: [10982861](https://pubmed.ncbi.nlm.nih.gov/10982861/)
+10. Oron Vanunu, Oded Magger, Eytan Ruppin, et al.. Associating Genes and Protein Complexes with Disease via Network Propagation. *PLoS Comput Biol*. 2010. doi: [10.1371/journal.pcbi.1000641](https://doi.org/10.1371/journal.pcbi.1000641) PMID: [20090828](https://pubmed.ncbi.nlm.nih.gov/20090828/)
 
 ## Enhancers & 3D genome
 
