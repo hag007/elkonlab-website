@@ -1,6 +1,6 @@
 # References
 
-251 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+252 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -246,7 +246,8 @@
 
 1. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
 2. Hagai Levi, Ran Elkon, Ron Shamir. DOMINO: a network‐based active module identification algorithm with reduced rate of false calls. *Mol Syst Biol*. 2021. doi: [10.15252/msb.20209593](https://doi.org/10.15252/msb.20209593) PMID: [33471440](https://pubmed.ncbi.nlm.nih.gov/33471440/)
-3. B. Snel. STRING: a web-server to retrieve and display the repeatedly occurring neighbourhood of a gene. *Nucleic Acids Research*. 2000. doi: [10.1093/nar/28.18.3442](https://doi.org/10.1093/nar/28.18.3442) PMID: [10982861](https://pubmed.ncbi.nlm.nih.gov/10982861/)
+3. Katja Luck, Dae-Kyum Kim, Luke Lambourne, et al.. A reference map of the human binary protein interactome. *Nature*. 2020. doi: [10.1038/s41586-020-2188-x](https://doi.org/10.1038/s41586-020-2188-x) PMID: [32296183](https://pubmed.ncbi.nlm.nih.gov/32296183/)
+4. B. Snel. STRING: a web-server to retrieve and display the repeatedly occurring neighbourhood of a gene. *Nucleic Acids Research*. 2000. doi: [10.1093/nar/28.18.3442](https://doi.org/10.1093/nar/28.18.3442) PMID: [10982861](https://pubmed.ncbi.nlm.nih.gov/10982861/)
 
 ## Enhancers & 3D genome
 
