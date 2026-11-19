@@ -1,6 +1,6 @@
 # References
 
-263 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+265 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -271,8 +271,10 @@
 12. Li Li, Alejandro P. Ugalde, Colinda L. G. J. Scheele, et al.. A comprehensive enhancer screen identifies TRAM2 as a key and novel mediator of YAP oncogenesis. *Genome Biol*. 2021. doi: [10.1186/s13059-021-02272-8](https://doi.org/10.1186/s13059-021-02272-8) PMID: [33514403](https://pubmed.ncbi.nlm.nih.gov/33514403/)
 13. Erez Lieberman-Aiden, Nynke L. van Berkum, Louise Williams, et al.. Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles of the Human Genome. *Science*. 2009. doi: [10.1126/science.1181369](https://doi.org/10.1126/science.1181369) PMID: [19815776](https://pubmed.ncbi.nlm.nih.gov/19815776/)
 14. Carlos A. Melo, Jarno Drost, Patrick J. Wijchers, et al.. eRNAs Are Required for p53-Dependent Enhancer Activity and Gene Transcription. *Molecular Cell*. 2013. doi: [10.1016/j.molcel.2012.11.021](https://doi.org/10.1016/j.molcel.2012.11.021) PMID: [23273978](https://pubmed.ncbi.nlm.nih.gov/23273978/)
-15. Idan Nurick, Ron Shamir, Ran Elkon. Genomic meta-analysis of the interplay between 3D chromatin organization and gene expression programs under basal and stress conditions. *Epigenetics &amp; Chromatin*. 2018. doi: [10.1186/s13072-018-0220-2](https://doi.org/10.1186/s13072-018-0220-2) PMID: [30157915](https://pubmed.ncbi.nlm.nih.gov/30157915/)
-16. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
+15. Borbala Mifsud, Filipe Tavares-Cadete, Alice N Young, et al.. Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C. *Nat Genet*. 2015. doi: [10.1038/ng.3286](https://doi.org/10.1038/ng.3286) PMID: [25938943](https://pubmed.ncbi.nlm.nih.gov/25938943/)
+16. Maxwell R Mumbach, Adam J Rubin, Ryan A Flynn, et al.. HiChIP: efficient and sensitive analysis of protein-directed genome architecture. *Nat Methods*. 2016. doi: [10.1038/nmeth.3999](https://doi.org/10.1038/nmeth.3999) PMID: [27643841](https://pubmed.ncbi.nlm.nih.gov/27643841/)
+17. Idan Nurick, Ron Shamir, Ran Elkon. Genomic meta-analysis of the interplay between 3D chromatin organization and gene expression programs under basal and stress conditions. *Epigenetics &amp; Chromatin*. 2018. doi: [10.1186/s13072-018-0220-2](https://doi.org/10.1186/s13072-018-0220-2) PMID: [30157915](https://pubmed.ncbi.nlm.nih.gov/30157915/)
+18. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
 
 ## Hearing loss genetics
 
