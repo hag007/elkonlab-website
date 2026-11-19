@@ -1,6 +1,6 @@
 # References
 
-235 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+237 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -168,10 +168,12 @@
 ## Integrated risk prediction
 
 1. Khadija Sana Hafeez, Carla Debernardi, Alessandra Allione, et al.. Integrating polygenic and methylation risk scores for pleural mesothelioma risk stratification. *International journal of cancer*. 2026. doi: [10.1002/ijc.70316](https://doi.org/10.1002/ijc.70316) PMID: [41472358](https://pubmed.ncbi.nlm.nih.gov/41472358/)
-2. Andrew Lee, Nasim Mavaddat, Amber N. Wilcox, et al.. BOADICEA: a comprehensive breast cancer risk prediction model incorporating genetic and nongenetic risk factors. *Genetics in Medicine*. 2019. doi: [10.1038/s41436-018-0406-9](https://doi.org/10.1038/s41436-018-0406-9) PMID: [30643217](https://pubmed.ncbi.nlm.nih.gov/30643217/)
-3. Anat Yaskolka Meir, Huan Yun, Jie Hu, et al.. Cross-omics risk scores of inflammation markers are associated with all-cause mortality: The Canadian Longitudinal Study on Aging. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2025.06.009](https://doi.org/10.1016/j.ajhg.2025.06.009) PMID: [40633542](https://pubmed.ncbi.nlm.nih.gov/40633542/)
-4. Sapir Shemesh, Rinat Bernstein-Molho, Shelley Shoval, et al.. Damaging missense variants in innate immunity genes are associated with earlier age of breast cancer onset in BRCA1 185delAG carriers. *J Med Genet*. 2026. doi: [10.1136/jmg-2025-111394](https://doi.org/10.1136/jmg-2025-111394) PMID: [41916723](https://pubmed.ncbi.nlm.nih.gov/41916723/)
-5. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
+2. Julia Hippisley-Cox, Carol Coupland, Peter Brindle. Development and validation of QRISK3 risk prediction algorithms to estimate future risk of cardiovascular disease: prospective cohort study. *BMJ*. 2017. doi: [10.1136/bmj.j2099](https://doi.org/10.1136/bmj.j2099) PMID: [28536104](https://pubmed.ncbi.nlm.nih.gov/28536104/)
+3. Karoline B Kuchenbaecker, Lesley McGuffog, Daniel Barrowdale, et al.. Evaluation of Polygenic Risk Scores for Breast and Ovarian Cancer Risk Prediction in BRCA1 and BRCA2 Mutation Carriers. *JNCI: Journal of the National Cancer Institute*. 2017. doi: [10.1093/jnci/djw302](https://doi.org/10.1093/jnci/djw302) PMID: [28376175](https://pubmed.ncbi.nlm.nih.gov/28376175/)
+4. Andrew Lee, Nasim Mavaddat, Amber N. Wilcox, et al.. BOADICEA: a comprehensive breast cancer risk prediction model incorporating genetic and nongenetic risk factors. *Genetics in Medicine*. 2019. doi: [10.1038/s41436-018-0406-9](https://doi.org/10.1038/s41436-018-0406-9) PMID: [30643217](https://pubmed.ncbi.nlm.nih.gov/30643217/)
+5. Anat Yaskolka Meir, Huan Yun, Jie Hu, et al.. Cross-omics risk scores of inflammation markers are associated with all-cause mortality: The Canadian Longitudinal Study on Aging. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2025.06.009](https://doi.org/10.1016/j.ajhg.2025.06.009) PMID: [40633542](https://pubmed.ncbi.nlm.nih.gov/40633542/)
+6. Sapir Shemesh, Rinat Bernstein-Molho, Shelley Shoval, et al.. Damaging missense variants in innate immunity genes are associated with earlier age of breast cancer onset in BRCA1 185delAG carriers. *J Med Genet*. 2026. doi: [10.1136/jmg-2025-111394](https://doi.org/10.1136/jmg-2025-111394) PMID: [41916723](https://pubmed.ncbi.nlm.nih.gov/41916723/)
+7. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
 
 ## Polygenic risk prediction
 
