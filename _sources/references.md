@@ -208,7 +208,7 @@
 26. Zixuan Eleanor Zhang, Artem Kim, Noah Suboc, et al.. Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02830-5](https://doi.org/10.1038/s41588-026-02830-5) PMID: [43009566](https://pubmed.ncbi.nlm.nih.gov/43009566/)
 27. Wei Zhou, Anna S E Cuomo, Linfeng Hu, et al.. Efficient and accurate mixed model association tool for single-cell eQTL analysis. *Nat Genet*. 2026. doi: [10.1038/s41588-026-02798-2](https://doi.org/10.1038/s41588-026-02798-2) PMID: [42995228](https://pubmed.ncbi.nlm.nih.gov/42995228/)
 
-## Common and rare variant risk models
+## Integrated risk prediction
 
 1. Matthew Aguirre, Flaviyan Jerome Irudayanathan, Maggie Crow, et al.. Systematic assessment of machine learning-based variant annotation methods for rare variant association testing. *bioRxiv*. 2026. doi: [10.64898/2026.03.18.712715](https://doi.org/10.64898/2026.03.18.712715)
 2. R Alemu, AS Young, DJ Benjamin, et al.. Dissecting the Predictive Accuracy of Polygenic Indexes for Behavioral Phenotypes Across Genetic Ancestries. *bioRxiv*. 2026. doi: [10.1101/2025.09.11.675704](https://doi.org/10.1101/2025.09.11.675704) PMID: [41929168](https://pubmed.ncbi.nlm.nih.gov/41929168/)
