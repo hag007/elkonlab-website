@@ -1,6 +1,6 @@
 # References
 
-171 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+173 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -191,8 +191,9 @@
 6. Gozde Korkmaz, Zohar Manber, Rui Lopes, et al.. A CRISPR-Cas9 screen identifies essential CTCF anchor sites for estrogen receptor-driven breast cancer cell proliferation. *Nucleic Acids Research*. 2019. doi: [10.1093/nar/gkz675](https://doi.org/10.1093/nar/gkz675) PMID: [31372638](https://pubmed.ncbi.nlm.nih.gov/31372638/)
 7. Gozde Korkmaz, Rui Lopes, Alejandro P Ugalde, et al.. Functional genetic screens for enhancer elements in the human genome using CRISPR-Cas9. *Nat Biotechnol*. 2016. doi: [10.1038/nbt.3450](https://doi.org/10.1038/nbt.3450) PMID: [26751173](https://pubmed.ncbi.nlm.nih.gov/26751173/)
 8. Li Li, Alejandro P. Ugalde, Colinda L. G. J. Scheele, et al.. A comprehensive enhancer screen identifies TRAM2 as a key and novel mediator of YAP oncogenesis. *Genome Biol*. 2021. doi: [10.1186/s13059-021-02272-8](https://doi.org/10.1186/s13059-021-02272-8) PMID: [33514403](https://pubmed.ncbi.nlm.nih.gov/33514403/)
-9. Idan Nurick, Ron Shamir, Ran Elkon. Genomic meta-analysis of the interplay between 3D chromatin organization and gene expression programs under basal and stress conditions. *Epigenetics &amp; Chromatin*. 2018. doi: [10.1186/s13072-018-0220-2](https://doi.org/10.1186/s13072-018-0220-2) PMID: [30157915](https://pubmed.ncbi.nlm.nih.gov/30157915/)
-10. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
+9. Carlos A. Melo, Jarno Drost, Patrick J. Wijchers, et al.. eRNAs Are Required for p53-Dependent Enhancer Activity and Gene Transcription. *Molecular Cell*. 2013. doi: [10.1016/j.molcel.2012.11.021](https://doi.org/10.1016/j.molcel.2012.11.021) PMID: [23273978](https://pubmed.ncbi.nlm.nih.gov/23273978/)
+10. Idan Nurick, Ron Shamir, Ran Elkon. Genomic meta-analysis of the interplay between 3D chromatin organization and gene expression programs under basal and stress conditions. *Epigenetics &amp; Chromatin*. 2018. doi: [10.1186/s13072-018-0220-2](https://doi.org/10.1186/s13072-018-0220-2) PMID: [30157915](https://pubmed.ncbi.nlm.nih.gov/30157915/)
+11. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
 
 ## Hearing loss genetics
 
@@ -200,8 +201,9 @@
 2. Mai Eshel, Beatrice Milon, Ronna Hertzano, et al.. The cells of the sensory epithelium, and not the stria vascularis, are the main cochlear cells related to the genetic pathogenesis of age-related hearing loss. *The American Journal of Human Genetics*. 2024. doi: [10.1016/j.ajhg.2024.01.008](https://doi.org/10.1016/j.ajhg.2024.01.008) PMID: [38330941](https://pubmed.ncbi.nlm.nih.gov/38330941/)
 3. Kathleen Gwilliam, Michal Sperber, Katherine Perry, et al.. A cell type–specific approach to elucidate the role of miR-96 in inner ear hair cells. *Front. Audiol. Otol.*. 2024. doi: [10.3389/fauot.2024.1400576](https://doi.org/10.3389/fauot.2024.1400576) PMID: [38826689](https://pubmed.ncbi.nlm.nih.gov/38826689/)
 4. Lama Khalaily, Shahar Kasirer, Rotem Domb, et al.. Live imaging and multimodal profiling reveal transdifferentiation of a cochlear supporting cell subpopulation upon Notch inhibition. *Sci. Adv.*. 2026. doi: [10.1126/sciadv.aed3887](https://doi.org/10.1126/sciadv.aed3887) PMID: [42308318](https://pubmed.ncbi.nlm.nih.gov/42308318/)
-5. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
-6. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
+5. Beatrice Milon, Eldad D. Shulman, Kathy S. So, et al.. A cell-type-specific atlas of the inner ear transcriptional response to acoustic trauma. *Cell Reports*. 2021. doi: [10.1016/j.celrep.2021.109758](https://doi.org/10.1016/j.celrep.2021.109758) PMID: [34592158](https://pubmed.ncbi.nlm.nih.gov/34592158/)
+6. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
+7. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
 
 ## Resources: Biobanks
 
