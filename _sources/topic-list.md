@@ -43,11 +43,11 @@ using the topic's description and keywords.
   <div class="pl-kw"><span class="pl-badge wn-topic wn-c1">MRS</span><span class="pl-badge wn-topic wn-c1">ERS</span></div>
 </section>
 <section class="pl-topic">
-  <h3>ZZ Topic Test<a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/5230ad92-27ef-4d70-b9e1-e16a38a86d06/papers" target="_blank" rel="noopener"
+  <h3><a href="topics/zz-topic-test.html">ZZ Topic Test</a><a class="pl-manage-link" href="http://rack-shamir6.cs.tau.ac.il:8765/topics/5230ad92-27ef-4d70-b9e1-e16a38a86d06/papers" target="_blank" rel="noopener"
      title="Add or remove this topic's papers (library server, password)">Manage papers 🔒</a></h3>
-  <div class="pl-meta">0 papers · not scanned yet · daily scan off</div>
+  <div class="pl-meta">1 paper · not scanned yet · daily scan off</div>
   <p>Throwaway topic for testing the Topics manager. Delete me.</p>
-  <div class="pl-kw"><span class="pl-badge wn-topic wn-c7">test</span></div>
+  <div class="pl-kw"><span class="pl-badge wn-topic wn-c5">test</span></div>
 </section>
 </div>
 ```
