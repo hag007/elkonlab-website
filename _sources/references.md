@@ -1,6 +1,6 @@
 # References
 
-293 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+295 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -332,9 +332,11 @@
 
 ## Resources: Atlases
 
-1. The ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. *Nature*. 2012. doi: [10.1038/nature11247](https://doi.org/10.1038/nature11247) PMID: [22955616](https://pubmed.ncbi.nlm.nih.gov/22955616/)
-2. John Lonsdale, Jeffrey Thomas, Mike Salvatore, et al.. The Genotype-Tissue Expression (GTEx) project. *Nat Genet*. 2013. doi: [10.1038/ng.2653](https://doi.org/10.1038/ng.2653) PMID: [23715323](https://pubmed.ncbi.nlm.nih.gov/23715323/)
-3. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
+1. Roadmap Epigenomics Consortium, Anshul Kundaje, Wouter Meuleman, et al.. Integrative analysis of 111 reference human epigenomes. *Nature*. 2015. doi: [10.1038/nature14248](https://doi.org/10.1038/nature14248) PMID: [25693563](https://pubmed.ncbi.nlm.nih.gov/25693563/)
+2. The ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. *Nature*. 2012. doi: [10.1038/nature11247](https://doi.org/10.1038/nature11247) PMID: [22955616](https://pubmed.ncbi.nlm.nih.gov/22955616/)
+3. John Lonsdale, Jeffrey Thomas, Mike Salvatore, et al.. The Genotype-Tissue Expression (GTEx) project. *Nat Genet*. 2013. doi: [10.1038/ng.2653](https://doi.org/10.1038/ng.2653) PMID: [23715323](https://pubmed.ncbi.nlm.nih.gov/23715323/)
+4. Aviv Regev, Sarah A Teichmann, Eric S Lander, et al.. The Human Cell Atlas. *eLife*. 2017. doi: [10.7554/elife.27041](https://doi.org/10.7554/elife.27041) PMID: [29206104](https://pubmed.ncbi.nlm.nih.gov/29206104/)
+5. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
 
 ## Alternative polyadenylation & RNA regulation
 
