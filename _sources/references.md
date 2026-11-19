@@ -1,6 +1,6 @@
 # References
 
-141 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+145 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -180,3 +180,10 @@
 19. Markos Tesfaye, Anne-Kristin Stavrum, Kira D Höffler, et al.. DNA methylation signatures associated with bipolar disorder in peripheral blood improve prediction models. *EBioMedicine*. 2026. doi: [10.1016/j.ebiom.2026.106284](https://doi.org/10.1016/j.ebiom.2026.106284) PMID: [42105630](https://pubmed.ncbi.nlm.nih.gov/42105630/)
 20. Scott Waterfield, Paul Yousefi, Matt Suderman. DNA methylation models of protein abundance across the lifecourse. *Clinical epigenetics*. 2024. doi: [10.1186/s13148-024-01802-y](https://doi.org/10.1186/s13148-024-01802-y) PMID: [39709440](https://pubmed.ncbi.nlm.nih.gov/39709440/)
 21. Sepideh Zarandooz, Laurel Raffington. Applying blood-derived epigenetic algorithms to saliva: cross-tissue similarity of DNA-methylation indices of aging, physiology, and cognition. *Clinical epigenetics*. 2025. doi: [10.1186/s13148-025-01868-2](https://doi.org/10.1186/s13148-025-01868-2) PMID: [40270051](https://pubmed.ncbi.nlm.nih.gov/40270051/)
+
+## Hearing loss genetics
+
+1. Mor Bordeynik-Cohen, Michal Sperber, Lena Ebbers, et al.. Shared and organ-specific gene-expression programs during the development of the cochlea and the superior olivary complex. *RNA Biology*. 2023. doi: [10.1080/15476286.2023.2247628](https://doi.org/10.1080/15476286.2023.2247628) PMID: [37602850](https://pubmed.ncbi.nlm.nih.gov/37602850/)
+2. Mai Eshel, Beatrice Milon, Ronna Hertzano, et al.. The cells of the sensory epithelium, and not the stria vascularis, are the main cochlear cells related to the genetic pathogenesis of age-related hearing loss. *The American Journal of Human Genetics*. 2024. doi: [10.1016/j.ajhg.2024.01.008](https://doi.org/10.1016/j.ajhg.2024.01.008) PMID: [38330941](https://pubmed.ncbi.nlm.nih.gov/38330941/)
+3. Kathleen Gwilliam, Michal Sperber, Katherine Perry, et al.. A cell type–specific approach to elucidate the role of miR-96 in inner ear hair cells. *Front. Audiol. Otol.*. 2024. doi: [10.3389/fauot.2024.1400576](https://doi.org/10.3389/fauot.2024.1400576) PMID: [38826689](https://pubmed.ncbi.nlm.nih.gov/38826689/)
+4. Lama Khalaily, Shahar Kasirer, Rotem Domb, et al.. Live imaging and multimodal profiling reveal transdifferentiation of a cochlear supporting cell subpopulation upon Notch inhibition. *Sci. Adv.*. 2026. doi: [10.1126/sciadv.aed3887](https://doi.org/10.1126/sciadv.aed3887) PMID: [42308318](https://pubmed.ncbi.nlm.nih.gov/42308318/)
