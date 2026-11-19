@@ -1,6 +1,6 @@
 # References
 
-302 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+303 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -364,3 +364,4 @@
 ## Bioinformatics tools & pipelines
 
 1. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
+2. Andreas Maier, Michael Hartung, Mark Abovsky, et al.. Drugst.One — a plug-and-play solution for online systems medicine and network-based drug repurposing. *Nucleic Acids Research*. 2024. doi: [10.1093/nar/gkae388](https://doi.org/10.1093/nar/gkae388) PMID: [38783119](https://pubmed.ncbi.nlm.nih.gov/38783119/)
