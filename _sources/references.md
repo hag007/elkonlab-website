@@ -1,6 +1,6 @@
 # References
 
-147 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+149 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -189,3 +189,8 @@
 4. Lama Khalaily, Shahar Kasirer, Rotem Domb, et al.. Live imaging and multimodal profiling reveal transdifferentiation of a cochlear supporting cell subpopulation upon Notch inhibition. *Sci. Adv.*. 2026. doi: [10.1126/sciadv.aed3887](https://doi.org/10.1126/sciadv.aed3887) PMID: [42308318](https://pubmed.ncbi.nlm.nih.gov/42308318/)
 5. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
 6. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
+
+## Alternative polyadenylation & RNA regulation
+
+1. Yuval Malka, Ferhat Alkan, Shinyeong Ju, et al.. Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential. *Molecular Cell*. 2022. doi: [10.1016/j.molcel.2022.09.036](https://doi.org/10.1016/j.molcel.2022.09.036) PMID: [36270248](https://pubmed.ncbi.nlm.nih.gov/36270248/)
+2. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
