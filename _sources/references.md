@@ -1,6 +1,6 @@
 # References
 
-306 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+308 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -363,8 +363,10 @@
 
 ## Bioinformatics tools & pipelines
 
-1. Tom Aharon Hait, Adi Maron-Katz, Dorit Sagir, et al.. The EXPANDER Integrated Platform for Transcriptome Analysis. *Journal of Molecular Biology*. 2019. doi: [10.1016/j.jmb.2019.05.013](https://doi.org/10.1016/j.jmb.2019.05.013) PMID: [31100387](https://pubmed.ncbi.nlm.nih.gov/31100387/)
-2. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
-3. Andreas Maier, Michael Hartung, Mark Abovsky, et al.. Drugst.One — a plug-and-play solution for online systems medicine and network-based drug repurposing. *Nucleic Acids Research*. 2024. doi: [10.1093/nar/gkae388](https://doi.org/10.1093/nar/gkae388) PMID: [38783119](https://pubmed.ncbi.nlm.nih.gov/38783119/)
-4. Ron Shamir, Adi Maron-Katz, Amos Tanay, et al.. EXPANDER – an integrative program suite for microarray data analysis. *BMC Bioinformatics*. 2005. doi: [10.1186/1471-2105-6-232](https://doi.org/10.1186/1471-2105-6-232) PMID: [16176576](https://pubmed.ncbi.nlm.nih.gov/16176576/)
-5. Igor Ulitsky, Adi Maron-Katz, Seagull Shavit, et al.. Expander: from expression microarrays to networks and functions. *Nat Protoc*. 2010. doi: [10.1038/nprot.2009.230](https://doi.org/10.1038/nprot.2009.230) PMID: [20134430](https://pubmed.ncbi.nlm.nih.gov/20134430/)
+1. Ran Elkon, Rita Vesterman, Nira Amit, et al.. SPIKE – a database, visualization and analysis tool of cellular signaling pathways. *BMC Bioinformatics*. 2008. doi: [10.1186/1471-2105-9-110](https://doi.org/10.1186/1471-2105-9-110) PMID: [18289391](https://pubmed.ncbi.nlm.nih.gov/18289391/)
+2. Tom Aharon Hait, Adi Maron-Katz, Dorit Sagir, et al.. The EXPANDER Integrated Platform for Transcriptome Analysis. *Journal of Molecular Biology*. 2019. doi: [10.1016/j.jmb.2019.05.013](https://doi.org/10.1016/j.jmb.2019.05.013) PMID: [31100387](https://pubmed.ncbi.nlm.nih.gov/31100387/)
+3. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
+4. Andreas Maier, Michael Hartung, Mark Abovsky, et al.. Drugst.One — a plug-and-play solution for online systems medicine and network-based drug repurposing. *Nucleic Acids Research*. 2024. doi: [10.1093/nar/gkae388](https://doi.org/10.1093/nar/gkae388) PMID: [38783119](https://pubmed.ncbi.nlm.nih.gov/38783119/)
+5. Arnon Paz, Zippora Brownstein, Yaara Ber, et al.. SPIKE: a database of highly curated human signaling pathways. *Nucleic Acids Research*. 2010. doi: [10.1093/nar/gkq1167](https://doi.org/10.1093/nar/gkq1167) PMID: [21097778](https://pubmed.ncbi.nlm.nih.gov/21097778/)
+6. Ron Shamir, Adi Maron-Katz, Amos Tanay, et al.. EXPANDER – an integrative program suite for microarray data analysis. *BMC Bioinformatics*. 2005. doi: [10.1186/1471-2105-6-232](https://doi.org/10.1186/1471-2105-6-232) PMID: [16176576](https://pubmed.ncbi.nlm.nih.gov/16176576/)
+7. Igor Ulitsky, Adi Maron-Katz, Seagull Shavit, et al.. Expander: from expression microarrays to networks and functions. *Nat Protoc*. 2010. doi: [10.1038/nprot.2009.230](https://doi.org/10.1038/nprot.2009.230) PMID: [20134430](https://pubmed.ncbi.nlm.nih.gov/20134430/)
