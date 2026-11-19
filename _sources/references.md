@@ -1,6 +1,6 @@
 # References
 
-297 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+299 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -350,8 +350,10 @@
 7. Martijn Kedde, Marieke van Kouwenhove, Wilbert Zwart, et al.. A Pumilio-induced RNA structure switch in p27-3′ UTR controls miR-221 and miR-222 accessibility. *Nat Cell Biol*. 2010. doi: [10.1038/ncb2105](https://doi.org/10.1038/ncb2105) PMID: [20818387](https://pubmed.ncbi.nlm.nih.gov/20818387/)
 8. Nicolas Léveillé, Ran Elkon, Veronica Davalos, et al.. Selective inhibition of microRNA accessibility by RBM38 is required for p53 activity. *Nat Commun*. 2011. doi: [10.1038/ncomms1519](https://doi.org/10.1038/ncomms1519) PMID: [22027593](https://pubmed.ncbi.nlm.nih.gov/22027593/)
 9. Yuval Malka, Ferhat Alkan, Shinyeong Ju, et al.. Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential. *Molecular Cell*. 2022. doi: [10.1016/j.molcel.2022.09.036](https://doi.org/10.1016/j.molcel.2022.09.036) PMID: [36270248](https://pubmed.ncbi.nlm.nih.gov/36270248/)
-10. Adam R. Morris, Arnold Bos, Begoña Diosdado, et al.. Alternative Cleavage and Polyadenylation during Colorectal Cancer Development. *Clinical Cancer Research*. 2012. doi: [10.1158/1078-0432.ccr-12-0543](https://doi.org/10.1158/1078-0432.ccr-12-0543) PMID: [22874640](https://pubmed.ncbi.nlm.nih.gov/22874640/)
-11. Maayan Salton, Ran Elkon, Tatiana Borodina, et al.. Matrin 3 Binds and Stabilizes mRNA. *PLoS ONE*. 2011. doi: [10.1371/journal.pone.0023882](https://doi.org/10.1371/journal.pone.0023882) PMID: [21858232](https://pubmed.ncbi.nlm.nih.gov/21858232/)
-12. Peter J. Shepard, Eun-A Choi, Jente Lu, et al.. Complex and dynamic landscape of RNA polyadenylation revealed by PAS-Seq. *RNA*. 2011. doi: [10.1261/rna.2581711](https://doi.org/10.1261/rna.2581711) PMID: [21343387](https://pubmed.ncbi.nlm.nih.gov/21343387/)
-13. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
-14. Boris Slobodin, Anat Bahat, Urmila Sehrawat, et al.. Transcription Dynamics Regulate Poly(A) Tails and Expression of the RNA Degradation Machinery to Balance mRNA Levels. *Molecular Cell*. 2020. doi: [10.1016/j.molcel.2020.03.022](https://doi.org/10.1016/j.molcel.2020.03.022) PMID: [32294471](https://pubmed.ncbi.nlm.nih.gov/32294471/)
+10. Pamela Moll, Michael Ante, Alexander Seitz, et al.. QuantSeq 3′ mRNA sequencing for RNA quantification. *Nat Methods*. 2014. doi: [10.1038/nmeth.f.376](https://doi.org/10.1038/nmeth.f.376)
+11. Adam R. Morris, Arnold Bos, Begoña Diosdado, et al.. Alternative Cleavage and Polyadenylation during Colorectal Cancer Development. *Clinical Cancer Research*. 2012. doi: [10.1158/1078-0432.ccr-12-0543](https://doi.org/10.1158/1078-0432.ccr-12-0543) PMID: [22874640](https://pubmed.ncbi.nlm.nih.gov/22874640/)
+12. Maayan Salton, Ran Elkon, Tatiana Borodina, et al.. Matrin 3 Binds and Stabilizes mRNA. *PLoS ONE*. 2011. doi: [10.1371/journal.pone.0023882](https://doi.org/10.1371/journal.pone.0023882) PMID: [21858232](https://pubmed.ncbi.nlm.nih.gov/21858232/)
+13. Peter J. Shepard, Eun-A Choi, Jente Lu, et al.. Complex and dynamic landscape of RNA polyadenylation revealed by PAS-Seq. *RNA*. 2011. doi: [10.1261/rna.2581711](https://doi.org/10.1261/rna.2581711) PMID: [21343387](https://pubmed.ncbi.nlm.nih.gov/21343387/)
+14. Eldad David Shulman, Ran Elkon. Systematic identification of functional SNPs interrupting 3’UTR polyadenylation signals. *PLoS Genet*. 2020. doi: [10.1371/journal.pgen.1008977](https://doi.org/10.1371/journal.pgen.1008977) PMID: [32804959](https://pubmed.ncbi.nlm.nih.gov/32804959/)
+15. Boris Slobodin, Anat Bahat, Urmila Sehrawat, et al.. Transcription Dynamics Regulate Poly(A) Tails and Expression of the RNA Degradation Machinery to Balance mRNA Levels. *Molecular Cell*. 2020. doi: [10.1016/j.molcel.2020.03.022](https://doi.org/10.1016/j.molcel.2020.03.022) PMID: [32294471](https://pubmed.ncbi.nlm.nih.gov/32294471/)
+16. Zheng Xia, Lawrence A. Donehower, Thomas A. Cooper, et al.. Dynamic analyses of alternative polyadenylation from RNA-seq reveal a 3′-UTR landscape across seven tumour types. *Nat Commun*. 2014. doi: [10.1038/ncomms6274](https://doi.org/10.1038/ncomms6274) PMID: [25409906](https://pubmed.ncbi.nlm.nih.gov/25409906/)
