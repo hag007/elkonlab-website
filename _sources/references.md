@@ -1,6 +1,6 @@
 # References
 
-164 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+165 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -185,7 +185,8 @@
 
 1. Ran Elkon, Reuven Agami. Two-layer design protects genes from mutations in their enhancers. *Nature*. 2022. doi: [10.1038/d41586-022-02341-3](https://doi.org/10.1038/d41586-022-02341-3) PMID: [36064783](https://pubmed.ncbi.nlm.nih.gov/36064783/)
 2. Tom Aharon Hait, Ran Elkon, Ron Shamir. CT-FOCS: a novel method for inferring cell type-specific enhancer–promoter maps. *Nucleic Acids Research*. 2022. doi: [10.1093/nar/gkac048](https://doi.org/10.1093/nar/gkac048) PMID: [35100425](https://pubmed.ncbi.nlm.nih.gov/35100425/)
-3. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
+3. Li Li, Alejandro P. Ugalde, Colinda L. G. J. Scheele, et al.. A comprehensive enhancer screen identifies TRAM2 as a key and novel mediator of YAP oncogenesis. *Genome Biol*. 2021. doi: [10.1186/s13059-021-02272-8](https://doi.org/10.1186/s13059-021-02272-8) PMID: [33514403](https://pubmed.ncbi.nlm.nih.gov/33514403/)
+4. Gony Shanel, Tsung-Han S Hsieh, Claudia Cattoglio, et al.. Transcriptional programs of cell identity and p53-induced stress responses are associated with distinctive features of spatial genome organization. *Nucleic Acids Research*. 2025. doi: [10.1093/nar/gkaf607](https://doi.org/10.1093/nar/gkaf607) PMID: [40626558](https://pubmed.ncbi.nlm.nih.gov/40626558/)
 
 ## Hearing loss genetics
 
