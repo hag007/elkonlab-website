@@ -1,13 +1,14 @@
 # References
 
-134 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+135 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
-1. Hilary K. Finucane, Brendan Bulik-Sullivan, Alexander Gusev, et al.. Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*. 2015. doi: [10.1038/ng.3404](https://doi.org/10.1038/ng.3404) PMID: [26414678](https://pubmed.ncbi.nlm.nih.gov/26414678/)
-2. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
-3. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
-4. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
+1. Mazal Cohen-Gulkar, Ahuvit David, Naama Messika-Gold, et al.. The LHX2-OTX2 transcriptional regulatory module controls retinal pigmented epithelium differentiation and underlies genetic risk for age-related macular degeneration. *PLoS Biol*. 2023. doi: [10.1371/journal.pbio.3001924](https://doi.org/10.1371/journal.pbio.3001924) PMID: [36649236](https://pubmed.ncbi.nlm.nih.gov/36649236/)
+2. Hilary K. Finucane, Brendan Bulik-Sullivan, Alexander Gusev, et al.. Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*. 2015. doi: [10.1038/ng.3404](https://doi.org/10.1038/ng.3404) PMID: [26414678](https://pubmed.ncbi.nlm.nih.gov/26414678/)
+3. Julian Fuhrer, Alexey A Shadrin, Timothy Hughes, et al.. Beyond exons: Linking noncoding heritability and polygenicity across complex human traits and disorders. *American journal of human genetics*. 2026. doi: [10.1016/j.ajhg.2026.08.012](https://doi.org/10.1016/j.ajhg.2026.08.012) PMID: [42697192](https://pubmed.ncbi.nlm.nih.gov/42697192/)
+4. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
+5. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
 
 ## Non-coding variant effect prediction
 
