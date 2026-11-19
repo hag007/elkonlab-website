@@ -1,6 +1,6 @@
 # References
 
-159 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+160 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -175,6 +175,10 @@
 19. Markos Tesfaye, Anne-Kristin Stavrum, Kira D Höffler, et al.. DNA methylation signatures associated with bipolar disorder in peripheral blood improve prediction models. *EBioMedicine*. 2026. doi: [10.1016/j.ebiom.2026.106284](https://doi.org/10.1016/j.ebiom.2026.106284) PMID: [42105630](https://pubmed.ncbi.nlm.nih.gov/42105630/)
 20. Scott Waterfield, Paul Yousefi, Matt Suderman. DNA methylation models of protein abundance across the lifecourse. *Clinical epigenetics*. 2024. doi: [10.1186/s13148-024-01802-y](https://doi.org/10.1186/s13148-024-01802-y) PMID: [39709440](https://pubmed.ncbi.nlm.nih.gov/39709440/)
 21. Sepideh Zarandooz, Laurel Raffington. Applying blood-derived epigenetic algorithms to saliva: cross-tissue similarity of DNA-methylation indices of aging, physiology, and cognition. *Clinical epigenetics*. 2025. doi: [10.1186/s13148-025-01868-2](https://doi.org/10.1186/s13148-025-01868-2) PMID: [40270051](https://pubmed.ncbi.nlm.nih.gov/40270051/)
+
+## Biological network analysis
+
+1. Hagai Levi, Nima Rahmanian, Ran Elkon, et al.. The DOMINO web-server for active module identification analysis. *Bioinformatics*. 2022. doi: [10.1093/bioinformatics/btac067](https://doi.org/10.1093/bioinformatics/btac067) PMID: [35139202](https://pubmed.ncbi.nlm.nih.gov/35139202/)
 
 ## Hearing loss genetics
 
