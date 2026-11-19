@@ -1,6 +1,6 @@
 # References
 
-219 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+220 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -123,6 +123,7 @@
 43. Michael C. Wu, Seunggeun Lee, Tianxi Cai, et al.. Rare-Variant Association Testing for Sequencing Data with the Sequence Kernel Association Test. *The American Journal of Human Genetics*. 2011. doi: [10.1016/j.ajhg.2011.05.029](https://doi.org/10.1016/j.ajhg.2011.05.029) PMID: [21737059](https://pubmed.ncbi.nlm.nih.gov/21737059/)
 44. Yuchen Yang, Eden Martin, Lindsay Farrer, et al.. Joint Analysis of Common Regulatory and Rare Coding Variants for Improved Power in Kernel Association Tests. *bioRxiv*. 2026. doi: [10.64898/2026.11.11.765949](https://doi.org/10.64898/2026.11.11.765949)
 45. Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. *medRxiv*. 2026. doi: [10.64898/2026.03.24.26349148](https://doi.org/10.64898/2026.03.24.26349148) PMID: [41929321](https://pubmed.ncbi.nlm.nih.gov/41929321/)
+46. Wei Zhou, Wenjian Bi, Zhangchen Zhao, et al.. SAIGE-GENE+ improves the efficiency and accuracy of set-based rare variant association tests. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01178-w](https://doi.org/10.1038/s41588-022-01178-w) PMID: [36138231](https://pubmed.ncbi.nlm.nih.gov/36138231/)
 
 ## Single-cell omics & GWAS integration
 
