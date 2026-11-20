@@ -1,6 +1,6 @@
 # References
 
-323 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+324 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -329,6 +329,7 @@
 7. Konrad J. Karczewski, Laurent C. Francioli, Grace Tiao, et al.. The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature*. 2020. doi: [10.1038/s41586-020-2308-7](https://doi.org/10.1038/s41586-020-2308-7) PMID: [32461654](https://pubmed.ncbi.nlm.nih.gov/32461654/)
 8. Mitja I. Kurki, Juha Karjalainen, Priit Palta, et al.. FinnGen provides genetic insights from a well-phenotyped isolated population. *Nature*. 2023. doi: [10.1038/s41586-022-05473-8](https://doi.org/10.1038/s41586-022-05473-8) PMID: [36653562](https://pubmed.ncbi.nlm.nih.gov/36653562/)
 9. Akiko Nagai, Makoto Hirata, Yoichiro Kamatani, et al.. Overview of the BioBank Japan Project: Study design and profile. *Journal of Epidemiology*. 2017. doi: [10.1016/j.je.2016.12.005](https://doi.org/10.1016/j.je.2016.12.005) PMID: [28189464](https://pubmed.ncbi.nlm.nih.gov/28189464/)
+10. Bharathram Uppili, Ankit Mukherjee, Sanjay Deshpande, et al.. GI-DB: a comprehensive variant database for exploring the extensive genetic diversity of the Indian population. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1179](https://doi.org/10.1093/nar/gkag1179) PMID: [43053325](https://pubmed.ncbi.nlm.nih.gov/43053325/)
 
 ## Resources: GWASs
 
