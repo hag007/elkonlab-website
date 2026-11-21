@@ -1,6 +1,6 @@
 # References
 
-337 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+338 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -129,13 +129,14 @@
 44. Thomas P Spargo, Chloe F Sands, Isabella R Juan, et al.. Haploinsufficiency of ITSN1 is associated with a substantial increased risk of Parkinson's disease. *Cell Rep*. 2025. doi: [10.1016/j.celrep.2025.115355](https://doi.org/10.1016/j.celrep.2025.115355) PMID: [40056900](https://pubmed.ncbi.nlm.nih.gov/40056900/)
 45. Jeffrey P Spence, Hakhamanesh Mostafavi, Mineto Ota, et al.. Specificity, length and luck drive gene rankings in association studies. *Nature*. 2026. doi: [10.1038/s41586-025-09703-7](https://doi.org/10.1038/s41586-025-09703-7) PMID: [41193809](https://pubmed.ncbi.nlm.nih.gov/41193809/)
 46. The LifeLines Cohort Study, Jian Yang, Andrew Bakshi, et al.. Genetic variance estimation with imputed variants finds negligible missing heritability for human height and body mass index. *Nat Genet*. 2015. doi: [10.1038/ng.3390](https://doi.org/10.1038/ng.3390) PMID: [26323059](https://pubmed.ncbi.nlm.nih.gov/26323059/)
-47. Pierrick Wainschtein, Yuanxiang Zhang, Jeremy Schwartzentruber, et al.. Estimation and mapping of the missing heritability of human phenotypes. *Nature*. 2026. doi: [10.1038/s41586-025-09720-6](https://doi.org/10.1038/s41586-025-09720-6) PMID: [41225014](https://pubmed.ncbi.nlm.nih.gov/41225014/)
-48. Belinda Wang, Matthew N Tran, Sheng Wang, et al.. Whole-exome sequencing in individuals with obsessive-compulsive disorder and chronic tic disorders identifies 36 large-effect risk genes. *Nat Neurosci*. 2026. doi: [10.1038/s41593-026-02419-5](https://doi.org/10.1038/s41593-026-02419-5) PMID: [42680906](https://pubmed.ncbi.nlm.nih.gov/42680906/)
-49. Daniel J. Weiner, Ajay Nadig, Karthik A. Jagadeesh, et al.. Polygenic architecture of rare coding variation across 394,783 exomes. *Nature*. 2023. doi: [10.1038/s41586-022-05684-z](https://doi.org/10.1038/s41586-022-05684-z) PMID: [36755099](https://pubmed.ncbi.nlm.nih.gov/36755099/)
-50. Michael C. Wu, Seunggeun Lee, Tianxi Cai, et al.. Rare-Variant Association Testing for Sequencing Data with the Sequence Kernel Association Test. *The American Journal of Human Genetics*. 2011. doi: [10.1016/j.ajhg.2011.05.029](https://doi.org/10.1016/j.ajhg.2011.05.029) PMID: [21737059](https://pubmed.ncbi.nlm.nih.gov/21737059/)
-51. Yuchen Yang, Eden Martin, Lindsay Farrer, et al.. Joint Analysis of Common Regulatory and Rare Coding Variants for Improved Power in Kernel Association Tests. *bioRxiv*. 2026. doi: [10.64898/2026.11.11.765949](https://doi.org/10.64898/2026.11.11.765949)
-52. Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. *medRxiv*. 2026. doi: [10.64898/2026.03.24.26349148](https://doi.org/10.64898/2026.03.24.26349148) PMID: [41929321](https://pubmed.ncbi.nlm.nih.gov/41929321/)
-53. Wei Zhou, Wenjian Bi, Zhangchen Zhao, et al.. SAIGE-GENE+ improves the efficiency and accuracy of set-based rare variant association tests. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01178-w](https://doi.org/10.1038/s41588-022-01178-w) PMID: [36138231](https://pubmed.ncbi.nlm.nih.gov/36138231/)
+47. Saeed Farajzadeh Valilou, Sydney Kramer, Masoud Edizadeh, et al.. Rare copy number variation in alcohol use disorder using whole-genome sequencing in the All of Us Research Program. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26367879](https://doi.org/10.64898/2026.11.18.26367879)
+48. Pierrick Wainschtein, Yuanxiang Zhang, Jeremy Schwartzentruber, et al.. Estimation and mapping of the missing heritability of human phenotypes. *Nature*. 2026. doi: [10.1038/s41586-025-09720-6](https://doi.org/10.1038/s41586-025-09720-6) PMID: [41225014](https://pubmed.ncbi.nlm.nih.gov/41225014/)
+49. Belinda Wang, Matthew N Tran, Sheng Wang, et al.. Whole-exome sequencing in individuals with obsessive-compulsive disorder and chronic tic disorders identifies 36 large-effect risk genes. *Nat Neurosci*. 2026. doi: [10.1038/s41593-026-02419-5](https://doi.org/10.1038/s41593-026-02419-5) PMID: [42680906](https://pubmed.ncbi.nlm.nih.gov/42680906/)
+50. Daniel J. Weiner, Ajay Nadig, Karthik A. Jagadeesh, et al.. Polygenic architecture of rare coding variation across 394,783 exomes. *Nature*. 2023. doi: [10.1038/s41586-022-05684-z](https://doi.org/10.1038/s41586-022-05684-z) PMID: [36755099](https://pubmed.ncbi.nlm.nih.gov/36755099/)
+51. Michael C. Wu, Seunggeun Lee, Tianxi Cai, et al.. Rare-Variant Association Testing for Sequencing Data with the Sequence Kernel Association Test. *The American Journal of Human Genetics*. 2011. doi: [10.1016/j.ajhg.2011.05.029](https://doi.org/10.1016/j.ajhg.2011.05.029) PMID: [21737059](https://pubmed.ncbi.nlm.nih.gov/21737059/)
+52. Yuchen Yang, Eden Martin, Lindsay Farrer, et al.. Joint Analysis of Common Regulatory and Rare Coding Variants for Improved Power in Kernel Association Tests. *bioRxiv*. 2026. doi: [10.64898/2026.11.11.765949](https://doi.org/10.64898/2026.11.11.765949)
+53. Yuxin Yuan, Yuanyuan Guan, Yannuo Feng, et al.. Rare coding and noncoding variants map 1,342 diseases and biomarkers in 490,549 whole genomes. *medRxiv*. 2026. doi: [10.64898/2026.03.24.26349148](https://doi.org/10.64898/2026.03.24.26349148) PMID: [41929321](https://pubmed.ncbi.nlm.nih.gov/41929321/)
+54. Wei Zhou, Wenjian Bi, Zhangchen Zhao, et al.. SAIGE-GENE+ improves the efficiency and accuracy of set-based rare variant association tests. *Nat Genet*. 2022. doi: [10.1038/s41588-022-01178-w](https://doi.org/10.1038/s41588-022-01178-w) PMID: [36138231](https://pubmed.ncbi.nlm.nih.gov/36138231/)
 
 ## Single-cell omics & GWAS integration
 
