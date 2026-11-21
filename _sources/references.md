@@ -1,6 +1,6 @@
 # References
 
-334 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+337 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -17,11 +17,14 @@
 11. Farhad Hormozdiari, Martijn van de Bunt, Ayellet V. Segrè, et al.. Colocalization of GWAS and eQTL Signals Detects Target Genes. *The American Journal of Human Genetics*. 2016. doi: [10.1016/j.ajhg.2016.10.003](https://doi.org/10.1016/j.ajhg.2016.10.003) PMID: [27866706](https://pubmed.ncbi.nlm.nih.gov/27866706/)
 12. Moonseong Jeong, Zhengtong Liu, Jiayi Ni, et al.. Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries. *bioRxiv*. 2026. doi: [10.64898/2026.10.20.760508](https://doi.org/10.64898/2026.10.20.760508)
 13. Christiaan A. de Leeuw, Joris M. Mooij, Tom Heskes, et al.. MAGMA: Generalized Gene-Set Analysis of GWAS Data. *PLoS Comput Biol*. 2015. doi: [10.1371/journal.pcbi.1004219](https://doi.org/10.1371/journal.pcbi.1004219) PMID: [25885710](https://pubmed.ncbi.nlm.nih.gov/25885710/)
-14. Suting Li, Hongming Li, Bingshu Li, et al.. Functionally decoupled cis-regulatory signals at PCOLCE2 link fibroblast-lineage collagen maturation to pelvic organ prolapse. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11780387/v1](https://doi.org/10.21203/rs.3.rs-11780387/v1)
-15. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
-16. Thomy Margalit, Hagai Levi, Ron Shamir, et al.. Mapping Genetic Risk Associations to Cellular Contexts via Deep Learning and Biological Ontologies. *bioRxiv*. 2026. doi: [10.64898/2026.05.25.726449](https://doi.org/10.64898/2026.05.25.726449)
-17. Edward Mountjoy, Ellen M. Schmidt, Miguel Carmona, et al.. An open approach to systematically prioritize causal variants and genes at all published human GWAS trait-associated loci. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00945-5](https://doi.org/10.1038/s41588-021-00945-5) PMID: [34711957](https://pubmed.ncbi.nlm.nih.gov/34711957/)
-18. Shuai Xu, Jiajun Shi, Xiao-Ou Shu, et al.. Integrating genetic and lung tissue proteomics data to identify susceptibility proteins for lung cancer. *Journal of the National Cancer Institute*. 2026. doi: [10.1093/jnci/djag424](https://doi.org/10.1093/jnci/djag424) PMID: [43055353](https://pubmed.ncbi.nlm.nih.gov/43055353/)
+14. Nanxi Li, Sihao Chen, Juan Wang, et al.. Brain-derived multi-omics prioritization of mitochondria-related genes in schizophrenia, bipolar disorder, and major depressive disorder. *Translational psychiatry*. 2026. doi: [10.1038/s41398-026-04586-2](https://doi.org/10.1038/s41398-026-04586-2) PMID: [43058085](https://pubmed.ncbi.nlm.nih.gov/43058085/)
+15. Suting Li, Hongming Li, Bingshu Li, et al.. Functionally decoupled cis-regulatory signals at PCOLCE2 link fibroblast-lineage collagen maturation to pelvic organ prolapse. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11780387/v1](https://doi.org/10.21203/rs.3.rs-11780387/v1)
+16. Hui Li, Tushar Kamath, Rahul Mazumder, et al.. Improved heritability partitioning and enrichment analyses using summary statistics with graphREML. *Nature genetics*. 2026. doi: [10.1038/s41588-026-02649-0](https://doi.org/10.1038/s41588-026-02649-0) PMID: [42386933](https://pubmed.ncbi.nlm.nih.gov/42386933/)
+17. Thomy Margalit, Hagai Levi, Ron Shamir, et al.. Mapping Genetic Risk Associations to Cellular Contexts via Deep Learning and Biological Ontologies. *bioRxiv*. 2026. doi: [10.64898/2026.05.25.726449](https://doi.org/10.64898/2026.05.25.726449)
+18. Edward Mountjoy, Ellen M. Schmidt, Miguel Carmona, et al.. An open approach to systematically prioritize causal variants and genes at all published human GWAS trait-associated loci. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00945-5](https://doi.org/10.1038/s41588-021-00945-5) PMID: [34711957](https://pubmed.ncbi.nlm.nih.gov/34711957/)
+19. M. M. Uddin, S. M. Z. A. Khan, K. Bomma Yadagiri. CELL-X: A Single-Cell Transcriptomics Framework for Cell-Type and Disease-State Prioritization of Type 2 Diabetes Risk Genes. *bioRxiv*. 2026. doi: [10.64898/2026.11.18.767745](https://doi.org/10.64898/2026.11.18.767745)
+20. Shuai Xu, Jiajun Shi, Xiao-Ou Shu, et al.. Integrating genetic and lung tissue proteomics data to identify susceptibility proteins for lung cancer. *Journal of the National Cancer Institute*. 2026. doi: [10.1093/jnci/djag424](https://doi.org/10.1093/jnci/djag424) PMID: [43055353](https://pubmed.ncbi.nlm.nih.gov/43055353/)
+21. Y. Zeng, N. Cook, M. Fujita, et al.. Brain Cell-Type-Specific X-Chromosome Gene Regulation Reveals Sex-Biased Candidate Genes in Neurodegeneration. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26368437](https://doi.org/10.64898/2026.11.18.26368437)
 
 ## Non-coding variant effect prediction
 
