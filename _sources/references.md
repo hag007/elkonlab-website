@@ -1,6 +1,6 @@
 # References
 
-347 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+348 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -259,10 +259,12 @@
 19. Lisa J Schmunk, Toby P Call, Daniel L McCartney, et al.. A novel framework to build saliva-based DNA methylation biomarkers: Quantifying systemic chronic inflammation as a case study. *Aging cell*. 2025. doi: [10.1111/acel.14444](https://doi.org/10.1111/acel.14444) PMID: [39888134](https://pubmed.ncbi.nlm.nih.gov/39888134/)
 20. Isabel K Schuurmans, Serena Defina, A P C Hermans, et al.. Methylation profile scores in child and adolescent health: a practical guide. *The Lancet. Child & adolescent health*. 2026. doi: [10.1016/s2352-4642(26)00162-8](https://doi.org/10.1016/s2352-4642(26)00162-8) PMID: [42641636](https://pubmed.ncbi.nlm.nih.gov/42641636/)
 21. Isabel K Schuurmans, Serena Defina, A P C Hermans, et al.. Paediatric DNA methylation profile scores: a systematic review and open-source atlas. *EBioMedicine*. 2026. doi: [10.1016/j.ebiom.2026.106300](https://doi.org/10.1016/j.ebiom.2026.106300) PMID: [42172921](https://pubmed.ncbi.nlm.nih.gov/42172921/)
-22. Hannah M Smith, Hong Kiat Ng, Joanna E Moodie, et al.. DNA methylation-based predictors of metabolic traits in Scottish and Singaporean cohorts. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2024.11.012](https://doi.org/10.1016/j.ajhg.2024.11.012) PMID: [39706196](https://pubmed.ncbi.nlm.nih.gov/39706196/)
-23. Markos Tesfaye, Anne-Kristin Stavrum, Kira D Höffler, et al.. DNA methylation signatures associated with bipolar disorder in peripheral blood improve prediction models. *EBioMedicine*. 2026. doi: [10.1016/j.ebiom.2026.106284](https://doi.org/10.1016/j.ebiom.2026.106284) PMID: [42105630](https://pubmed.ncbi.nlm.nih.gov/42105630/)
-24. Scott Waterfield, Paul Yousefi, Matt Suderman. DNA methylation models of protein abundance across the lifecourse. *Clinical epigenetics*. 2024. doi: [10.1186/s13148-024-01802-y](https://doi.org/10.1186/s13148-024-01802-y) PMID: [39709440](https://pubmed.ncbi.nlm.nih.gov/39709440/)
-25. Sepideh Zarandooz, Laurel Raffington. Applying blood-derived epigenetic algorithms to saliva: cross-tissue similarity of DNA-methylation indices of aging, physiology, and cognition. *Clinical epigenetics*. 2025. doi: [10.1186/s13148-025-01868-2](https://doi.org/10.1186/s13148-025-01868-2) PMID: [40270051](https://pubmed.ncbi.nlm.nih.gov/40270051/)
+22. Kirsten Blythe Seale, Sayf Hassouneh, Laura Balagué-Dobón, et al.. One blood methylation profile stratifies ten-year risk across 21 common diseases. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26368164](https://doi.org/10.64898/2026.11.18.26368164)
+23. Hannah M Smith, Hong Kiat Ng, Joanna E Moodie, et al.. DNA methylation-based predictors of metabolic traits in Scottish and Singaporean cohorts. *American journal of human genetics*. 2025. doi: [10.1016/j.ajhg.2024.11.012](https://doi.org/10.1016/j.ajhg.2024.11.012) PMID: [39706196](https://pubmed.ncbi.nlm.nih.gov/39706196/)
+24. Markos Tesfaye, Anne-Kristin Stavrum, Kira D Höffler, et al.. DNA methylation signatures associated with bipolar disorder in peripheral blood improve prediction models. *EBioMedicine*. 2026. doi: [10.1016/j.ebiom.2026.106284](https://doi.org/10.1016/j.ebiom.2026.106284) PMID: [42105630](https://pubmed.ncbi.nlm.nih.gov/42105630/)
+25. Zhaoyu Wang, Qingkun Liu, Jeffrey Nemes, et al.. Enduring DNA Methylation Marks of Blast and Trauma Exposures in Warfighters. *Military Medicine*. 2026. doi: [10.1093/milmed/usag525](https://doi.org/10.1093/milmed/usag525) PMID: [43062301](https://pubmed.ncbi.nlm.nih.gov/43062301/)
+26. Scott Waterfield, Paul Yousefi, Matt Suderman. DNA methylation models of protein abundance across the lifecourse. *Clinical epigenetics*. 2024. doi: [10.1186/s13148-024-01802-y](https://doi.org/10.1186/s13148-024-01802-y) PMID: [39709440](https://pubmed.ncbi.nlm.nih.gov/39709440/)
+27. Sepideh Zarandooz, Laurel Raffington. Applying blood-derived epigenetic algorithms to saliva: cross-tissue similarity of DNA-methylation indices of aging, physiology, and cognition. *Clinical epigenetics*. 2025. doi: [10.1186/s13148-025-01868-2](https://doi.org/10.1186/s13148-025-01868-2) PMID: [40270051](https://pubmed.ncbi.nlm.nih.gov/40270051/)
 
 ## Biological network analysis
 
