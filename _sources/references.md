@@ -1,6 +1,6 @@
 # References
 
-348 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+349 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -278,6 +278,7 @@
 8. Katja Luck, Dae-Kyum Kim, Luke Lambourne, et al.. A reference map of the human binary protein interactome. *Nature*. 2020. doi: [10.1038/s41586-020-2188-x](https://doi.org/10.1038/s41586-020-2188-x) PMID: [32296183](https://pubmed.ncbi.nlm.nih.gov/32296183/)
 9. B. Snel. STRING: a web-server to retrieve and display the repeatedly occurring neighbourhood of a gene. *Nucleic Acids Research*. 2000. doi: [10.1093/nar/28.18.3442](https://doi.org/10.1093/nar/28.18.3442) PMID: [10982861](https://pubmed.ncbi.nlm.nih.gov/10982861/)
 10. Oron Vanunu, Oded Magger, Eytan Ruppin, et al.. Associating Genes and Protein Complexes with Disease via Network Propagation. *PLoS Comput Biol*. 2010. doi: [10.1371/journal.pcbi.1000641](https://doi.org/10.1371/journal.pcbi.1000641) PMID: [20090828](https://pubmed.ncbi.nlm.nih.gov/20090828/)
+11. H Yang, L Chen, A Li, et al.. OMIGAT: Multi-Feature Enhanced Collaborative Attention and Graph Convolution Model for Cancer Driver Gene Identification. *Interdisciplinary sciences, computational life sciences*. 2026. doi: [10.1007/s12539-026-00887-8](https://doi.org/10.1007/s12539-026-00887-8) PMID: [43062793](https://pubmed.ncbi.nlm.nih.gov/43062793/)
 
 ## Enhancers & 3D genome
 
