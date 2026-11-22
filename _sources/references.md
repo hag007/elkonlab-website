@@ -1,6 +1,6 @@
 # References
 
-370 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+371 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -23,8 +23,9 @@
 17. Thomy Margalit, Hagai Levi, Ron Shamir, et al.. Mapping Genetic Risk Associations to Cellular Contexts via Deep Learning and Biological Ontologies. *bioRxiv*. 2026. doi: [10.64898/2026.05.25.726449](https://doi.org/10.64898/2026.05.25.726449)
 18. Edward Mountjoy, Ellen M. Schmidt, Miguel Carmona, et al.. An open approach to systematically prioritize causal variants and genes at all published human GWAS trait-associated loci. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00945-5](https://doi.org/10.1038/s41588-021-00945-5) PMID: [34711957](https://pubmed.ncbi.nlm.nih.gov/34711957/)
 19. M. M. Uddin, S. M. Z. A. Khan, K. Bomma Yadagiri. CELL-X: A Single-Cell Transcriptomics Framework for Cell-Type and Disease-State Prioritization of Type 2 Diabetes Risk Genes. *bioRxiv*. 2026. doi: [10.64898/2026.11.18.767745](https://doi.org/10.64898/2026.11.18.767745)
-20. Shuai Xu, Jiajun Shi, Xiao-Ou Shu, et al.. Integrating genetic and lung tissue proteomics data to identify susceptibility proteins for lung cancer. *Journal of the National Cancer Institute*. 2026. doi: [10.1093/jnci/djag424](https://doi.org/10.1093/jnci/djag424) PMID: [43055353](https://pubmed.ncbi.nlm.nih.gov/43055353/)
-21. Y. Zeng, N. Cook, M. Fujita, et al.. Brain Cell-Type-Specific X-Chromosome Gene Regulation Reveals Sex-Biased Candidate Genes in Neurodegeneration. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26368437](https://doi.org/10.64898/2026.11.18.26368437)
+20. Peter M. Visscher, Naomi R. Wray, Qian Zhang, et al.. 10 Years of GWAS Discovery: Biology, Function, and Translation. *The American Journal of Human Genetics*. 2017. doi: [10.1016/j.ajhg.2017.06.005](https://doi.org/10.1016/j.ajhg.2017.06.005) PMID: [28686856](https://pubmed.ncbi.nlm.nih.gov/28686856/)
+21. Shuai Xu, Jiajun Shi, Xiao-Ou Shu, et al.. Integrating genetic and lung tissue proteomics data to identify susceptibility proteins for lung cancer. *Journal of the National Cancer Institute*. 2026. doi: [10.1093/jnci/djag424](https://doi.org/10.1093/jnci/djag424) PMID: [43055353](https://pubmed.ncbi.nlm.nih.gov/43055353/)
+22. Y. Zeng, N. Cook, M. Fujita, et al.. Brain Cell-Type-Specific X-Chromosome Gene Regulation Reveals Sex-Biased Candidate Genes in Neurodegeneration. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26368437](https://doi.org/10.64898/2026.11.18.26368437)
 
 ## Non-coding variant effect prediction
 
