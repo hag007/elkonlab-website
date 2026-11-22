@@ -12,5 +12,3 @@
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Hearing loss genetics"></div>
 <script src="../_static/library/whatsnew.js?v=09a1a8e2"></script>
 ```
-
-*Out of scope:* general methods for GWAS interpretation, fine-mapping, risk prediction or single-cell integration that only use hearing loss as one example among other traits (these belong to their own topics), clinical audiology without genetic analysis, and gene therapy without variant analysis.

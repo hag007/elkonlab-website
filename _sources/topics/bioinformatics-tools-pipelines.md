@@ -14,5 +14,3 @@
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Bioinformatics tools &amp; pipelines"></div>
 <script src="../_static/library/whatsnew.js?v=09a1a8e2"></script>
 ```
-
-*Out of scope:* papers whose main contribution is a statistical or machine-learning method for one analysis (e.g. fine-mapping or PRS); those belong to their own topics.

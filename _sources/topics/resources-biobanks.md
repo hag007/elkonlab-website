@@ -10,5 +10,3 @@
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Resources: Biobanks"></div>
 <script src="../_static/library/whatsnew.js?v=09a1a8e2"></script>
 ```
-
-*Out of scope:* studies that only use these resources; this topic is for the papers that describe the biobanks and panels themselves.

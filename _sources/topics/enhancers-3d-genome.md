@@ -14,5 +14,3 @@
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Enhancers &amp; 3D genome"></div>
 <script src="../_static/library/whatsnew.js?v=09a1a8e2"></script>
 ```
-
-*Out of scope:* GWAS trait enrichment and variant-effect deep learning models, which belong to their own topics.
