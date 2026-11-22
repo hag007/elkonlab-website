@@ -44,9 +44,9 @@ your question.
 <p><a class="pl-edit-topics" href="_static/skills/papers-by-topic.zip" download>⬇ Download papers-by-topic.zip</a></p>
 ```
 
-**Install:** as for /papers above, with `papers-by-topic.zip`. The skill is rebuilt whenever the topics change, and
-when you use it Claude checks the current list of topics in Google Drive, so an older copy still offers the current
-topics (and tells you when a newer copy is available).
+**Install:** as for /papers above, with `papers-by-topic.zip`. Install it once: when you use it, Claude reads the
+current list of topics from the library in Google Drive, which follows the website, so new, renamed or removed topics
+show up without downloading the skill again.
 
 **Use:**
 
