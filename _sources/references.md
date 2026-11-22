@@ -435,7 +435,7 @@
 11. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
 12. Seyhan Yazar, Jose Alquicira-Hernandez, Kristof Wing, et al.. Single-cell eQTL mapping identifies cell type–specific genetic control of autoimmune disease. *Science*. 2022. doi: [10.1126/science.abf3041](https://doi.org/10.1126/science.abf3041) PMID: [35389779](https://pubmed.ncbi.nlm.nih.gov/35389779/)
 
-## Alternative polyadenylation & RNA regulation
+## Alternative polyadenylation
 
 1. SS Ahmad, MZI Khan, S Roy. In Silico Prioritization of GWAS-Derived 3' UTR MicroRNA-Binding Variants at Colorectal Cancer Risk Loci Detected in Hispanic Patients from the All of Us Research Program. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11272400/v1](https://doi.org/10.21203/rs.3.rs-11272400/v1) PMID: [43059915](https://pubmed.ncbi.nlm.nih.gov/43059915/)
 2. Esther E. Creemers, Amira Bawazeer, Alejandro P. Ugalde, et al.. Genome-Wide Polyadenylation Maps Reveal Dynamic mRNA 3′-End Formation in the Failing Human Heart. *Circulation Research*. 2016. doi: [10.1161/circresaha.115.307082](https://doi.org/10.1161/circresaha.115.307082) PMID: [26671978](https://pubmed.ncbi.nlm.nih.gov/26671978/)
