@@ -452,6 +452,7 @@
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#papers-ask-questions-about-the-library-s-papers">/papers: ask questions about the library’s papers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#papers-by-topic-ask-about-one-topic">/papers-by-topic: ask about one topic</a></li>
 </ul>
             </nav>
         </div>
@@ -492,6 +493,25 @@ remove the old <em>papers</em> skill and upload the new file.</p></li>
 <strong>Web search</strong> off in the chat’s tools menu, so only Google Drive is on.</p>
 <p><strong>Requires:</strong> a <a class="reference external" href="http://claude.ai">claude.ai</a> account with skills, and read access to the Google Drive folder <em>Paper Library</em> (ask the
 lab’s library admin).</p>
+</section>
+<section id="papers-by-topic-ask-about-one-topic">
+<h2>/papers-by-topic: ask about one topic<a class="headerlink" href="#papers-by-topic-ask-about-one-topic" title="Link to this heading">#</a></h2>
+<p>The same as /papers, but limited to <strong>one topic</strong> you choose from the website’s topics. Claude reads only that
+topic’s papers. Start with <code class="docutils literal notranslate"><span class="pre">/papers-by-topic</span></code> alone to get the list of topics to pick from, or name the topic with
+your question.</p>
+<p><a class="pl-edit-topics" href="_static/skills/papers-by-topic.zip" download>⬇ Download papers-by-topic.zip</a></p><p><strong>Install:</strong> as for /papers above, with <code class="docutils literal notranslate"><span class="pre">papers-by-topic.zip</span></code>. The skill is rebuilt whenever the topics change, and
+when you use it Claude checks the current list of topics in Google Drive, so an older copy still offers the current
+topics (and tells you when a newer copy is available).</p>
+<p><strong>Use:</strong></p>
+<blockquote>
+<div><p>/papers-by-topic</p>
+</div></blockquote>
+<blockquote>
+<div><p>/papers-by-topic Fine mapping: how do the methods handle a mismatched LD reference?</p>
+</div></blockquote>
+<blockquote>
+<div><p>/papers-by-topic PRS: which methods work best across ancestries?</p>
+</div></blockquote>
 </section>
 </section>
 
@@ -562,6 +582,7 @@ lab’s library admin).</p>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#papers-ask-questions-about-the-library-s-papers">/papers: ask questions about the library’s papers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#papers-by-topic-ask-about-one-topic">/papers-by-topic: ask about one topic</a></li>
 </ul>
   </nav></div>
 

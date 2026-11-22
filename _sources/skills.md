@@ -33,3 +33,25 @@ Name a collection to focus the search, or leave it out to search all of them. Fo
 
 **Requires:** a claude.ai account with skills, and read access to the Google Drive folder *Paper Library* (ask the
 lab's library admin).
+
+## /papers-by-topic: ask about one topic
+
+The same as /papers, but limited to **one topic** you choose from the website's topics. Claude reads only that
+topic's papers. Start with `/papers-by-topic` alone to get the list of topics to pick from, or name the topic with
+your question.
+
+```{raw} html
+<p><a class="pl-edit-topics" href="_static/skills/papers-by-topic.zip" download>⬇ Download papers-by-topic.zip</a></p>
+```
+
+**Install:** as for /papers above, with `papers-by-topic.zip`. The skill is rebuilt whenever the topics change, and
+when you use it Claude checks the current list of topics in Google Drive, so an older copy still offers the current
+topics (and tells you when a newer copy is available).
+
+**Use:**
+
+> /papers-by-topic
+
+> /papers-by-topic Fine mapping: how do the methods handle a mismatched LD reference?
+
+> /papers-by-topic PRS: which methods work best across ancestries?
