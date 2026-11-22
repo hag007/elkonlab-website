@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-rare-variants">Why rare variants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#association-tests">Association tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-and-meta-analysis">Annotation and meta-analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heritability">Heritability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +485,32 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Rare variant analysis</strong>: the question the field asks and why it matters.</p>
+<section id="why-rare-variants">
+<h2>Why rare variants<a class="headerlink" href="#why-rare-variants" title="Link to this heading">#</a></h2>
+<p>Common variants explain much of the heritability of complex traits, but each has a small effect and usually acts through regulation. Rare coding variants can have large effects and point directly to a gene. Exome and genome sequencing of hundreds of thousands of people in biobanks has made rare-variant association studies routine (<a class="reference external" href="https://doi.org/10.1038/s41586-021-04103-z">Backman et al. 2021</a>; <a class="reference external" href="https://doi.org/10.1016/j.xgen.2022.100168">Karczewski et al. 2022</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="association-tests">
+<h2>Association tests<a class="headerlink" href="#association-tests" title="Link to this heading">#</a></h2>
+<p>Single rare variants are rarely testable on their own, so they are grouped by gene or region (<a class="reference external" href="https://doi.org/10.1016/j.ajhg.2014.06.009">Lee et al. 2014</a>):</p>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Burden tests</strong> sum the qualifying variants in a gene; they are powerful when most variants act in the same direction.</p></li>
+<li><p><strong>Variance-component tests</strong>, such as <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2011.05.029">SKAT</a>, allow effects in both directions. <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2012.06.007">SKAT-O</a> combines burden and SKAT, and <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2019.01.002">ACAT</a> combines p-values across tests and variant masks.</p></li>
+<li><p><strong>Biobank-scale tools</strong> handle relatedness, unbalanced case-control ratios and many phenotypes: <a class="reference external" href="https://doi.org/10.1038/s41588-022-01178-w">SAIGE-GENE+</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-021-00870-7">REGENIE</a>. <a class="reference external" href="https://doi.org/10.1038/s41467-022-32885-x">GATE</a> extends these tests to time-to-event outcomes.</p></li>
 </ul>
+</section>
+<section id="annotation-and-meta-analysis">
+<h2>Annotation and meta-analysis<a class="headerlink" href="#annotation-and-meta-analysis" title="Link to this heading">#</a></h2>
+<p>Choosing which variants to include matters as much as the test. <a class="reference external" href="https://doi.org/10.1038/s41588-020-0676-4">STAAR</a> weights variants by several functional annotations, which also lets it test non-coding rare variants. Experimental scores from multiplexed assays (<a class="reference external" href="https://doi.org/10.1186/s13059-019-1845-6">MaveDB</a>) add direct evidence for missense variants. Meta-analysis across cohorts uses <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btu367">RAREMETAL</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-025-02403-y">Meta-SAIGE</a>.</p>
+</section>
+<section id="heritability">
+<h2>Heritability<a class="headerlink" href="#heritability" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://doi.org/10.1038/ng.3390">GREML-LDMS</a> estimates heritability by frequency and LD bins. Burden heritability shows that rare coding variants explain only a small part of heritability for most traits, but concentrate it in a few constrained genes (<a class="reference external" href="https://doi.org/10.1038/s41586-022-05684-z">Weiner et al. 2023</a>). Rare variants can also modify the effect of a known pathogenic variant: damaging missense variants in innate immunity genes are associated with earlier breast cancer onset in BRCA1 185delAG carriers (<a class="reference external" href="https://doi.org/10.1136/jmg-2025-111394">Shemesh et al. 2026</a>).</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Testing non-coding rare variants with enough power.</p></li>
+<li><p>Bringing rare-variant genes into risk prediction (see <em>Integrated risk prediction</em>).</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +581,10 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-rare-variants">Why rare variants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#association-tests">Association tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-and-meta-analysis">Annotation and meta-analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heritability">Heritability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

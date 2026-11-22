@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-methylation">Why methylation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epigenetic-clocks">Epigenetic clocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methylation-risk-scores">Methylation risk scores</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,28 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Methylation risk prediction</strong>: the question the field asks and why it matters.</p>
+<section id="why-methylation">
+<h2>Why methylation<a class="headerlink" href="#why-methylation" title="Link to this heading">#</a></h2>
+<p>DNA methylation at CpG sites reflects both genetics and exposures such as smoking, diet and ageing, and it can be measured cheaply from blood on arrays. Methylation-based predictors can therefore capture risk that germline genetics misses (<a class="reference external" href="https://doi.org/10.1038/s41576-022-00465-w">Yousefi et al. 2022</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="epigenetic-clocks">
+<h2>Epigenetic clocks<a class="headerlink" href="#epigenetic-clocks" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>First generation.</strong> The <a class="reference external" href="https://doi.org/10.1186/gb-2013-14-10-r115">Horvath clock</a> and the <a class="reference external" href="https://doi.org/10.1016/j.molcel.2012.10.016">Hannum clock</a> predict chronological age from a few hundred CpGs.</p></li>
+<li><p><strong>Second generation.</strong> These are trained on outcomes rather than age. <a class="reference external" href="https://doi.org/10.18632/aging.101414">PhenoAge</a> is trained on clinical markers of ageing, and <a class="reference external" href="https://doi.org/10.18632/aging.101684">GrimAge</a> on mortality and plasma protein surrogates; both predict lifespan and disease better than age clocks.</p></li>
+<li><p><strong>Pace of ageing.</strong> <a class="reference external" href="https://doi.org/10.7554/eLife.73420">DunedinPACE</a> measures the current rate of biological ageing.</p></li>
 </ul>
+</section>
+<section id="methylation-risk-scores">
+<h2>Methylation risk scores<a class="headerlink" href="#methylation-risk-scores" title="Link to this heading">#</a></h2>
+<p>Methylation risk scores (MRS) are built by EWAS-weighted sums or by penalized regression (elastic net) over CpGs. <a class="reference external" href="https://doi.org/10.7554/eLife.71802">EpiScores</a> are methylation proxies for plasma proteins, and they improve prediction of several diseases.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Reverse causation: methylation can be a consequence of disease rather than a cause.</p></li>
+<li><p>Cell-type composition of blood confounds methylation signals.</p></li>
+<li><p>How much MRS add on top of polygenic and clinical scores (see <em>Integrated risk prediction</em>).</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +576,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-methylation">Why methylation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epigenetic-clocks">Epigenetic clocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methylation-risk-scores">Methylation risk scores</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

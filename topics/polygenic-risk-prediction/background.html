@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-polygenic-score-is">What a polygenic score is</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-across-ancestries">Portability across ancestries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-prs-predict">How much can PRS predict?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +485,32 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Polygenic risk prediction</strong>: the question the field asks and why it matters.</p>
+<section id="what-a-polygenic-score-is">
+<h2>What a polygenic score is<a class="headerlink" href="#what-a-polygenic-score-is" title="Link to this heading">#</a></h2>
+<p>A polygenic risk score (PRS) sums an individual’s risk alleles across the genome, weighted by effect sizes estimated in a GWAS (<a class="reference external" href="https://doi.org/10.1038/s41576-018-0018-x">Torkamani et al. 2018</a>; <a class="reference external" href="https://doi.org/10.1038/s41596-020-0353-1">Choi et al. 2020</a>). For several common diseases, people at the top of the PRS distribution have a risk similar to that of carriers of monogenic mutations (<a class="reference external" href="https://doi.org/10.1038/s41588-018-0183-z">Khera et al. 2018</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Pruning and thresholding (P+T).</strong> Keep independent SNPs below a p-value threshold, as in <a class="reference external" href="https://doi.org/10.1086/519795">PLINK</a>, <a class="reference external" href="https://doi.org/10.1186/s13742-015-0047-8">PLINK2</a> and <a class="reference external" href="https://doi.org/10.1093/gigascience/giz082">PRSice-2</a>.</p></li>
+<li><p><strong>Bayesian shrinkage.</strong> Model all SNPs jointly with an LD reference: <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btaa1029">LDpred2</a>, <a class="reference external" href="https://doi.org/10.1038/s41467-019-09718-5">PRS-CS</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-024-01704-y">SBayesRC</a>.</p></li>
+<li><p><strong>Functional priors.</strong> Weight SNPs by annotations: <a class="reference external" href="https://doi.org/10.1038/s41467-021-25171-9">LDpred-funct</a>, <a class="reference external" href="https://doi.org/10.1038/s41588-022-01036-9">PolyPred</a> and SBayesRC.</p></li>
+<li><p><strong>Deep learning.</strong> Model non-additive effects or use biological structure, for example <a class="reference external" href="https://doi.org/10.1101/2024.02.13.580211">PRS-Net</a>.</p></li>
 </ul>
+</section>
+<section id="portability-across-ancestries">
+<h2>Portability across ancestries<a class="headerlink" href="#portability-across-ancestries" title="Link to this heading">#</a></h2>
+<p>Most GWAS participants are of European ancestry, and PRS accuracy drops sharply in other populations (<a class="reference external" href="https://doi.org/10.1038/s41588-019-0379-x">Martin et al. 2019</a>). Even within Europe, scores do not transfer perfectly; for example, a European breast-cancer PRS performs differently in Ashkenazi Jewish women (<a class="reference external" href="https://doi.org/10.1136/jmg-2023-109185">Levi et al. 2023</a>). Multi-ancestry methods combine GWAS from several populations: <a class="reference external" href="https://doi.org/10.1038/s41588-022-01054-7">PRS-CSx</a>, <a class="reference external" href="https://doi.org/10.1038/s41588-023-01501-z">CT-SLEB</a>, <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2022.09.010">TL-PRS</a> and <a class="reference external" href="https://doi.org/10.64898/2026.07.12.26357860">PRANA</a>.</p>
+</section>
+<section id="how-much-can-prs-predict">
+<h2>How much can PRS predict?<a class="headerlink" href="#how-much-can-prs-predict" title="Link to this heading">#</a></h2>
+<p>Even with large GWAS, the predictive capacity of PRS for most diseases is only moderate (<a class="reference external" href="https://doi.org/10.1093/bioinformatics/btae036">Levi et al. 2024</a>). The reasons include limited SNP-heritability, environmental effects and differences between study populations.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Fair performance across ancestries.</p></li>
+<li><p>Clinical utility when PRS is added to existing risk models (see <em>Integrated risk prediction</em>).</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +581,10 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-polygenic-score-is">What a polygenic score is</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-across-ancestries">Portability across ancestries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-prs-predict">How much can PRS predict?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

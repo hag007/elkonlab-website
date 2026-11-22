@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem">The problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generations-of-models">Generations of models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#known-limitations">Known limitations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,30 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Non-coding variant effect prediction</strong>: the question the field asks and why it matters.</p>
+<section id="the-problem">
+<h2>The problem<a class="headerlink" href="#the-problem" title="Link to this heading">#</a></h2>
+<p>Most disease-associated variants are non-coding, and most non-coding variants have no measured effect. Sequence-to-function models learn the regulatory code from large functional genomics atlases, such as ENCODE and Roadmap. They can then predict the effect of any variant <em>in silico</em>, by comparing the prediction for the reference and the alternative allele.</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="generations-of-models">
+<h2>Generations of models<a class="headerlink" href="#generations-of-models" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Convolutional models of chromatin profiles.</strong> <a class="reference external" href="https://doi.org/10.1038/nmeth.3547">DeepSEA</a> and <a class="reference external" href="https://doi.org/10.1101/gr.200535.115">Basset</a> predict TF binding, DNase accessibility and histone marks from about 1 kb of sequence. <a class="reference external" href="https://doi.org/10.1038/s41588-022-01102-2">Sei</a> groups thousands of these predictions into sequence classes.</p></li>
+<li><p><strong>Long-range models of expression.</strong> <a class="reference external" href="https://doi.org/10.1101/gr.227819.117">Basenji</a>, <a class="reference external" href="https://doi.org/10.1038/s41592-021-01252-x">Enformer</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-024-02053-6">Borzoi</a> predict RNA-seq coverage from 100–500 kb windows. <a class="reference external" href="https://doi.org/10.1038/s41586-025-10014-0">AlphaGenome</a> predicts many modalities at base-pair resolution from 1 Mb of sequence.</p></li>
+<li><p><strong>Base-resolution models.</strong> <a class="reference external" href="https://doi.org/10.1101/2024.12.25.630221">ChromBPNet</a> models chromatin accessibility profiles at base resolution and corrects for the enzyme’s sequence bias.</p></li>
+<li><p><strong>Genomic language models.</strong> <a class="reference external" href="https://doi.org/10.1038/s41592-024-02523-z">Nucleotide Transformer</a>, <a class="reference external" href="https://doi.org/10.1073/pnas.2311219120">GPN</a> and <a class="reference external" href="https://doi.org/10.1126/science.ado9336">Evo</a> learn from unlabeled genomes and score variants by sequence likelihood, without functional labels.</p></li>
+<li><p><strong>Splicing.</strong> <a class="reference external" href="https://doi.org/10.1016/j.cell.2018.12.015">SpliceAI</a> and <a class="reference external" href="https://doi.org/10.1186/s13059-022-02664-4">Pangolin</a> predict splice-site gain and loss and are widely used in clinical variant interpretation.</p></li>
+<li><p><strong>Integrative scores.</strong> <a class="reference external" href="https://doi.org/10.1038/ng.2892">CADD</a> combines many annotations into one deleteriousness score; <a class="reference external" href="https://doi.org/10.1038/ng.3331">deltaSVM</a> is an early k-mer model of regulatory variant effects.</p></li>
 </ul>
+</section>
+<section id="known-limitations">
+<h2>Known limitations<a class="headerlink" href="#known-limitations" title="Link to this heading">#</a></h2>
+<p>Benchmarks show that current models capture promoter effects well but largely miss distal enhancers (<a class="reference external" href="https://doi.org/10.1186/s13059-023-02899-9">Karollus et al. 2023</a>). They also explain little of the variation in gene expression between individuals, and often get the direction of effect wrong (<a class="reference external" href="https://doi.org/10.1038/s41588-023-01574-w">Huang et al. 2023</a>; <a class="reference external" href="https://doi.org/10.1038/s41588-023-01524-6">Sasse et al. 2023</a>).</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Predicting effects in rare cell types and states that are missing from training data.</p></li>
+<li><p>Calibrating model scores so that they can serve as priors for fine-mapping and gene prioritization.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +578,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem">The problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generations-of-models">Generations of models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#known-limitations">Known limitations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-networks">Why networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-propagation">Network propagation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-discovery">Module discovery</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,23 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Biological network analysis</strong>: the question the field asks and why it matters.</p>
+<section id="why-networks">
+<h2>Why networks<a class="headerlink" href="#why-networks" title="Link to this heading">#</a></h2>
+<p>Disease genes do not act alone; they cluster in connected neighbourhoods of the molecular interaction network, called <em>disease modules</em> (<a class="reference external" href="https://doi.org/10.1038/nrg2918">Barabási et al. 2011</a>; <a class="reference external" href="https://doi.org/10.1126/science.1257601">Menche et al. 2015</a>). Networks such as <a class="reference external" href="https://doi.org/10.1093/nar/28.18.3442">STRING</a> and the reference interactome <a class="reference external" href="https://doi.org/10.1038/s41586-020-2188-x">HuRI</a> let weak genetic signals be amplified by the signals of their neighbours.</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
-</ul>
+<section id="network-propagation">
+<h2>Network propagation<a class="headerlink" href="#network-propagation" title="Link to this heading">#</a></h2>
+<p>Propagation spreads scores from seed genes over the network, so that genes near many seeds score high (<a class="reference external" href="https://doi.org/10.1038/nrg.2017.38">Cowen et al. 2017</a>). Early applications prioritized disease genes (<a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1000641">Vanunu et al. 2010</a>). <a class="reference external" href="https://doi.org/10.1038/ng.3168">HotNet2</a> finds significantly mutated subnetworks in cancer. For GWAS, <a class="reference external" href="https://doi.org/10.1016/j.isci.2019.05.025">NAGA</a> propagates gene-level association signals, and <a class="reference external" href="https://doi.org/10.1038/ng.3259">NetWAS</a> reranks GWAS genes with tissue-specific networks.</p>
+</section>
+<section id="module-discovery">
+<h2>Module discovery<a class="headerlink" href="#module-discovery" title="Link to this heading">#</a></h2>
+<p>Active module identification searches for connected subnetworks enriched in a signal, such as differential expression. <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1004120">DIAMOnD</a> grows modules from seed genes by connectivity significance. <a class="reference external" href="https://doi.org/10.1186/1471-2105-9-559">WGCNA</a> builds co-expression modules instead of using interaction networks. Many module methods report modules that are not reproducible and that inflate GO enrichment. <a class="reference external" href="https://doi.org/10.15252/msb.20209593">DOMINO</a> was designed to reduce such false calls, and it is also available as a <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btac067">web server</a>.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Interaction networks are biased toward well-studied genes.</p></li>
+<li><p>Tissue- and cell-type-specific networks are still incomplete.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +571,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-networks">Why networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-propagation">Network propagation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-discovery">Module discovery</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

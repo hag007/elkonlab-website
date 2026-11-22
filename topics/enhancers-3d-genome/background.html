@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enhancers">Enhancers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-enhancers">Mapping enhancers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-genome">3D genome</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linking-enhancers-to-genes">Linking enhancers to genes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +485,31 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Enhancers &amp; 3D genome</strong>: the question the field asks and why it matters.</p>
+<section id="enhancers">
+<h2>Enhancers<a class="headerlink" href="#enhancers" title="Link to this heading">#</a></h2>
+<p>Enhancers are short DNA elements, bound by transcription factors, that activate genes from a distance, often tens to hundreds of kilobases away (<a class="reference external" href="https://doi.org/10.1038/nrg3682">Shlyueva et al. 2014</a>). Most GWAS variants fall in enhancers, so knowing which enhancer controls which gene is central to interpreting genetic risk (<a class="reference external" href="https://doi.org/10.1038/nbt.3863">Elkon &amp; Agami 2017</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="mapping-enhancers">
+<h2>Mapping enhancers<a class="headerlink" href="#mapping-enhancers" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Chromatin profiling</strong> marks candidate enhancers by open chromatin and histone modifications: <a class="reference external" href="https://doi.org/10.1126/science.1141319">ChIP-seq</a>, <a class="reference external" href="https://doi.org/10.1038/nmeth.2688">ATAC-seq</a> and <a class="reference external" href="https://doi.org/10.1038/s41467-019-09982-5">CUT&amp;Tag</a>.</p></li>
+<li><p><strong>Enhancer RNAs.</strong> Active enhancers are transcribed, and these eRNAs are needed for p53-dependent enhancer activity (<a class="reference external" href="https://doi.org/10.1016/j.molcel.2012.11.021">Melo et al. 2013</a>).</p></li>
+<li><p><strong>Functional assays</strong> test enhancer activity directly: <a class="reference external" href="https://doi.org/10.1038/nbt.2137">MPRA</a>, <a class="reference external" href="https://doi.org/10.1126/science.1232542">STARR-seq</a>, CRISPR-Cas9 enhancer screens (<a class="reference external" href="https://doi.org/10.1038/nbt.3450">Korkmaz et al. 2016</a>) and <a class="reference external" href="https://doi.org/10.1126/science.aag2445">CRISPRi screens</a>, up to genome-wide scale (<a class="reference external" href="https://doi.org/10.1016/j.cell.2018.11.029">Gasperini et al. 2019</a>).</p></li>
 </ul>
+</section>
+<section id="d-genome">
+<h2>3D genome<a class="headerlink" href="#d-genome" title="Link to this heading">#</a></h2>
+<p>Chromosome conformation capture shows how DNA folds in the nucleus. <a class="reference external" href="https://doi.org/10.1126/science.1181369">Hi-C</a> revealed topologically associating domains (TADs; <a class="reference external" href="https://doi.org/10.1038/nature11082">Dixon et al. 2012</a>) and chromatin loops anchored by CTCF (<a class="reference external" href="https://doi.org/10.1016/j.cell.2014.11.021">Rao et al. 2014</a>). <a class="reference external" href="https://doi.org/10.1016/j.cell.2015.05.048">Micro-C</a>, <a class="reference external" href="https://doi.org/10.1038/nmeth.3999">HiChIP</a> and <a class="reference external" href="https://doi.org/10.1038/ng.3286">promoter capture Hi-C</a> increase resolution or focus on promoters. Disrupting TAD boundaries can rewire enhancer–promoter contacts and cause disease (<a class="reference external" href="https://doi.org/10.1016/j.cell.2015.04.004">Lupiáñez et al. 2015</a>). A meta-analysis of Hi-C and expression data shows how 3D organization relates to gene expression programs, at baseline and under stress (<a class="reference external" href="https://doi.org/10.1186/s13072-018-0220-2">Nurick et al. 2018</a>).</p>
+</section>
+<section id="linking-enhancers-to-genes">
+<h2>Linking enhancers to genes<a class="headerlink" href="#linking-enhancers-to-genes" title="Link to this heading">#</a></h2>
+<p>Computational models predict enhancer–gene links. <a class="reference external" href="https://doi.org/10.1186/s13059-018-1432-2">FOCS</a> and <a class="reference external" href="https://doi.org/10.1093/nar/gkac048">CT-FOCS</a> use correlated activity across samples. The <a class="reference external" href="https://doi.org/10.1038/s41588-019-0538-0">ABC model</a> multiplies enhancer activity by contact frequency, and <a class="reference external" href="https://doi.org/10.1038/s41586-020-03145-z">EpiMap</a> links enhancers across hundreds of tissues.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Many genes have several redundant enhancers, which buffers them against mutations in one of them.</p></li>
+<li><p>Predicting enhancer–gene links in cell types without 3D data.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +580,10 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enhancers">Enhancers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-enhancers">Mapping enhancers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-genome">3D genome</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linking-enhancers-to-genes">Linking enhancers to genes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

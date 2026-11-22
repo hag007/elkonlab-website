@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-and-rare-variants-together">Common and rare variants together</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-models">Clinical models</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,24 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Integrated risk prediction</strong>: the question the field asks and why it matters.</p>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>Disease risk comes from several sources: rare high-penetrance variants (such as in BRCA1 or BRCA2), the polygenic background of common variants, family history, and clinical and lifestyle factors. Each alone gives a partial picture. Integrated models combine them into one estimate that is useful for screening and prevention (<a class="reference external" href="https://doi.org/10.1186/s13073-020-00742-5">Lewis &amp; Vassos 2020</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
-</ul>
+<section id="common-and-rare-variants-together">
+<h2>Common and rare variants together<a class="headerlink" href="#common-and-rare-variants-together" title="Link to this heading">#</a></h2>
+<p>Polygenic background modifies the penetrance of monogenic variants. Carriers of pathogenic variants in breast-cancer or cardiovascular genes have very different risks depending on their polygenic score (<a class="reference external" href="https://doi.org/10.1038/s41467-020-17374-3">Fahed et al. 2020</a>). In BRCA1 and BRCA2 carriers, polygenic scores stratify breast and ovarian cancer risk (<a class="reference external" href="https://doi.org/10.1093/jnci/djw302">Kuchenbaecker et al. 2017</a>). Rare-variant burden in genes found by sequencing studies (see <em>Rare variant analysis</em>) can add further information; for example, damaging missense variants in innate immunity genes are associated with earlier breast cancer onset in BRCA1 185delAG carriers (<a class="reference external" href="https://doi.org/10.1136/jmg-2025-111394">Shemesh et al. 2026</a>).</p>
+</section>
+<section id="clinical-models">
+<h2>Clinical models<a class="headerlink" href="#clinical-models" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://doi.org/10.1038/s41436-018-0406-9">BOADICEA</a> combines pathogenic variants, a 313-SNP polygenic score (<a class="reference external" href="https://doi.org/10.1016/j.ajhg.2018.11.002">Mavaddat et al. 2019</a>), family history and lifestyle factors to predict breast cancer risk. For cardiovascular disease, polygenic scores are tested on top of established clinical tools such as <a class="reference external" href="https://doi.org/10.1136/bmj.j2099">QRISK3</a> and the <a class="reference external" href="https://doi.org/10.1161/01.cir.0000437741.48606.98">Pooled Cohort Equations</a>.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>How much polygenic scores add on top of good clinical models.</p></li>
+<li><p>Calibration across ancestries and across age.</p></li>
+<li><p>Combining genetic scores with methylation and other omic scores (see <em>Methylation risk prediction</em>).</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +572,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-and-rare-variants-together">Common and rare variants together</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-models">Clinical models</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linking-gwas-to-cell-types-and-states">Linking GWAS to cell types and states</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-qtls">Single-cell QTLs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,27 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Single-cell omics &amp; GWAS integration</strong>: the question the field asks and why it matters.</p>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>Bulk tissue data average over many cell types, so they can hide the cells in which risk variants act. Single-cell RNA-seq and single-cell chromatin profiling (scATAC-seq) resolve cell types, cell states and developmental trajectories. Atlases such as the <a class="reference external" href="https://doi.org/10.7554/eLife.27041">Human Cell Atlas</a> and <a class="reference external" href="https://doi.org/10.1126/science.abl4896">Tabula Sapiens</a> provide these data across the body.</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="linking-gwas-to-cell-types-and-states">
+<h2>Linking GWAS to cell types and states<a class="headerlink" href="#linking-gwas-to-cell-types-and-states" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Cell-type enrichment.</strong> Genes specifically expressed in a cell type are tested for heritability enrichment (<a class="reference external" href="https://doi.org/10.1038/s41588-018-0081-4">LDSC-SEG</a>, <a class="reference external" href="https://doi.org/10.7554/eLife.55851">CELLECT</a>). <a class="reference external" href="https://doi.org/10.1038/s41588-022-01187-9">sc-linker</a> combines single-cell gene programs with enhancer–gene links.</p></li>
+<li><p><strong>Individual cells.</strong> <a class="reference external" href="https://doi.org/10.1038/s41588-022-01167-z">scDRS</a> scores each cell for the expression of disease genes, which shows variation within a cell type. <a class="reference external" href="https://doi.org/10.1038/s41587-022-01341-y">SCAVENGE</a> propagates fine-mapped variants over a single-cell chromatin graph.</p></li>
+<li><p><strong>Developmental trajectories.</strong> Mapping GWAS signals onto pseudotime shows when along differentiation the risk genes act (<a class="reference external" href="https://doi.org/10.1016/j.csbj.2021.05.055">Shulman et al. 2021</a>).</p></li>
 </ul>
+</section>
+<section id="single-cell-qtls">
+<h2>Single-cell QTLs<a class="headerlink" href="#single-cell-qtls" title="Link to this heading">#</a></h2>
+<p>Single-cell eQTL studies, such as <a class="reference external" href="https://doi.org/10.1126/science.abf3041">OneK1K</a>, map genetic effects in each cell type of the blood. Many of these effects are invisible in bulk data. Methods include <a class="reference external" href="https://doi.org/10.1038/s41588-026-02798-2">SAIGE-QTL</a>, <a class="reference external" href="https://doi.org/10.15252/msb.202110663">CellRegMap</a> for context-dependent effects and <a class="reference external" href="https://doi.org/10.1186/s13059-019-1836-7">tensorQTL</a> for fast mapping. <a class="reference external" href="https://doi.org/10.1038/s41588-024-01682-1">SCENT</a> links enhancers to genes from multimodal single-cell data, and <a class="reference external" href="https://doi.org/10.1038/s41588-021-00790-6">ArchR</a> is a standard toolkit for scATAC-seq.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Disease-relevant cell states may exist only in patients or after a stimulus.</p></li>
+<li><p>Single-cell QTL studies still have small sample sizes.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +575,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linking-gwas-to-cell-types-and-states">Linking GWAS to cell types and states</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-qtls">Single-cell QTLs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

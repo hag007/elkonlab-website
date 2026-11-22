@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-interpretation-is-hard">Why interpretation is hard</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-approaches">Main approaches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning-based-interpretation">Deep-learning-based interpretation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +484,29 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Functional interpretation of GWAS</strong>: the question the field asks and why it matters.</p>
+<section id="why-interpretation-is-hard">
+<h2>Why interpretation is hard<a class="headerlink" href="#why-interpretation-is-hard" title="Link to this heading">#</a></h2>
+<p>Genome-wide association studies (GWAS) have mapped many thousands of loci for complex traits and diseases (<a class="reference external" href="https://doi.org/10.1016/j.ajhg.2017.06.005">Visscher et al. 2017</a>), but about 90% of the associated variants lie outside protein-coding sequence. Risk variants are strongly enriched in regulatory DNA, such as DNase I hypersensitive sites, in the cell types relevant to each trait (<a class="reference external" href="https://doi.org/10.1126/science.1222794">Maurano et al. 2012</a>). Associations are also spread across much of the genome, as described by the <a class="reference external" href="https://doi.org/10.1016/j.cell.2017.05.038">omnigenic model</a>. The main task is to go from a statistical signal to a biological mechanism: which tissues and cell types, which genes, and which pathways.</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="main-approaches">
+<h2>Main approaches<a class="headerlink" href="#main-approaches" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Heritability enrichment.</strong> <a class="reference external" href="https://doi.org/10.1038/ng.3404">Stratified LD score regression (S-LDSC)</a> partitions SNP-heritability across functional annotations. <a class="reference external" href="https://doi.org/10.1038/s41588-018-0081-4">LDSC-SEG</a> applies it to tissue- and cell-type-specific expressed genes to find the tissues that drive a trait.</p></li>
+<li><p><strong>Gene-level and gene-set analysis.</strong> <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1004219">MAGMA</a> aggregates SNP associations into gene and pathway scores. Assigning SNPs to genes by position alone misses distal regulation; adding enhancer–promoter links to gene-set analysis improves it (<a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1009908">Groenewoud et al. 2022</a>).</p></li>
+<li><p><strong>Colocalization and molecular QTLs.</strong> <a class="reference external" href="https://doi.org/10.1371/journal.pgen.1004383">coloc</a> and <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2016.10.003">eCAVIAR</a> test whether a GWAS signal and an eQTL share a causal variant. Many GWAS hits still lack a matching eQTL, partly because eQTL and GWAS studies are biased toward different kinds of genes (<a class="reference external" href="https://doi.org/10.1038/s41588-023-01529-1">Mostafavi et al. 2023</a>).</p></li>
+<li><p><strong>TWAS and PWAS.</strong> <a class="reference external" href="https://doi.org/10.1038/ng.3506">FUSION</a> and <a class="reference external" href="https://doi.org/10.1038/s41467-018-03621-1">S-PrediXcan</a> impute expression from genotypes and test it for association; <a class="reference external" href="https://doi.org/10.1186/s13059-020-02089-x">PWAS</a> does the same for predicted protein function. Their opportunities and pitfalls, such as co-regulated genes and LD, are reviewed by <a class="reference external" href="https://doi.org/10.1038/s41588-019-0385-z">Wainberg et al. 2019</a>.</p></li>
+<li><p><strong>Locus-to-gene models.</strong> <a class="reference external" href="https://doi.org/10.1038/s41588-021-00945-5">L2G</a> combines fine-mapping, distance, QTL and chromatin features into one causal-gene score.</p></li>
 </ul>
+</section>
+<section id="deep-learning-based-interpretation">
+<h2>Deep-learning-based interpretation<a class="headerlink" href="#deep-learning-based-interpretation" title="Link to this heading">#</a></h2>
+<p>Sequence-based models (see <em>Non-coding variant effect prediction</em>) score how each variant changes chromatin or expression in many cellular contexts. Aggregating these scores over the variants of a GWAS links the trait to specific cellular contexts, for example in <a class="reference external" href="https://doi.org/10.64898/2026.05.25.726449">IMPACT-DL</a>.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>How to bring in cell states and developmental stages that bulk eQTL atlases do not cover.</p></li>
+<li><p>How to combine many weak, correlated lines of evidence into calibrated gene and cell-type calls.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +577,9 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-interpretation-is-hard">Why interpretation is hard</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-approaches">Main approaches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning-based-interpretation">Deep-learning-based interpretation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

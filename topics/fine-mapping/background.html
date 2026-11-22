@@ -290,10 +290,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../resources-biobanks/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-gwass.html">Resources: GWASs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-gwass/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources-atlases.html">Resources: Atlases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources-atlases/papers.html">Papers</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation.html">Alternative polyadenylation &amp; RNA regulation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/background.html">Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/tutorial.html">Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
 </ul>
 </details></li>
 </ul>
@@ -449,8 +467,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem">The problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-methods">Statistical methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functional-priors">Functional priors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-ancestries">Multiple ancestries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -465,24 +485,30 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Fine mapping</strong>: the question the field asks and why it matters.</p>
+<section id="the-problem">
+<h2>The problem<a class="headerlink" href="#the-problem" title="Link to this heading">#</a></h2>
+<p>A GWAS locus usually contains tens to hundreds of variants in strong linkage disequilibrium (LD) with the lead SNP. Fine-mapping asks which of them are causal. It usually reports a <em>posterior inclusion probability</em> (PIP) for each variant and <em>credible sets</em> that contain a causal variant with high probability (<a class="reference external" href="https://doi.org/10.1038/s41576-018-0016-z">Schaid et al. 2018</a>).</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="statistical-methods">
+<h2>Statistical methods<a class="headerlink" href="#statistical-methods" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong>Bayesian fine-mapping.</strong> Early methods assumed a single causal variant per locus (<a class="reference external" href="https://doi.org/10.1038/ng.2435">Maller et al. 2012</a>). <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btw018">FINEMAP</a> searches over configurations with several causal variants. <a class="reference external" href="https://doi.org/10.1111/rssb.12388">SuSiE</a> writes the signal as a sum of single effects, which gives one credible set per effect. <a class="reference external" href="https://doi.org/10.1371/journal.pgen.1010299">SuSiE-RSS</a> runs it on summary statistics.</p></li>
+<li><p><strong>Robustness to LD mismatch.</strong> Summary-statistics fine-mapping needs an LD matrix, often from an external reference panel. Mismatch between this panel and the GWAS creates false signals. <a class="reference external" href="https://doi.org/10.1016/j.xgen.2022.100210">SLALOM</a> and <a class="reference external" href="https://doi.org/10.1038/s41467-021-27438-7">DENTIST</a> detect problematic loci or variants, and <a class="reference external" href="https://doi.org/10.1038/s41588-023-01392-0">CARMA</a> models the mismatch directly.</p></li>
 </ul>
+</section>
+<section id="functional-priors">
+<h2>Functional priors<a class="headerlink" href="#functional-priors" title="Link to this heading">#</a></h2>
+<p>Causal variants are enriched in functional annotations. <a class="reference external" href="https://doi.org/10.1371/journal.pgen.1004722">PAINTOR</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-020-00735-5">PolyFun</a> learn annotation-based priors and use them to sharpen PIPs. Scores from sequence models (see <em>Non-coding variant effect prediction</em>) are a natural source for such priors.</p>
+</section>
+<section id="multiple-ancestries">
+<h2>Multiple ancestries<a class="headerlink" href="#multiple-ancestries" title="Link to this heading">#</a></h2>
+<p>LD differs between populations, so combining ancestries narrows credible sets. Methods include <a class="reference external" href="https://doi.org/10.1371/journal.pgen.1009733">MsCAVIAR</a>, <a class="reference external" href="https://doi.org/10.1038/s41588-024-01870-z">SuSiEx</a> and <a class="reference external" href="https://doi.org/10.1038/s41588-023-01604-7">MESuSiE</a>.</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p>Causal variants that are missing from the data (not genotyped or imputed) can produce confident false signals.</p></li>
+<li><p>How to validate PIPs at scale, for example with MPRA or CRISPR screens.</p></li>
 </ul>
 </section>
 </section>
@@ -553,8 +579,10 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem">The problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-methods">Statistical methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functional-priors">Functional priors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-ancestries">Multiple ancestries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>

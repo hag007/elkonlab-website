@@ -308,6 +308,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../alternative-polyadenylation-rna-regulation/papers.html">Papers</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../bioinformatics-tools-pipelines.html">Bioinformatics tools &amp; pipelines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/tutorial.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioinformatics-tools-pipelines/papers.html">Papers</a></li>
+</ul>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
 <ul class="nav bd-sidenav">
@@ -461,9 +467,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-atlases">Why atlases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expression-and-molecular-qtls">Expression and molecular QTLs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regulatory-annotation">Regulatory annotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-atlases">Single-cell atlases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#points-to-keep-in-mind">Points to keep in mind</a></li>
 </ul>
             </nav>
         </div>
@@ -477,24 +485,38 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
 <h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p><em>Placeholder: replace this notebook with your own background for the topic.</em></p>
-<section id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Link to this heading">#</a></h2>
-<p>A short introduction to <strong>Resources: Atlases</strong>: the question the field asks and why it matters.</p>
+<section id="why-atlases">
+<h2>Why atlases<a class="headerlink" href="#why-atlases" title="Link to this heading">#</a></h2>
+<p>Interpreting a genetic association requires knowing where and when genes are expressed and regulated. Reference atlases supply this context for most of the methods in the other topics.</p>
 </section>
-<section id="key-concepts">
-<h2>Key concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<section id="expression-and-molecular-qtls">
+<h2>Expression and molecular QTLs<a class="headerlink" href="#expression-and-molecular-qtls" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Concept 1: definition and intuition</p></li>
-<li><p>Concept 2: definition and intuition</p></li>
-<li><p>Concept 3: definition and intuition</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1038/ng.2653">GTEx</a></strong> profiled gene expression and eQTLs in about 50 tissues from nearly 1,000 donors (<a class="reference external" href="https://doi.org/10.1126/science.aaz1776">GTEx Consortium 2020</a>).</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1038/s41588-021-00913-z">eQTLGen</a></strong> mapped cis- and trans-eQTLs in blood from over 30,000 people.</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1126/science.1260419">Human Protein Atlas</a></strong> maps protein expression across tissues.</p></li>
 </ul>
 </section>
-<section id="open-questions">
-<h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
+<section id="regulatory-annotation">
+<h2>Regulatory annotation<a class="headerlink" href="#regulatory-annotation" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What is still unresolved?</p></li>
-<li><p>Which papers in this topic address it? (see the topic page)</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1038/nature11247">ENCODE</a></strong> annotated functional elements of the human genome; its third phase expanded this to millions of candidate regulatory elements (<a class="reference external" href="https://doi.org/10.1038/s41586-020-2493-4">ENCODE 2020</a>).</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1038/nature14248">Roadmap Epigenomics</a></strong> provided reference epigenomes for over 100 tissues and cell types.</p></li>
+</ul>
+</section>
+<section id="single-cell-atlases">
+<h2>Single-cell atlases<a class="headerlink" href="#single-cell-atlases" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://doi.org/10.7554/eLife.27041">Human Cell Atlas</a></strong> aims to map every cell type of the human body.</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1126/science.abl4896">Tabula Sapiens</a></strong> profiled about 500,000 cells from 24 organs of the same donors.</p></li>
+<li><p><strong><a class="reference external" href="https://doi.org/10.1126/science.abf3041">OneK1K</a></strong> mapped single-cell eQTLs in blood from about 1,000 people.</p></li>
+</ul>
+</section>
+<section id="points-to-keep-in-mind">
+<h2>Points to keep in mind<a class="headerlink" href="#points-to-keep-in-mind" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Disease states, development and stimulated conditions are underrepresented.</p></li>
+<li><p>Donor numbers are often small for single-cell atlases.</p></li>
 </ul>
 </section>
 </section>
@@ -565,9 +587,11 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-it">What is it?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-atlases">Why atlases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expression-and-molecular-qtls">Expression and molecular QTLs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regulatory-annotation">Regulatory annotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-cell-atlases">Single-cell atlases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#points-to-keep-in-mind">Points to keep in mind</a></li>
 </ul>
   </nav></div>
 
