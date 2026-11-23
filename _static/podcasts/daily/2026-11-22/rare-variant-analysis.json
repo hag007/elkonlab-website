@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Rare variant analysis",
+ "slug": "rare-variant-analysis",
+ "date": "2026-11-22",
+ "title": "Rare variant analysis · Sunday, November 22",
+ "seconds": 126.7,
+ "drive": "https://drive.google.com/open?id=1waknRufhnKYIIuQLA61MD9SfXKVCXKC1",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Rare variant analysis",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/rare-variant-analysis/papers.html",
+   "papers": [
+    {
+     "title": "Rare copy number variation in alcohol use disorder using whole-genome sequencing in the All of Us Research Program",
+     "authors": "Saeed Farajzadeh Valilou et al.",
+     "source": "medRxiv",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.64898/2026.11.18.26367879"
+    }
+   ]
+  }
+ ]
+}

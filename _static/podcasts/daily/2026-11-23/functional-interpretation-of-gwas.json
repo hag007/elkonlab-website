@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-23",
+ "title": "Functional interpretation of GWAS · Monday, November 23",
+ "seconds": 107.9,
+ "drive": "https://drive.google.com/open?id=1gH_h4MskxY9nuJK0H10AOMMUbBpthBlY",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "EPIC2: integrating single-cell chromatin accessibility with human genetics to identify trait-relevant cell types",
+     "authors": "Lingxuan Zhu and Yuchao Jiang",
+     "source": "bioRxiv",
+     "date": "2026-11-22",
+     "url": "https://doi.org/10.64898/2026.11.12.766196"
+    }
+   ]
+  }
+ ]
+}

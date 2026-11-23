@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Resources: GWASs",
+ "slug": "resources-gwass",
+ "date": "2026-11-22",
+ "title": "Resources: GWASs · Sunday, November 22",
+ "seconds": 100.6,
+ "drive": "https://drive.google.com/open?id=1SkF3trx6geNuYGFtr7qnq8VSUYrGFHWD",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Resources: GWASs",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-gwass/papers.html",
+   "papers": [
+    {
+     "title": "Multiancestry genome-wide association and integrative multiomics analyses implicate key pathways in endometriosis",
+     "authors": "Lindsay A Guare et al.",
+     "source": "Nature Genetics",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.1038/s41588-026-02810-9"
+    }
+   ]
+  }
+ ]
+}

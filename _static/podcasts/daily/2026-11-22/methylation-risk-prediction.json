@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Methylation risk prediction",
+ "slug": "methylation-risk-prediction",
+ "date": "2026-11-22",
+ "title": "Methylation risk prediction · Sunday, November 22",
+ "seconds": 112.8,
+ "drive": "https://drive.google.com/open?id=1eCGEmBLw6Z40_i3VLp_SrmS2IPe47cfw",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Methylation risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/methylation-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "One blood methylation profile stratifies ten-year risk across 21 common diseases",
+     "authors": "Kirsten Blythe Seale et al.",
+     "source": "medRxiv",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.64898/2026.11.18.26368164"
+    }
+   ]
+  }
+ ]
+}

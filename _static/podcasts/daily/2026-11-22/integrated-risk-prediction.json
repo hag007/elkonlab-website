@@ -1,0 +1,57 @@
+{
+ "kind": "daily",
+ "topic": "Integrated risk prediction",
+ "slug": "integrated-risk-prediction",
+ "date": "2026-11-22",
+ "title": "Integrated risk prediction · Sunday, November 22",
+ "seconds": 175.2,
+ "drive": "https://drive.google.com/open?id=1AXBlfSKC4rbF1K2Zj6jPkuVdJ3jCrNbT",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Integrated risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/integrated-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "One blood methylation profile stratifies ten-year risk across 21 common diseases",
+     "authors": "Kirsten Blythe Seale et al.",
+     "source": "medRxiv",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.64898/2026.11.18.26368164"
+    },
+    {
+     "title": "PRISM-AD quantifies clinical and genetic contributions to cognitive risk prediction",
+     "authors": "Yulin Dai et al.",
+     "source": "medRxiv",
+     "date": "2026-11-04",
+     "url": "https://doi.org/10.64898/2026.11.03.26367206"
+    },
+    {
+     "title": "Machine Learning-Based Classification of Type 2 Diabetes Mellitus Using a Polygenic Risk Score and DNA Methylation",
+     "authors": "Jihun Kim et al.",
+     "source": "Healthcare informatics research",
+     "date": "2026-10-31",
+     "url": "https://doi.org/10.4258/hir.2026.32.4.365"
+    },
+    {
+     "title": "Metabolic syndrome, genetic susceptibility, and risk of cardiovascular disease: a prospective study in the UK Biobank",
+     "authors": "Lin Zhu et al.",
+     "source": "Frontiers in cardiovascular medicine",
+     "date": "2026-11-05",
+     "url": "https://doi.org/10.3389/fcvm.2026.1871387"
+    },
+    {
+     "title": "How inherited variation shapes human disease trajectories",
+     "authors": "Sarah Urbut et al.",
+     "source": "medRxiv",
+     "date": "2026-11-13",
+     "url": "https://doi.org/10.64898/2026.11.11.26367654"
+    }
+   ]
+  }
+ ]
+}

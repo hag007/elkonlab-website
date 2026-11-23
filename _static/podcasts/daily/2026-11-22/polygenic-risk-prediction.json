@@ -1,0 +1,36 @@
+{
+ "kind": "daily",
+ "topic": "Polygenic risk prediction",
+ "slug": "polygenic-risk-prediction",
+ "date": "2026-11-22",
+ "title": "Polygenic risk prediction · Sunday, November 22",
+ "seconds": 146.5,
+ "drive": "https://drive.google.com/open?id=1AOIG-F4U6jFIGd4_ZtoxzbWWv_N8431A",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Polygenic risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/polygenic-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Optimizing phenotype scale improves genetic analyses in large-scale biobanks",
+     "authors": "Z Huang et al.",
+     "source": "Nature Genetics",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.1038/s41588-026-02826-1"
+    },
+    {
+     "title": "Fine-tuning of polygenic score to local data improves risk prediction and clinical implementation",
+     "authors": "M S Kim et al.",
+     "source": "Nature Communications",
+     "date": "2026-10-23",
+     "url": "https://doi.org/10.1038/s41467-026-77770-z"
+    }
+   ]
+  }
+ ]
+}

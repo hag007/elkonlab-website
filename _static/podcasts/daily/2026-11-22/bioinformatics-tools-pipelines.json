@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Bioinformatics tools & pipelines",
+ "slug": "bioinformatics-tools-pipelines",
+ "date": "2026-11-22",
+ "title": "Bioinformatics tools & pipelines · Sunday, November 22",
+ "seconds": 106.9,
+ "drive": "https://drive.google.com/open?id=1vSNdTbJjQyncNbAuhJ9kOITVCeSPd5CC",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Bioinformatics tools & pipelines",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
+   "papers": [
+    {
+     "title": "VEGABrain: a Visualizer of Enriched Gene Analysis for the developing human brain",
+     "authors": "Isaac Medeiros et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.64898/2026.11.19.767876"
+    }
+   ]
+  }
+ ]
+}

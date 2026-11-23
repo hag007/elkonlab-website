@@ -1,0 +1,64 @@
+{
+ "kind": "daily",
+ "topic": "Alternative polyadenylation",
+ "slug": "alternative-polyadenylation",
+ "date": "2026-11-22",
+ "title": "Alternative polyadenylation · Sunday, November 22",
+ "seconds": 175.8,
+ "drive": "https://drive.google.com/open?id=1cwCoFdJH0iFYPSuNAvY58T5iF7SfK7PE",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Alternative polyadenylation",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/alternative-polyadenylation/papers.html",
+   "papers": [
+    {
+     "title": "The RNA and protein landscapes of mouse brain organoids",
+     "authors": "AC Fromaget et al.",
+     "source": "iScience",
+     "date": "2026-11-01",
+     "url": "https://doi.org/10.1016/j.isci.2026.118144"
+    },
+    {
+     "title": "Hyperglycemia-responsive circRNA drives diabetic neuropathic pain by competing for PUM2 binding and promoting proNT3/CCL2 in DRG neurons",
+     "authors": "X Li et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.64898/2026.11.10.765753"
+    },
+    {
+     "title": "A multi-tissue atlas of age-associated differential transcript usage in mouse reveals predominantly regulatory isoform switching across brain, liver, and adipose",
+     "authors": "N Paidimukkala et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.64898/2026.11.10.765779"
+    },
+    {
+     "title": "In Silico Prioritization of GWAS-Derived 3' UTR MicroRNA-Binding Variants at Colorectal Cancer Risk Loci Detected in Hispanic Patients from the All of Us Research Program",
+     "authors": "SS Ahmad et al.",
+     "source": "Research Square",
+     "date": "2026-11-13",
+     "url": "https://doi.org/10.21203/rs.3.rs-11272400/v1"
+    },
+    {
+     "title": "Deciphering the mechanisms of transcriptome remodeling in residual HCC recurrence post-radiofrequency ablation via long-read sequencing",
+     "authors": "J Li et al.",
+     "source": "BMC Cancer",
+     "date": "2026-08-26",
+     "url": "https://doi.org/10.1186/s12885-026-16842-1"
+    },
+    {
+     "title": "Leveraging short and long-read sequencing to comprehensively characterize alternatively polyadenylated and alternatively spliced transcripts",
+     "authors": "M Gupta et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-04",
+     "url": "https://doi.org/10.64898/2026.11.03.763780"
+    }
+   ]
+  }
+ ]
+}

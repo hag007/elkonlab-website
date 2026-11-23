@@ -1,0 +1,57 @@
+{
+ "kind": "daily",
+ "topic": "Bioinformatics tools & pipelines",
+ "slug": "bioinformatics-tools-pipelines",
+ "date": "2026-11-21",
+ "title": "Bioinformatics tools & pipelines · Saturday, November 21",
+ "seconds": 161.6,
+ "drive": "https://drive.google.com/open?id=1KOkHBMtUG2k_hYWQt1uKwkH1XQ_V8jp_",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Bioinformatics tools & pipelines",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
+   "papers": [
+    {
+     "title": "PDAC BioPortal: An Integrated Web Resource for Multi-Scale Analysis of Pancreatic Cancer Transcriptomics",
+     "authors": "Prince Kumar and Erina Vlashi",
+     "source": "bioRxiv",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.64898/2026.11.18.767683"
+    },
+    {
+     "title": "VPHYL: A Web Application for Converting Emu and EPI2ME wf-16s Nanopore 16S rRNA Abundance Tables into phyloseq and BIOM Objects",
+     "authors": "Venkata Sai Reddy Ramireddy and Sarvesh Kumar Srivastava",
+     "source": "bioRxiv",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.64898/2026.11.18.767361"
+    },
+    {
+     "title": "nf-core/pairgenomealign: a scalable pipeline for pairwise whole-genome alignment",
+     "authors": "Charles Plessy et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.64898/2026.11.18.767494"
+    },
+    {
+     "title": "MitoArc: A Reproducible Short-Read Workflow for Human Mitochondrial Genome Analysis with Circular-Coordinate and NUMT-Aware Evaluation",
+     "authors": "Sarvesh Galgale et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.64898/2026.11.19.767817"
+    },
+    {
+     "title": "Sparrowhawk: harnessing WebAssembly for private microbial genomics, and beyond",
+     "authors": "Víctor Rodríguez-Bouza et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.64898/2026.11.18.767565"
+    }
+   ]
+  }
+ ]
+}
