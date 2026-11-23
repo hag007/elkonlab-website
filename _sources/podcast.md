@@ -6,5 +6,5 @@ Google Drive (Paper Library › Podcasts).
 
 ```{raw} html
 <div id="pl-podcast"></div>
-<script src="_static/library/podcast.js?v=a94bf948"></script>
+<script src="_static/library/podcast.js?v=2bf4f143"></script>
 ```

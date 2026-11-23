@@ -1,4 +1,5 @@
-// The Podcast page's player: podcast.html?a=<Drive id of the MP3>&n=<Drive id of the show notes JSON>.
+// The Podcast page's player: podcast.html?a=<Drive id of the MP3>&n=<Drive id of the show notes JSON>, or (no
+// episode in the address) the latest episode from podcasts.json, the list of episodes that the site build writes.
 // The episode and its show notes stay in Google Drive (Paper Library › Podcasts); Drive serves both with range
 // requests and CORS, so the audio streams and seeks here. Chapters (one per topic) come from the show notes.
 // Remembers the speed (all episodes) and where you stopped (per episode) in this browser.
@@ -6,7 +7,7 @@
   const root = document.getElementById("pl-podcast");
   if (!root) return;
   const params = new URLSearchParams(location.search);
-  const audioId = params.get("a"), notesId = params.get("n");
+  const base = (document.currentScript && document.currentScript.src.replace(/podcast\.js.*$/, "")) || "_static/library/";
   const drive = (id) => `https://drive.usercontent.google.com/download?id=${encodeURIComponent(id)}&export=download`;
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const store = {
@@ -19,12 +20,29 @@
     return h ? `${h}:${String(m).padStart(2, "0")}:${s}` : `${m}:${s}`;
   };
 
-  if (!audioId || !/^[\w-]+$/.test(audioId) || (notesId && !/^[\w-]+$/.test(notesId))) {
-    root.innerHTML = `<p class="pl-pod-empty">Open an episode from the link in your email. Episodes are in Google Drive
-      under <b>Paper Library › Podcasts</b>.</p>`;
-    return;
+  const valid = (id) => /^[\w-]+$/.test(id || "");
+  const episodeList = (episodes, current) => episodes.length ? `<h3 class="pl-pod-h">Episodes</h3>
+    <ul class="pl-pod-episodes">${episodes.map(e => `<li${e.a === current ? ' class="on"' : ""}>
+      <a href="?a=${encodeURIComponent(e.a)}&n=${encodeURIComponent(e.n)}">${esc(e.title)}</a>
+      <span class="pl-pod-meta">${esc(e.minutes)} min</span></li>`).join("")}</ul>` : "";
+  const listing = fetch(base + "podcasts.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : []).catch(() => []);
+
+  if (valid(params.get("a"))) {
+    start(params.get("a"), valid(params.get("n")) ? params.get("n") : null);
+    listing.then(eps => { root.insertAdjacentHTML("beforeend", episodeList(eps, params.get("a"))); });
+  } else {
+    listing.then(eps => {
+      if (!eps.length) {
+        root.innerHTML = `<p class="pl-pod-empty">No episodes yet. Turn on the podcast in your email alert settings, and
+          your first episode arrives with your next email.</p>`;
+        return;
+      }
+      start(eps[0].a, eps[0].n);  // the latest episode
+      root.insertAdjacentHTML("beforeend", episodeList(eps, eps[0].a));
+    });
   }
 
+  function start(audioId, notesId) {
   root.innerHTML = `
     <div class="pl-pod">
       <div class="pl-pod-head"><h2 id="pod-title">Loading the episode…</h2><div class="pl-pod-meta" id="pod-meta"></div></div>
@@ -164,4 +182,5 @@
     $("pod-title").textContent = title;
     $("pod-chapters").innerHTML = `<li class="pl-pod-meta">The show notes could not be loaded; the audio still plays.</li>`;
   });
+  }
 })();
