@@ -5,9 +5,6 @@ Each lab member has a personal badge on the papers they picked. Click a name to 
 ```{raw} html
 <ul class="pl-team">
 <li>👤 <a href="explore.html?badge=Hagai">Hagai</a></li>
-<li>👤 <a href="explore.html?badge=Test%20A">Test A</a></li>
-<li>👤 <a href="explore.html?badge=Test%20B">Test B</a></li>
-<li>👤 <a href="explore.html?badge=Test%20C">Test C</a></li>
 </ul>
 <p><a class="pl-edit-topics" href="http://rack-shamir6.cs.tau.ac.il:8765/members" target="_blank" rel="noopener"
    title="Add, rename or remove team members (library server, password)">Manage team members 🔒</a></p>
