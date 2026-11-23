@@ -1,6 +1,6 @@
 # References
 
-425 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+426 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -30,6 +30,7 @@
 24. Michael Wainberg, Nasa Sinnott-Armstrong, Nicholas Mancuso, et al.. Opportunities and challenges for transcriptome-wide association studies. *Nat Genet*. 2019. doi: [10.1038/s41588-019-0385-z](https://doi.org/10.1038/s41588-019-0385-z) PMID: [30926968](https://pubmed.ncbi.nlm.nih.gov/30926968/)
 25. Shuai Xu, Jiajun Shi, Xiao-Ou Shu, et al.. Integrating genetic and lung tissue proteomics data to identify susceptibility proteins for lung cancer. *Journal of the National Cancer Institute*. 2026. doi: [10.1093/jnci/djag424](https://doi.org/10.1093/jnci/djag424) PMID: [43055353](https://pubmed.ncbi.nlm.nih.gov/43055353/)
 26. Y. Zeng, N. Cook, M. Fujita, et al.. Brain Cell-Type-Specific X-Chromosome Gene Regulation Reveals Sex-Biased Candidate Genes in Neurodegeneration. *medRxiv*. 2026. doi: [10.64898/2026.11.18.26368437](https://doi.org/10.64898/2026.11.18.26368437)
+27. Lingxuan Zhu, Yuchao Jiang. EPIC2: integrating single-cell chromatin accessibility with human genetics to identify trait-relevant cell types. *bioRxiv*. 2026. doi: [10.64898/2026.11.12.766196](https://doi.org/10.64898/2026.11.12.766196)
 
 ## Non-coding variant effect prediction
 
