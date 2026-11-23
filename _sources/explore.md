@@ -4,5 +4,5 @@ Search all papers and filter by topic or badge. Click a badge on a paper to filt
 
 ```{raw} html
 <div id="paper-explorer"></div>
-<script src="_static/library/explorer.js?v=a3cd763d"></script>
+<script src="_static/library/explorer.js?v=e860811e"></script>
 ```

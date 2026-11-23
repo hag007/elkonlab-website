@@ -28,6 +28,8 @@ html[data-theme="dark"] {
 .pl-k-status { background: var(--pl-status); color: var(--pl-status-ink); }
 .pl-k-folder { background: var(--pl-folder); color: var(--pl-folder-ink); }
 .pl-k-highlight { background: var(--pl-highlight); color: var(--pl-highlight-ink); font-weight: 600; }
+.pl-k-member { background: transparent; color: inherit; border: 1px solid currentColor; font-weight: 600; }
+.pl-k-member::before { content: "👤 "; }
 .pl-meta { color: var(--pst-color-text-muted); font-size: 0.9em; margin: -0.4em 0 0.3em; }
 .pl-badges { margin-bottom: 0.4em; }
 

@@ -67,7 +67,8 @@
   function card(p, terms) {
     const meta = [p.authors.length > 3 ? p.authors.slice(0, 3).join(", ") + " et al." : p.authors.join(", "),
                   p.source, p.pub_date || p.year, p.impact != null ? `IF ≈ ${p.impact}` : ""].filter(Boolean).join(" · ");
-    const hl = p.badges.filter(b => b.kind === "highlight"), rest = p.badges.filter(b => b.kind !== "highlight");
+    const top = (b) => b.kind === "highlight" || b.kind === "member";
+    const hl = p.badges.filter(top), rest = p.badges.filter(b => !top(b));
     // PDFs and supplementary files live on the password-protected library server.
     const filesLink = (p) => `${p.files_url}?back=${encodeURIComponent(location.href)}`;  // the files page links back here
     const srv = (href, cls, text, title) => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${text}</a>`;
@@ -127,7 +128,7 @@
       p.folders.forEach(f => folders[f] = (folders[f] || 0) + 1);
       p.badges.forEach(b => { badges[b.label] = badges[b.label] || { ...b, n: 0 }; badges[b.label].n++; });
     }
-    const order = ["highlight", "type", "topic", "data", "disease", "status"];
+    const order = ["highlight", "member", "type", "topic", "data", "disease", "status"];
     const badgeList = Object.values(badges).sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind) || b.n - a.n);
     root.querySelector(".pl-folders").innerHTML = locked ? "" : "<b>Topics</b>" +
       Object.entries(folders).map(([f, n]) => folderBadge(f, ` ${n}`)).join("");
