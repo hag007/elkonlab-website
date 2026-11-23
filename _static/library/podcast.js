@@ -1,14 +1,14 @@
-// The Podcast page's player: podcast.html?a=<Drive id of the MP3>&n=<Drive id of the show notes JSON>, or (no
-// episode in the address) the latest episode from podcasts.json, the list of episodes that the site build writes.
-// The episode and its show notes stay in Google Drive (Paper Library › Podcasts); Drive serves both with range
-// requests and CORS, so the audio streams and seeks here. Chapters (one per topic) come from the show notes.
+// The Podcast page's player: podcast.html?e=<episode key>, or (no episode in the address) the latest episode in
+// podcasts.json, the list of episodes that the site build writes. The episodes are published next to this page
+// (_static/podcasts/<key>.mp3 and <key>.json, the show notes with a chapter per topic); a copy of each is in Google
+// Drive (Paper Library › Podcasts), which can't serve this player itself (it refuses other websites).
 // Remembers the speed (all episodes) and where you stopped (per episode) in this browser.
 (function () {
   const root = document.getElementById("pl-podcast");
   if (!root) return;
   const params = new URLSearchParams(location.search);
   const base = (document.currentScript && document.currentScript.src.replace(/podcast\.js.*$/, "")) || "_static/library/";
-  const drive = (id) => `https://drive.usercontent.google.com/download?id=${encodeURIComponent(id)}&export=download`;
+  const files = base.replace(/library\/$/, "podcasts/");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
@@ -22,14 +22,14 @@
 
   const valid = (id) => /^[\w-]+$/.test(id || "");
   const episodeList = (episodes, current) => episodes.length ? `<h3 class="pl-pod-h">Episodes</h3>
-    <ul class="pl-pod-episodes">${episodes.map(e => `<li${e.a === current ? ' class="on"' : ""}>
-      <a href="?a=${encodeURIComponent(e.a)}&n=${encodeURIComponent(e.n)}">${esc(e.title)}</a>
+    <ul class="pl-pod-episodes">${episodes.map(e => `<li${e.e === current ? ' class="on"' : ""}>
+      <a href="?e=${encodeURIComponent(e.e)}">${esc(e.title)}</a>
       <span class="pl-pod-meta">${esc(e.minutes)} min</span></li>`).join("")}</ul>` : "";
   const listing = fetch(base + "podcasts.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : []).catch(() => []);
 
-  if (valid(params.get("a"))) {
-    start(params.get("a"), valid(params.get("n")) ? params.get("n") : null);
-    listing.then(eps => { root.insertAdjacentHTML("beforeend", episodeList(eps, params.get("a"))); });
+  if (valid(params.get("e"))) {
+    start(params.get("e"));
+    listing.then(eps => { root.insertAdjacentHTML("beforeend", episodeList(eps, params.get("e"))); });
   } else {
     listing.then(eps => {
       if (!eps.length) {
@@ -37,16 +37,16 @@
           your first episode arrives with your next email.</p>`;
         return;
       }
-      start(eps[0].a, eps[0].n);  // the latest episode
-      root.insertAdjacentHTML("beforeend", episodeList(eps, eps[0].a));
+      start(eps[0].e);  // the latest episode
+      root.insertAdjacentHTML("beforeend", episodeList(eps, eps[0].e));
     });
   }
 
-  function start(audioId, notesId) {
+  function start(episode) {
   root.innerHTML = `
     <div class="pl-pod">
       <div class="pl-pod-head"><h2 id="pod-title">Loading the episode…</h2><div class="pl-pod-meta" id="pod-meta"></div></div>
-      <audio id="pod-audio" preload="metadata" src="${esc(drive(audioId))}"></audio>
+      <audio id="pod-audio" preload="metadata" src="${esc(files + episode + ".mp3")}"></audio>
       <div class="pl-pod-controls">
         <button class="pl-pod-skip" id="pod-back" aria-label="Back 15 seconds" title="Back 15 s (←)">↺ 15</button>
         <button class="pl-pod-play" id="pod-play" aria-label="Play">▶</button>
@@ -64,13 +64,13 @@
       <div class="pl-pod-error" id="pod-error" hidden></div>
       <h3 class="pl-pod-h">Chapters</h3>
       <ol class="pl-pod-chapters" id="pod-chapters"><li class="pl-pod-meta">Loading…</li></ol>
-      <p class="pl-pod-foot"><a href="https://drive.google.com/file/d/${esc(audioId)}/view" target="_blank" rel="noopener">Open in Google Drive</a>
-        (download, or listen there) · Keys: space play/pause, ← → skip</p>
+      <p class="pl-pod-foot"><a href="${esc(files + episode + ".mp3")}" download>Download (MP3)</a><span id="pod-drive"></span>
+        · Keys: space play/pause, ← → skip</p>
     </div>`;
   const $ = (id) => document.getElementById(id);
   const audio = $("pod-audio");
   let chapters = [], title = "Paper Library podcast";
-  const posKey = `pl-podcast-pos:${audioId}`;
+  const posKey = `pl-podcast-pos:${episode}`;
 
   // Speed: remembered for every episode.
   const speed = parseFloat(store.get("pl-podcast-speed")) || 1;
@@ -87,8 +87,8 @@
   audio.addEventListener("pause", () => { $("pod-play").textContent = "▶"; $("pod-play").setAttribute("aria-label", "Play"); });
   audio.addEventListener("error", () => {
     $("pod-error").hidden = false;
-    $("pod-error").innerHTML = `The audio could not be loaded here. <a href="https://drive.google.com/file/d/${esc(audioId)}/view"
-      target="_blank" rel="noopener">Listen in Google Drive</a> instead.`;
+    $("pod-error").innerHTML = `This episode could not be loaded: the website keeps the last two months of episodes.
+      Older ones are in Google Drive (Paper Library › Podcasts).`;
   });
 
   // Seek bar: dragging does not fight with playback updates.
@@ -151,16 +151,12 @@
     ms.setActionHandler("nexttrack", () => jump(current() + 1));
   }
 
-  if (!notesId) {
-    $("pod-title").textContent = title;
-    $("pod-chapters").innerHTML = "";
-    return;
-  }
-  fetch(drive(notesId)).then(r => r.json()).then(n => {
+  fetch(files + episode + ".json").then(r => r.json()).then(n => {
     title = n.title || title;
     chapters = n.chapters || [];
     document.title = `${title} · Paper Library podcast`;
     $("pod-title").textContent = title;
+    if (n.drive) $("pod-drive").innerHTML = ` · <a href="${esc(n.drive)}" target="_blank" rel="noopener">Open in Google Drive</a>`;
     const papers = chapters.reduce((t, c) => t + (c.papers || []).length, 0);
     $("pod-meta").textContent = [`${Math.round((n.seconds || 0) / 60)} min`, `${papers} paper${papers === 1 ? "" : "s"}`,
                                  n.hosts && `with ${n.hosts.join(" and ")}`].filter(Boolean).join(" · ");
