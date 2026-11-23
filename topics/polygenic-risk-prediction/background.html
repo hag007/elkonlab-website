@@ -454,7 +454,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-polygenic-score-is">What a polygenic score is</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-across-ancestries">Portability across ancestries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation-and-the-target-population">Imputation and the target population</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
             </nav>
@@ -485,10 +484,6 @@
 <section id="portability-across-ancestries">
 <h2>Portability across ancestries<a class="headerlink" href="#portability-across-ancestries" title="Link to this heading">#</a></h2>
 <p>Most GWAS participants are of European ancestry, and PRS accuracy drops sharply in other populations (<a class="reference external" href="https://doi.org/10.1038/s41588-019-0379-x">Martin et al. 2019</a>). The drop depends on the target population: European-based breast-cancer PRSs still identify Ashkenazi Jewish women in Israel at markedly elevated risk, with an odds ratio of about 1.6 per standard deviation (<a class="reference external" href="https://doi.org/10.1136/jmg-2023-109185">Levi et al. 2023</a>). Multi-ancestry methods combine GWAS from several populations: <a class="reference external" href="https://doi.org/10.1038/s41588-022-01054-7">PRS-CSx</a>, <a class="reference external" href="https://doi.org/10.1038/s41588-023-01501-z">CT-SLEB</a> and <a class="reference external" href="https://doi.org/10.1016/j.ajhg.2022.09.010">TL-PRS</a>. <a class="reference external" href="https://doi.org/10.64898/2026.07.12.26357860">PRANA</a> takes a different route: a deep-learning model that adapts an existing European PRS to another ancestry using a modestly sized cohort from the target population, without a large GWAS there.</p>
-</section>
-<section id="imputation-and-the-target-population">
-<h2>Imputation and the target population<a class="headerlink" href="#imputation-and-the-target-population" title="Link to this heading">#</a></h2>
-<p>GWAS and PRS studies usually genotype people on SNP arrays and impute the untyped SNPs from a reference panel of sequenced individuals. Imputing a target population with a panel of its own ancestry usually improves imputation accuracy. However, when the GWAS and the target population differ in ancestry, an ancestry-matched imputation panel for the target set improves PRS prediction only marginally, and only under specific conditions (<a class="reference external" href="https://doi.org/10.1093/bioinformatics/btae036">Levi et al. 2024</a>).</p>
 </section>
 <section id="open-questions">
 <h2>Open questions<a class="headerlink" href="#open-questions" title="Link to this heading">#</a></h2>
@@ -568,7 +563,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-polygenic-score-is">What a polygenic score is</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-across-ancestries">Portability across ancestries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation-and-the-target-population">Imputation and the target population</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
 </ul>
   </nav></div>
