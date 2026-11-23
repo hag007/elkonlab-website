@@ -6,8 +6,8 @@ Get an email with the library's new papers, each with a short summary and links.
   nothing new arrived) or weekly on the day you choose.
 - **What:** the papers in the topics you choose (or all topics), with title, authors, journal, a 1–3 sentence
   summary and links to the paper and its PDF.
-- **Podcast (optional):** daily or weekly, two hosts talk through the new papers in your topics (3–5 minutes per
-  topic, up to about 15 minutes). The email links to the episode in Google Drive.
+- **Podcast (optional):** daily or weekly, two hosts talk through the new papers in the topics you chose (2–3
+  minutes per topic). The email links to the episode in Google Drive.
 - **Your settings:** every email has your personal link to change topics, frequency or the podcast, or to unsubscribe.
 
 ```{raw} html
