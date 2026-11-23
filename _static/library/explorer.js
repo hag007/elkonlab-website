@@ -64,6 +64,13 @@
   const folderBadge = (f, extra = "") =>
     `<span class="pl-badge pl-k-folder${state.folder === f ? " on" : ""}" data-folder="${esc(f)}">${esc(f)}${extra}</span>`;
 
+  // The paper in its topic's paper manager (on a topic's page that topic, otherwise its first), scrolled to and highlighted.
+  const manageLink = (p, topic, cls) => {
+    const m = p.manage || {}, url = m[topic] || Object.values(m)[0];
+    return url ? `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener"
+      title="This paper in the topic's paper manager: move, remove, lab members (library server, password)">Manage 🔒</a>` : "";
+  };
+
   function card(p, terms) {
     const meta = [p.authors.length > 3 ? p.authors.slice(0, 3).join(", ") + " et al." : p.authors.join(", "),
                   p.source, p.pub_date || p.year, p.impact != null ? `IF ≈ ${p.impact}` : ""].filter(Boolean).join(" · ");
@@ -86,6 +93,7 @@
     // Footer like the landing page's cards: outside links on the left, the paper's files on the right.
     const files = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
                    suppLinks(p),
+                   manageLink(p, locked, "pl-edit"),
                    p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
                                              : srv(filesLink(p), "pl-pdf", "+ Add PDF", "Upload a PDF on the library server (password)"))
                   ].filter(Boolean).join("");

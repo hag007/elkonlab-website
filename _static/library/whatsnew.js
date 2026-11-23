@@ -43,6 +43,12 @@
           <span class="pl-dd-size">${size(s.reduce((t, f) => t + (f.size || 0), 0))}</span></a></div></details>`;
   };
 
+  // The paper in its topic's paper manager (this page's topic, or else its first), scrolled to and highlighted.
+  const manageLink = (p) => {
+    const m = p.manage || {}, url = m[topic] || Object.values(m)[0];
+    return url ? srv(url, "wn-edit", "Manage 🔒", "This paper in the topic's paper manager: move, remove, lab members (library server, password)") : "";
+  };
+
   function item(p) {
     const date = new Date(p.pub_date + "T00:00:00");
     const fresh = Date.now() - date < 2 * DAY;
@@ -59,6 +65,7 @@
       <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}<span class="wn-files">${[
         p.pdf_url && srv(p.pdf_url, "wn-pdf", "PDF 🔒", "Opens on the library server (password)"),
         suppLinks(p),
+        manageLink(p),
         p.files_url && (p.has_pdf ? srv(filesLink(p), "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
                                   : srv(filesLink(p), "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
       ].filter(Boolean).join("")}</span></div>
