@@ -13,7 +13,7 @@
   const base = document.currentScript.src.replace(/explorer\.js.*$/, "");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const locked = root.dataset.folder || "";
-  const state = { q: "", folder: locked || new URLSearchParams(location.search).get("folder") || "", badges: new Set(), sort: "",
+  const state = { q: "", folder: locked || new URLSearchParams(location.search).get("folder") || "", badges: new Set(new URLSearchParams(location.search).getAll("badge")), sort: "",
                   author: "", journal: "", yFrom: "", yTo: "", minIf: "" };
   const yearOf = (p) => +String(p.pub_date || p.year || "").slice(0, 4) || 0;
   const lastName = (a) => (a || "").trim().split(/\s+/).pop().toLowerCase();
