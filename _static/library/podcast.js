@@ -6,8 +6,8 @@
 //   podcast.html?from=<date>&to=<date>&topics=<slug>,<slug>   open with these filters (the digest emails' link);
 //                                          either date may be left out, and no topics = all topics
 // Episodes and their show notes are published next to this page (_static/podcasts/, listed in podcasts.json by the
-// site build); copies are in Google Drive (Paper Library › Podcasts). The filters, order, speed, "play next
-// automatically" and where you stopped in each episode are remembered in this browser.
+// site build); copies are in Google Drive (Paper Library › Podcasts). The filters, order, speed and where you
+// stopped in each episode are remembered in this browser; "play next automatically" is on whenever the page opens.
 (function () {
   const root = document.getElementById("pl-podcast");
   if (!root) return;
@@ -47,7 +47,7 @@
           <div class="pl-pod-ticks" id="pod-ticks" aria-hidden="true"></div></div>
         <span id="pod-total">–:––</span>
       </div>
-      <label class="pl-pod-auto"><input type="checkbox" id="pod-auto"> Play the next episode in the list automatically</label>
+      <label class="pl-pod-auto"><input type="checkbox" id="pod-auto" checked> Play the next episode in the list automatically</label>
       <div class="pl-pod-resume" id="pod-resume" hidden></div>
       <div class="pl-pod-error" id="pod-error" hidden></div>
       <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
@@ -305,8 +305,6 @@
   $("pod-next").onclick = () => step(1, playing());
   $("pod-speed").value = String(parseFloat(store.get("pl-podcast-speed")) || 1);
   $("pod-speed").onchange = () => { audio.playbackRate = parseFloat($("pod-speed").value); store.set("pl-podcast-speed", $("pod-speed").value); };
-  $("pod-auto").checked = store.get("pl-podcast-auto") !== "0";
-  $("pod-auto").onchange = () => store.set("pl-podcast-auto", $("pod-auto").checked ? "1" : "0");
   const toggle = () => (audio.paused ? audio.play() : audio.pause());
   const skip = (s) => { audio.currentTime = Math.min(Math.max(0, audio.currentTime + s), audio.duration || 1e9); };
   $("pod-play").onclick = toggle;
