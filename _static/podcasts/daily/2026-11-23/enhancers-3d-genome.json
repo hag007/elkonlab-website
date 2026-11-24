@@ -1,7 +1,13 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "42649d21-aae9-3fc3-bb9f-e05f3685e332",
+  "45244972-39e4-3532-ae21-9498c7f9cf1e",
+  "49902140-ba46-328c-842d-e51a5680cac7",
+  "a40fe26d-a819-3ebc-8f7f-5bc17ade886b"
+ ],
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-23",
@@ -15,32 +21,36 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
    "papers": [
     {
-     "title": "A Super-Enhancer-Like Element and a Positive Feedback Loop Drive Ultra-High Expression of CCS for Red Pepper Ripening",
-     "authors": "Y Zhou et al.",
-     "source": "Plant Cell",
-     "date": "2026-11-21",
-     "url": "https://doi.org/10.1093/plcell/koag364"
-    },
-    {
-     "title": "Single-nucleus chromatin accessibility time course of excisional wound repair in rat skin",
-     "authors": "C Chai et al.",
-     "source": "GigaByte",
-     "date": "2026-11-03",
-     "url": "https://doi.org/10.46471/gigabyte.197"
+     "title": "Read&Tag enables antibody-independent combinatorial and multifactorial chromatin profiling",
+     "authors": "M. Schneider et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-22",
+     "url": "https://doi.org/10.64898/2026.11.19.763725",
+     "start": 91.4
     },
     {
      "title": "Long-range chromatin interactions nominate candidate susceptibility genes at non-coding PDAC risk loci",
      "authors": "KE Connelly et al.",
      "source": "medRxiv",
      "date": "2026-10-30",
-     "url": "https://doi.org/10.64898/2026.10.28.26366656"
+     "url": "https://doi.org/10.64898/2026.10.28.26366656",
+     "start": 7.5
     },
     {
-     "title": "Read&Tag enables antibody-independent combinatorial and multifactorial chromatin profiling",
-     "authors": "M. Schneider et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-22",
-     "url": "https://doi.org/10.64898/2026.11.19.763725"
+     "title": "Single-nucleus chromatin accessibility time course of excisional wound repair in rat skin",
+     "authors": "C Chai et al.",
+     "source": "GigaByte",
+     "date": "2026-11-03",
+     "url": "https://doi.org/10.46471/gigabyte.197",
+     "start": 157.7
+    },
+    {
+     "title": "A Super-Enhancer-Like Element and a Positive Feedback Loop Drive Ultra-High Expression of CCS for Red Pepper Ripening",
+     "authors": "Y Zhou et al.",
+     "source": "Plant Cell",
+     "date": "2026-11-21",
+     "url": "https://doi.org/10.1093/plcell/koag364",
+     "start": 143.2
     }
    ]
   }

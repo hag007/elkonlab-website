@@ -1,7 +1,12 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "1ee89abd-4651-3557-a3ae-52dfd77a301c",
+  "8f0533ac-fe1d-3a45-98ca-e2423b94c789",
+  "94d64080-b802-3940-9c35-52ed71f28816"
+ ],
  "topic": "Integrated risk prediction",
  "slug": "integrated-risk-prediction",
  "date": "2026-11-23",
@@ -19,21 +24,24 @@
      "authors": "Hao Zhang et al.",
      "source": "Global heart",
      "date": "2026-11-17",
-     "url": "https://doi.org/10.5334/gh.1603"
+     "url": "https://doi.org/10.5334/gh.1603",
+     "start": 72.6
     },
     {
      "title": "Acceleration of the GrimAge2 epigenetic clock is associated with atherogenic inflammageing and independently predicts acute coronary syndrome incremental to SCORE2-OP and PREVENT",
      "authors": "Kwan Hung Ng et al.",
      "source": "European heart journal open",
      "date": "2026-11-01",
-     "url": "https://doi.org/10.1093/ehjopen/oeag199"
+     "url": "https://doi.org/10.1093/ehjopen/oeag199",
+     "start": 14.7
     },
     {
      "title": "Projected clinical utility of polygenic risk score-stratified cancer screening: a systematic review",
      "authors": "Eleonora Pascucci et al.",
      "source": "EClinicalMedicine",
      "date": "2026-11-13",
-     "url": "https://doi.org/10.1016/j.eclinm.2026.104329"
+     "url": "https://doi.org/10.1016/j.eclinm.2026.104329",
+     "start": 113.3
     }
    ]
   }
