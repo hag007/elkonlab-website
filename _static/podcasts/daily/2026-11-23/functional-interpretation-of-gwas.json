@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "5521326b-fcef-334b-b056-523751f8ae9a"
+ ],
  "topic": "Functional interpretation of GWAS",
  "slug": "functional-interpretation-of-gwas",
  "date": "2026-11-23",
@@ -19,7 +22,8 @@
      "authors": "Lingxuan Zhu and Yuchao Jiang",
      "source": "bioRxiv",
      "date": "2026-11-22",
-     "url": "https://doi.org/10.64898/2026.11.12.766196"
+     "url": "https://doi.org/10.64898/2026.11.12.766196",
+     "start": 11.2
     }
    ]
   }

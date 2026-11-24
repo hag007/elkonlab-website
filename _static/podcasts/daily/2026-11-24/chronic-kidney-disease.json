@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "8ba40927-bbdd-342b-a29e-24546344d48c",
@@ -23,14 +23,16 @@
      "authors": "Arif Rather and Dongwon Lee",
      "source": "bioRxiv",
      "date": "2026-10-04",
-     "url": "https://doi.org/10.64898/2026.09.28.746288"
+     "url": "https://doi.org/10.64898/2026.09.28.746288",
+     "start": 13.3
     },
     {
      "title": "Genomic and multi-omic insights into the heterogeneity of diabetic kidney disease",
      "authors": "Jae Hyun Bae et al.",
      "source": "Nature reviews. Nephrology",
      "date": "2026-11-09",
-     "url": "https://doi.org/10.1038/s41581-026-01144-3"
+     "url": "https://doi.org/10.1038/s41581-026-01144-3",
+     "start": 71.1
     }
    ]
   }
