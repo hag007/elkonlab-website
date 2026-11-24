@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "4ef81218-0341-3c82-ada3-d64db0571084"
+ ],
  "topic": "Rare variant analysis",
  "slug": "rare-variant-analysis",
  "date": "2026-11-22",
@@ -19,7 +22,8 @@
      "authors": "Saeed Farajzadeh Valilou et al.",
      "source": "medRxiv",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.64898/2026.11.18.26367879"
+     "url": "https://doi.org/10.64898/2026.11.18.26367879",
+     "start": 11.5
     }
    ]
   }
