@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Non-coding variant effect prediction",
  "slug": "non-coding-variant-effect-prediction",
  "date": "2026-11-24",
  "title": "Non-coding variant effect prediction · Tuesday, November 24",
- "seconds": 143.4,
+ "seconds": 147.1,
  "drive": "https://drive.google.com/open?id=1kHMHKW899KJyhca56zdLpUJsK1bKTYpd",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Non-coding variant effect prediction",
