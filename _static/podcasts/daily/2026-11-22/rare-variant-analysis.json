@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Rare variant analysis",
  "slug": "rare-variant-analysis",
  "date": "2026-11-22",
  "title": "Rare variant analysis · Sunday, November 22",
- "seconds": 126.8,
+ "seconds": 109.0,
  "drive": "https://drive.google.com/open?id=1waknRufhnKYIIuQLA61MD9SfXKVCXKC1",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Rare variant analysis",

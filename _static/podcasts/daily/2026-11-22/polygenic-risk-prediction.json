@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Polygenic risk prediction",
  "slug": "polygenic-risk-prediction",
  "date": "2026-11-22",
  "title": "Polygenic risk prediction · Sunday, November 22",
- "seconds": 147.0,
+ "seconds": 150.2,
  "drive": "https://drive.google.com/open?id=1AOIG-F4U6jFIGd4_ZtoxzbWWv_N8431A",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Polygenic risk prediction",
