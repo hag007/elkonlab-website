@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "69deafe8-fbbb-36a9-8ce9-8e41761e69df",
@@ -24,21 +24,24 @@
      "authors": "H. R. Salzler et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.21.768281"
+     "url": "https://doi.org/10.64898/2026.11.21.768281",
+     "start": 115.4
     },
     {
      "title": "Cross- species developmental multiomics identifies RHOJ as a regulator of human-enriched cortical progenitor states",
      "authors": "Y. Sun et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.21.768345"
+     "url": "https://doi.org/10.64898/2026.11.21.768345",
+     "start": 71.1
     },
     {
      "title": "Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer",
      "authors": "O. Faroque et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.20.768082"
+     "url": "https://doi.org/10.64898/2026.11.20.768082",
+     "start": 13.3
     }
    ]
   }
