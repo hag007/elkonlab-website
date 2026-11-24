@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "0fc297da-4e0d-3f54-860c-3a17b701b4bc",
@@ -24,21 +24,24 @@
      "authors": "M. Laker et al.",
      "source": "medRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.23.26368185"
+     "url": "https://doi.org/10.64898/2026.11.23.26368185",
+     "start": 12.4
     },
     {
      "title": "Optimizing Exomiser to prioritize candidate genes underlying monogenic forms of common disease",
      "authors": "J Petrovska et al.",
      "source": "medRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.20.26368494"
+     "url": "https://doi.org/10.64898/2026.11.20.26368494",
+     "start": 74.7
     },
     {
      "title": "Genetic analysis of non-familial early-onset Alzheimer's disease patients",
      "authors": "F. Ecca et al.",
      "source": "medRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.20.26367760"
+     "url": "https://doi.org/10.64898/2026.11.20.26367760",
+     "start": 121.3
     }
    ]
   }
