@@ -1,7 +1,12 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "440728c7-3614-38e4-96e4-0d6152bf0e94",
+  "adc15e75-0289-3dac-a19d-3cba0ce2303d",
+  "bcc454a7-fcdd-3a38-812c-19f12243a32a"
+ ],
  "topic": "Functional interpretation of GWAS",
  "slug": "functional-interpretation-of-gwas",
  "date": "2026-11-21",
@@ -15,25 +20,28 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
    "papers": [
     {
-     "title": "Brain-derived multi-omics prioritization of mitochondria-related genes in schizophrenia, bipolar disorder, and major depressive disorder",
-     "authors": "Nanxi Li et al.",
-     "source": "Translational psychiatry",
+     "title": "CELL-X: A Single-Cell Transcriptomics Framework for Cell-Type and Disease-State Prioritization of Type 2 Diabetes Risk Genes",
+     "authors": "M. M. Uddin et al.",
+     "source": "bioRxiv",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.1038/s41398-026-04586-2"
+     "url": "https://doi.org/10.64898/2026.11.18.767745",
+     "start": 137.2
     },
     {
      "title": "Brain Cell-Type-Specific X-Chromosome Gene Regulation Reveals Sex-Biased Candidate Genes in Neurodegeneration",
      "authors": "Y. Zeng et al.",
      "source": "medRxiv",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.64898/2026.11.18.26368437"
+     "url": "https://doi.org/10.64898/2026.11.18.26368437",
+     "start": 76.7
     },
     {
-     "title": "CELL-X: A Single-Cell Transcriptomics Framework for Cell-Type and Disease-State Prioritization of Type 2 Diabetes Risk Genes",
-     "authors": "M. M. Uddin et al.",
-     "source": "bioRxiv",
+     "title": "Brain-derived multi-omics prioritization of mitochondria-related genes in schizophrenia, bipolar disorder, and major depressive disorder",
+     "authors": "Nanxi Li et al.",
+     "source": "Translational psychiatry",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.64898/2026.11.18.767745"
+     "url": "https://doi.org/10.1038/s41398-026-04586-2",
+     "start": 16.2
     }
    ]
   }
