@@ -3,6 +3,8 @@
 // them in the list's order, one after the other.
 //   podcast.html?d=<date>&t=<topic slug>   start with that daily topic episode
 //   podcast.html?e=<key>                   a subscriber's episode (the link in the email), with a chapter per topic
+//   podcast.html?from=<date>&to=<date>&topics=<slug>,<slug>   open with these filters (the digest emails' link);
+//                                          either date may be left out, and no topics = all topics
 // Episodes and their show notes are published next to this page (_static/podcasts/, listed in podcasts.json by the
 // site build); copies are in Google Drive (Paper Library › Podcasts). The filters, order, speed, "play next
 // automatically" and where you stopped in each episode are remembered in this browser.
@@ -369,10 +371,18 @@
     (d.topics || []).forEach((s, i) => { rank[s] = i; });  // the library's topic order
     index.daily.forEach(x => { if (!(x.slug in rank)) rank[x.slug] = Object.keys(rank).length; });
     const known = (set, values) => [...set].filter(v => values.includes(v));  // drop filters for days that are gone
+    const q = new URLSearchParams(location.search), day = q.get("d"), isDate = (v) => /^\d{4}-\d{2}-\d{2}$/.test(v || "");
+    if (q.has("from") || q.has("to") || q.has("topics")) {  // filters from the link (e.g. in the digest email)
+      state.range = "custom";
+      state.from = isDate(q.get("from")) ? q.get("from") : "";
+      state.to = isDate(q.get("to")) ? q.get("to") : "";
+      state.topics = new Set((q.get("topics") || "").split(",").filter(Boolean));
+      if (state.sort === "custom") state.sort = "topic";  // the email's topics in the library's order
+      remember();
+    }
     state.topics = new Set(known(state.topics, index.daily.map(x => x.slug)));
     $("pod-filters").hidden = $("pod-listhead").hidden = !index.daily.length;
     renderFilters();
-    const q = new URLSearchParams(location.search), day = q.get("d");
     if (q.get("e") && /^[\w-]+$/.test(q.get("e"))) load({ kind: "episode", e: q.get("e") }, false);
     else if (day && index.daily.some(x => x.date === day && x.slug === q.get("t"))) load({ kind: "daily", date: day, slug: q.get("t") }, false);
     else if (list().length) load({ kind: "daily", date: list()[0].date, slug: list()[0].slug }, false);
