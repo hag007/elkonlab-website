@@ -1,10 +1,11 @@
 {
  "kind": "daily",
+ "voice": "3",
  "topic": "Bioinformatics tools & pipelines",
  "slug": "bioinformatics-tools-pipelines",
  "date": "2026-11-21",
  "title": "Bioinformatics tools & pipelines · Saturday, November 21",
- "seconds": 161.6,
+ "seconds": 161.7,
  "drive": "https://drive.google.com/open?id=1KOkHBMtUG2k_hYWQt1uKwkH1XQ_V8jp_",
  "hosts": [
   "Maya",

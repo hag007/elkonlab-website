@@ -1,10 +1,11 @@
 {
  "kind": "daily",
+ "voice": "3",
  "topic": "Alternative polyadenylation",
  "slug": "alternative-polyadenylation",
  "date": "2026-11-21",
  "title": "Alternative polyadenylation · Saturday, November 21",
- "seconds": 175.5,
+ "seconds": 175.0,
  "drive": "https://drive.google.com/open?id=1OSdJX00lPALaH64A8QzA4baLapBbZWND",
  "hosts": [
   "Maya",
