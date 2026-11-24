@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Integrated risk prediction",
  "slug": "integrated-risk-prediction",
  "date": "2026-11-23",
  "title": "Integrated risk prediction · Monday, November 23",
- "seconds": 164.8,
+ "seconds": 169.3,
  "drive": "https://drive.google.com/open?id=12VXVs6XWKyemwCftSfgVtsXE5das7Il_",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Integrated risk prediction",
