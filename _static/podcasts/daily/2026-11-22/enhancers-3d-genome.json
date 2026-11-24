@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-22",
  "title": "Enhancers & 3D genome · Sunday, November 22",
- "seconds": 192.7,
+ "seconds": 189.0,
  "drive": "https://drive.google.com/open?id=1EI1Yz9VrIQe5ySSCbpfRh-KLKn2ZCwMe",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Enhancers & 3D genome",
