@@ -1,0 +1,79 @@
+{
+ "kind": "daily",
+ "voice": "3",
+ "topic": "Enhancers & 3D genome",
+ "slug": "enhancers-3d-genome",
+ "date": "2026-11-22",
+ "title": "Enhancers & 3D genome · Sunday, November 22",
+ "seconds": 192.7,
+ "drive": "https://drive.google.com/open?id=1EI1Yz9VrIQe5ySSCbpfRh-KLKn2ZCwMe",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Enhancers & 3D genome",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
+   "papers": [
+    {
+     "title": "Overlapping enhancer activity robustly regulates rax expression during ocular development in zebrafish",
+     "authors": "Dwon Jordana and Nathan Clark",
+     "source": "bioRxiv",
+     "date": "2026-11-09",
+     "url": "https://doi.org/10.64898/2026.11.06.764943"
+    },
+    {
+     "title": "The Gata2 3'-distal region is essential for IL-3 responsiveness in basophil and mast cell progenitors",
+     "authors": "Shin'ya Ohmori et al.",
+     "source": "iScience",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.1016/j.isci.2026.118203"
+    },
+    {
+     "title": "NAD Metabolism Drives CTCF-Cohesin Chromatin Regulation in EBV-Transformed B-Cells",
+     "authors": "Davide Maestri et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-02",
+     "url": "https://doi.org/10.64898/2026.11.01.763250"
+    },
+    {
+     "title": "Dosage compensation is regulated by segregated chromatin modules during development in Drosophila",
+     "authors": "Lubna Younas et al.",
+     "source": "Molecular systems biology",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.1038/s44320-026-00254-1"
+    },
+    {
+     "title": "Inferring chromatin looping interactions from microscopy-based measurements: opportunities and pitfalls",
+     "authors": "James Jusuf et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.64898/2026.11.10.765665"
+    },
+    {
+     "title": "SPACE-Tag Enables High-Throughput Spatial Chromatin Profiling With CUT&Tag",
+     "authors": "Chao Yan et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-07",
+     "url": "https://doi.org/10.64898/2026.11.06.764689"
+    },
+    {
+     "title": "Reference-Guided De Novo Retrieval of 3D Chromatin Organizational Features with Representation Learning",
+     "authors": "Sean Moran and Jie Liu",
+     "source": "bioRxiv",
+     "date": "2026-11-04",
+     "url": "https://doi.org/10.64898/2026.10.31.763357"
+    },
+    {
+     "title": "Optogenetic induction of TAD boundary pairing promotes gene activity",
+     "authors": "Martin Stortz et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-06",
+     "url": "https://doi.org/10.64898/2026.11.04.764356"
+    }
+   ]
+  }
+ ]
+}

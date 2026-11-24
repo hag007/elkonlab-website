@@ -1,10 +1,11 @@
 {
  "kind": "daily",
+ "voice": "3",
  "topic": "Resources: GWASs",
  "slug": "resources-gwass",
  "date": "2026-11-22",
  "title": "Resources: GWASs · Sunday, November 22",
- "seconds": 100.6,
+ "seconds": 101.4,
  "drive": "https://drive.google.com/open?id=1SkF3trx6geNuYGFtr7qnq8VSUYrGFHWD",
  "hosts": [
   "Maya",

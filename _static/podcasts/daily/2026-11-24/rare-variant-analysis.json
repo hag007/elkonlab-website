@@ -1,10 +1,11 @@
 {
  "kind": "daily",
+ "voice": "3",
  "topic": "Rare variant analysis",
  "slug": "rare-variant-analysis",
  "date": "2026-11-24",
  "title": "Rare variant analysis · Tuesday, November 24",
- "seconds": 173.9,
+ "seconds": 174.5,
  "drive": "https://drive.google.com/open?id=1tS4vWVEpa1pHA5YAwYrjsX-0-XiPpRFi",
  "hosts": [
   "Maya",

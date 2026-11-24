@@ -1,10 +1,11 @@
 {
  "kind": "daily",
+ "voice": "3",
  "topic": "Functional interpretation of GWAS",
  "slug": "functional-interpretation-of-gwas",
  "date": "2026-11-24",
  "title": "Functional interpretation of GWAS · Tuesday, November 24",
- "seconds": 152.6,
+ "seconds": 119.7,
  "drive": "https://drive.google.com/open?id=1vddZaPFf4p-HoHDsH2Mcu98jtECcLOXb",
  "hosts": [
   "Maya",
@@ -22,13 +23,6 @@
      "source": "bioRxiv",
      "date": "2026-11-23",
      "url": "https://doi.org/10.64898/2026.11.20.768224"
-    },
-    {
-     "title": "CellColocDB: a disease-centred resource linking GWAS loci to genes, cell contexts, and fine-mapping evidence",
-     "authors": "Meng Wu et al.",
-     "source": "Nucleic Acids Research",
-     "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1209"
     }
    ]
   }
