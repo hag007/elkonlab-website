@@ -251,7 +251,7 @@
       const papers = chapters.reduce((t, ch) => t + (ch.papers || []).length, 0);
       $("pod-title").textContent = c.kind === "daily" ? n.topic : n.title;
       $("pod-meta").textContent = [c.kind === "daily" && dayName(n.date), `${Math.round((n.seconds || 0) / 6) / 10} min`,
-                                   `${papers} paper${papers === 1 ? "" : "s"}`, n.hosts && `with ${n.hosts.join(" and ")}`]
+                                   `${papers} paper${papers === 1 ? "" : "s"}`]
                                    .filter(Boolean).join(" · ");
       document.title = `${$("pod-title").textContent} · Paper Library podcast`;
       if (n.drive) $("pod-drive").innerHTML = ` · <a href="${esc(n.drive)}" target="_blank" rel="noopener">Open in Google Drive</a>`;
