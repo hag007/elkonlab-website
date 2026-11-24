@@ -1,6 +1,6 @@
 # References
 
-452 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+453 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -449,18 +449,19 @@
 
 ## Resources: Atlases
 
-1. Taoyu Chen, Shulei Yin, Shikai Wang, et al.. LACA: a cross-species single-cell resource for exploring longevity and aging-associated cellular and molecular programs. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1129](https://doi.org/10.1093/nar/gkag1129) PMID: [43059359](https://pubmed.ncbi.nlm.nih.gov/43059359/)
-2. The GTEx Consortium, François Aguet, Shankara Anand, et al.. The GTEx Consortium atlas of genetic regulatory effects across human tissues. *Science*. 2020. doi: [10.1126/science.aaz1776](https://doi.org/10.1126/science.aaz1776) PMID: [32913098](https://pubmed.ncbi.nlm.nih.gov/32913098/)
-3. The ENCODE Project Consortium, Federico Abascal, Reyes Acosta, et al.. Expanded encyclopaedias of DNA elements in the human and mouse genomes. *Nature*. 2020. doi: [10.1038/s41586-020-2493-4](https://doi.org/10.1038/s41586-020-2493-4) PMID: [32728249](https://pubmed.ncbi.nlm.nih.gov/32728249/)
-4. Roadmap Epigenomics Consortium, Anshul Kundaje, Wouter Meuleman, et al.. Integrative analysis of 111 reference human epigenomes. *Nature*. 2015. doi: [10.1038/nature14248](https://doi.org/10.1038/nature14248) PMID: [25693563](https://pubmed.ncbi.nlm.nih.gov/25693563/)
-5. The ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. *Nature*. 2012. doi: [10.1038/nature11247](https://doi.org/10.1038/nature11247) PMID: [22955616](https://pubmed.ncbi.nlm.nih.gov/22955616/)
-6. The Tabula Sapiens Consortium*, Robert C. Jones, Jim Karkanias, et al.. The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans. *Science*. 2022. doi: [10.1126/science.abl4896](https://doi.org/10.1126/science.abl4896) PMID: [35549404](https://pubmed.ncbi.nlm.nih.gov/35549404/)
-7. John Lonsdale, Jeffrey Thomas, Mike Salvatore, et al.. The Genotype-Tissue Expression (GTEx) project. *Nat Genet*. 2013. doi: [10.1038/ng.2653](https://doi.org/10.1038/ng.2653) PMID: [23715323](https://pubmed.ncbi.nlm.nih.gov/23715323/)
-8. Marios Miliotis, Stavros Giannoukakos, Ioannis Kavakiotis, et al.. DIANA-miTED v2: an expanded microRNA tissue expression database with an integrated healthy-tissue reference atlas. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1181](https://doi.org/10.1093/nar/gkag1181) PMID: [43053333](https://pubmed.ncbi.nlm.nih.gov/43053333/)
-9. Aviv Regev, Sarah A Teichmann, Eric S Lander, et al.. The Human Cell Atlas. *eLife*. 2017. doi: [10.7554/elife.27041](https://doi.org/10.7554/elife.27041) PMID: [29206104](https://pubmed.ncbi.nlm.nih.gov/29206104/)
-10. Mathias Uhlén, Linn Fagerberg, Björn M. Hallström, et al.. Tissue-based map of the human proteome. *Science*. 2015. doi: [10.1126/science.1260419](https://doi.org/10.1126/science.1260419) PMID: [25613900](https://pubmed.ncbi.nlm.nih.gov/25613900/)
-11. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
-12. Seyhan Yazar, Jose Alquicira-Hernandez, Kristof Wing, et al.. Single-cell eQTL mapping identifies cell type–specific genetic control of autoimmune disease. *Science*. 2022. doi: [10.1126/science.abf3041](https://doi.org/10.1126/science.abf3041) PMID: [35389779](https://pubmed.ncbi.nlm.nih.gov/35389779/)
+1. Govindkumar Balagannavar, Kavyashree Basavaraju, Vasumathi Manivelan, et al.. MIsoTEx: a mammalian transcript-isoform classification framework and database for exploring tissue distribution, expression stability, and abundance patterns. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1261](https://doi.org/10.1093/nar/gkag1261) PMID: [43069509](https://pubmed.ncbi.nlm.nih.gov/43069509/)
+2. Taoyu Chen, Shulei Yin, Shikai Wang, et al.. LACA: a cross-species single-cell resource for exploring longevity and aging-associated cellular and molecular programs. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1129](https://doi.org/10.1093/nar/gkag1129) PMID: [43059359](https://pubmed.ncbi.nlm.nih.gov/43059359/)
+3. The GTEx Consortium, François Aguet, Shankara Anand, et al.. The GTEx Consortium atlas of genetic regulatory effects across human tissues. *Science*. 2020. doi: [10.1126/science.aaz1776](https://doi.org/10.1126/science.aaz1776) PMID: [32913098](https://pubmed.ncbi.nlm.nih.gov/32913098/)
+4. The ENCODE Project Consortium, Federico Abascal, Reyes Acosta, et al.. Expanded encyclopaedias of DNA elements in the human and mouse genomes. *Nature*. 2020. doi: [10.1038/s41586-020-2493-4](https://doi.org/10.1038/s41586-020-2493-4) PMID: [32728249](https://pubmed.ncbi.nlm.nih.gov/32728249/)
+5. Roadmap Epigenomics Consortium, Anshul Kundaje, Wouter Meuleman, et al.. Integrative analysis of 111 reference human epigenomes. *Nature*. 2015. doi: [10.1038/nature14248](https://doi.org/10.1038/nature14248) PMID: [25693563](https://pubmed.ncbi.nlm.nih.gov/25693563/)
+6. The ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. *Nature*. 2012. doi: [10.1038/nature11247](https://doi.org/10.1038/nature11247) PMID: [22955616](https://pubmed.ncbi.nlm.nih.gov/22955616/)
+7. The Tabula Sapiens Consortium*, Robert C. Jones, Jim Karkanias, et al.. The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans. *Science*. 2022. doi: [10.1126/science.abl4896](https://doi.org/10.1126/science.abl4896) PMID: [35549404](https://pubmed.ncbi.nlm.nih.gov/35549404/)
+8. John Lonsdale, Jeffrey Thomas, Mike Salvatore, et al.. The Genotype-Tissue Expression (GTEx) project. *Nat Genet*. 2013. doi: [10.1038/ng.2653](https://doi.org/10.1038/ng.2653) PMID: [23715323](https://pubmed.ncbi.nlm.nih.gov/23715323/)
+9. Marios Miliotis, Stavros Giannoukakos, Ioannis Kavakiotis, et al.. DIANA-miTED v2: an expanded microRNA tissue expression database with an integrated healthy-tissue reference atlas. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1181](https://doi.org/10.1093/nar/gkag1181) PMID: [43053333](https://pubmed.ncbi.nlm.nih.gov/43053333/)
+10. Aviv Regev, Sarah A Teichmann, Eric S Lander, et al.. The Human Cell Atlas. *eLife*. 2017. doi: [10.7554/elife.27041](https://doi.org/10.7554/elife.27041) PMID: [29206104](https://pubmed.ncbi.nlm.nih.gov/29206104/)
+11. Mathias Uhlén, Linn Fagerberg, Björn M. Hallström, et al.. Tissue-based map of the human proteome. *Science*. 2015. doi: [10.1126/science.1260419](https://doi.org/10.1126/science.1260419) PMID: [25613900](https://pubmed.ncbi.nlm.nih.gov/25613900/)
+12. Urmo Võsa, Annique Claringbould, Harm-Jan Westra, et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. *Nat Genet*. 2021. doi: [10.1038/s41588-021-00913-z](https://doi.org/10.1038/s41588-021-00913-z) PMID: [34475573](https://pubmed.ncbi.nlm.nih.gov/34475573/)
+13. Seyhan Yazar, Jose Alquicira-Hernandez, Kristof Wing, et al.. Single-cell eQTL mapping identifies cell type–specific genetic control of autoimmune disease. *Science*. 2022. doi: [10.1126/science.abf3041](https://doi.org/10.1126/science.abf3041) PMID: [35389779](https://pubmed.ncbi.nlm.nih.gov/35389779/)
 
 ## Bioinformatics tools & pipelines
 
