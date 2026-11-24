@@ -13,6 +13,7 @@
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch { /* not remembered */ } },
   };
+  const clock = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
   const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "topic";
   const when = (d) => {
     if (!/^\d{4}-\d{2}-\d{2}/.test(d || "")) return d || "";
@@ -60,7 +61,8 @@
     const links = [
       url && `<a href="${esc(url)}" target="_blank" rel="noopener">${preprint ? "Preprint" : "Paper"}</a>`,
       x.pdf_url && `<a href="${esc(x.pdf_url)}" target="_blank" rel="noopener" title="On the library server (password)">PDF 🔒</a>`,
-      x.episode && `<a href="${esc(site)}podcast.html?d=${esc(x.episode.d)}&t=${esc(x.episode.t)}">🎧 Listen</a>`,
+      x.episode && `<a href="${esc(site)}podcast.html?d=${esc(x.episode.d)}&t=${esc(x.episode.t)}${x.episode.at != null
+        ? `&at=${x.episode.at}" title="Plays from where this paper is discussed">🎧 Listen (${clock(x.episode.at)})` : `">🎧 Listen`}</a>`,
     ].filter(Boolean).join("");
     return `<article class="pl-feed-card${x.figure ? "" : " nofig"}">
       ${fig}

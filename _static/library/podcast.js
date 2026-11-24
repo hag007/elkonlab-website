@@ -1,7 +1,8 @@
 // The Podcast page: a player for the daily topic episodes. Filter the episodes by day and topic; the filtered episodes
 // form a list that can be sorted (or put in any order by dragging or with the ↑ ↓ buttons), and the player plays
 // them in the list's order, one after the other.
-//   podcast.html?d=<date>&t=<topic slug>   start with that daily topic episode
+//   podcast.html?d=<date>&t=<topic slug>   start with that daily topic episode (&at=<seconds>: at that moment, e.g.
+//                                          where a paper starts: the Feed's links)
 //   podcast.html?e=<key>                   a subscriber's episode (the link in the email), with a chapter per topic
 //   podcast.html?from=<date>&to=<date>&topics=<slug>,<slug>   open with these filters (the digest emails' link);
 //                                          either date may be left out, and no topics = all topics
@@ -228,7 +229,9 @@
   });
 
   // ---- loading an episode ----
-  function load(c, autoplay) {
+  let startAt = null;  // a moment to start at (?at=, or a paper's time clicked): wins over "where you stopped"
+  function load(c, autoplay, at) {
+    startAt = at == null ? null : at;
     current = c;
     const path = c.kind === "daily" ? `${files}daily/${c.date}/${c.slug}` : `${files}${c.e}`;
     history.replaceState(null, "", c.kind === "daily" ? `?d=${c.date}&t=${encodeURIComponent(c.slug)}` : `?e=${encodeURIComponent(c.e)}`);
@@ -276,7 +279,8 @@
       <ol class="pl-pod-chapters">${chapters.map((c, i) => `<li>
         ${daily ? "" : `<button type="button" class="pl-pod-ch" data-i="${i}"><span class="pl-pod-ch-t">${clock(c.start)}</span>
           <span class="pl-pod-ch-name">${esc(c.title)}</span></button>`}
-        ${(c.papers || []).length ? `<ul class="pl-pod-papers${daily ? " flat" : ""}">${c.papers.map(p => `<li>${p.url
+        ${(c.papers || []).length ? `<ul class="pl-pod-papers${daily ? " flat" : ""}">${c.papers.map(p => `<li>${p.start != null
+            ? `<button type="button" class="pl-pod-at" data-at="${p.start}" title="Play from where this paper starts">▶ ${clock(p.start)}</button> ` : ""}${p.url
             ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title)}
             <span class="pl-pod-meta">${esc([p.authors, p.source, p.date].filter(Boolean).join(" · "))}</span></li>`).join("")}
           ${c.page ? `<li class="pl-pod-more"><a href="${esc(c.page)}">All ${esc(c.title)} papers →</a></li>` : ""}</ul>` : ""}
@@ -291,6 +295,8 @@
         <span class="pl-pod-meta">${esc(e.minutes)} min</span></li>`).join("")}</ul></details>`;
   }
   $("pod-notes").onclick = (e) => {
+    const t = e.target.closest(".pl-pod-at");  // a paper's timestamp
+    if (t) { audio.currentTime = +t.dataset.at; if (audio.paused) audio.play(); return; }
     const b = e.target.closest(".pl-pod-ch");
     if (b && chapters[+b.dataset.i]) { audio.currentTime = chapters[+b.dataset.i].start; if (audio.paused) audio.play(); }
   };
@@ -329,7 +335,11 @@
     $("pod-total").textContent = clock(audio.duration);
     drawTicks();
     const at = parseFloat(store.get(`pl-podcast-pos:${keyOf(current)}`));
-    if (!resumed && at > 10 && at < audio.duration - 10) {  // where you stopped last time
+    if (startAt != null) {  // a paper's moment
+      audio.currentTime = Math.min(startAt, audio.duration - 1);
+      startAt = null;
+      resumed = true;
+    } else if (!resumed && at > 10 && at < audio.duration - 10) {  // where you stopped last time
       resumed = true;
       audio.currentTime = at;
       $("pod-resume").hidden = false;
@@ -382,7 +392,10 @@
     $("pod-filters").hidden = $("pod-listhead").hidden = !index.daily.length;
     renderFilters();
     if (q.get("e") && /^[\w-]+$/.test(q.get("e"))) load({ kind: "episode", e: q.get("e") }, false);
-    else if (day && index.daily.some(x => x.date === day && x.slug === q.get("t"))) load({ kind: "daily", date: day, slug: q.get("t") }, false);
+    else if (day && index.daily.some(x => x.date === day && x.slug === q.get("t"))) {
+      const at = parseFloat(q.get("at"));
+      load({ kind: "daily", date: day, slug: q.get("t") }, false, at >= 0 ? at : null);
+    }
     else if (list().length) load({ kind: "daily", date: list()[0].date, slug: list()[0].slug }, false);
     else if (index.daily.length) load({ kind: "daily", date: index.daily[0].date, slug: index.daily[0].slug }, false);
     else if (index.episodes.length) load({ kind: "episode", e: index.episodes[0].e }, false);
