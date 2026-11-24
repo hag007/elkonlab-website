@@ -1,10 +1,11 @@
-// The Podcast page: a player for the daily topic episodes, a playlist per day that plays one episode after the other,
-// and a navigation bar to move between the topics of a day and the days of a topic.
-//   podcast.html?d=<date>&t=<topic slug>   a daily topic episode (no parameters: the latest day's first topic)
+// The Podcast page: a player for the daily topic episodes. Filter the episodes by day and topic; the filtered episodes
+// form a list that can be sorted (or put in any order by dragging or with the ↑ ↓ buttons), and the player plays
+// them in the list's order, one after the other.
+//   podcast.html?d=<date>&t=<topic slug>   start with that daily topic episode
 //   podcast.html?e=<key>                   a subscriber's episode (the link in the email), with a chapter per topic
 // Episodes and their show notes are published next to this page (_static/podcasts/, listed in podcasts.json by the
-// site build); copies are in Google Drive (Paper Library › Podcasts). The speed, "play next automatically" and where
-// you stopped in each episode are remembered in this browser.
+// site build); copies are in Google Drive (Paper Library › Podcasts). The filters, order, speed, "play next
+// automatically" and where you stopped in each episode are remembered in this browser.
 (function () {
   const root = document.getElementById("pl-podcast");
   if (!root) return;
@@ -22,17 +23,19 @@
   };
   const dayName = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
   const shortDay = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+  const SORTS = { newest: "Newest first", oldest: "Oldest first", topic: "By topic", az: "Topic A–Z", shortest: "Shortest first",
+                  custom: "My order" };
 
   root.innerHTML = `
     <div class="pl-pod">
       <div class="pl-pod-head"><h2 id="pod-title">Loading…</h2><div class="pl-pod-meta" id="pod-meta"></div></div>
       <audio id="pod-audio" preload="metadata"></audio>
       <div class="pl-pod-controls">
-        <button class="pl-pod-skip" id="pod-prev" aria-label="Previous episode" title="Previous episode">⏮</button>
+        <button class="pl-pod-skip" id="pod-prev" aria-label="Previous in the list" title="Previous in the list">⏮</button>
         <button class="pl-pod-skip" id="pod-back" aria-label="Back 15 seconds" title="Back 15 s (←)">↺ 15</button>
         <button class="pl-pod-play" id="pod-play" aria-label="Play">▶</button>
         <button class="pl-pod-skip" id="pod-fwd" aria-label="Forward 30 seconds" title="Forward 30 s (→)">30 ↻</button>
-        <button class="pl-pod-skip" id="pod-next" aria-label="Next episode" title="Next episode (N)">⏭</button>
+        <button class="pl-pod-skip" id="pod-next" aria-label="Next in the list" title="Next in the list (N)">⏭</button>
         <label class="pl-pod-speed">Speed <select id="pod-speed" aria-label="Playback speed">
           ${[0.75, 1, 1.25, 1.5, 1.75, 2].map(v => `<option value="${v}">${v}×</option>`).join("")}</select></label>
       </div>
@@ -42,23 +45,24 @@
           <div class="pl-pod-ticks" id="pod-ticks" aria-hidden="true"></div></div>
         <span id="pod-total">–:––</span>
       </div>
-      <label class="pl-pod-auto"><input type="checkbox" id="pod-auto"> Play the next episode automatically</label>
+      <label class="pl-pod-auto"><input type="checkbox" id="pod-auto"> Play the next episode in the list automatically</label>
       <div class="pl-pod-resume" id="pod-resume" hidden></div>
       <div class="pl-pod-error" id="pod-error" hidden></div>
-      <nav class="pl-pod-nav" id="pod-nav" aria-label="Episodes" hidden>
-        <div class="pl-pod-navrow"><span class="pl-pod-navlabel">Same day</span>
-          <button type="button" id="nav-topic-prev" aria-label="Previous topic this day" title="Previous topic">◀</button>
-          <select id="nav-topic" aria-label="Topic"></select>
-          <button type="button" id="nav-topic-next" aria-label="Next topic this day" title="Next topic">▶</button></div>
-        <div class="pl-pod-navrow"><span class="pl-pod-navlabel">Same topic</span>
-          <button type="button" id="nav-day-prev" aria-label="Earlier day with this topic" title="Earlier day">◀</button>
-          <select id="nav-day" aria-label="Day"></select>
-          <button type="button" id="nav-day-next" aria-label="Later day with this topic" title="Later day">▶</button></div>
-      </nav>
-      <div id="pod-playlist"></div>
+      <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
+        <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-days-l">Days</span>
+          <div class="pl-pod-chips" id="f-days" role="group" aria-labelledby="f-days-l"></div></div>
+        <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-topics-l">Topics</span>
+          <div class="pl-pod-chips" id="f-topics" role="group" aria-labelledby="f-topics-l"></div></div>
+      </section>
+      <div class="pl-pod-listhead" id="pod-listhead" hidden>
+        <h3 class="pl-pod-h" id="pod-count"></h3>
+        <label class="pl-pod-sort">Sort <select id="pod-sort" aria-label="Sort the list">
+          ${Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select></label>
+      </div>
+      <ol class="pl-pod-list" id="pod-list"></ol>
       <div id="pod-notes"></div>
       <p class="pl-pod-foot"><a id="pod-download" href="#" download>Download (MP3)</a><span id="pod-drive"></span>
-        · Keys: space play/pause, ← → skip, N next episode</p>
+        · Keys: space play/pause, ← → skip, N next in the list</p>
       <div id="pod-others"></div>
     </div>`;
   const $ = (id) => document.getElementById(id);
@@ -67,14 +71,123 @@
   let current = null;  // {kind: "daily", date, slug} or {kind: "episode", e}
   let chapters = [];
   let dragging = false, resumed = false, lastSave = 0;
-
-  // ---- the episode lists ----
-  const daysOf = () => [...new Set(index.daily.map(x => x.date))];                    // newest first
-  const dayList = (date) => index.daily.filter(x => x.date === date);                 // in the topics' order
-  const topicDays = (slug) => index.daily.filter(x => x.slug === slug).map(x => x.date);
-  const playlist = () => current.kind === "daily" ? dayList(current.date) : index.episodes;
-  const position = () => playlist().findIndex(x => current.kind === "daily" ? x.slug === current.slug : x.e === current.e);
   const keyOf = (c) => c.kind === "daily" ? `${c.date}/${c.slug}` : c.e;
+
+  // ---- filters, sorting and the list (the play queue) ----
+  const saved = (() => { try { return JSON.parse(store.get("pl-podcast-list") || "{}"); } catch { return {}; } })();
+  const state = { days: new Set(saved.days || []), topics: new Set(saved.topics || []),  // empty = all
+                  sort: SORTS[saved.sort] ? saved.sort : "newest", order: saved.order || [] };
+  const remember = () => store.set("pl-podcast-list", JSON.stringify({ days: [...state.days], topics: [...state.topics],
+                                                                       sort: state.sort, order: state.order }));
+  let rank = {};  // topic slug -> its place in the library's topic order
+  function list() {
+    let xs = index.daily.filter(x => (!state.days.size || state.days.has(x.date)) && (!state.topics.size || state.topics.has(x.slug)));
+    const k = (x) => `${x.date}/${x.slug}`;
+    const by = {
+      newest: (a, b) => b.date.localeCompare(a.date) || rank[a.slug] - rank[b.slug],
+      oldest: (a, b) => a.date.localeCompare(b.date) || rank[a.slug] - rank[b.slug],
+      topic: (a, b) => rank[a.slug] - rank[b.slug] || b.date.localeCompare(a.date),
+      az: (a, b) => a.topic.localeCompare(b.topic) || b.date.localeCompare(a.date),
+      shortest: (a, b) => a.minutes - b.minutes,
+    };
+    if (state.sort === "custom") {  // your order; episodes not placed yet go at the end, newest first
+      const pos = new Map(state.order.map((key, i) => [key, i]));
+      return xs.sort((a, b) => (pos.has(k(a)) ? pos.get(k(a)) : 1e6) - (pos.has(k(b)) ? pos.get(k(b)) : 1e6) || by.newest(a, b));
+    }
+    return xs.sort(by[state.sort]);
+  }
+  const queue = () => current && current.kind === "episode" ? index.episodes.map(e => ({ e: e.e })) : list();
+  const position = () => queue().findIndex(x => current.kind === "daily" ? x.date === current.date && x.slug === current.slug : x.e === current.e);
+
+  function renderFilters() {
+    const days = [...new Set(index.daily.map(x => x.date))].sort().reverse();
+    const topics = [...new Map(index.daily.map(x => [x.slug, x.topic])).entries()].sort((a, b) => rank[a[0]] - rank[b[0]]);
+    const chip = (group, value, label, on) => `<button type="button" class="pl-pod-chip${on ? " on" : ""}" data-group="${group}"
+      data-value="${esc(value)}" aria-pressed="${on}">${esc(label)}</button>`;
+    $("f-days").innerHTML = chip("days", "", "All days", !state.days.size) + days.map(d => chip("days", d, shortDay(d), state.days.has(d))).join("");
+    $("f-topics").innerHTML = chip("topics", "", "All topics", !state.topics.size) + topics.map(([s, t]) => chip("topics", s, t, state.topics.has(s))).join("");
+  }
+  function renderList() {
+    const xs = list(), total = xs.reduce((t, x) => t + x.minutes, 0);
+    $("pod-sort").value = state.sort;
+    $("pod-count").innerHTML = `${xs.length} episode${xs.length === 1 ? "" : "s"} <span class="pl-pod-meta">· ${Math.round(total)} min · plays in this order</span>`;
+    const playingNow = (x) => current && current.kind === "daily" && x.date === current.date && x.slug === current.slug;
+    $("pod-list").innerHTML = xs.map((x, i) => `<li draggable="true" data-key="${esc(x.date + "/" + x.slug)}"${playingNow(x) ? ' class="on" aria-current="true"' : ""}>
+        <span class="pl-pod-grip" aria-hidden="true" title="Drag to reorder">⠿</span>
+        <button type="button" class="pl-pod-item" data-key="${esc(x.date + "/" + x.slug)}"><span class="pl-pod-n">${i + 1}</span>
+          <span class="pl-pod-ch-name">${esc(x.topic)}</span>
+          <span class="pl-pod-meta">${esc(shortDay(x.date))} · ${x.papers} paper${x.papers === 1 ? "" : "s"} · ${x.minutes} min</span></button>
+        <span class="pl-pod-move"><button type="button" data-move="-1" aria-label="Move ${esc(x.topic)}, ${esc(shortDay(x.date))} up" ${i ? "" : "disabled"}>↑</button><button
+          type="button" data-move="1" aria-label="Move ${esc(x.topic)}, ${esc(shortDay(x.date))} down" ${i < xs.length - 1 ? "" : "disabled"}>↓</button></span>
+      </li>`).join("") || `<li class="pl-pod-none">No episodes match these filters.</li>`;
+    $("pod-prev").disabled = position() <= 0;
+    $("pod-next").disabled = position() < 0 ? !queue().length : position() >= queue().length - 1;
+  }
+  function changed() { remember(); renderFilters(); renderList(); }
+  function moveTo(fromKey, toIndex) {  // a custom order: the list as shown, with one episode moved
+    const keys = list().map(x => `${x.date}/${x.slug}`), from = keys.indexOf(fromKey);
+    if (from < 0 || toIndex < 0 || toIndex >= keys.length) return;
+    keys.splice(toIndex, 0, keys.splice(from, 1)[0]);
+    state.order = [...keys, ...state.order.filter(k => !keys.includes(k))];
+    state.sort = "custom";
+    changed();
+  }
+
+  $("pod-filters").onclick = (e) => {
+    const b = e.target.closest(".pl-pod-chip");
+    if (!b) return;
+    const set = state[b.dataset.group], v = b.dataset.value;
+    if (!v) set.clear();                               // "All"
+    else if (set.has(v)) set.delete(v); else set.add(v);  // several days or topics at once
+    changed();
+  };
+  $("pod-sort").onchange = () => { state.sort = $("pod-sort").value; changed(); };
+  $("pod-list").onclick = (e) => {
+    const mv = e.target.closest("button[data-move]");
+    if (mv) {
+      const li = mv.closest("li"), keys = list().map(x => `${x.date}/${x.slug}`);
+      moveTo(li.dataset.key, keys.indexOf(li.dataset.key) + +mv.dataset.move);
+      const again = $("pod-list").querySelector(`li[data-key="${CSS.escape(li.dataset.key)}"] button[data-move="${mv.dataset.move}"]`);
+      (again && !again.disabled ? again : $("pod-list").querySelector(`li[data-key="${CSS.escape(li.dataset.key)}"] .pl-pod-item`))?.focus();
+      return;
+    }
+    const b = e.target.closest(".pl-pod-item");
+    if (b) { const [date, slug] = b.dataset.key.split("/"); load({ kind: "daily", date, slug }, true); }
+  };
+  let dragKey = null;  // drag and drop to reorder
+  $("pod-list").addEventListener("dragstart", (e) => {
+    const li = e.target.closest("li[data-key]");
+    if (!li) return;
+    dragKey = li.dataset.key;
+    li.classList.add("dragging");
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", dragKey);
+  });
+  $("pod-list").addEventListener("dragover", (e) => {
+    if (!dragKey) return;
+    e.preventDefault();
+    const li = e.target.closest("li[data-key]");
+    $("pod-list").querySelectorAll(".drop-before, .drop-after").forEach(x => x.classList.remove("drop-before", "drop-after"));
+    if (li && li.dataset.key !== dragKey) {
+      const after = e.clientY > li.getBoundingClientRect().top + li.offsetHeight / 2;
+      li.classList.add(after ? "drop-after" : "drop-before");
+    }
+  });
+  $("pod-list").addEventListener("drop", (e) => {
+    e.preventDefault();
+    const li = e.target.closest("li[data-key]");
+    if (!dragKey || !li || li.dataset.key === dragKey) return;
+    const keys = list().map(x => `${x.date}/${x.slug}`).filter(k => k !== dragKey);
+    const after = e.clientY > li.getBoundingClientRect().top + li.offsetHeight / 2;
+    const target = keys.indexOf(li.dataset.key) + (after ? 1 : 0);
+    const k = dragKey;
+    dragKey = null;
+    moveTo(k, target);
+  });
+  $("pod-list").addEventListener("dragend", () => {
+    dragKey = null;
+    $("pod-list").querySelectorAll(".dragging, .drop-before, .drop-after").forEach(x => x.classList.remove("dragging", "drop-before", "drop-after"));
+  });
 
   // ---- loading an episode ----
   function load(c, autoplay) {
@@ -92,7 +205,7 @@
     $("pod-title").textContent = "Loading…";
     $("pod-meta").textContent = "";
     if (autoplay) audio.play().catch(() => { /* the browser wants a click first */ });
-    renderNav();
+    renderList();
     renderOthers();
     fetch(path + ".json").then(r => r.json()).then(n => {
       if (keyOf(current) !== keyOf(c)) return;  // another episode was chosen meanwhile
@@ -112,49 +225,14 @@
       }
     }).catch(() => { $("pod-notes").innerHTML = ""; $("pod-title").textContent = "Paper Library podcast"; });
   }
-
-  function step(delta, autoplay) {  // the previous or next episode in the playlist
-    const list = playlist(), i = position() + delta;
-    if (i < 0 || i >= list.length) return false;
-    load(current.kind === "daily" ? { kind: "daily", date: current.date, slug: list[i].slug } : { kind: "episode", e: list[i].e }, autoplay);
+  function step(delta, autoplay) {  // the previous or next episode in the list (the first one if this one isn't in it)
+    const q = queue(), i = position();
+    const j = i < 0 ? (delta > 0 ? 0 : -1) : i + delta;
+    if (j < 0 || j >= q.length) return false;
+    load(current.kind === "daily" || i < 0 ? { kind: "daily", date: q[j].date, slug: q[j].slug } : { kind: "episode", e: q[j].e }, autoplay);
     return true;
   }
-  function goDay(date, autoplay) {  // that day's episode of the same topic, or else the day's first topic
-    const list = dayList(date);
-    if (!list.length) return;
-    const same = list.find(x => x.slug === current.slug);
-    load({ kind: "daily", date, slug: (same || list[0]).slug }, autoplay);
-  }
 
-  // ---- navigation bar, playlist, show notes ----
-  function renderNav() {
-    const daily = current.kind === "daily", i = position();
-    $("pod-nav").hidden = !daily;
-    $("pod-prev").disabled = i <= 0;
-    $("pod-next").disabled = i < 0 || i >= playlist().length - 1;
-    if (daily) {
-      const today = dayList(current.date);
-      $("nav-topic").innerHTML = today.map(x => `<option value="${esc(x.slug)}"${x.slug === current.slug ? " selected" : ""}>${esc(x.topic)}</option>`).join("");
-      $("nav-topic-prev").disabled = i <= 0;
-      $("nav-topic-next").disabled = i >= today.length - 1;
-      const days = topicDays(current.slug), j = days.indexOf(current.date);  // newest first
-      $("nav-day").innerHTML = daysOf().map(d => `<option value="${d}"${d === current.date ? " selected" : ""}>${esc(shortDay(d))}${
-        days.includes(d) ? "" : " (other topics)"}</option>`).join("");
-      $("nav-day-prev").disabled = j < 0 || j >= days.length - 1;
-      $("nav-day-next").disabled = j <= 0;
-    }
-    renderPlaylist();
-  }
-  function renderPlaylist() {
-    if (current.kind !== "daily") { $("pod-playlist").innerHTML = ""; return; }
-    const list = dayList(current.date), total = list.reduce((t, x) => t + x.minutes, 0);
-    $("pod-playlist").innerHTML = `<h3 class="pl-pod-h">Playlist · ${esc(dayName(current.date))}
-        <span class="pl-pod-meta">${list.length} topic${list.length === 1 ? "" : "s"} · ${Math.round(total)} min</span></h3>
-      <ol class="pl-pod-list">${list.map((x, i) => `<li${x.slug === current.slug ? ' class="on" aria-current="true"' : ""}>
-        <button type="button" data-slug="${esc(x.slug)}"><span class="pl-pod-n">${i + 1}</span>
-          <span class="pl-pod-ch-name">${esc(x.topic)}</span>
-          <span class="pl-pod-meta">${x.papers} paper${x.papers === 1 ? "" : "s"} · ${x.minutes} min</span></button></li>`).join("")}</ol>`;
-  }
   function renderNotes(daily) {
     $("pod-notes").innerHTML = `<h3 class="pl-pod-h">${daily ? "Papers in this episode" : "Chapters"}</h3>
       <ol class="pl-pod-chapters">${chapters.map((c, i) => `<li>
@@ -174,20 +252,6 @@
         <a href="?e=${encodeURIComponent(e.e)}" data-e="${esc(e.e)}">${esc(e.title)}</a>
         <span class="pl-pod-meta">${esc(e.minutes)} min</span></li>`).join("")}</ul></details>`;
   }
-
-  const playing = () => !audio.paused;
-  $("nav-topic").onchange = () => load({ kind: "daily", date: current.date, slug: $("nav-topic").value }, playing());
-  $("nav-topic-prev").onclick = () => step(-1, playing());
-  $("nav-topic-next").onclick = () => step(1, playing());
-  $("nav-day").onchange = () => goDay($("nav-day").value, playing());
-  $("nav-day-prev").onclick = () => { const d = topicDays(current.slug); goDay(d[d.indexOf(current.date) + 1], playing()); };
-  $("nav-day-next").onclick = () => { const d = topicDays(current.slug); goDay(d[d.indexOf(current.date) - 1], playing()); };
-  $("pod-prev").onclick = () => step(-1, playing());
-  $("pod-next").onclick = () => step(1, playing());
-  $("pod-playlist").onclick = (e) => {
-    const b = e.target.closest("button[data-slug]");
-    if (b) load({ kind: "daily", date: current.date, slug: b.dataset.slug }, true);
-  };
   $("pod-notes").onclick = (e) => {
     const b = e.target.closest(".pl-pod-ch");
     if (b && chapters[+b.dataset.i]) { audio.currentTime = chapters[+b.dataset.i].start; if (audio.paused) audio.play(); }
@@ -198,6 +262,9 @@
   };
 
   // ---- playback ----
+  const playing = () => !audio.paused;
+  $("pod-prev").onclick = () => step(-1, playing());
+  $("pod-next").onclick = () => step(1, playing());
   $("pod-speed").value = String(parseFloat(store.get("pl-podcast-speed")) || 1);
   $("pod-speed").onchange = () => { audio.playbackRate = parseFloat($("pod-speed").value); store.set("pl-podcast-speed", $("pod-speed").value); };
   $("pod-auto").checked = store.get("pl-podcast-auto") !== "0";
@@ -217,7 +284,7 @@
   });
   audio.addEventListener("ended", () => {
     store.set(`pl-podcast-pos:${keyOf(current)}`, "0");
-    if ($("pod-auto").checked) step(1, true);  // the next episode in the playlist
+    if ($("pod-auto").checked) step(1, true);  // the next episode in the list
   });
   $("pod-seek").addEventListener("input", () => { dragging = true; $("pod-now").textContent = clock($("pod-seek").value); });
   $("pod-seek").addEventListener("change", () => { audio.currentTime = +$("pod-seek").value; dragging = false; });
@@ -225,12 +292,12 @@
     $("pod-seek").max = Math.floor(audio.duration);
     $("pod-total").textContent = clock(audio.duration);
     drawTicks();
-    const saved = parseFloat(store.get(`pl-podcast-pos:${keyOf(current)}`));
-    if (!resumed && saved > 10 && saved < audio.duration - 10) {  // where you stopped last time
+    const at = parseFloat(store.get(`pl-podcast-pos:${keyOf(current)}`));
+    if (!resumed && at > 10 && at < audio.duration - 10) {  // where you stopped last time
       resumed = true;
-      audio.currentTime = saved;
+      audio.currentTime = at;
       $("pod-resume").hidden = false;
-      $("pod-resume").innerHTML = `Resuming at ${clock(saved)}. <button type="button" id="pod-restart">Start from the beginning</button>`;
+      $("pod-resume").innerHTML = `Resuming at ${clock(at)}. <button type="button" id="pod-restart">Start from the beginning</button>`;
       $("pod-restart").onclick = () => { audio.currentTime = 0; $("pod-resume").hidden = true; };
     }
   });
@@ -242,7 +309,6 @@
     $("pod-ticks").innerHTML = audio.duration && chapters.length > 1 ? chapters.slice(1).map(c =>
       `<span style="left:${(100 * c.start / audio.duration).toFixed(2)}%"></span>`).join("") : "";
   }
-
   document.addEventListener("keydown", (e) => {
     if (e.target.closest("input, select, textarea") || (e.key === " " && e.target.closest("button, a, summary"))) return;
     if (e.key === " ") { e.preventDefault(); toggle(); }
@@ -261,13 +327,20 @@
     ms.setActionHandler("nexttrack", () => step(1, true));
   }
 
-  // ---- start: the episode in the address, or the latest day's first topic ----
+  // ---- start: the episode in the address, or the first episode of the list ----
   fetch(base + "podcasts.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : {}).catch(() => ({})).then(d => {
     index = { daily: d.daily || [], episodes: d.episodes || [] };
+    (d.topics || []).forEach((s, i) => { rank[s] = i; });  // the library's topic order
+    index.daily.forEach(x => { if (!(x.slug in rank)) rank[x.slug] = Object.keys(rank).length; });
+    const known = (set, values) => [...set].filter(v => values.includes(v));  // drop filters for days that are gone
+    state.days = new Set(known(state.days, index.daily.map(x => x.date)));
+    state.topics = new Set(known(state.topics, index.daily.map(x => x.slug)));
+    $("pod-filters").hidden = $("pod-listhead").hidden = !index.daily.length;
+    renderFilters();
     const q = new URLSearchParams(location.search), day = q.get("d");
     if (q.get("e") && /^[\w-]+$/.test(q.get("e"))) load({ kind: "episode", e: q.get("e") }, false);
     else if (day && index.daily.some(x => x.date === day && x.slug === q.get("t"))) load({ kind: "daily", date: day, slug: q.get("t") }, false);
-    else if (day && dayList(day).length) load({ kind: "daily", date: day, slug: dayList(day)[0].slug }, false);
+    else if (list().length) load({ kind: "daily", date: list()[0].date, slug: list()[0].slug }, false);
     else if (index.daily.length) load({ kind: "daily", date: index.daily[0].date, slug: index.daily[0].slug }, false);
     else if (index.episodes.length) load({ kind: "episode", e: index.episodes[0].e }, false);
     else root.innerHTML = `<p class="pl-pod-empty">No episodes yet: the first ones arrive after the next morning scan.</p>`;
