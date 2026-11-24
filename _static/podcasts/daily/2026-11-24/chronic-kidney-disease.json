@@ -1,0 +1,38 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "papers": [
+  "8ba40927-bbdd-342b-a29e-24546344d48c",
+  "bbff9ca3-932e-3147-9b3e-420bf024fc3e"
+ ],
+ "topic": "Chronic Kidney Disease",
+ "slug": "chronic-kidney-disease",
+ "date": "2026-11-24",
+ "title": "Chronic Kidney Disease · Tuesday, November 24",
+ "seconds": 136.8,
+ "drive": "https://drive.google.com/open?id=1FWRLCiKeHQBTVGk1PBmLcRo9lmPpOtuj",
+ "chapters": [
+  {
+   "title": "Chronic Kidney Disease",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/chronic-kidney-disease/papers.html",
+   "papers": [
+    {
+     "title": "Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney",
+     "authors": "Arif Rather and Dongwon Lee",
+     "source": "bioRxiv",
+     "date": "2026-10-04",
+     "url": "https://doi.org/10.64898/2026.09.28.746288"
+    },
+    {
+     "title": "Genomic and multi-omic insights into the heterogeneity of diabetic kidney disease",
+     "authors": "Jae Hyun Bae et al.",
+     "source": "Nature reviews. Nephrology",
+     "date": "2026-11-09",
+     "url": "https://doi.org/10.1038/s41581-026-01144-3"
+    }
+   ]
+  }
+ ]
+}

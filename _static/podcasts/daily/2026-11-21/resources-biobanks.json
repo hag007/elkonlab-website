@@ -1,0 +1,27 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "topic": "Resources: Biobanks",
+ "slug": "resources-biobanks",
+ "date": "2026-11-21",
+ "title": "Resources: Biobanks · Saturday, November 21",
+ "seconds": 114.3,
+ "drive": "https://drive.google.com/open?id=18NeNlRp_vEnbNriFaMpEfaRnLzHSxaQq",
+ "chapters": [
+  {
+   "title": "Resources: Biobanks",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-biobanks/papers.html",
+   "papers": [
+    {
+     "title": "GI-DB: a comprehensive variant database for exploring the extensive genetic diversity of the Indian population",
+     "authors": "Bharathram Uppili et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1179"
+    }
+   ]
+  }
+ ]
+}

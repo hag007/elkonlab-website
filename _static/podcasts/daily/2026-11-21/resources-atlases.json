@@ -1,0 +1,27 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "topic": "Resources: Atlases",
+ "slug": "resources-atlases",
+ "date": "2026-11-21",
+ "title": "Resources: Atlases · Saturday, November 21",
+ "seconds": 103.3,
+ "drive": "https://drive.google.com/open?id=1YSqzvBmNT5xNcVPCVd6ndtQgIGllXLZP",
+ "chapters": [
+  {
+   "title": "Resources: Atlases",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-atlases/papers.html",
+   "papers": [
+    {
+     "title": "DIANA-miTED v2: an expanded microRNA tissue expression database with an integrated healthy-tissue reference atlas",
+     "authors": "Marios Miliotis et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1181"
+    }
+   ]
+  }
+ ]
+}

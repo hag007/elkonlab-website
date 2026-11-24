@@ -1,0 +1,30 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "papers": [
+  "cbdd5850-c70f-3841-b3a8-a13002e73e45"
+ ],
+ "topic": "Resources: Biobanks",
+ "slug": "resources-biobanks",
+ "date": "2026-11-24",
+ "title": "Resources: Biobanks · Tuesday, November 24",
+ "seconds": 113.6,
+ "drive": "https://drive.google.com/open?id=1KeBa-55BTNT1gkkD76UNUnbYGi4NVH8E",
+ "chapters": [
+  {
+   "title": "Resources: Biobanks",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-biobanks/papers.html",
+   "papers": [
+    {
+     "title": "Overview of recruitment strategies to reach the million milestone and characterization of the Million Veteran Program cohort",
+     "authors": "SB Whitbourne et al.",
+     "source": "PLoS One",
+     "date": "2026",
+     "url": "https://doi.org/10.1371/journal.pone.0362460"
+    }
+   ]
+  }
+ ]
+}

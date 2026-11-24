@@ -2,6 +2,10 @@
  "kind": "daily",
  "voice": "4",
  "version": "5",
+ "papers": [
+  "597fa542-895e-320d-b4e2-28b8cc13cf39",
+  "e4deafae-b617-3412-bff9-63e0bf141265"
+ ],
  "topic": "Non-coding variant effect prediction",
  "slug": "non-coding-variant-effect-prediction",
  "date": "2026-11-24",

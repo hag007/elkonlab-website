@@ -2,6 +2,10 @@
  "kind": "daily",
  "voice": "4",
  "version": "5",
+ "papers": [
+  "59808674-8331-3d72-96b0-1c5a20eefe45",
+  "e5ee7fbb-51c9-379a-a12f-60ccb73238ff"
+ ],
  "topic": "Polygenic risk prediction",
  "slug": "polygenic-risk-prediction",
  "date": "2026-11-24",

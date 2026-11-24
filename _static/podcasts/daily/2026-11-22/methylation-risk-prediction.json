@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "voice": "3",
+ "voice": "4",
  "version": "5",
  "topic": "Methylation risk prediction",
  "slug": "methylation-risk-prediction",
  "date": "2026-11-22",
  "title": "Methylation risk prediction · Sunday, November 22",
- "seconds": 123.0,
+ "seconds": 140.7,
  "drive": "https://drive.google.com/open?id=1eCGEmBLw6Z40_i3VLp_SrmS2IPe47cfw",
  "chapters": [
   {
@@ -20,6 +20,13 @@
      "source": "medRxiv",
      "date": "2026-11-20",
      "url": "https://doi.org/10.64898/2026.11.18.26368164"
+    },
+    {
+     "title": "Enduring DNA Methylation Marks of Blast and Trauma Exposures in Warfighters",
+     "authors": "Zhaoyu Wang et al.",
+     "source": "Military Medicine",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/milmed/usag525"
     }
    ]
   }

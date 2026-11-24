@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "3",
+ "voice": "4",
  "version": "5",
  "topic": "Integrated risk prediction",
  "slug": "integrated-risk-prediction",
@@ -22,18 +22,11 @@
      "url": "https://doi.org/10.64898/2026.11.18.26368164"
     },
     {
-     "title": "PRISM-AD quantifies clinical and genetic contributions to cognitive risk prediction",
-     "authors": "Yulin Dai et al.",
+     "title": "How inherited variation shapes human disease trajectories",
+     "authors": "Sarah Urbut et al.",
      "source": "medRxiv",
-     "date": "2026-11-04",
-     "url": "https://doi.org/10.64898/2026.11.03.26367206"
-    },
-    {
-     "title": "Machine Learning-Based Classification of Type 2 Diabetes Mellitus Using a Polygenic Risk Score and DNA Methylation",
-     "authors": "Jihun Kim et al.",
-     "source": "Healthcare informatics research",
-     "date": "2026-10-31",
-     "url": "https://doi.org/10.4258/hir.2026.32.4.365"
+     "date": "2026-11-13",
+     "url": "https://doi.org/10.64898/2026.11.11.26367654"
     },
     {
      "title": "Metabolic syndrome, genetic susceptibility, and risk of cardiovascular disease: a prospective study in the UK Biobank",
@@ -43,11 +36,18 @@
      "url": "https://doi.org/10.3389/fcvm.2026.1871387"
     },
     {
-     "title": "How inherited variation shapes human disease trajectories",
-     "authors": "Sarah Urbut et al.",
+     "title": "Machine Learning-Based Classification of Type 2 Diabetes Mellitus Using a Polygenic Risk Score and DNA Methylation",
+     "authors": "Jihun Kim et al.",
+     "source": "Healthcare informatics research",
+     "date": "2026-10-31",
+     "url": "https://doi.org/10.4258/hir.2026.32.4.365"
+    },
+    {
+     "title": "PRISM-AD quantifies clinical and genetic contributions to cognitive risk prediction",
+     "authors": "Yulin Dai et al.",
      "source": "medRxiv",
-     "date": "2026-11-13",
-     "url": "https://doi.org/10.64898/2026.11.11.26367654"
+     "date": "2026-11-04",
+     "url": "https://doi.org/10.64898/2026.11.03.26367206"
     }
    ]
   }

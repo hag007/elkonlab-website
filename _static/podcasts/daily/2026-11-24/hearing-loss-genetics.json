@@ -1,0 +1,30 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "papers": [
+  "dc103a0e-4893-327f-8e63-057e86370c5c"
+ ],
+ "topic": "Hearing loss genetics",
+ "slug": "hearing-loss-genetics",
+ "date": "2026-11-24",
+ "title": "Hearing loss genetics · Tuesday, November 24",
+ "seconds": 102.6,
+ "drive": "https://drive.google.com/open?id=1Lmf3AYcPRPwYfg7iw2eJuXg5GGbRxchH",
+ "chapters": [
+  {
+   "title": "Hearing loss genetics",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/hearing-loss-genetics/papers.html",
+   "papers": [
+    {
+     "title": "ATP8B1-TMEM30B flippase activity maintains stereocilia lipid asymmetry required for hearing",
+     "authors": "Henry Newkirk De Hoyos et al.",
+     "source": "eLife",
+     "date": "2026-11-09",
+     "url": "https://doi.org/10.7554/elife.110466"
+    }
+   ]
+  }
+ ]
+}

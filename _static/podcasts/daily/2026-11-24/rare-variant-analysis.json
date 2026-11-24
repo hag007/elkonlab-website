@@ -2,6 +2,11 @@
  "kind": "daily",
  "voice": "4",
  "version": "5",
+ "papers": [
+  "0fc297da-4e0d-3f54-860c-3a17b701b4bc",
+  "82027d79-76a1-34a5-b86a-c21f50440ebf",
+  "8d2e3901-2d5d-377e-854e-a5f6cb75a079"
+ ],
  "topic": "Rare variant analysis",
  "slug": "rare-variant-analysis",
  "date": "2026-11-24",

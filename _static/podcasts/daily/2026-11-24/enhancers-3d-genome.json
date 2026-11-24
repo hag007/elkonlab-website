@@ -2,6 +2,11 @@
  "kind": "daily",
  "voice": "4",
  "version": "5",
+ "papers": [
+  "69deafe8-fbbb-36a9-8ce9-8e41761e69df",
+  "ccf78632-ebd6-3a36-b356-f8ff7716d61d",
+  "d25f4508-1fc6-3767-9bd0-64d565d1d9f7"
+ ],
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-24",
@@ -15,11 +20,11 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
    "papers": [
     {
-     "title": "Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer",
-     "authors": "O. Faroque et al.",
+     "title": "BASIN: Background-Anchored Signal Normalization with Integrated Quality Control for CUT&RUN and CUT&Tag",
+     "authors": "H. R. Salzler et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.20.768082"
+     "url": "https://doi.org/10.64898/2026.11.21.768281"
     },
     {
      "title": "Cross- species developmental multiomics identifies RHOJ as a regulator of human-enriched cortical progenitor states",
@@ -29,11 +34,11 @@
      "url": "https://doi.org/10.64898/2026.11.21.768345"
     },
     {
-     "title": "BASIN: Background-Anchored Signal Normalization with Integrated Quality Control for CUT&RUN and CUT&Tag",
-     "authors": "H. R. Salzler et al.",
+     "title": "Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer",
+     "authors": "O. Faroque et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.21.768281"
+     "url": "https://doi.org/10.64898/2026.11.20.768082"
     }
    ]
   }

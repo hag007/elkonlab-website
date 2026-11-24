@@ -1,0 +1,27 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "topic": "Biological network analysis",
+ "slug": "biological-network-analysis",
+ "date": "2026-11-22",
+ "title": "Biological network analysis · Sunday, November 22",
+ "seconds": 108.5,
+ "drive": "https://drive.google.com/open?id=1gTGT-Ha5S8kxCBzoEZwazOX-PN7CLzfe",
+ "chapters": [
+  {
+   "title": "Biological network analysis",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/biological-network-analysis/papers.html",
+   "papers": [
+    {
+     "title": "OMIGAT: Multi-Feature Enhanced Collaborative Attention and Graph Convolution Model for Cancer Driver Gene Identification",
+     "authors": "H Yang et al.",
+     "source": "Interdisciplinary sciences, computational life sciences",
+     "date": "2026",
+     "url": "https://doi.org/10.1007/s12539-026-00887-8"
+    }
+   ]
+  }
+ ]
+}

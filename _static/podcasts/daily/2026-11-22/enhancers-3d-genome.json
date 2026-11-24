@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "voice": "3",
+ "voice": "4",
  "version": "5",
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-22",
  "title": "Enhancers & 3D genome · Sunday, November 22",
- "seconds": 189.0,
+ "seconds": 169.7,
  "drive": "https://drive.google.com/open?id=1EI1Yz9VrIQe5ySSCbpfRh-KLKn2ZCwMe",
  "chapters": [
   {
@@ -14,6 +14,20 @@
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
    "papers": [
+    {
+     "title": "Both Endogenous Enhancer and Retrotransposon Inserted Nearby Are Required to Induce Ectopic Expression in Danforth's Short Tail Mutation",
+     "authors": "Midori Tokuyasu et al.",
+     "source": "Genes to Cells",
+     "date": "2026",
+     "url": "https://doi.org/10.1111/gtc.70161"
+    },
+    {
+     "title": "Genetic Dissection of the Mouse Class I Odorant Receptor Gene Cluster",
+     "authors": "Tetsuo Iwata et al.",
+     "source": "Genes to Cells",
+     "date": "2026",
+     "url": "https://doi.org/10.1111/gtc.70159"
+    },
     {
      "title": "Overlapping enhancer activity robustly regulates rax expression during ocular development in zebrafish",
      "authors": "Dwon Jordana and Nathan Clark",

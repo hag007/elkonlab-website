@@ -2,6 +2,9 @@
  "kind": "daily",
  "voice": "4",
  "version": "5",
+ "papers": [
+  "4835aed5-a138-3868-a845-f7d9a83911fe"
+ ],
  "topic": "Integrated risk prediction",
  "slug": "integrated-risk-prediction",
  "date": "2026-11-24",

@@ -1,0 +1,27 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "topic": "Resources: Atlases",
+ "slug": "resources-atlases",
+ "date": "2026-11-22",
+ "title": "Resources: Atlases · Sunday, November 22",
+ "seconds": 116.8,
+ "drive": "https://drive.google.com/open?id=1X-sciTayrXhTHQbeZtBTN2KwHACOdMmV",
+ "chapters": [
+  {
+   "title": "Resources: Atlases",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-atlases/papers.html",
+   "papers": [
+    {
+     "title": "LACA: a cross-species single-cell resource for exploring longevity and aging-associated cellular and molecular programs",
+     "authors": "Taoyu Chen et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1129"
+    }
+   ]
+  }
+ ]
+}

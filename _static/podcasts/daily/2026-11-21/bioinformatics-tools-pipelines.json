@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "voice": "3",
+ "voice": "4",
  "version": "5",
  "topic": "Bioinformatics tools & pipelines",
  "slug": "bioinformatics-tools-pipelines",
  "date": "2026-11-21",
  "title": "Bioinformatics tools & pipelines · Saturday, November 21",
- "seconds": 199.2,
+ "seconds": 165.9,
  "drive": "https://drive.google.com/open?id=1KOkHBMtUG2k_hYWQt1uKwkH1XQ_V8jp_",
  "chapters": [
   {
@@ -14,6 +14,13 @@
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
    "papers": [
+    {
+     "title": "DGIdb in 2026: an interoperable resource for the druggable genome",
+     "authors": "Matthew Cannon et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1191"
+    },
     {
      "title": "PDAC BioPortal: An Integrated Web Resource for Multi-Scale Analysis of Pancreatic Cancer Transcriptomics",
      "authors": "Prince Kumar and Erina Vlashi",

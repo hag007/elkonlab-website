@@ -1,0 +1,30 @@
+{
+ "kind": "daily",
+ "voice": "4",
+ "version": "5",
+ "papers": [
+  "d6abc7cc-73b3-3421-afe8-5706ee845d0f"
+ ],
+ "topic": "Resources: Atlases",
+ "slug": "resources-atlases",
+ "date": "2026-11-24",
+ "title": "Resources: Atlases · Tuesday, November 24",
+ "seconds": 124.5,
+ "drive": "https://drive.google.com/open?id=1LppmMZjK-2KD48BkR68PaOwrsrjAVhGQ",
+ "chapters": [
+  {
+   "title": "Resources: Atlases",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-atlases/papers.html",
+   "papers": [
+    {
+     "title": "MIsoTEx: a mammalian transcript-isoform classification framework and database for exploring tissue distribution, expression stability, and abundance patterns",
+     "authors": "Govindkumar Balagannavar et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1261"
+    }
+   ]
+  }
+ ]
+}
