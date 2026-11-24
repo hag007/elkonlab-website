@@ -1,0 +1,36 @@
+{
+ "kind": "daily",
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-24",
+ "title": "Functional interpretation of GWAS · Tuesday, November 24",
+ "seconds": 152.6,
+ "drive": "https://drive.google.com/open?id=1vddZaPFf4p-HoHDsH2Mcu98jtECcLOXb",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "The IGVF Catalog Knowledge Graph",
+     "authors": "Shengcheng Dong et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.20.768224"
+    },
+    {
+     "title": "CellColocDB: a disease-centred resource linking GWAS loci to genes, cell contexts, and fine-mapping evidence",
+     "authors": "Meng Wu et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1209"
+    }
+   ]
+  }
+ ]
+}

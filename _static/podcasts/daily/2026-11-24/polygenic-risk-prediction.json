@@ -1,0 +1,36 @@
+{
+ "kind": "daily",
+ "topic": "Polygenic risk prediction",
+ "slug": "polygenic-risk-prediction",
+ "date": "2026-11-24",
+ "title": "Polygenic risk prediction · Tuesday, November 24",
+ "seconds": 139.2,
+ "drive": "https://drive.google.com/open?id=1pd06ht5-FZRTAgb3CoGsV4tZanq6-3im",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Polygenic risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/polygenic-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Quantification of Bias-Variance Tradeoffs in Genome-Wide Polygenic Indices: When 'Good' PGIs are Bad and 'Bad' PGIs are Good",
+     "authors": "Yavor Dragostinov et al.",
+     "source": "medRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.18.26368405"
+    },
+    {
+     "title": "Fixed group shrinkage exposes the fairness accuracy Pareto frontier for cross ancestry polygenic risk scores",
+     "authors": "Shoukai Yu et al.",
+     "source": "Research Square",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.21203/rs.3.rs-11570074/v1"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "kind": "daily",
+ "topic": "Enhancers & 3D genome",
+ "slug": "enhancers-3d-genome",
+ "date": "2026-11-24",
+ "title": "Enhancers & 3D genome · Tuesday, November 24",
+ "seconds": 177.6,
+ "drive": "https://drive.google.com/open?id=1YeNaKfPzYMgwKhIiBzhggrSiPEcdI7Ah",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Enhancers & 3D genome",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
+   "papers": [
+    {
+     "title": "Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer",
+     "authors": "O. Faroque et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.20.768082"
+    },
+    {
+     "title": "Cross- species developmental multiomics identifies RHOJ as a regulator of human-enriched cortical progenitor states",
+     "authors": "Y. Sun et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.21.768345"
+    },
+    {
+     "title": "BASIN: Background-Anchored Signal Normalization with Integrated Quality Control for CUT&RUN and CUT&Tag",
+     "authors": "H. R. Salzler et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.21.768281"
+    }
+   ]
+  }
+ ]
+}

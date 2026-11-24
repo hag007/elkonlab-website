@@ -1,0 +1,29 @@
+{
+ "kind": "daily",
+ "topic": "Integrated risk prediction",
+ "slug": "integrated-risk-prediction",
+ "date": "2026-11-24",
+ "title": "Integrated risk prediction · Tuesday, November 24",
+ "seconds": 101.2,
+ "drive": "https://drive.google.com/open?id=1rOltn3wLxYs8B6UekxBiMQ5KKxr0IbTs",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Integrated risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/integrated-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Combining family history, polygenic scores, and childhood trauma to predict major depressive disorder",
+     "authors": "Rujia Wang et al.",
+     "source": "medRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.19.26368522"
+    }
+   ]
+  }
+ ]
+}

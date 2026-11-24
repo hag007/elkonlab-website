@@ -1,0 +1,43 @@
+{
+ "kind": "daily",
+ "topic": "Rare variant analysis",
+ "slug": "rare-variant-analysis",
+ "date": "2026-11-24",
+ "title": "Rare variant analysis · Tuesday, November 24",
+ "seconds": 173.9,
+ "drive": "https://drive.google.com/open?id=1tS4vWVEpa1pHA5YAwYrjsX-0-XiPpRFi",
+ "hosts": [
+  "Maya",
+  "Daniel"
+ ],
+ "chapters": [
+  {
+   "title": "Rare variant analysis",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/rare-variant-analysis/papers.html",
+   "papers": [
+    {
+     "title": "Genetic analysis of non-familial early-onset Alzheimer's disease patients",
+     "authors": "F. Ecca et al.",
+     "source": "medRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.20.26367760"
+    },
+    {
+     "title": "Optimizing Exomiser to prioritize candidate genes underlying monogenic forms of common disease",
+     "authors": "J Petrovska et al.",
+     "source": "medRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.20.26368494"
+    },
+    {
+     "title": "Meta-analysis of Sequencing Data Identifies Candidate Endometrial Cancer Susceptibility Genes",
+     "authors": "M. Laker et al.",
+     "source": "medRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.23.26368185"
+    }
+   ]
+  }
+ ]
+}
