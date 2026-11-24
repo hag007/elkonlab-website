@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Methylation risk prediction",
  "slug": "methylation-risk-prediction",
  "date": "2026-11-22",
  "title": "Methylation risk prediction · Sunday, November 22",
- "seconds": 112.8,
+ "seconds": 123.0,
  "drive": "https://drive.google.com/open?id=1eCGEmBLw6Z40_i3VLp_SrmS2IPe47cfw",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Methylation risk prediction",
