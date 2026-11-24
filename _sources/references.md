@@ -1,6 +1,6 @@
 # References
 
-444 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+445 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -225,9 +225,10 @@
 20. Zhuqing Shi, Ashley J Mulford, Huy Tran, et al.. Integrated Genetic Risk Stratifies Early-Onset Colorectal Cancer in Two Independent Cohorts. *Gastro hep advances*. 2026. doi: [10.1016/j.gastha.2026.101110](https://doi.org/10.1016/j.gastha.2026.101110) PMID: [43061375](https://pubmed.ncbi.nlm.nih.gov/43061375/)
 21. A Surawit, P Pasookhush, S Pumeiam, et al.. Novel prediabetes subtypes and genetic variants predict differential risk of progression to type 2 diabetes: a data-driven cohort analysis. *BMC Endocrine Disorders*. 2026. doi: [10.1186/s12902-026-02508-3](https://doi.org/10.1186/s12902-026-02508-3) PMID: [43052965](https://pubmed.ncbi.nlm.nih.gov/43052965/)
 22. Sarah Urbut, Buu Truong, Shaan Khurshid, et al.. How inherited variation shapes human disease trajectories. *medRxiv*. 2026. doi: [10.64898/2026.11.11.26367654](https://doi.org/10.64898/2026.11.11.26367654) PMID: [43060047](https://pubmed.ncbi.nlm.nih.gov/43060047/)
-23. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
-24. Hao Zhang, Mingyang Li, Sizhuang Huang, et al.. Joint Associations of Cardiovascular Health and Polygenic Risk with Incident Cardiovascular Disease across the CKM Syndrome Continuum: A Prospective Cohort Study. *Global heart*. 2026. doi: [10.5334/gh.1603](https://doi.org/10.5334/gh.1603) PMID: [43066065](https://pubmed.ncbi.nlm.nih.gov/43066065/)
-25. Lin Zhu, Xijie Guo, Shuting Chen, et al.. Metabolic syndrome, genetic susceptibility, and risk of cardiovascular disease: a prospective study in the UK Biobank. *Frontiers in cardiovascular medicine*. 2026. doi: [10.3389/fcvm.2026.1871387](https://doi.org/10.3389/fcvm.2026.1871387) PMID: [43061438](https://pubmed.ncbi.nlm.nih.gov/43061438/)
+23. Rujia Wang, Helena Davies, Sang-Hyuck Lee, et al.. Combining family history, polygenic scores, and childhood trauma to predict major depressive disorder. *medRxiv*. 2026. doi: [10.64898/2026.11.19.26368522](https://doi.org/10.64898/2026.11.19.26368522)
+24. J Williams, T Chen, X Hua, et al.. Integrating common and rare variants improves polygenic risk prediction across diverse populations. *Nat Commun*. 2026. doi: [10.1038/s41467-026-72185-2](https://doi.org/10.1038/s41467-026-72185-2) PMID: [42031785](https://pubmed.ncbi.nlm.nih.gov/42031785/)
+25. Hao Zhang, Mingyang Li, Sizhuang Huang, et al.. Joint Associations of Cardiovascular Health and Polygenic Risk with Incident Cardiovascular Disease across the CKM Syndrome Continuum: A Prospective Cohort Study. *Global heart*. 2026. doi: [10.5334/gh.1603](https://doi.org/10.5334/gh.1603) PMID: [43066065](https://pubmed.ncbi.nlm.nih.gov/43066065/)
+26. Lin Zhu, Xijie Guo, Shuting Chen, et al.. Metabolic syndrome, genetic susceptibility, and risk of cardiovascular disease: a prospective study in the UK Biobank. *Frontiers in cardiovascular medicine*. 2026. doi: [10.3389/fcvm.2026.1871387](https://doi.org/10.3389/fcvm.2026.1871387) PMID: [43061438](https://pubmed.ncbi.nlm.nih.gov/43061438/)
 
 ## Polygenic risk prediction
 
