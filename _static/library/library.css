@@ -308,3 +308,28 @@ a.pl-edit-topics + a.pl-edit-topics { margin-left: 8px; }
 .pl-pod-range label { display: inline-flex; gap: 6px; align-items: center; }
 .pl-pod-range input { font: inherit; padding: 3px 6px; border-radius: 6px; border: 1px solid var(--pst-color-border);
   background: var(--pst-color-surface); color: var(--pst-color-text-base); }
+
+/* Feed (feed.js) */
+.pl-feed-bar { position: sticky; top: 0; z-index: 5; display: grid; gap: 8px; padding: 10px 0; margin-bottom: 6px;
+  background: var(--pst-color-background); border-bottom: 1px solid var(--pst-color-border); }
+.pl-feed-sort { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-size: 0.9em;
+  color: var(--pst-color-text-muted); }
+.pl-feed-sort select { font: inherit; padding: 3px 6px; border-radius: 6px; border: 1px solid var(--pst-color-border);
+  background: var(--pst-color-surface); color: var(--pst-color-text-base); }
+.pl-feed { display: grid; gap: 18px; max-width: 720px; margin: 12px auto 0; }
+.pl-feed-card { border: 1px solid var(--pst-color-border); border-radius: 14px; overflow: hidden; background: var(--pst-color-surface); }
+.pl-feed-fig { display: block; background: #fff; border-bottom: 1px solid var(--pst-color-border); }
+.pl-feed-fig img { display: block; width: 100%; max-height: 460px; object-fit: contain; }
+.pl-feed-credit { font-size: 0.75em; color: var(--pst-color-text-muted); padding: 4px 16px 0; }
+.pl-feed-card.nofig { border-left: 4px solid var(--pst-color-primary); }
+.pl-feed-body { padding: 12px 16px 14px; }
+.pl-feed-body h3 { font-size: 1.08em; line-height: 1.35; margin: 4px 0 6px; }
+.pl-feed-body h3 a { color: inherit; text-decoration: none; }
+.pl-feed-body h3 a:hover { text-decoration: underline; }
+.pl-feed-body p { margin: 8px 0; line-height: 1.55; }
+.pl-feed-topics { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 0.78em; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .03em; }
+.pl-feed-topics a { color: var(--pst-color-primary); text-decoration: none; }
+.pl-feed-meta { font-size: 0.86em; color: var(--pst-color-text-muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pl-feed-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9em; }
+.pl-feed-more { display: flex; justify-content: center; margin: 18px 0; }
