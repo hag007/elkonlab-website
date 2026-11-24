@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "7898ef80-a821-3d50-9926-c7210e0ef118"
+ ],
  "topic": "Biological network analysis",
  "slug": "biological-network-analysis",
  "date": "2026-11-22",
@@ -19,7 +22,8 @@
      "authors": "H Yang et al.",
      "source": "Interdisciplinary sciences, computational life sciences",
      "date": "2026",
-     "url": "https://doi.org/10.1007/s12539-026-00887-8"
+     "url": "https://doi.org/10.1007/s12539-026-00887-8",
+     "start": 7.7
     }
    ]
   }

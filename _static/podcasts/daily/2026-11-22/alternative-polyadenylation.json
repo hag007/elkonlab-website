@@ -1,7 +1,15 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "754972fa-5f65-3e1e-a4aa-86bb62ab02ac",
+  "ad978542-d00e-3cbb-be43-754145e3547c",
+  "c04f3139-c510-3985-8250-a505652bee0e",
+  "c7653a86-78e7-358b-8d94-b8f0dd632cbd",
+  "e12291f5-1527-3f86-8974-7b86c3921b69",
+  "eb938ed2-7566-31fb-97c1-91ecef956ad9"
+ ],
  "topic": "Alternative polyadenylation",
  "slug": "alternative-polyadenylation",
  "date": "2026-11-22",
@@ -15,46 +23,52 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/alternative-polyadenylation/papers.html",
    "papers": [
     {
-     "title": "The RNA and protein landscapes of mouse brain organoids",
-     "authors": "AC Fromaget et al.",
-     "source": "iScience",
-     "date": "2026-11-01",
-     "url": "https://doi.org/10.1016/j.isci.2026.118144"
-    },
-    {
-     "title": "Hyperglycemia-responsive circRNA drives diabetic neuropathic pain by competing for PUM2 binding and promoting proNT3/CCL2 in DRG neurons",
-     "authors": "X Li et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-11",
-     "url": "https://doi.org/10.64898/2026.11.10.765753"
+     "title": "In Silico Prioritization of GWAS-Derived 3' UTR MicroRNA-Binding Variants at Colorectal Cancer Risk Loci Detected in Hispanic Patients from the All of Us Research Program",
+     "authors": "SS Ahmad et al.",
+     "source": "Research Square",
+     "date": "2026-11-13",
+     "url": "https://doi.org/10.21203/rs.3.rs-11272400/v1",
+     "start": 30.8
     },
     {
      "title": "A multi-tissue atlas of age-associated differential transcript usage in mouse reveals predominantly regulatory isoform switching across brain, liver, and adipose",
      "authors": "N Paidimukkala et al.",
      "source": "bioRxiv",
      "date": "2026-11-11",
-     "url": "https://doi.org/10.64898/2026.11.10.765779"
+     "url": "https://doi.org/10.64898/2026.11.10.765779",
+     "start": 100.3
     },
     {
-     "title": "In Silico Prioritization of GWAS-Derived 3' UTR MicroRNA-Binding Variants at Colorectal Cancer Risk Loci Detected in Hispanic Patients from the All of Us Research Program",
-     "authors": "SS Ahmad et al.",
-     "source": "Research Square",
-     "date": "2026-11-13",
-     "url": "https://doi.org/10.21203/rs.3.rs-11272400/v1"
+     "title": "Hyperglycemia-responsive circRNA drives diabetic neuropathic pain by competing for PUM2 binding and promoting proNT3/CCL2 in DRG neurons",
+     "authors": "X Li et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.64898/2026.11.10.765753",
+     "start": 138.9
+    },
+    {
+     "title": "The RNA and protein landscapes of mouse brain organoids",
+     "authors": "AC Fromaget et al.",
+     "source": "iScience",
+     "date": "2026-11-01",
+     "url": "https://doi.org/10.1016/j.isci.2026.118144",
+     "start": 126.8
     },
     {
      "title": "Deciphering the mechanisms of transcriptome remodeling in residual HCC recurrence post-radiofrequency ablation via long-read sequencing",
      "authors": "J Li et al.",
      "source": "BMC Cancer",
      "date": "2026-08-26",
-     "url": "https://doi.org/10.1186/s12885-026-16842-1"
+     "url": "https://doi.org/10.1186/s12885-026-16842-1",
+     "start": 60.5
     },
     {
      "title": "Leveraging short and long-read sequencing to comprehensively characterize alternatively polyadenylated and alternatively spliced transcripts",
      "authors": "M Gupta et al.",
      "source": "bioRxiv",
      "date": "2026-11-04",
-     "url": "https://doi.org/10.64898/2026.11.03.763780"
+     "url": "https://doi.org/10.64898/2026.11.03.763780",
+     "start": 14.6
     }
    ]
   }

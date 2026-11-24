@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "e9bac38c-d940-32bf-aab8-d8dc70675bda"
+ ],
  "topic": "Resources: Atlases",
  "slug": "resources-atlases",
  "date": "2026-11-22",
@@ -19,7 +22,8 @@
      "authors": "Taoyu Chen et al.",
      "source": "Nucleic Acids Research",
      "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1129"
+     "url": "https://doi.org/10.1093/nar/gkag1129",
+     "start": 9.8
     }
    ]
   }

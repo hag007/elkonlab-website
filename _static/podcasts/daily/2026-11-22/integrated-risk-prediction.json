@@ -1,7 +1,14 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "0691aab9-9bac-3e1a-97c0-cc70c014273a",
+  "0fe180af-0221-36e9-b84e-30037e1875a3",
+  "13dac2dc-56a8-39bb-ae30-26bea54d821b",
+  "14fee4f4-7439-3c46-b14d-60976bb74189",
+  "4b65fbec-5fcf-374e-aaff-4bc2d0fce259"
+ ],
  "topic": "Integrated risk prediction",
  "slug": "integrated-risk-prediction",
  "date": "2026-11-22",
@@ -19,35 +26,40 @@
      "authors": "Kirsten Blythe Seale et al.",
      "source": "medRxiv",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.64898/2026.11.18.26368164"
+     "url": "https://doi.org/10.64898/2026.11.18.26368164",
+     "start": 13.5
     },
     {
      "title": "How inherited variation shapes human disease trajectories",
      "authors": "Sarah Urbut et al.",
      "source": "medRxiv",
      "date": "2026-11-13",
-     "url": "https://doi.org/10.64898/2026.11.11.26367654"
+     "url": "https://doi.org/10.64898/2026.11.11.26367654",
+     "start": 87.1
     },
     {
      "title": "Metabolic syndrome, genetic susceptibility, and risk of cardiovascular disease: a prospective study in the UK Biobank",
      "authors": "Lin Zhu et al.",
      "source": "Frontiers in cardiovascular medicine",
      "date": "2026-11-05",
-     "url": "https://doi.org/10.3389/fcvm.2026.1871387"
+     "url": "https://doi.org/10.3389/fcvm.2026.1871387",
+     "start": 136.1
     },
     {
      "title": "Machine Learning-Based Classification of Type 2 Diabetes Mellitus Using a Polygenic Risk Score and DNA Methylation",
      "authors": "Jihun Kim et al.",
      "source": "Healthcare informatics research",
      "date": "2026-10-31",
-     "url": "https://doi.org/10.4258/hir.2026.32.4.365"
+     "url": "https://doi.org/10.4258/hir.2026.32.4.365",
+     "start": 53.2
     },
     {
      "title": "PRISM-AD quantifies clinical and genetic contributions to cognitive risk prediction",
      "authors": "Yulin Dai et al.",
      "source": "medRxiv",
      "date": "2026-11-04",
-     "url": "https://doi.org/10.64898/2026.11.03.26367206"
+     "url": "https://doi.org/10.64898/2026.11.03.26367206",
+     "start": 121.1
     }
    ]
   }

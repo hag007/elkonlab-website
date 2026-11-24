@@ -1,7 +1,19 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "03a89806-d298-3b52-9a63-81d83ecaa64a",
+  "0f2f8fa8-d981-39f0-b558-7296e161f81f",
+  "3876cbd8-7ab6-3886-b352-038e1e33f5b5",
+  "56de22f6-0855-3511-b82d-2dabb2ec8a83",
+  "7d8c2ecd-d6dc-38ef-93f1-3e3ffdf631bb",
+  "afc86937-ce41-394a-9f38-c988d736309f",
+  "b8691632-7971-31ec-907d-51752859bcc4",
+  "c6333767-83ad-3107-904f-5bbc32528b85",
+  "cf59189c-d159-3423-9f0f-fbcfb640dff9",
+  "e7da8ac8-1258-3a14-99b1-1bb8fec67946"
+ ],
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-22",
@@ -15,74 +27,84 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
    "papers": [
     {
-     "title": "Both Endogenous Enhancer and Retrotransposon Inserted Nearby Are Required to Induce Ectopic Expression in Danforth's Short Tail Mutation",
-     "authors": "Midori Tokuyasu et al.",
-     "source": "Genes to Cells",
-     "date": "2026",
-     "url": "https://doi.org/10.1111/gtc.70161"
-    },
-    {
-     "title": "Genetic Dissection of the Mouse Class I Odorant Receptor Gene Cluster",
-     "authors": "Tetsuo Iwata et al.",
-     "source": "Genes to Cells",
-     "date": "2026",
-     "url": "https://doi.org/10.1111/gtc.70159"
-    },
-    {
-     "title": "Overlapping enhancer activity robustly regulates rax expression during ocular development in zebrafish",
-     "authors": "Dwon Jordana and Nathan Clark",
+     "title": "Optogenetic induction of TAD boundary pairing promotes gene activity",
+     "authors": "Martin Stortz et al.",
      "source": "bioRxiv",
-     "date": "2026-11-09",
-     "url": "https://doi.org/10.64898/2026.11.06.764943"
-    },
-    {
-     "title": "The Gata2 3'-distal region is essential for IL-3 responsiveness in basophil and mast cell progenitors",
-     "authors": "Shin'ya Ohmori et al.",
-     "source": "iScience",
-     "date": "2026-11-11",
-     "url": "https://doi.org/10.1016/j.isci.2026.118203"
-    },
-    {
-     "title": "NAD Metabolism Drives CTCF-Cohesin Chromatin Regulation in EBV-Transformed B-Cells",
-     "authors": "Davide Maestri et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-02",
-     "url": "https://doi.org/10.64898/2026.11.01.763250"
-    },
-    {
-     "title": "Dosage compensation is regulated by segregated chromatin modules during development in Drosophila",
-     "authors": "Lubna Younas et al.",
-     "source": "Molecular systems biology",
-     "date": "2026-11-19",
-     "url": "https://doi.org/10.1038/s44320-026-00254-1"
-    },
-    {
-     "title": "Inferring chromatin looping interactions from microscopy-based measurements: opportunities and pitfalls",
-     "authors": "James Jusuf et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-11",
-     "url": "https://doi.org/10.64898/2026.11.10.765665"
-    },
-    {
-     "title": "SPACE-Tag Enables High-Throughput Spatial Chromatin Profiling With CUT&Tag",
-     "authors": "Chao Yan et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-07",
-     "url": "https://doi.org/10.64898/2026.11.06.764689"
+     "date": "2026-11-06",
+     "url": "https://doi.org/10.64898/2026.11.04.764356",
+     "start": 7.6
     },
     {
      "title": "Reference-Guided De Novo Retrieval of 3D Chromatin Organizational Features with Representation Learning",
      "authors": "Sean Moran and Jie Liu",
      "source": "bioRxiv",
      "date": "2026-11-04",
-     "url": "https://doi.org/10.64898/2026.10.31.763357"
+     "url": "https://doi.org/10.64898/2026.10.31.763357",
+     "start": 91.5
     },
     {
-     "title": "Optogenetic induction of TAD boundary pairing promotes gene activity",
-     "authors": "Martin Stortz et al.",
+     "title": "SPACE-Tag Enables High-Throughput Spatial Chromatin Profiling With CUT&Tag",
+     "authors": "Chao Yan et al.",
      "source": "bioRxiv",
-     "date": "2026-11-06",
-     "url": "https://doi.org/10.64898/2026.11.04.764356"
+     "date": "2026-11-07",
+     "url": "https://doi.org/10.64898/2026.11.06.764689",
+     "start": 101.0
+    },
+    {
+     "title": "Inferring chromatin looping interactions from microscopy-based measurements: opportunities and pitfalls",
+     "authors": "James Jusuf et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.64898/2026.11.10.765665",
+     "start": 42.3
+    },
+    {
+     "title": "Dosage compensation is regulated by segregated chromatin modules during development in Drosophila",
+     "authors": "Lubna Younas et al.",
+     "source": "Molecular systems biology",
+     "date": "2026-11-19",
+     "url": "https://doi.org/10.1038/s44320-026-00254-1",
+     "start": 61.9
+    },
+    {
+     "title": "NAD Metabolism Drives CTCF-Cohesin Chromatin Regulation in EBV-Transformed B-Cells",
+     "authors": "Davide Maestri et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-02",
+     "url": "https://doi.org/10.64898/2026.11.01.763250",
+     "start": 101.0
+    },
+    {
+     "title": "Overlapping enhancer activity robustly regulates rax expression during ocular development in zebrafish",
+     "authors": "Dwon Jordana and Nathan Clark",
+     "source": "bioRxiv",
+     "date": "2026-11-09",
+     "url": "https://doi.org/10.64898/2026.11.06.764943",
+     "start": 150.2
+    },
+    {
+     "title": "Both Endogenous Enhancer and Retrotransposon Inserted Nearby Are Required to Induce Ectopic Expression in Danforth's Short Tail Mutation",
+     "authors": "Midori Tokuyasu et al.",
+     "source": "Genes to Cells",
+     "date": "2026",
+     "url": "https://doi.org/10.1111/gtc.70161",
+     "start": 130.5
+    },
+    {
+     "title": "Genetic Dissection of the Mouse Class I Odorant Receptor Gene Cluster",
+     "authors": "Tetsuo Iwata et al.",
+     "source": "Genes to Cells",
+     "date": "2026",
+     "url": "https://doi.org/10.1111/gtc.70159",
+     "start": 130.5
+    },
+    {
+     "title": "The Gata2 3'-distal region is essential for IL-3 responsiveness in basophil and mast cell progenitors",
+     "authors": "Shin'ya Ohmori et al.",
+     "source": "iScience",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.1016/j.isci.2026.118203",
+     "start": 118.3
     }
    ]
   }

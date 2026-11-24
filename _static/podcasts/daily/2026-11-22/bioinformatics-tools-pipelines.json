@@ -1,7 +1,12 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "247d0b6d-ba9e-34cc-8dc2-87595137de03",
+  "9027f4bf-d7ae-3355-830a-6409c1033d92",
+  "f0d961c2-2c8a-36b1-ab66-420046576312"
+ ],
  "topic": "Bioinformatics tools & pipelines",
  "slug": "bioinformatics-tools-pipelines",
  "date": "2026-11-22",
@@ -15,25 +20,28 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
    "papers": [
     {
-     "title": "RNAcomp2D: a web tool to execute multiple methods and visually compare predictions of RNA secondary structure",
-     "authors": "Rosario Vitale et al.",
-     "source": "Bioinformatics",
-     "date": "2026",
-     "url": "https://doi.org/10.1093/bioinformatics/btag841"
-    },
-    {
      "title": "VEGABrain: a Visualizer of Enriched Gene Analysis for the developing human brain",
      "authors": "Isaac Medeiros et al.",
      "source": "bioRxiv",
      "date": "2026-11-20",
-     "url": "https://doi.org/10.64898/2026.11.19.767876"
+     "url": "https://doi.org/10.64898/2026.11.19.767876",
+     "start": 59.9
+    },
+    {
+     "title": "RNAcomp2D: a web tool to execute multiple methods and visually compare predictions of RNA secondary structure",
+     "authors": "Rosario Vitale et al.",
+     "source": "Bioinformatics",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/bioinformatics/btag841",
+     "start": 16.9
     },
     {
      "title": "pyGENIE: A Python library for programmatic access and mutational analysis of AACR Project GENIE",
      "authors": "Dana Dayan and Mark Gerstein",
      "source": "Bioinformatics",
      "date": "2026",
-     "url": "https://doi.org/10.1093/bioinformatics/btag844"
+     "url": "https://doi.org/10.1093/bioinformatics/btag844",
+     "start": 100.4
     }
    ]
   }
