@@ -1,7 +1,12 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "58217722-d931-3e7c-95d0-26aadd8626d7",
+  "bd2eb990-75e4-3e88-bd65-1085ba4b3b0c",
+  "d1a16e42-0dd3-3e3c-9d54-b0b63537c62b"
+ ],
  "topic": "Enhancers & 3D genome",
  "slug": "enhancers-3d-genome",
  "date": "2026-11-21",
@@ -19,21 +24,24 @@
      "authors": "M. Higashihara et al.",
      "source": "bioRxiv",
      "date": "2026-11-19",
-     "url": "https://doi.org/10.64898/2026.11.15.766730"
+     "url": "https://doi.org/10.64898/2026.11.15.766730",
+     "start": 18.7
     },
     {
      "title": "Chromatin compartment shifting is recurrent and associated with epigenetic reprogramming in prostate cancer",
      "authors": "Tuomo Virtanen et al.",
      "source": "iScience",
      "date": "2026-11-01",
-     "url": "https://doi.org/10.1016/j.isci.2026.118155"
+     "url": "https://doi.org/10.1016/j.isci.2026.118155",
+     "start": 67.4
     },
     {
      "title": "Chromatin loci move coherently due to spatially correlated fluctuations",
      "authors": "Janni Harju et al.",
      "source": "Science Advances",
      "date": "2026-11-18",
-     "url": "https://doi.org/10.1126/sciadv.aei5536"
+     "url": "https://doi.org/10.1126/sciadv.aei5536",
+     "start": 108.3
     }
    ]
   }

@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "c524d7d4-ca17-39a6-bc6a-ce76f24bc601"
+ ],
  "topic": "Resources: Biobanks",
  "slug": "resources-biobanks",
  "date": "2026-11-21",

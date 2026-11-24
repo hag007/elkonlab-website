@@ -1,7 +1,12 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "30f37603-408c-3e8a-bd2f-3693a110bf48",
+  "5b15d22d-6a07-3e0d-a68d-5de480323903",
+  "e84be1f7-60ef-3b7e-ac42-77cf9df75b03"
+ ],
  "topic": "Alternative polyadenylation",
  "slug": "alternative-polyadenylation",
  "date": "2026-11-21",
@@ -19,21 +24,24 @@
      "authors": "Giulia Pagani et al.",
      "source": "Journal of experimental & clinical cancer research : CR",
      "date": "2026-08-24",
-     "url": "https://doi.org/10.1186/s13046-026-03807-2"
+     "url": "https://doi.org/10.1186/s13046-026-03807-2",
+     "start": 15.1
     },
     {
      "title": "A common germline 3' UTR variant controls DDIT4 translation efficiency and stress responses in cancer cells",
      "authors": "Meriem Hadjer Hamadou et al.",
      "source": "iScience",
      "date": "2026-10-06",
-     "url": "https://doi.org/10.1016/j.isci.2026.117707"
+     "url": "https://doi.org/10.1016/j.isci.2026.117707",
+     "start": 79.2
     },
     {
      "title": "Translation of a small upstream open reading frame functions as a rheostat for the regulation of lin-41 by the Let-7 microRNA in Caenorhabditis elegans",
      "authors": "Caroline A Spike et al.",
      "source": "Development (Cambridge, England)",
      "date": "2026-11-05",
-     "url": "https://doi.org/10.1242/dev.206149"
+     "url": "https://doi.org/10.1242/dev.206149",
+     "start": 38.2
     }
    ]
   }

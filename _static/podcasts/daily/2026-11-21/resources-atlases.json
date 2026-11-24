@@ -1,7 +1,10 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
+ "papers": [
+  "3f7b3861-989a-3be8-a184-2e8306c6a87b"
+ ],
  "topic": "Resources: Atlases",
  "slug": "resources-atlases",
  "date": "2026-11-21",
@@ -19,7 +22,8 @@
      "authors": "Marios Miliotis et al.",
      "source": "Nucleic Acids Research",
      "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1181"
+     "url": "https://doi.org/10.1093/nar/gkag1181",
+     "start": 7.2
     }
    ]
   }
