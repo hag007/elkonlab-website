@@ -50,7 +50,9 @@
       <div class="pl-pod-error" id="pod-error" hidden></div>
       <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
         <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-days-l">Days</span>
-          <div class="pl-pod-chips" id="f-days" role="group" aria-labelledby="f-days-l"></div></div>
+          <div class="pl-pod-days"><div class="pl-pod-chips" id="f-days" role="group" aria-labelledby="f-days-l"></div>
+            <div class="pl-pod-range" id="f-range" hidden>
+              <label>From <input type="date" id="f-from"></label><label>To <input type="date" id="f-to"></label></div></div></div>
         <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-topics-l">Topics</span>
           <div class="pl-pod-chips" id="f-topics" role="group" aria-labelledby="f-topics-l"></div></div>
       </section>
@@ -74,14 +76,30 @@
   const keyOf = (c) => c.kind === "daily" ? `${c.date}/${c.slug}` : c.e;
 
   // ---- filters, sorting and the list (the play queue) ----
+  // Days: a range, so the filter stays short however many days there are (presets count back from today).
+  const RANGES = { today: "Today", d2: "Last 2 days", d3: "Last 3 days", week: "This week", w2: "Last 2 weeks", all: "All days" };
+  const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const daysAgo = (n) => { const d = new Date(); d.setDate(d.getDate() - n); return iso(d); };
+  function span(r) {  // [from, to] dates, "" = open
+    if (r === "today") return [daysAgo(0), ""];
+    if (r === "d2") return [daysAgo(1), ""];
+    if (r === "d3") return [daysAgo(2), ""];
+    if (r === "week") return [daysAgo((new Date().getDay() + 6) % 7), ""];  // since Monday
+    if (r === "w2") return [daysAgo(13), ""];
+    if (r === "custom") return [state.from, state.to];
+    return ["", ""];
+  }
   const saved = (() => { try { return JSON.parse(store.get("pl-podcast-list") || "{}"); } catch { return {}; } })();
-  const state = { days: new Set(saved.days || []), topics: new Set(saved.topics || []),  // empty = all
+  const state = { range: RANGES[saved.range] || saved.range === "custom" ? saved.range : "all", from: saved.from || "",
+                  to: saved.to || "", topics: new Set(saved.topics || []),  // topics: empty = all
                   sort: SORTS[saved.sort] ? saved.sort : "newest", order: saved.order || [] };
-  const remember = () => store.set("pl-podcast-list", JSON.stringify({ days: [...state.days], topics: [...state.topics],
+  const remember = () => store.set("pl-podcast-list", JSON.stringify({ range: state.range, from: state.from, to: state.to,
+                                                                       topics: [...state.topics],
                                                                        sort: state.sort, order: state.order }));
   let rank = {};  // topic slug -> its place in the library's topic order
   function list() {
-    let xs = index.daily.filter(x => (!state.days.size || state.days.has(x.date)) && (!state.topics.size || state.topics.has(x.slug)));
+    const [from, to] = span(state.range);
+    let xs = index.daily.filter(x => (!from || x.date >= from) && (!to || x.date <= to) && (!state.topics.size || state.topics.has(x.slug)));
     const k = (x) => `${x.date}/${x.slug}`;
     const by = {
       newest: (a, b) => b.date.localeCompare(a.date) || rank[a.slug] - rank[b.slug],
@@ -104,7 +122,12 @@
     const topics = [...new Map(index.daily.map(x => [x.slug, x.topic])).entries()].sort((a, b) => rank[a[0]] - rank[b[0]]);
     const chip = (group, value, label, on) => `<button type="button" class="pl-pod-chip${on ? " on" : ""}" data-group="${group}"
       data-value="${esc(value)}" aria-pressed="${on}">${esc(label)}</button>`;
-    $("f-days").innerHTML = chip("days", "", "All days", !state.days.size) + days.map(d => chip("days", d, shortDay(d), state.days.has(d))).join("");
+    const count = (r) => { const [f, t] = span(r); return index.daily.filter(x => (!f || x.date >= f) && (!t || x.date <= t)).length; };
+    $("f-days").innerHTML = Object.entries(RANGES).map(([r, label]) => chip("range", r, `${label} (${count(r)})`, state.range === r)).join("")
+      + chip("range", "custom", "Custom…", state.range === "custom");
+    $("f-range").hidden = state.range !== "custom";
+    for (const id of ["f-from", "f-to"]) { $(id).min = days[days.length - 1] || ""; $(id).max = days[0] || ""; }
+    $("f-from").value = state.from; $("f-to").value = state.to;
     $("f-topics").innerHTML = chip("topics", "", "All topics", !state.topics.size) + topics.map(([s, t]) => chip("topics", s, t, state.topics.has(s))).join("");
   }
   function renderList() {
@@ -136,12 +159,25 @@
   $("pod-filters").onclick = (e) => {
     const b = e.target.closest(".pl-pod-chip");
     if (!b) return;
-    const set = state[b.dataset.group], v = b.dataset.value;
-    if (!v) set.clear();                               // "All"
-    else if (set.has(v)) set.delete(v); else set.add(v);  // several days or topics at once
+    const v = b.dataset.value;
+    if (b.dataset.group === "range") {  // one range at a time
+      state.range = v;
+      if (v === "custom" && !state.from && !state.to) state.from = state.to = $("f-from").max;  // start with the latest day
+    } else {
+      const set = state.topics;
+      if (!v) set.clear();                               // "All topics"
+      else if (set.has(v)) set.delete(v); else set.add(v);  // several topics at once
+    }
     changed();
   };
   $("pod-sort").onchange = () => { state.sort = $("pod-sort").value; changed(); };
+  for (const id of ["f-from", "f-to"]) {
+    $(id).addEventListener("change", () => {
+      state.from = $("f-from").value; state.to = $("f-to").value;
+      if (state.from && state.to && state.from > state.to) [state.from, state.to] = [state.to, state.from];
+      changed();
+    });
+  }
   $("pod-list").onclick = (e) => {
     const mv = e.target.closest("button[data-move]");
     if (mv) {
@@ -333,7 +369,6 @@
     (d.topics || []).forEach((s, i) => { rank[s] = i; });  // the library's topic order
     index.daily.forEach(x => { if (!(x.slug in rank)) rank[x.slug] = Object.keys(rank).length; });
     const known = (set, values) => [...set].filter(v => values.includes(v));  // drop filters for days that are gone
-    state.days = new Set(known(state.days, index.daily.map(x => x.date)));
     state.topics = new Set(known(state.topics, index.daily.map(x => x.slug)));
     $("pod-filters").hidden = $("pod-listhead").hidden = !index.daily.length;
     renderFilters();
