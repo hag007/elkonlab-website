@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "d6abc7cc-73b3-3421-afe8-5706ee845d0f"
@@ -22,7 +22,8 @@
      "authors": "Govindkumar Balagannavar et al.",
      "source": "Nucleic Acids Research",
      "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1261"
+     "url": "https://doi.org/10.1093/nar/gkag1261",
+     "start": 16.2
     }
    ]
   }

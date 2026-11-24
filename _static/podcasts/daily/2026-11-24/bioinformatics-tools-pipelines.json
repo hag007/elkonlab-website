@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "36e407db-c0bf-336a-a8f4-b2af09c1585b",
@@ -23,46 +23,52 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
    "papers": [
     {
-     "title": "The IGVF Data Portal: a repository for insights into genome function",
-     "authors": "Jennifer Jou et al.",
+     "title": "NanoHIV-DR: a Nextflow workflow for consensus and read level HIV-1 drug resistance profiling from Oxford Nanopore sequencing",
+     "authors": "Daniel Lule et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.18.767169"
-    },
-    {
-     "title": "VEuPathDB: 2026 update on data, tools, and infrastructure for eukaryotic pathogens, vectors, and hosts",
-     "authors": "Cristina Aurrecoechea et al.",
-     "source": "Nucleic Acids Research",
-     "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1245"
-    },
-    {
-     "title": "MGnify analyses in 2027: enhancing the depth and breadth of analyses across metabarcoding, unassembled metagenomes, and assembled datasets",
-     "authors": "Lorna Richardson et al.",
-     "source": "Nucleic Acids Research",
-     "date": "2026",
-     "url": "https://doi.org/10.1093/nar/gkag1235"
-    },
-    {
-     "title": "MatriSpace: Identification and visualization of spatially resolved ECM gene expression patterns in health and disease",
-     "authors": "A Oshinjo et al.",
-     "source": "Journal of Cell Science",
-     "date": "2026",
-     "url": "https://doi.org/10.1242/jcs.264998"
+     "url": "https://doi.org/10.64898/2026.11.20.768148",
+     "start": 100.9
     },
     {
      "title": "From benchmarking to application: a scalable mitochondrial DNA analysis and variant identification framework for whole-genome sequencing",
      "authors": "Kelly Chen et al.",
      "source": "Research Square",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.21203/rs.3.rs-11468975/v1"
+     "url": "https://doi.org/10.21203/rs.3.rs-11468975/v1",
+     "start": 15.0
     },
     {
-     "title": "NanoHIV-DR: a Nextflow workflow for consensus and read level HIV-1 drug resistance profiling from Oxford Nanopore sequencing",
-     "authors": "Daniel Lule et al.",
+     "title": "MatriSpace: Identification and visualization of spatially resolved ECM gene expression patterns in health and disease",
+     "authors": "A Oshinjo et al.",
+     "source": "Journal of Cell Science",
+     "date": "2026",
+     "url": "https://doi.org/10.1242/jcs.264998",
+     "start": 150.1
+    },
+    {
+     "title": "The IGVF Data Portal: a repository for insights into genome function",
+     "authors": "Jennifer Jou et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.20.768148"
+     "url": "https://doi.org/10.64898/2026.11.18.767169",
+     "start": 77.3
+    },
+    {
+     "title": "VEuPathDB: 2026 update on data, tools, and infrastructure for eukaryotic pathogens, vectors, and hosts",
+     "authors": "Cristina Aurrecoechea et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1245",
+     "start": 133.9
+    },
+    {
+     "title": "MGnify analyses in 2027: enhancing the depth and breadth of analyses across metabarcoding, unassembled metagenomes, and assembled datasets",
+     "authors": "Lorna Richardson et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026",
+     "url": "https://doi.org/10.1093/nar/gkag1235",
+     "start": 117.0
     }
    ]
   }
