@@ -1,6 +1,6 @@
 # References
 
-451 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+452 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -427,6 +427,7 @@
 12. Cathie Sudlow, John Gallacher, Naomi Allen, et al.. UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age. *PLoS Med*. 2015. doi: [10.1371/journal.pmed.1001779](https://doi.org/10.1371/journal.pmed.1001779) PMID: [25826379](https://pubmed.ncbi.nlm.nih.gov/25826379/)
 13. Daniel Taliun, Daniel N. Harris, Michael D. Kessler, et al.. Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program. *Nature*. 2021. doi: [10.1038/s41586-021-03205-y](https://doi.org/10.1038/s41586-021-03205-y) PMID: [33568819](https://pubmed.ncbi.nlm.nih.gov/33568819/)
 14. Bharathram Uppili, Ankit Mukherjee, Sanjay Deshpande, et al.. GI-DB: a comprehensive variant database for exploring the extensive genetic diversity of the Indian population. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1179](https://doi.org/10.1093/nar/gkag1179) PMID: [43053325](https://pubmed.ncbi.nlm.nih.gov/43053325/)
+15. SB Whitbourne, AR Williams, JVV Brewer, et al.. Overview of recruitment strategies to reach the million milestone and characterization of the Million Veteran Program cohort. *PLoS One*. 2026. doi: [10.1371/journal.pone.0362460](https://doi.org/10.1371/journal.pone.0362460) PMID: [43071672](https://pubmed.ncbi.nlm.nih.gov/43071672/)
 
 ## Resources: GWASs
 
