@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "4835aed5-a138-3868-a845-f7d9a83911fe"
@@ -22,7 +22,8 @@
      "authors": "Rujia Wang et al.",
      "source": "medRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.19.26368522"
+     "url": "https://doi.org/10.64898/2026.11.19.26368522",
+     "start": 7.3
     }
    ]
   }

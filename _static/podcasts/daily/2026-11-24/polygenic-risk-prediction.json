@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "59808674-8331-3d72-96b0-1c5a20eefe45",
@@ -23,14 +23,16 @@
      "authors": "Shoukai Yu et al.",
      "source": "Research Square",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.21203/rs.3.rs-11570074/v1"
+     "url": "https://doi.org/10.21203/rs.3.rs-11570074/v1",
+     "start": 15.7
     },
     {
      "title": "Quantification of Bias-Variance Tradeoffs in Genome-Wide Polygenic Indices: When 'Good' PGIs are Bad and 'Bad' PGIs are Good",
      "authors": "Yavor Dragostinov et al.",
      "source": "medRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.18.26368405"
+     "url": "https://doi.org/10.64898/2026.11.18.26368405",
+     "start": 77.2
     }
    ]
   }
