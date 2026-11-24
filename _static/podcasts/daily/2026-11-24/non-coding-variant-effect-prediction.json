@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "voice": "3",
+ "voice": "4",
  "version": "5",
  "topic": "Non-coding variant effect prediction",
  "slug": "non-coding-variant-effect-prediction",
  "date": "2026-11-24",
  "title": "Non-coding variant effect prediction · Tuesday, November 24",
- "seconds": 147.1,
+ "seconds": 147.0,
  "drive": "https://drive.google.com/open?id=1kHMHKW899KJyhca56zdLpUJsK1bKTYpd",
  "chapters": [
   {
@@ -15,18 +15,18 @@
    "page": "https://hag007.github.io/elkonlab-website/topics/non-coding-variant-effect-prediction/papers.html",
    "papers": [
     {
-     "title": "SpliceVarMech: A causal generative framework for mechanistic interpretation of non-canonical splicing variants",
-     "authors": "Moustafa Zein and Aboul Ella Hassanien",
-     "source": "bioRxiv",
-     "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.19.767866"
-    },
-    {
      "title": "Genomic foundation models and complementary variant-scoring strategies in LGMD-associated genes: architecture, adaptation, and sequence context",
      "authors": "Sarvesh Galgale et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
      "url": "https://doi.org/10.64898/2026.11.21.768324"
+    },
+    {
+     "title": "SpliceVarMech: A causal generative framework for mechanistic interpretation of non-canonical splicing variants",
+     "authors": "Moustafa Zein and Aboul Ella Hassanien",
+     "source": "bioRxiv",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.64898/2026.11.19.767866"
     }
    ]
   }
