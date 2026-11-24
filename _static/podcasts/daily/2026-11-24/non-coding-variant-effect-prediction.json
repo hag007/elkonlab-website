@@ -1,6 +1,6 @@
 {
  "kind": "daily",
- "voice": "4",
+ "voice": "5",
  "version": "5",
  "papers": [
   "597fa542-895e-320d-b4e2-28b8cc13cf39",
@@ -23,14 +23,16 @@
      "authors": "Sarvesh Galgale et al.",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.21.768324"
+     "url": "https://doi.org/10.64898/2026.11.21.768324",
+     "start": 85.9
     },
     {
      "title": "SpliceVarMech: A causal generative framework for mechanistic interpretation of non-canonical splicing variants",
      "authors": "Moustafa Zein and Aboul Ella Hassanien",
      "source": "bioRxiv",
      "date": "2026-11-23",
-     "url": "https://doi.org/10.64898/2026.11.19.767866"
+     "url": "https://doi.org/10.64898/2026.11.19.767866",
+     "start": 15.4
     }
    ]
   }
