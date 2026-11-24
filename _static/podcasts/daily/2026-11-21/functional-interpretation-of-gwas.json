@@ -1,16 +1,13 @@
 {
  "kind": "daily",
  "voice": "3",
+ "version": "5",
  "topic": "Functional interpretation of GWAS",
  "slug": "functional-interpretation-of-gwas",
  "date": "2026-11-21",
  "title": "Functional interpretation of GWAS · Saturday, November 21",
- "seconds": 185.0,
+ "seconds": 193.4,
  "drive": "https://drive.google.com/open?id=1uUxmIZpWDfPHoUIoXCX4NOcEoZjWJbNt",
- "hosts": [
-  "Maya",
-  "Daniel"
- ],
  "chapters": [
   {
    "title": "Functional interpretation of GWAS",
