@@ -8,5 +8,5 @@ last two months of episodes; all of them are also in Google Drive (Paper Library
 
 ```{raw} html
 <div id="pl-podcast"></div>
-<script src="_static/library/podcast.js?v=01d47400"></script>
+<script src="_static/library/podcast.js?v=cd680fdb"></script>
 ```

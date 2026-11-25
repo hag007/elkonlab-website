@@ -51,6 +51,11 @@
       <label class="pl-pod-auto"><input type="checkbox" id="pod-auto" checked> Play the next episode in the list automatically</label>
       <div class="pl-pod-resume" id="pod-resume" hidden></div>
       <div class="pl-pod-error" id="pod-error" hidden></div>
+      <details class="pl-pod-transcript" id="pod-transcript" open hidden>
+        <summary>Transcript</summary>
+        <label class="pl-pod-follow"><input type="checkbox" id="pod-follow" checked> Follow along</label>
+        <ol class="pl-pod-lines" id="pod-lines" aria-label="Transcript: click a line to play from there"></ol>
+      </details>
       <div id="pod-notes"></div>
       <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
         <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-days-l">Days</span>
@@ -239,6 +244,8 @@
     $("pod-resume").hidden = true;
     resumed = false;
     chapters = [];
+    lines = [];
+    $("pod-transcript").hidden = true;
     audio.src = path + ".mp3";
     audio.playbackRate = parseFloat($("pod-speed").value);
     $("pod-download").href = path + ".mp3";
@@ -259,6 +266,7 @@
       document.title = `${$("pod-title").textContent} · Paper Library podcast`;
       if (n.drive) $("pod-drive").innerHTML = ` · <a href="${esc(n.drive)}" target="_blank" rel="noopener">Open in Google Drive</a>`;
       renderNotes(c.kind === "daily");
+      renderTranscript(n.transcript || []);
       drawTicks();
       if ("mediaSession" in navigator && window.MediaMetadata) {
         navigator.mediaSession.metadata = new MediaMetadata({ title: $("pod-title").textContent,
@@ -273,6 +281,40 @@
     load(current.kind === "daily" || i < 0 ? { kind: "daily", date: q[j].date, slug: q[j].slug } : { kind: "episode", e: q[j].e }, autoplay);
     return true;
   }
+
+  // ---- transcript: the line being spoken is highlighted and kept in view ("Follow along"); click a line to jump ----
+  let lines = [], spoken = -1, quietUntil = 0;
+  function renderTranscript(xs) {
+    lines = xs;
+    spoken = -1;
+    $("pod-transcript").hidden = !xs.length;
+    $("pod-lines").innerHTML = xs.map((x, i) => `<li class="pl-pod-line s${x.s === "B" ? 2 : 1}" data-i="${i}">
+      <button type="button" data-t="${x.t}"><span class="pl-pod-line-t">${clock(x.t)}</span><span>${esc(x.text)}</span></button></li>`).join("");
+    followLine();
+  }
+  function followLine() {
+    if (!lines.length) return;
+    let i = -1;
+    for (let lo = 0, hi = lines.length - 1; lo <= hi;) {  // the last line that has started
+      const mid = (lo + hi) >> 1;
+      if (lines[mid].t <= audio.currentTime + 0.15) { i = mid; lo = mid + 1; } else hi = mid - 1;
+    }
+    if (i === spoken) return;
+    $("pod-lines").querySelector(".now")?.classList.remove("now");
+    spoken = i;
+    const li = i >= 0 && $("pod-lines").children[i];
+    if (!li) return;
+    li.classList.add("now");
+    const box = $("pod-lines");
+    if ($("pod-follow").checked && Date.now() > quietUntil) {  // (not while you scroll the transcript yourself)
+      box.scrollTo({ top: li.offsetTop - box.clientHeight / 3, behavior: "smooth" });  // (the list is the li offsetParent)
+    }
+  }
+  $("pod-lines").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-t]");
+    if (b) { audio.currentTime = +b.dataset.t; if (audio.paused) audio.play(); }
+  });
+  ["wheel", "touchmove", "keydown"].forEach(ev => $("pod-lines").addEventListener(ev, () => { quietUntil = Date.now() + 5000; }, { passive: true }));
 
   function renderNotes(daily) {
     $("pod-notes").innerHTML = `<h3 class="pl-pod-h">${daily ? "Papers in this episode" : "Chapters"}</h3>
@@ -349,6 +391,7 @@
   });
   audio.addEventListener("timeupdate", () => {
     if (!dragging) { $("pod-seek").value = Math.floor(audio.currentTime); $("pod-now").textContent = clock(audio.currentTime); }
+    followLine();
     if (Math.abs(audio.currentTime - lastSave) > 5) { lastSave = audio.currentTime; store.set(`pl-podcast-pos:${keyOf(current)}`, String(audio.currentTime)); }
   });
   function drawTicks() {

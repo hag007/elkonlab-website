@@ -13,6 +13,63 @@
  "title": "Functional interpretation of GWAS · Saturday, November 21",
  "seconds": 193.1,
  "drive": "https://drive.google.com/open?id=1uUxmIZpWDfPHoUIoXCX4NOcEoZjWJbNt",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Saturday, November 21."
+  },
+  {
+   "t": 8.1,
+   "s": "A",
+   "text": "Let's turn to functional interpretation of GWAS. All three papers today try to get from risk loci to genes and cell contexts."
+  },
+  {
+   "t": 16.24,
+   "s": "B",
+   "text": "The first is from the Li lab, in Translational Psychiatry. They asked whether mitochondria-related genes expressed in the brain help explain risk for schizophrenia, bipolar disorder and major depression. They combined brain methylation, expression and protein QTLs with summary-data Mendelian randomization, the HEIDI heterogeneity test and Bayesian colocalization."
+  },
+  {
+   "t": 42.49,
+   "s": "A",
+   "text": "A three-tier framework ranked ACADVL and SLC25A24 highest for schizophrenia. ENDOG looked like a regulatory signal driven by methylation, and it also came up for the combined bipolar and schizophrenia phenotype."
+  },
+  {
+   "t": 57.98,
+   "s": "B",
+   "text": "One caution is that the links from expression to protein for COX11 and SLC25A24 had colocalization support but did not pass HEIDI, so pleiotropy isn't ruled out. The authors call these candidates that need experimental validation."
+  },
+  {
+   "t": 76.68,
+   "s": "A",
+   "text": "Next is a medRxiv preprint from the Belloy lab on the X chromosome, which GWAS follow-up often leaves out. They mapped cis-eQTLs in seven brain cell types from 423 older individuals and found 212 genetically regulated X-linked genes. Most were cell-type specific, and ten showed different genetic regulation in the two sexes."
+  },
+  {
+   "t": 100.15,
+   "s": "B",
+   "text": "They also found 101 sex-biased genes, mostly higher in females and most strikingly in microglia. Many of these overlap genes that escape X inactivation. Combining the eQTLs with X-chromosome association studies nominated 11 candidate causal genes for Alzheimer's, Parkinson's and multiple system atrophy."
+  },
+  {
+   "t": 124.78,
+   "s": "A",
+   "text": "With 423 donors split across cell types, I'd want replication. It uses the same kind of QTL-based causal inference as the Li paper, but resolved by cell type and by sex."
+  },
+  {
+   "t": 137.23,
+   "s": "B",
+   "text": "The last is a bioRxiv preprint from the Yadagiri lab called CELL-X, for type 2 diabetes. It scores 37 genes with genetic support for cell-type relevance and for expression shifts across normal, prediabetic and diabetic states, using an islet atlas of about 246 thousand cells."
+  },
+  {
+   "t": 159.21,
+   "s": "A",
+   "text": "Beta cells came out as the main disease-relevant cell type, and known genes like SLC30A8, GLIS3, GCK and TCF7L2 ranked highly in a 30-gene benchmark. Because it starts from 37 genes that already have support, it ranks a short list rather than finding new genes."
+  },
+  {
+   "t": 179.31,
+   "s": "B",
+   "text": "The takeaway is that cell-resolved molecular data keep turning GWAS loci into gene and cell hypotheses we can test, but every list here still needs experimental validation."
+  }
+ ],
  "chapters": [
   {
    "title": "Functional interpretation of GWAS",
