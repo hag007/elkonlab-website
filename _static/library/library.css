@@ -355,3 +355,6 @@ a.pl-edit-topics + a.pl-edit-topics { margin-left: 8px; }
   box-shadow: inset 3px 0 0 var(--pst-color-primary); }
 .pl-pod-line-t { flex: none; min-width: 3em; font-variant-numeric: tabular-nums; font-size: 0.85em; padding-top: 2px; }
 @media (prefers-reduced-motion: reduce) { .pl-pod-lines { scroll-behavior: auto; } }
+.pl-pod-playlist { margin-top: 22px; }
+.pl-pod-title { font-size: 1.15em; margin: 0 0 4px; }
+.pl-pod-playlist .pl-pod-filters { margin-top: 8px; }

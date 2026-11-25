@@ -57,6 +57,11 @@
         <ol class="pl-pod-lines" id="pod-lines" aria-label="Transcript: click a line to play from there"></ol>
       </details>
       <div id="pod-notes"></div>
+      <p class="pl-pod-foot"><a id="pod-download" href="#" download>Download (MP3)</a><span id="pod-drive"></span>
+        · Keys: space play/pause, ← → skip, N next in the list</p>
+    </div>
+    <div class="pl-pod pl-pod-playlist" id="pod-playlist-box">
+      <h2 class="pl-pod-title">Playlist</h2>
       <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
         <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-days-l">Days</span>
           <div class="pl-pod-days"><div class="pl-pod-chips" id="f-days" role="group" aria-labelledby="f-days-l"></div>
@@ -71,8 +76,6 @@
           ${Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select></label>
       </div>
       <ol class="pl-pod-list" id="pod-list"></ol>
-      <p class="pl-pod-foot"><a id="pod-download" href="#" download>Download (MP3)</a><span id="pod-drive"></span>
-        · Keys: space play/pause, ← → skip, N next in the list</p>
       <div id="pod-others"></div>
     </div>`;
   const $ = (id) => document.getElementById(id);
@@ -433,6 +436,7 @@
     }
     state.topics = new Set(known(state.topics, index.daily.map(x => x.slug)));
     $("pod-filters").hidden = $("pod-listhead").hidden = !index.daily.length;
+    $("pod-playlist-box").hidden = !index.daily.length && !index.episodes.length;
     renderFilters();
     if (q.get("e") && /^[\w-]+$/.test(q.get("e"))) load({ kind: "episode", e: q.get("e") }, false);
     else if (day && index.daily.some(x => x.date === day && x.slug === q.get("t"))) {
