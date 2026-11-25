@@ -4,6 +4,19 @@
 // moment, the PDF and files, Manage, and 👤 lab members (a small window on the library server, password). Calm on
 // purpose: no box, no "breaking" tags. Data: feed.json. <div id="whats-new" [data-folder="<topic>"]>: data-folder
 // limits it to one topic.
+// Every page (this script is loaded on all of them): the sidebar buttons on phones. The theme gives its click handler
+// only to the first .primary-toggle (and .secondary-toggle) on the page, which phones hide; the visible one (the book
+// theme's) did nothing. A click on any of them now triggers the first one.
+if (!window.plSidebarFix) {
+  window.plSidebarFix = true;
+  document.addEventListener("click", (e) => {
+    for (const cls of ["primary-toggle", "secondary-toggle"]) {
+      const clicked = e.target.closest(`.${cls}`), first = document.querySelector(`.${cls}`);
+      if (clicked && first && clicked !== first) { e.preventDefault(); e.stopPropagation(); first.click(); return; }
+    }
+  }, true);
+}
+
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
