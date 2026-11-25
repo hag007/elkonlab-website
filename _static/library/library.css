@@ -385,3 +385,11 @@ a.pl-edit-topics + a.pl-edit-topics { margin-left: 8px; }
   background: transparent; color: var(--pst-color-text-muted); border-radius: 999px; padding: 0 9px; cursor: pointer; margin-left: 8px; }
 #paper-explorer .pl-links .pl-assign:hover { color: var(--pst-color-primary); border-color: var(--pst-color-primary); }
 @media (prefers-reduced-motion: reduce) { #paper-explorer .pl-card { transition: none; } }
+/* Recent papers on the landing pages: no box around them, no urgency (overrides the older "What's new?" box) */
+#whats-new { border: 0; border-left: 0; background: none; border-radius: 0; box-shadow: none; padding: 0; margin: 1.2em 0 1.6em; }
+#whats-new .wn-bar { padding: 0 0 6px; background: none; border: 0; font-size: 0.88em; color: var(--pst-color-text-muted); }
+#whats-new .wn-sub { color: var(--pst-color-text-muted); }
+#whats-new .wn-scan.running { color: var(--pst-color-text-muted); font-weight: 400; }
+#whats-new .wn-list { padding: 0; }
+#whats-new .wn-card.nofig { border-left: 1px solid var(--pst-color-border); }
+#whats-new .wn-head { font-size: 0.85em; }

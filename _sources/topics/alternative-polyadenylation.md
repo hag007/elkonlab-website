@@ -13,5 +13,5 @@
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Alternative polyadenylation"></div>
-<script src="../_static/library/whatsnew.js?v=0d6d521b"></script>
+<script src="../_static/library/whatsnew.js?v=65ce0f42"></script>
 ```

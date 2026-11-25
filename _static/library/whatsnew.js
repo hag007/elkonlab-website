@@ -1,4 +1,4 @@
-// "What's new?" on the landing pages: papers published in the last data-days days (90 by default), newest first,
+// The recent papers on the landing pages (no box, no "breaking" tags: calm): papers published in the last data-days days (90 by default), newest first,
 // at most data-max of them (10), as cards: a figure (openly licensed papers), the lab, journal and date, a synopsis,
 // and links: the paper's card on its topic's Papers page (highlighted), the podcast moment, the PDF and files,
 // Manage, and 👤 lab members (a small window on the library server, password). Computed in the viewer's browser
@@ -61,7 +61,6 @@
 
   function item(p) {
     const preprint = p.badges.some(b => b.label === "Preprint");
-    const fresh = Date.now() - new Date(p.date + "T00:00:00") < 2 * DAY;
     const highlights = p.badges.filter(b => b.kind === "highlight").map(b => `<span class="pl-badge pl-k-highlight">${esc(b.label)}</span>`).join("");
     const topics = p.topics.filter(f => f !== topic).map(f =>
       `<a class="pl-badge wn-topic wn-c${color[f] ?? 0}" href="${site}topics/${slug(f)}/papers.html">${esc(f.split("/").pop())}</a>`).join("");
@@ -74,8 +73,8 @@
     return `<li class="wn-item wn-card${p.figure ? "" : " nofig"}" data-id="${esc(p.id)}">
       ${fig}
       <div class="wn-body">
-        <div class="wn-head"><span class="wn-tag${fresh ? " hot" : ""}">${fresh ? "Breaking" : preprint ? "New preprint" : "New paper"}</span>
-          <span class="wn-when">${esc(p.source)} · ${ago(new Date(p.date + "T00:00:00"))}</span></div>
+        <div class="wn-head"><span class="wn-when">${esc(p.source)} · ${ago(new Date(p.date + "T00:00:00"))}</span>${
+          preprint ? '<span class="pl-badge pl-k-status">Preprint</span>' : ""}</div>
         <div class="wn-title"><a href="${esc(cardLink(p))}" title="This paper on its topic's Papers page">${esc(p.title)}</a></div>
         <div class="wn-lab">${esc((p.lab || "").replace(/^the /, "The "))}${highlights}<span class="wn-members" data-id="${esc(p.id)}">${memberBadges(p.members || [])}</span></div>
         <div class="wn-gist">${esc(p.synopsis)}</div>
@@ -114,10 +113,9 @@
     const cutoff = Date.now() - days * DAY;
     const recent = dated.filter(p => new Date(p.date + "T00:00:00") >= cutoff && new Date(p.date) <= Date.now() + DAY);
     const list = recent.length ? recent.slice(0, max) : dated.slice(0, fallback);
-    root.innerHTML = `<div class="wn-bar"><span class="wn-pulse"></span><b>What's new?</b>
-        <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +
-                                               (recent.length > max ? ` · showing the latest ${max}` : "")
-                                              : `Nothing published in the last ${days} days · latest papers`}</span>
+    root.innerHTML = `<div class="wn-bar"><span class="wn-sub">${recent.length ? `Recent papers` +
+                                               (recent.length > max ? ` · the latest ${max} of ${recent.length} from the last ${days} days` : "")
+                                              : `The latest papers`}</span>
         <span class="wn-status"><a class="wn-alerts" hidden target="_blank" rel="noopener"
           title="Get an email when new papers arrive">✉ Email alerts</a><span class="wn-scan" hidden></span><span
           class="wn-updated"></span></span></div>
@@ -152,7 +150,7 @@
         const min = Math.max(0, Math.round((Date.now() - started) / 60000));
         const what = scan.topic ? `“${esc(scan.topic)}”` : "topics";
         const more = (scan.queue || []).length ? ` (+${scan.queue.length} more)` : "";
-        el.innerHTML = `<span class="wn-spin" aria-hidden="true">⟳</span> Scanning ${what}${more}… started ${time(started)}
+        el.innerHTML = `Scanning ${what}${more}, started ${time(started)}
           (${min < 1 ? "just now" : `${min} min ago`}) ${live}`;
       };
       el.hidden = false;
