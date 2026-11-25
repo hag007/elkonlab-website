@@ -23,7 +23,7 @@ if (!window.plSidebarFix) {
 // id, members} when saved: the pages update the paper's badges themselves (whatsnew.js below, explorer.js).
 window.plMembersDialog = window.plMembersDialog || function (url, title) {
   document.querySelector(".pl-mdlg")?.remove();
-  const W = 480, H = 600;
+  const W = 480, H = 420;  // (the window then fits itself to its card)
   const left = Math.max(0, (window.screenX || 0) + (window.outerWidth - W) / 2);
   const top = Math.max(0, (window.screenY || 0) + (window.outerHeight - H) / 2);
   const win = window.open(url, "pl-members", `popup,width=${W},height=${H},left=${Math.round(left)},top=${Math.round(top)}`);
