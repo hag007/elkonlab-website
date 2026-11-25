@@ -1,6 +1,6 @@
 # References
 
-500 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+501 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -431,6 +431,7 @@
 24. Natalia Trpchevska, Maxim B. Freidin, Linda Broer, et al.. Genome-wide association meta-analysis identifies 48 risk variants and highlights the role of the stria vascularis in hearing loss. *The American Journal of Human Genetics*. 2022. doi: [10.1016/j.ajhg.2022.04.010](https://doi.org/10.1016/j.ajhg.2022.04.010) PMID: [35580588](https://pubmed.ncbi.nlm.nih.gov/35580588/)
 25. Tomokatsu Udagawa, Patrick J. Atkinson, Beatrice Milon, et al.. Lineage-tracing and translatomic analysis of damage-inducible mitotic cochlear progenitors identifies candidate genes regulating regeneration. *PLoS Biol*. 2021. doi: [10.1371/journal.pbio.3001445](https://doi.org/10.1371/journal.pbio.3001445) PMID: [34758021](https://pubmed.ncbi.nlm.nih.gov/34758021/)
 26. Helena R.R. Wells, Maxim B. Freidin, Fatin N. Zainul Abidin, et al.. GWAS Identifies 44 Independent Associated Genomic Loci for Self-Reported Adult Hearing Difficulty in UK Biobank. *The American Journal of Human Genetics*. 2019. doi: [10.1016/j.ajhg.2019.09.008](https://doi.org/10.1016/j.ajhg.2019.09.008) PMID: [31564434](https://pubmed.ncbi.nlm.nih.gov/31564434/)
+27. Hong-Bo Zhao, X Lu. Mechanisms and gene therapy of GJB2 related deafness. *Communications Medicine*. 2026. doi: [10.1038/s43856-026-01996-7](https://doi.org/10.1038/s43856-026-01996-7) PMID: [43073445](https://pubmed.ncbi.nlm.nih.gov/43073445/)
 
 ## Resources: Biobanks
 
