@@ -166,15 +166,45 @@ window.plMembersDialog = window.plMembersDialog || function (url, title) {
   fetch(base + "feed.json", { cache: "no-cache" }).then(r => r.json()).then(papers => {
     [...new Set(papers.flatMap(p => p.topics))].sort().forEach((f, i) => color[f] = i % 8);
     // Newest additions first (each day's sync adds its papers at the top), then by publication date.
-    const all = papers.filter(p => !topic || p.topics.includes(topic))
+    const inPage = papers.filter(p => !topic || p.topics.includes(topic))
       .sort((a, b) => (b.added || "").localeCompare(a.added || "") || (b.date || "").localeCompare(a.date || ""));
-    let shown = Math.min(PAGE, all.length);
-    root.innerHTML = `<div class="wn-bar"><span class="wn-sub">Papers, newest first · ${all.length} in all</span>
+    // The home page: filter by topic (several at once, like the Podcast page), remembered in this browser.
+    const picked = new Set((() => { try { return JSON.parse(localStorage.getItem("pl-cards-topics") || "[]"); } catch { return []; } })()
+      .filter(t => !topic && inPage.some(p => p.topics.includes(t))));
+    const remember = () => { try { localStorage.setItem("pl-cards-topics", JSON.stringify([...picked])); } catch { /* not kept */ } };
+    const order = [...new Set(inPage.flatMap(p => p.topics))].map(t => [t, inPage.filter(p => p.topics.includes(t)).length])
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    let all = [], shown = 0;
+    root.innerHTML = `<div class="wn-bar"><span class="wn-sub"></span>
         <span class="wn-status"><a class="wn-alerts" hidden target="_blank" rel="noopener"
           title="Get an email when new papers arrive">✉ Email alerts</a><span class="wn-scan" hidden></span><span
           class="wn-updated"></span></span></div>
-      <ul class="wn-list">${all.slice(0, shown).map(item).join("")}</ul>
-      <div class="wn-more">${shown < all.length ? `<button type="button" class="wn-assign">Show more</button>` : ""}</div>`;
+      ${topic ? "" : `<div class="pl-pod-chips wn-topics" role="group" aria-label="Filter the papers by topic"></div>`}
+      <ul class="wn-list"></ul>
+      <div class="wn-more"></div>`;
+    function draw() {
+      all = inPage.filter(p => !picked.size || p.topics.some(t => picked.has(t)));
+      shown = Math.min(PAGE, all.length);
+      root.querySelector(".wn-sub").textContent = `Papers, newest first · ${all.length}${picked.size ? ` of ${inPage.length}` : " in all"}`;
+      const chips = root.querySelector(".wn-topics");
+      if (chips) {
+        const chip = (v, label, on) => `<button type="button" class="pl-pod-chip${on ? " on" : ""}" data-topic="${esc(v)}"
+          aria-pressed="${on}">${esc(label)}</button>`;
+        chips.innerHTML = chip("", "All topics", !picked.size) + order.map(([t, n]) => chip(t, `${t} (${n})`, picked.has(t))).join("");
+      }
+      root.querySelector(".wn-list").innerHTML = all.slice(0, shown).map(item).join("") ||
+        `<li class="wn-none">No papers in these topics.</li>`;
+      root.querySelector(".wn-more").innerHTML = shown < all.length ? `<button type="button" class="wn-assign">Show more</button>` : "";
+    }
+    draw();
+    root.querySelector(".wn-topics")?.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-topic]");
+      if (!b) return;
+      const t = b.dataset.topic;
+      if (!t) picked.clear(); else if (picked.has(t)) picked.delete(t); else picked.add(t);
+      remember();
+      draw();
+    });
     root.querySelector(".wn-more").addEventListener("click", (e) => {
       if (!e.target.closest("button")) return;
       root.querySelector(".wn-list").insertAdjacentHTML("beforeend", all.slice(shown, shown + PAGE).map(item).join(""));
