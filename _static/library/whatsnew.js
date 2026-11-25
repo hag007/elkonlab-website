@@ -1,10 +1,9 @@
-// The recent papers on the landing pages (no box, no "breaking" tags: calm): papers published in the last data-days days (90 by default), newest first,
-// at most data-max of them (10), as cards: a figure (openly licensed papers), the lab, journal and date, a synopsis,
-// and links: the paper's card on its topic's Papers page (highlighted), the podcast moment, the PDF and files,
-// Manage, and 👤 lab members (a small window on the library server, password). Computed in the viewer's browser
-// from feed.json, so the window stays current between rebuilds.
-// <div id="whats-new" data-days="90" data-max="10" data-fallback="3" [data-folder="<topic>"]>; data-folder limits it
-// to one topic. With no new papers it shows the latest few instead.
+// The papers on the landing pages, as cards: newest additions first (each day's sync adds its papers at the top),
+// 100 at a time with "Show more", so no card ever drops off. Each card: a figure (openly licensed papers), the lab,
+// journal and date, a synopsis, and links: the paper's card on its topic's Papers page (highlighted), the podcast
+// moment, the PDF and files, Manage, and 👤 lab members (a small window on the library server, password). Calm on
+// purpose: no box, no "breaking" tags. Data: feed.json. <div id="whats-new" [data-folder="<topic>"]>: data-folder
+// limits it to one topic.
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
@@ -16,14 +15,16 @@
   }
   const base = document.currentScript.src.replace(/whatsnew\.js.*$/, "");
   const site = base.replace(/_static\/library\/$/, "");
-  const days = +root.dataset.days || 90, max = +root.dataset.max || 10, fallback = +root.dataset.fallback || 3;
+  const PAGE = 100;  // cards shown at first; "Show more" adds the next 100 (a card never drops off the page)
   const topic = root.dataset.folder || "";
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
   const slug = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "topic";
   const DAY = 864e5;
 
-  function ago(date) {
+  function ago(date) {  // "today", "3 days ago", or the date itself after a month
+    if (isNaN(date)) return "";
     const d = Math.round((Date.now() - date) / DAY);
+    if (d > 30 || d < 0) return date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
     return d <= 0 ? "today" : d === 1 ? "yesterday" : `${d} days ago`;
   }
 
@@ -73,7 +74,7 @@
     return `<li class="wn-item wn-card${p.figure ? "" : " nofig"}" data-id="${esc(p.id)}">
       ${fig}
       <div class="wn-body">
-        <div class="wn-head"><span class="wn-when">${esc(p.source)} · ${ago(new Date(p.date + "T00:00:00"))}</span>${
+        <div class="wn-head"><span class="wn-when">${esc([p.source, /^\d{4}-\d{2}-\d{2}/.test(p.date || "") ? ago(new Date(p.date + "T00:00:00")) : p.date].filter(Boolean).join(" · "))}</span>${
           preprint ? '<span class="pl-badge pl-k-status">Preprint</span>' : ""}</div>
         <div class="wn-title"><a href="${esc(cardLink(p))}" title="This paper on its topic's Papers page">${esc(p.title)}</a></div>
         <div class="wn-lab">${esc((p.lab || "").replace(/^the /, "The "))}${highlights}<span class="wn-members" data-id="${esc(p.id)}">${memberBadges(p.members || [])}</span></div>
@@ -108,18 +109,22 @@
   // no-cache: always ask the server whether the list changed (a quick 304 when it did not).
   fetch(base + "feed.json", { cache: "no-cache" }).then(r => r.json()).then(papers => {
     [...new Set(papers.flatMap(p => p.topics))].sort().forEach((f, i) => color[f] = i % 8);
-    const dated = papers.filter(p => (!topic || p.topics.includes(topic)) && /^\d{4}-\d{2}-\d{2}$/.test(p.date || ""))
-      .sort((a, b) => b.date.localeCompare(a.date) || (b.added || "").localeCompare(a.added || ""));
-    const cutoff = Date.now() - days * DAY;
-    const recent = dated.filter(p => new Date(p.date + "T00:00:00") >= cutoff && new Date(p.date) <= Date.now() + DAY);
-    const list = recent.length ? recent.slice(0, max) : dated.slice(0, fallback);
-    root.innerHTML = `<div class="wn-bar"><span class="wn-sub">${recent.length ? `Recent papers` +
-                                               (recent.length > max ? ` · the latest ${max} of ${recent.length} from the last ${days} days` : "")
-                                              : `The latest papers`}</span>
+    // Newest additions first (each day's sync adds its papers at the top), then by publication date.
+    const all = papers.filter(p => !topic || p.topics.includes(topic))
+      .sort((a, b) => (b.added || "").localeCompare(a.added || "") || (b.date || "").localeCompare(a.date || ""));
+    let shown = Math.min(PAGE, all.length);
+    root.innerHTML = `<div class="wn-bar"><span class="wn-sub">Papers, newest first · ${all.length} in all</span>
         <span class="wn-status"><a class="wn-alerts" hidden target="_blank" rel="noopener"
           title="Get an email when new papers arrive">✉ Email alerts</a><span class="wn-scan" hidden></span><span
           class="wn-updated"></span></span></div>
-      <ul class="wn-list">${list.map(item).join("")}</ul>`;
+      <ul class="wn-list">${all.slice(0, shown).map(item).join("")}</ul>
+      <div class="wn-more">${shown < all.length ? `<button type="button" class="wn-assign">Show more</button>` : ""}</div>`;
+    root.querySelector(".wn-more").addEventListener("click", (e) => {
+      if (!e.target.closest("button")) return;
+      root.querySelector(".wn-list").insertAdjacentHTML("beforeend", all.slice(shown, shown + PAGE).map(item).join(""));
+      shown = Math.min(shown + PAGE, all.length);
+      if (shown >= all.length) root.querySelector(".wn-more").innerHTML = "";
+    });
     // "Last updated" (when the library was last synced) and, while a scan runs, "Scanning <topic>…".
     // Both come from updated.json, which the server publishes when a scan starts and with every rebuild.
     fetch(base + "updated.json", { cache: "no-cache" }).then(r => r.json()).then(u => {
