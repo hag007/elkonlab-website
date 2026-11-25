@@ -11,6 +11,53 @@
  "title": "Rare variant analysis · Sunday, November 22",
  "seconds": 108.9,
  "drive": "https://drive.google.com/open?id=1waknRufhnKYIIuQLA61MD9SfXKVCXKC1",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Rare variant analysis, for Sunday, November 22."
+  },
+  {
+   "t": 7.01,
+   "s": "A",
+   "text": "Let's turn to rare variant analysis, with a structural variant twist."
+  },
+  {
+   "t": 11.52,
+   "s": "B",
+   "text": "This medRxiv preprint from the Riley lab asks whether rare copy number variants, below one percent frequency and called from short-read whole-genome sequencing in All of Us, contribute to alcohol use disorder risk."
+  },
+  {
+   "t": 26.91,
+   "s": "A",
+   "text": "They had about fifty-six thousand participants, roughly fifty-four hundred of them cases from health records, analyzed by ancestry group and then in a cross-ancestry meta-analysis."
+  },
+  {
+   "t": 38.4,
+   "s": "B",
+   "text": "The headline is mostly null. No genome-wide burden metric and no individual region of ten kilobases or more survived false discovery rate correction."
+  },
+  {
+   "t": 49.56,
+   "s": "A",
+   "text": "The gene-set results are interesting, though. The significant hits were almost all duplications linked to lower risk, across unrelated gene sets, so the authors read that as a general duplication dosage effect rather than pathway enrichment."
+  },
+  {
+   "t": 64.57,
+   "s": "B",
+   "text": "Deletions went the other way. Deletions in neurodevelopmental genes raised risk modestly, and a deletion at sixteen p twelve point one, a known neuropsychiatric locus, had an odds ratio of about two point nine, consistent across ancestries."
+  },
+  {
+   "t": 82.97,
+   "s": "A",
+   "text": "I'd hold that single locus loosely until it replicates. It's a preprint, the case count is modest, and short-read sequencing misses some structural variation."
+  },
+  {
+   "t": 92.96,
+   "s": "B",
+   "text": "The takeaway: at current biobank sample sizes, rare copy number variants seen by short-read sequencing seem to add little to alcohol use disorder liability, though the dosage signals deserve follow-up."
+  }
+ ],
  "chapters": [
   {
    "title": "Rare variant analysis",

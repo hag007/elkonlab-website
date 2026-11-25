@@ -11,6 +11,48 @@
  "title": "Resources: Atlases · Saturday, November 21",
  "seconds": 103.3,
  "drive": "https://drive.google.com/open?id=1YSqzvBmNT5xNcVPCVd6ndtQgIGllXLZP",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Atlases, for Saturday, November 21."
+  },
+  {
+   "t": 7.2,
+   "s": "A",
+   "text": "Let's turn to Resources: Atlases. There's one paper today, an update to a microRNA expression database from the Hatzigeorgiou lab, published in Nucleic Acids Research."
+  },
+  {
+   "t": 18.66,
+   "s": "B",
+   "text": "This is DIANA-miTED version two. If you see a microRNA change in a disease, you need a healthy baseline to compare it with, and that baseline has been thin."
+  },
+  {
+   "t": 30.32,
+   "s": "A",
+   "text": "The collection grows from about fifteen thousand to nearly fifty thousand uniformly processed human small RNA sequencing profiles. That includes almost seventeen thousand new GTEx samples and many more from the Sequence Read Archive."
+  },
+  {
+   "t": 44.86,
+   "s": "B",
+   "text": "It covers two thousand six hundred fifty six mature microRNAs across ninety six tissues, four hundred thirty seven cell lines and five hundred three diseases. The big change is the healthy reference: healthy donors go from seven hundred nine to over twenty three thousand."
+  },
+  {
+   "t": 63.75,
+   "s": "A",
+   "text": "I like that they keep tumour-adjacent normal profiles in a separate class, and separate primary tissues from cultured preparations. Adjacent normal tissue isn't really healthy, so lumping it in would blur the reference."
+  },
+  {
+   "t": 76.56,
+   "s": "B",
+   "text": "There are also co-expression tools with precomputed WGCNA modules, plus downloads and a REST API. One caution: the archive data comes from many studies with different protocols, so batch effects are still worth checking."
+  },
+  {
+   "t": 92.99,
+   "s": "A",
+   "text": "The takeaway: if you're interpreting microRNA findings, you now have a much larger healthy-tissue reference to compare against, and it's free to use."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: Atlases",

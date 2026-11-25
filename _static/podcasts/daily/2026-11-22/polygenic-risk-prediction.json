@@ -12,6 +12,58 @@
  "title": "Polygenic risk prediction · Sunday, November 22",
  "seconds": 150.2,
  "drive": "https://drive.google.com/open?id=1AOIG-F4U6jFIGd4_ZtoxzbWWv_N8431A",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Polygenic risk prediction, for Sunday, November 22."
+  },
+  {
+   "t": 7.22,
+   "s": "A",
+   "text": "Let's turn to polygenic risk prediction, where both new papers improve scores without running a new GWAS."
+  },
+  {
+   "t": 14.06,
+   "s": "B",
+   "text": "The first is from the Dahl lab in Nature Genetics. Their question is whether the default scale we measure a phenotype on is actually the right one for genetic analysis. Their method, SIQReg, learns a data-driven scale by making genetic effects as similar as possible across the quantiles of the trait."
+  },
+  {
+   "t": 34.27,
+   "s": "A",
+   "text": "Across 25 UK Biobank traits, the default scale was rejected for 24. The learned scales usually fell between the raw scale and the log scale, so these traits are neither purely additive nor purely multiplicative."
+  },
+  {
+   "t": 48.31,
+   "s": "B",
+   "text": "The striking result is that 97 percent of variance quantitative trait loci went away, which suggests they may be artefacts of scale. Biologically plausible nonadditive signals were kept."
+  },
+  {
+   "t": 61.87,
+   "s": "A",
+   "text": "Additive analyses also got better. GWAS loci went up by 11 percent, transcriptome-wide association genes by 13 percent, polygenic prediction accuracy by 10 percent, and they identified 50 percent more high-risk individuals. These gains replicated across ancestry groups."
+  },
+  {
+   "t": 81.31,
+   "s": "B",
+   "text": "The second paper, from the Fahed lab in Nature Communications, tackles a different problem: published scores often transfer poorly to new cohorts. The authors combine several published scores for a disease and use machine learning to reweight them by how well each one predicts in the local cohort."
+  },
+  {
+   "t": 100.99,
+   "s": "A",
+   "text": "In the MGB Biobank, C-statistics rose by about 20 percent for coronary artery disease, 9 percent for prostate cancer and 8 percent for breast cancer. The optimized coronary score caught 27.7 percent of cases, compared with 17.8 percent for the best published score."
+  },
+  {
+   "t": 121.2,
+   "s": "B",
+   "text": "The gain in high-risk case enrichment was even bigger for breast cancer, 20.8 versus 7.1 percent. One caution is that this was tested in a single biobank, so I'd want to see validation on data held out from the tuning, and in other health systems."
+  },
+  {
+   "t": 139.41,
+   "s": "A",
+   "text": "So the takeaway is that both papers get better scores out of existing GWAS, one by fixing the phenotype scale and the other by tuning to the local population."
+  }
+ ],
  "chapters": [
   {
    "title": "Polygenic risk prediction",

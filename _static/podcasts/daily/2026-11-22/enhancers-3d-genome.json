@@ -20,6 +20,83 @@
  "title": "Enhancers & 3D genome · Sunday, November 22",
  "seconds": 169.7,
  "drive": "https://drive.google.com/open?id=1EI1Yz9VrIQe5ySSCbpfRh-KLKn2ZCwMe",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Sunday, November 22."
+  },
+  {
+   "t": 7.61,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome. A bioRxiv preprint from the Misteli lab asks whether TAD structure changes transcription of the genes inside."
+  },
+  {
+   "t": 18.05,
+   "s": "B",
+   "text": "They built OptoTet, a light-controlled tool that forces a TAD's two boundaries to pair without mutating or depleting proteins."
+  },
+  {
+   "t": 27.36,
+   "s": "A",
+   "text": "Forced pairing increased ERRFI1 bursting and partly rescued cohesin depletion there, but MYC was insensitive."
+  },
+  {
+   "t": 35.11,
+   "s": "B",
+   "text": "Clean causal design, but it's two loci in a preprint, so we'd want many more before generalizing."
+  },
+  {
+   "t": 42.27,
+   "s": "A",
+   "text": "A Zechner lab preprint, also on bioRxiv, uses polymer simulations to show that simple distance thresholding badly misestimates looping probability, lifetime and search time."
+  },
+  {
+   "t": 54.74,
+   "s": "B",
+   "text": "It fails when localization error nears the contact distance, and noise-aware inference does much better."
+  },
+  {
+   "t": 61.85,
+   "s": "A",
+   "text": "Next, the Zhou lab in Molecular Systems Biology asks how Drosophila dosage compensation is tuned gene by gene, using sexed 3D genome data across development."
+  },
+  {
+   "t": 73.63,
+   "s": "B",
+   "text": "About 30 percent of X-linked genes are compensated only in specific stages or tissues. Housekeeping genes keep contacts with HAS elements at stable TAD boundaries, while stage-specific genes gain contacts with PionX and satellite elements."
+  },
+  {
+   "t": 91.46,
+   "s": "A",
+   "text": "Now briefly, the rest. The Liu lab's C-Fetch, on bioRxiv, finds contact-map patterns from example patches and beats Mustache loop calls."
+  },
+  {
+   "t": 101.0,
+   "s": "B",
+   "text": "Two more bioRxiv preprints. The Tempera lab links NAD salvage to CTCF-cohesin looping in Epstein-Barr virus transformed B cells, and the Vickovic lab's SPACE-Tag maps histone marks across the aging mouse brain."
+  },
+  {
+   "t": 118.27,
+   "s": "A",
+   "text": "In iScience, the Ohneda lab finds a Gata2 enhancer 53 kilobases downstream that is needed for IL-3 responsiveness in mast cell and basophil progenitors."
+  },
+  {
+   "t": 130.54,
+   "s": "B",
+   "text": "In Genes to Cells, the Araki lab shows an endogenous enhancer and an inserted retrovirus together drive ectopic Ptf1a in Danforth's short tail mice, and the Hirota lab confirms the J element as the main Class I odorant receptor enhancer."
+  },
+  {
+   "t": 150.16,
+   "s": "A",
+   "text": "And a Clark lab preprint finds that rax expression in the zebrafish eye is largely buffered by redundant enhancers."
+  },
+  {
+   "t": 157.91,
+   "s": "B",
+   "text": "The takeaway: enhancers and 3D contacts often act in gene-specific, buffered ways, so we need both direct perturbation and noise-aware measurement."
+  }
+ ],
  "chapters": [
   {
    "title": "Enhancers & 3D genome",

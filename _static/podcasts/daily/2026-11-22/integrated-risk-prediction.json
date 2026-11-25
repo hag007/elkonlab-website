@@ -15,6 +15,68 @@
  "title": "Integrated risk prediction · Sunday, November 22",
  "seconds": 170.1,
  "drive": "https://drive.google.com/open?id=1AXBlfSKC4rbF1K2Zj6jPkuVdJ3jCrNbT",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Sunday, November 22."
+  },
+  {
+   "t": 7.22,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction, where several new papers add other data types to genetics."
+  },
+  {
+   "t": 13.52,
+   "s": "B",
+   "text": "The broadest is a medRxiv preprint from the Smith lab. It asks whether one blood methylation profile can rank ten-year risk for 21 common diseases in 12,785 adults from two large cohorts."
+  },
+  {
+   "t": 29.64,
+   "s": "A",
+   "text": "They kept only reproducible probes and held out a test set never used for fitting or tuning. Eight scores reached a holdout C-index of at least 0.8, including heart failure, type 2 diabetes and dementia."
+  },
+  {
+   "t": 43.02,
+   "s": "B",
+   "text": "But three diseases, dementia among them, had few events, and the comparisons with polygenic scores use published values, not head-to-head tests."
+  },
+  {
+   "t": 53.19,
+   "s": "A",
+   "text": "Type 2 diabetes was the exception, where a published polygenic-plus-risk-factor model still won. That links to a Lee lab paper in Healthcare Informatics Research, which classified prevalent type 2 diabetes in two small Korean cohorts."
+  },
+  {
+   "t": 68.32,
+   "s": "B",
+   "text": "Adding a polygenic score, then diabetes-related methylation, to baseline features improved discrimination at each step, up to an AUROC of 0.896. But because the disease was already present, some methylation signal may follow diagnosis."
+  },
+  {
+   "t": 87.06,
+   "s": "A",
+   "text": "The third, a Gusev lab preprint on medRxiv, introduces Mendelnoulli, a model of how polygenic and monogenic effects change with age, applied to 348 diseases in three biobanks."
+  },
+  {
+   "t": 100.72,
+   "s": "B",
+   "text": "Letting polygenic effects vary with age improved one-year discrimination for all 28 diseases tested, with a mean AUC gain of 0.023. It also recovered known timing, with BRCA1 acting earlier on breast cancer than BRCA2."
+  },
+  {
+   "t": 121.12,
+   "s": "A",
+   "text": "Briefly, a Hsu lab preprint found that adding a polygenic score to its PRISM-AD model of cognitive decline did not significantly improve accuracy in 4,435 European-ancestry participants."
+  },
+  {
+   "t": 136.07,
+   "s": "B",
+   "text": "And a Zheng lab study in UK Biobank, published in Frontiers in Cardiovascular Medicine, linked metabolic syndrome to higher cardiovascular risk, more strongly in women. Its evidence that metabolic syndrome and polygenic risk add together was only exploratory."
+  },
+  {
+   "t": 155.38,
+   "s": "A",
+   "text": "The takeaway is that genetics is becoming one layer among several, with gains from signals that change over time, like methylation and age-varying effects, but most of these results still need independent replication."
+  }
+ ],
  "chapters": [
   {
    "title": "Integrated risk prediction",

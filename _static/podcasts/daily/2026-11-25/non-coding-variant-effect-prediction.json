@@ -1,0 +1,120 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "105194e5-e9df-3d3b-baf0-77485595c727",
+  "3826f343-79fc-31d4-8327-1b845dad9790",
+  "528492fb-8556-384b-af10-76ed57377dd4",
+  "8894b1bd-dab6-3815-ab7c-31b607a54096"
+ ],
+ "topic": "Non-coding variant effect prediction",
+ "slug": "non-coding-variant-effect-prediction",
+ "date": "2026-11-25",
+ "title": "Non-coding variant effect prediction · Wednesday, November 25",
+ "seconds": 169.1,
+ "drive": "https://drive.google.com/open?id=1CV7jxeHKWkcF9RLapunLKJ2uL05F7vrg",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Non-coding variant effect prediction, for Wednesday, November 25."
+  },
+  {
+   "t": 7.86,
+   "s": "A",
+   "text": "Let's turn to non-coding variant effect prediction, where today's question is what sequence-to-function models can tell us about individual genomes."
+  },
+  {
+   "t": 16.91,
+   "s": "B",
+   "text": "First, a bioRxiv preprint from the Demeulemeester lab asks whether one sample is enough to train such a model. Using Fiber-seq and Nanopore direct RNA-seq from a single genome, HG002, they built FiberTron, a twelve million parameter model that reads 524 kilobases."
+  },
+  {
+   "t": 39.79,
+   "s": "A",
+   "text": "It predicts methylation, accessibility and transcription at base-pair resolution, with correlations of zero point eight five to zero point nine seven on held-out chromosomes. On dsQTL and eQTL tasks it matches AlphaGenome despite being over ten times smaller."
+  },
+  {
+   "t": 58.45,
+   "s": "B",
+   "text": "Because training uses only reference sequence, the sample's own reads stay free to test variant predictions. It recovered 79 percent of allele-specific accessibility variants in a melanoma line, and flagged oncogenic TERT promoter and TAL1 enhancer mutations."
+  },
+  {
+   "t": 77.78,
+   "s": "A",
+   "text": "Whether predictions hold up beyond single-nucleotide variants is the subject of a Research Square preprint from the Feng lab. They compared AlphaGenome and Borzoi on 400 pangenome insertions absent from both reference genomes."
+  },
+  {
+   "t": 92.85,
+   "s": "B",
+   "text": "The models hardly agreed: a Spearman correlation of minus zero point zero five, with matching signs only about half the time. For single-nucleotide variants it was zero point six three, though the authors call that contrast descriptive."
+  },
+  {
+   "t": 109.97,
+   "s": "A",
+   "text": "With only nine loci checkable against expression data, real calibration wasn't possible. The authors recommend reporting coverage, context sensitivity and calibration separately for insertions."
+  },
+  {
+   "t": 122.54,
+   "s": "B",
+   "text": "The third paper, from the Dias lab, introduces EMBHER, a method that asks how much expression heritability a model's internal embeddings capture across individuals."
+  },
+  {
+   "t": 134.5,
+   "s": "A",
+   "text": "In whole blood, Borzoi's embeddings recovered much of the heritability explained by genotypes, far more than its predictions, while carrying less ancestry information."
+  },
+  {
+   "t": 144.92,
+   "s": "B",
+   "text": "Briefly, the Wu lab presents EditFinder, which predicts A-to-I RNA editing sites and suggests nearby variants could change editing at about ten percent of known sites."
+  },
+  {
+   "t": 156.94,
+   "s": "A",
+   "text": "The takeaway: these models are becoming useful for single genomes and for populations, but beyond single-nucleotide variants their predictions still need independent checks."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Non-coding variant effect prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/non-coding-variant-effect-prediction/papers.html",
+   "papers": [
+    {
+     "title": "FiberTron enables regulatory variant effect prediction and testing from multi-omic long reads of a single sample",
+     "authors": "Marios Eftychiou et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.13.762587",
+     "start": 16.9
+    },
+    {
+     "title": "Limited cross-model agreement in predicted RNA effects of complete non-reference human insertions",
+     "authors": "Yu Zhang et al.",
+     "source": "Research Square",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.21203/rs.3.rs-11548505/v1",
+     "start": 77.8
+    },
+    {
+     "title": "EditFinder: A Sequence-Based Model for A-to-I RNA Editing Identification and Characterization of Genetic Variant Effects",
+     "authors": "Yan Zeng et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.23.768754",
+     "start": 144.9
+    },
+    {
+     "title": "Sequence-to-function embeddings across individuals capture rare and common variant heritability",
+     "authors": "Federico Billeci et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.23.768687",
+     "start": 122.5
+    }
+   ]
+  }
+ ]
+}

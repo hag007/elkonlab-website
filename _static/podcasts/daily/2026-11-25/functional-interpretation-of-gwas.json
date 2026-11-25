@@ -13,12 +13,82 @@
  "title": "Functional interpretation of GWAS · Wednesday, November 25",
  "seconds": 193.6,
  "drive": "https://drive.google.com/open?id=126me8y0oIj2e8JqhOPPNVXaPV01pUoPu",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Wednesday, November 25."
+  },
+  {
+   "t": 7.95,
+   "s": "A",
+   "text": "Let's turn to functional interpretation of GWAS, where three new preprints all ask the same question: which molecular layer do risk variants actually act through?"
+  },
+  {
+   "t": 18.18,
+   "s": "B",
+   "text": "The first one is from the Furey lab, on bioRxiv. They mapped cis expression QTLs and cis splicing QTLs in 1,149 colon samples from people with inflammatory bowel disease, from the SPARC IBD cohort, to link IBD risk loci to genes."
+  },
+  {
+   "t": 38.99,
+   "s": "A",
+   "text": "Colocalization prioritized 239 expression genes and 164 splicing genes at 147 of 320 IBD loci, and 58 genes had support from both. One detail stood out. In five genes, the risk allele moved expression and splice junction usage in opposite directions, which fits nonsense-mediated decay."
+  },
+  {
+   "t": 63.29,
+   "s": "B",
+   "text": "The genes linked through splicing were also enriched in immune pathways and drug targets. That's a large disease-relevant tissue sample, but it's still a preprint, and all the samples come from patients rather than a mixed cohort."
+  },
+  {
+   "t": 78.19,
+   "s": "A",
+   "text": "The second paper takes the same idea to adipose tissue and type 2 diabetes. It's from the Jin lab, also on bioRxiv. The authors colocalized 338 fine-mapped DIAMANTE signals with five RNA layers from GTEx in the eQTL Catalogue, covering gene, exon, transcript usage, event usage and splice junctions."
+  },
+  {
+   "t": 101.13,
+   "s": "B",
+   "text": "They found 77 colocalized pairs at 30 signals, and 87 percent of those involved features other than total gene expression. At loci like BDNF-AS and PGM1, transcript-level features colocalized with diabetes, while bulk expression pointed to different causal variants."
+  },
+  {
+   "t": 122.63,
+   "s": "A",
+   "text": "So if you only colocalize at the gene level, you can miss the causal gene or pick the wrong one. That matches the IBD splicing result nicely."
+  },
+  {
+   "t": 131.4,
+   "s": "B",
+   "text": "The third paper goes from statistics to experiments. It's from the Orozco lab on bioRxiv, studying osteoarthritis loci in primary human chondrocytes. The authors combined massively parallel reporter assays, chromatin accessibility, H3K27 acetylation and chromatin conformation data with CRISPR activation and interference."
+  },
+  {
+   "t": 157.05,
+   "s": "A",
+   "text": "That linked osteoarthritis risk regions to PAPPA and SPRY4. At 9q33 they nominate rs1895062 as a likely causal variant. Its risk allele raises activity at an enhancer that loops to the PAPPA promoter."
+  },
+  {
+   "t": 174.49,
+   "s": "B",
+   "text": "It's a good example of testing a nominated mechanism directly in the relevant cell type, though again it's a preprint."
+  },
+  {
+   "t": 182.71,
+   "s": "A",
+   "text": "The takeaway is that splicing, transcript usage and experimentally tested enhancers often reveal causal genes that total expression alone would miss."
+  }
+ ],
  "chapters": [
   {
    "title": "Functional interpretation of GWAS",
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
    "papers": [
+    {
+     "title": "Multi-layer colocalization prioritizes adipose RNA regulatory features beyond gene expression at type 2 diabetes loci",
+     "authors": "Yuelong Chen et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.23.768771",
+     "start": 78.2
+    },
     {
      "title": "Beyond Abundance: Integrated Splicing and Expression Quantitative Trait Loci Refine Causal Gene Mapping in IBD",
      "authors": "Emma Yu-Chen Huang et al.",
@@ -34,14 +104,6 @@
      "date": "2026-11-24",
      "url": "https://doi.org/10.64898/2026.11.23.768666",
      "start": 131.4
-    },
-    {
-     "title": "Multi-layer colocalization prioritizes adipose RNA regulatory features beyond gene expression at type 2 diabetes loci",
-     "authors": "Yuelong Chen et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-24",
-     "url": "https://doi.org/10.64898/2026.11.23.768771",
-     "start": 78.2
     }
    ]
   }

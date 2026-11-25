@@ -1,0 +1,78 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "32f5b0d1-9f44-3a46-8e10-95de78ff9d6e"
+ ],
+ "topic": "Single-cell omics & GWAS integration",
+ "slug": "single-cell-omics-gwas-integration",
+ "date": "2026-11-25",
+ "title": "Single-cell omics & GWAS integration · Wednesday, November 25",
+ "seconds": 111.9,
+ "drive": "https://drive.google.com/open?id=1yIIeBr6KAGetG2D6-tYftmHYyyIU2J_c",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Single-cell omics & GWAS integration, for Wednesday, November 25."
+  },
+  {
+   "t": 8.46,
+   "s": "A",
+   "text": "Let's turn to single-cell omics and GWAS integration, where today we have one new atlas."
+  },
+  {
+   "t": 14.1,
+   "s": "B",
+   "text": "It's a Research Square preprint from the Li lab: a spatially resolved multi-omics atlas of the human optic nerve, part of the Human Cell Atlas. The question is which optic nerve cell types and regulatory programs might carry genetic risk for glaucoma."
+  },
+  {
+   "t": 31.84,
+   "s": "A",
+   "text": "It's big: about two point one million nuclei from 108 donors, profiled with single-nucleus RNA and ATAC sequencing plus Xenium spatial transcriptomics. They define ten major cell classes and more than sixty populations, each with its regulatory elements and transcription factor regulons."
+  },
+  {
+   "t": 52.03,
+   "s": "B",
+   "text": "They also find spatial gradients along the nerve and trace adult lineages for oligodendroglia and astrocytes. With age, progenitor-like glia and microglia become less abundant, and cell-cycle programs decline."
+  },
+  {
+   "t": 67.33,
+   "s": "A",
+   "text": "Then the GWAS part. The authors overlay glaucoma and other neuro-ophthalmic signals on the atlas and report new insights into the cells involved."
+  },
+  {
+   "t": 77.26,
+   "s": "B",
+   "text": "That's the part to be careful with, because the abstract doesn't name specific cell types or give enrichment statistics. Treat it as a reference resource first and mechanistic claims second."
+  },
+  {
+   "t": 89.37,
+   "s": "A",
+   "text": "Still, chromatin accessibility at this resolution should make fine-mapping glaucoma variants to specific enhancers much more workable."
+  },
+  {
+   "t": 98.16,
+   "s": "B",
+   "text": "Takeaway: the optic nerve now has a large, multi-modal, age-aware single-cell reference for mapping glaucoma risk, but the genetic conclusions need checking against the full paper."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Single-cell omics & GWAS integration",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/single-cell-omics-gwas-integration/papers.html",
+   "papers": [
+    {
+     "title": "An Integrated Single-cell Multi-Omics Atlas of the Human Optic Nerve",
+     "authors": "Rui Chen et al.",
+     "source": "Research Square",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.21203/rs.3.rs-11587599/v1",
+     "start": 14.1
+    }
+   ]
+  }
+ ]
+}

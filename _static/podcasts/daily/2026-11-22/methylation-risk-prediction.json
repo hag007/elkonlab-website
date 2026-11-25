@@ -12,6 +12,58 @@
  "title": "Methylation risk prediction · Sunday, November 22",
  "seconds": 140.7,
  "drive": "https://drive.google.com/open?id=1eCGEmBLw6Z40_i3VLp_SrmS2IPe47cfw",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Methylation risk prediction, for Sunday, November 22."
+  },
+  {
+   "t": 7.31,
+   "s": "A",
+   "text": "Let's turn to methylation risk prediction, where we have two papers today."
+  },
+  {
+   "t": 11.8,
+   "s": "B",
+   "text": "The first is a medRxiv preprint from the Smith lab. It asks whether a single blood methylation profile can rank ten-year risk across 21 common diseases, using 12,785 adults from Generation Scotland and the Mass General Brigham Biobank."
+  },
+  {
+   "t": 31.33,
+   "s": "A",
+   "text": "They used reproducible probes, null-calibrated feature selection and a holdout set never used for selection, fitting or tuning. Scores for eight diseases reached a holdout C-index of at least 0.80, including chronic kidney disease, COPD, heart failure, type 2 diabetes and dementia."
+  },
+  {
+   "t": 50.86,
+   "s": "B",
+   "text": "For five scores with enough events, hazard ratios per standard deviation ranged from 2.6 to 4.1, and the top risk tertile held 73 to 90 percent of ten-year events. Dementia, interstitial lung disease and fatty liver disease had fewer events, so treat those with caution."
+  },
+  {
+   "t": 71.73,
+   "s": "A",
+   "text": "Comparisons with other scores use published values, not a head-to-head test. For type 2 diabetes, their C-index of 0.809 was below a polygenic score plus risk factors, at 0.85."
+  },
+  {
+   "t": 86.01,
+   "s": "B",
+   "text": "The second paper, from the Haghighi lab in Military Medicine, moves from disease to exposure. They studied 190 breachers and 30 hand grenade operators and built methylation risk scores for career blast and trauma exposure."
+  },
+  {
+   "t": 102.38,
+   "s": "A",
+   "text": "Internal validation gave areas under the curve of 88 and 86 percent. Externally, both scores reached 74 percent in breachers, but in grenade operators the blast score fell to 52 percent. The trauma score was linked to slower reaction time, and exposures were associated with faster aging on the DunedinPACE clock."
+  },
+  {
+   "t": 123.62,
+   "s": "B",
+   "text": "With only 220 men, that drop is the main caution."
+  },
+  {
+   "t": 128.08,
+   "s": "A",
+   "text": "The takeaway is that blood methylation may capture both future disease risk and past exposures, but these claims need untouched holdout sets and head-to-head comparisons to hold up."
+  }
+ ],
  "chapters": [
   {
    "title": "Methylation risk prediction",

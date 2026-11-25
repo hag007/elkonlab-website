@@ -13,6 +13,68 @@
  "title": "Integrated risk prediction · Monday, November 23",
  "seconds": 169.3,
  "drive": "https://drive.google.com/open?id=12VXVs6XWKyemwCftSfgVtsXE5das7Il_",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Monday, November 23."
+  },
+  {
+   "t": 7.2,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction. Today we have three papers that ask what is worth adding on top of standard risk tools."
+  },
+  {
+   "t": 14.72,
+   "s": "B",
+   "text": "The first is from the Fung lab, in the European Heart Journal Open. It asks whether epigenetic age acceleration improves cardiovascular risk scores in older adults. They profiled blood DNA methylation in 535 adults in Hong Kong, aged 60 to 99, and compared five epigenetic clocks."
+  },
+  {
+   "t": 37.34,
+   "s": "A",
+   "text": "GrimAge2 acceleration stood out. Each extra year of acceleration raised the hazard of hospitalisation for acute coronary syndrome or atherosclerotic disease by 11 percent. Adding it raised the concordance index of SCORE2-OP from 0.693 to 0.734, and of PREVENT from 0.682 to 0.725."
+  },
+  {
+   "t": 62.5,
+   "s": "B",
+   "text": "That's encouraging, but it rests on only 42 events in a single cohort, so it needs replication. It also did not predict all-cause mortality."
+  },
+  {
+   "t": 72.58,
+   "s": "A",
+   "text": "The second paper, from the Yu lab in Global Heart, covers nearly 243 thousand UK Biobank participants across cardiovascular-kidney-metabolic syndrome stages zero to three. It looked at Life's Essential 8 cardiovascular health and a polygenic score together."
+  },
+  {
+   "t": 90.64,
+   "s": "B",
+   "text": "Ideal cardiovascular health had a hazard ratio of 0.47 compared with poor, in every genetic-risk group, and that protection held in advanced stages. The polygenic score's effect grew stronger in later stages."
+  },
+  {
+   "t": 106.62,
+   "s": "A",
+   "text": "It's observational, but it supports treating lifestyle and genetic risk as separate, complementary axes."
+  },
+  {
+   "t": 113.35,
+   "s": "B",
+   "text": "The third paper is a systematic review from the Boccia lab in eClinicalMedicine, on cancer screening stratified by polygenic risk scores. It included 25 studies, mostly decision-analytic models, covering breast, colorectal, prostate, lung and gastric cancer."
+  },
+  {
+   "t": 132.47,
+   "s": "A",
+   "text": "Most models projected gains in quality-adjusted life-years, and prostate models mainly projected less overdiagnosis. But the benefit over uniform screening was modest, and harms rose in high-risk groups given more intensive surveillance."
+  },
+  {
+   "t": 147.89,
+   "s": "B",
+   "text": "Certainty of evidence was very low for every outcome, so the authors want it kept investigational until prospective trials are done in diverse populations."
+  },
+  {
+   "t": 159.01,
+   "s": "A",
+   "text": "The takeaway is that adding genetic and epigenetic layers can sharpen risk prediction, but we still lack proof that it improves outcomes for patients."
+  }
+ ],
  "chapters": [
   {
    "title": "Integrated risk prediction",

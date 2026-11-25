@@ -14,6 +14,68 @@
  "title": "Enhancers & 3D genome · Monday, November 23",
  "seconds": 181.3,
  "drive": "https://drive.google.com/open?id=1ez9lP2xUasQyWQZw04rq-k_vWNorSnp1",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Monday, November 23."
+  },
+  {
+   "t": 7.52,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome. The headline is a medRxiv preprint from the Amundadottir lab, asking which genes sit behind the non-coding risk loci for pancreatic ductal adenocarcinoma."
+  },
+  {
+   "t": 21.18,
+   "s": "B",
+   "text": "Earlier GWAS found 31 risk signals across 26 loci, but the causal variants and target genes are still mostly unknown. The authors fine-mapped 1,414 variants. Then they used a capture-based conformation method called GWAS Capture-C to see which promoters those variants physically contact."
+  },
+  {
+   "t": 43.85,
+   "s": "A",
+   "text": "That nominated 273 candidate genes at 25 loci, some over long distances. They include contacts of more than a megabase with KRT gene promoters and about 280 kilobases with SOX9, a master regulator of pancreatic development."
+  },
+  {
+   "t": 62.1,
+   "s": "B",
+   "text": "The strongest case is at 7p14.1. There's an eQTL for INHBA, a roughly 900 kilobase contact with its promoter, and CRISPR inhibition at four fine-mapped variants lowered INHBA expression."
+  },
+  {
+   "t": 77.46,
+   "s": "A",
+   "text": "So the contact, the eQTL and the perturbation all point to a distal enhancer. The caution is that 273 genes is a list of candidates, only one locus got functional follow-up, and this is still a preprint."
+  },
+  {
+   "t": 91.4,
+   "s": "B",
+   "text": "Next, a bioRxiv preprint from the Villasenor lab introduces Read&Tag. It's a CUT&Tag-style method that fuses engineered chromatin reader domains or intrabodies directly to Tn5, so no antibodies are needed."
+  },
+  {
+   "t": 108.63,
+   "s": "A",
+   "text": "It profiles histone marks, DNA methylation and elongating RNA polymerase two, even in frozen tissue and low-input samples. The neat part is a dual-specificity reader that only tagments fragments carrying both H3K4 trimethylation and H3K27 trimethylation. That means bivalency is measured directly instead of inferred from overlapping profiles."
+  },
+  {
+   "t": 134.75,
+   "s": "B",
+   "text": "Barcoded complexes also read four chromatin features in one reaction, though it still needs independent benchmarking."
+  },
+  {
+   "t": 143.18,
+   "s": "A",
+   "text": "In Plant Cell, the Li lab traces the very high ripening expression of the pepper CCS gene to a super-enhancer-like array of 22 CArG-box repeats, where activation scales with repeat copy number."
+  },
+  {
+   "t": 157.74,
+   "s": "B",
+   "text": "And in GigaByte, the Ji lab shares single-nucleus ATAC-seq of healing rat skin wounds over 19 days, with 37,555 nuclei across 23 cell types."
+  },
+  {
+   "t": 171.79,
+   "s": "A",
+   "text": "The takeaway is that linking non-coding variants to target genes now takes contact maps plus perturbation, not contacts alone."
+  }
+ ],
  "chapters": [
   {
    "title": "Enhancers & 3D genome",

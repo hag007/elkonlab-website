@@ -1,0 +1,73 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "b58ae4d2-04ac-3fcd-96dd-7a46885bf34d"
+ ],
+ "topic": "Polygenic risk prediction",
+ "slug": "polygenic-risk-prediction",
+ "date": "2026-11-25",
+ "title": "Polygenic risk prediction · Wednesday, November 25",
+ "seconds": 109.0,
+ "drive": "https://drive.google.com/open?id=1J1qWowGBlMEfPHbMgzgpdypzlQnOqKfV",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Polygenic risk prediction, for Wednesday, November 25."
+  },
+  {
+   "t": 7.46,
+   "s": "A",
+   "text": "Let's turn to polygenic risk prediction, with one paper today on glaucoma."
+  },
+  {
+   "t": 12.35,
+   "s": "B",
+   "text": "It's a systematic review from the Hewitt lab, published in Ophthalmic Genetics. The question is how polygenic risk scores for primary open-angle glaucoma have been built, and how well they actually predict the disease. The review was registered on PROSPERO, and the authors used the PROBAST tool to assess risk of bias."
+  },
+  {
+   "t": 33.16,
+   "s": "A",
+   "text": "They screened about two thousand articles and kept sixty-five. Twenty of those built an original score, and the other forty-five looked at an existing score alongside clinically relevant traits."
+  },
+  {
+   "t": 44.67,
+   "s": "B",
+   "text": "And the scores are all over the map. They range from four SNPs to over nine million, with training samples from six hundred seventy-two people to more than four hundred forty-nine thousand. Outcomes were reported inconsistently, so the odds ratio per decile ran anywhere from about one point seven to about forty-five."
+  },
+  {
+   "t": 66.67,
+   "s": "A",
+   "text": "That spread makes it hard to compare the studies directly. Still, some patterns came through. Adding demographic factors to the score improved prediction, and scores built for a given ancestry worked best in that same ancestry."
+  },
+  {
+   "t": 79.84,
+   "s": "B",
+   "text": "The scores were also linked to cardiovascular disease, poorer lung function and higher urinary sodium excretion. The authors call for validation in more diverse populations, and for bringing environmental risk factors into the models."
+  },
+  {
+   "t": 96.3,
+   "s": "A",
+   "text": "The takeaway: glaucoma risk scores look promising, but until reporting is standardized and the scores are tested across ancestries, their headline effect sizes can't really be compared."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Polygenic risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/polygenic-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Heterogeneity of glaucoma polygenic risk score reporting",
+     "authors": "Chen Wang et al.",
+     "source": "Ophthalmic genetics",
+     "date": "2026",
+     "url": "https://doi.org/10.1080/13816810.2026.2758864",
+     "start": 12.3
+    }
+   ]
+  }
+ ]
+}

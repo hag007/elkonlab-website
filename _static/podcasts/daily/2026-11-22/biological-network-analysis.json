@@ -11,6 +11,53 @@
  "title": "Biological network analysis · Sunday, November 22",
  "seconds": 108.5,
  "drive": "https://drive.google.com/open?id=1gTGT-Ha5S8kxCBzoEZwazOX-PN7CLzfe",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Biological network analysis, for Sunday, November 22."
+  },
+  {
+   "t": 7.67,
+   "s": "A",
+   "text": "Let's turn to Biological network analysis. We have one paper today, from the Wang lab, published in Interdisciplinary Sciences, Computational Life Sciences. It tries to identify cancer driver genes with a model called OMIGAT."
+  },
+  {
+   "t": 22.29,
+   "s": "B",
+   "text": "The problem will sound familiar. Multi-omics data are noisy and interaction networks are incomplete, and both limit how well deep learning models rank driver genes."
+  },
+  {
+   "t": 33.95,
+   "s": "A",
+   "text": "So the authors combine genomic, transcriptomic and epigenomic features with network topology, plus label-free topological priors to better represent hub genes and local modules."
+  },
+  {
+   "t": 46.31,
+   "s": "B",
+   "text": "The model then runs two branches. A global branch builds a similarity graph from the omics data to catch links the network misses. A local branch is a graph convolution over the network itself, designed to limit the spread of noisy edges."
+  },
+  {
+   "t": 62.55,
+   "s": "A",
+   "text": "An adaptive fusion step combines them. On the PPNet dataset the model reaches an area under the curve of 87.46 percent for identifying known driver genes."
+  },
+  {
+   "t": 73.7,
+   "s": "B",
+   "text": "A few caveats, though. The abstract reports one benchmark with no comparisons to other methods. And testing against known driver genes doesn't show whether it finds new, validated ones."
+  },
+  {
+   "t": 86.66,
+   "s": "A",
+   "text": "Hub genes are also a concern. Network models can reward well-studied genes, so I'd like to see performance broken down by node degree."
+  },
+  {
+   "t": 95.24,
+   "s": "B",
+   "text": "The takeaway: learning similarity graphs alongside curated networks is a reasonable fix for incomplete interactomes, but it needs broader benchmarking before we rely on it."
+  }
+ ],
  "chapters": [
   {
    "title": "Biological network analysis",

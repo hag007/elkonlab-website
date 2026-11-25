@@ -11,6 +11,53 @@
  "title": "Resources: Biobanks · Saturday, November 21",
  "seconds": 114.3,
  "drive": "https://drive.google.com/open?id=18NeNlRp_vEnbNriFaMpEfaRnLzHSxaQq",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Biobanks, for Saturday, November 21."
+  },
+  {
+   "t": 7.22,
+   "s": "A",
+   "text": "Let's turn to Resources: Biobanks, where there's one new paper today."
+  },
+  {
+   "t": 11.6,
+   "s": "B",
+   "text": "It comes from the GenomeIndia consortium and is published in Nucleic Acids Research. It starts from a familiar gap: Indian and other South Asian populations are underrepresented in global variant resources, and that limits genomic medicine in the region."
+  },
+  {
+   "t": 29.23,
+   "s": "A",
+   "text": "To fill it, the initiative sequenced about ten thousand genomes from eighty-three Indian populations. This paper presents the public browser for that data, called G I D B. It catalogs one hundred thirty-six million high-confidence variants."
+  },
+  {
+   "t": 44.05,
+   "s": "B",
+   "text": "And forty-four million of those don't appear in other global or South Asian databases. That's a striking share, and it shows how much variation the existing references have been missing."
+  },
+  {
+   "t": 55.89,
+   "s": "A",
+   "text": "What I find most useful is how the allele frequencies are broken down: tribal versus non-tribal groups, geographic region, and language family. In a population this structured, a single pooled frequency can hide a lot."
+  },
+  {
+   "t": 69.68,
+   "s": "B",
+   "text": "The variants come annotated with VEP and ClinVar, and the browser compares them with 1000 Genomes, gnomAD and GenomeAsia. There's programmatic access too. The authors pitch it for rare disease interpretation, complex disorders and pharmacogenomics."
+  },
+  {
+   "t": 88.25,
+   "s": "A",
+   "text": "One caution: ten thousand genomes spread over eighty-three populations leaves some subgroups small. So frequency estimates for rare variants in those subgroups will be imprecise."
+  },
+  {
+   "t": 99.36,
+   "s": "B",
+   "text": "The takeaway is that G I D B gives Indian populations a stratified reference panel, and anyone filtering variants or interpreting clinical findings in South Asian samples should start using it."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: Biobanks",

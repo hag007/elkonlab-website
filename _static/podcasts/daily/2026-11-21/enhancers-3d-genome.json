@@ -13,12 +13,82 @@
  "title": "Enhancers & 3D genome · Saturday, November 21",
  "seconds": 163.9,
  "drive": "https://drive.google.com/open?id=1yxcPNhajB1Ou5Dr4-TTzEsJHOrT8KXbL",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Saturday, November 21."
+  },
+  {
+   "t": 7.74,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome. Three papers today, running from enhancer rewiring in tumors down to the physics of how an enhancer and a promoter actually meet."
+  },
+  {
+   "t": 18.69,
+   "s": "B",
+   "text": "First, a bioRxiv preprint from the Masuda lab on head and neck squamous cell carcinoma, asking what TP53 mutation enables, since it is frequent but not sufficient. They combined multi-omics in mouse models with multiregional human tumors."
+  },
+  {
+   "t": 36.86,
+   "s": "A",
+   "text": "The contrast is the interesting part. Global chromatin architecture stays largely stable through progression, while YAP1 moves onto newly formed super-enhancers, with an IL6-dependent feedforward loop and partners like FOXM1, delta N p63 and PITX2."
+  },
+  {
+   "t": 55.7,
+   "s": "B",
+   "text": "The YAP1 and PITX2 axis ties to partial EMT and lymph node metastasis. Caveat: it is a preprint, and the staging argument leans on the mice."
+  },
+  {
+   "t": 67.44,
+   "s": "A",
+   "text": "Second, from the Nykter lab in iScience, compartments in prostate cancer. Hi-C, ATAC-seq and transcriptomes from 18 clinical samples, from benign hyperplasia to castration-resistant disease, with compartment calls corrected for copy number and tumor purity."
+  },
+  {
+   "t": 84.75,
+   "s": "B",
+   "text": "That correction matters in aneuploid tumors. They report recurrent B to A shifts in cancer, enriched for chromatin bound by AR, FOXA1 and HOXB13, and for cancer genes like PCA3. With 18 samples, recurrent is a within-cohort claim."
+  },
+  {
+   "t": 103.3,
+   "s": "A",
+   "text": "Nice pairing: compartments shift in one tumor, architecture holds in the other."
+  },
+  {
+   "t": 108.34,
+   "s": "B",
+   "text": "Third, from the Brückner lab in Science Advances, the mechanics underneath. Live imaging in Drosophila embryos and mouse stem cells, plus polymer simulations, shows nearby loci diffuse relative to each other far more slowly than polymer physics predicts."
+  },
+  {
+   "t": 126.38,
+   "s": "A",
+   "text": "They attribute that to correlated fluctuations coupling loci through the nucleoplasm. Equilibrium noise did not reproduce it; actively driven flows did, depending on ATP and cohesin loop extrusion."
+  },
+  {
+   "t": 139.51,
+   "s": "B",
+   "text": "The consequence: fewer encounters, but longer ones. So Hi-C contact frequency is a shaky proxy for enhancer-promoter communication, since duration may matter as much as rate."
+  },
+  {
+   "t": 152.38,
+   "s": "A",
+   "text": "Takeaway: enhancer landscapes get rewired in disease, but what a rewired contact delivers depends on dynamics that population-averaged maps do not capture."
+  }
+ ],
  "chapters": [
   {
    "title": "Enhancers & 3D genome",
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
    "papers": [
+    {
+     "title": "Chromatin loci move coherently due to spatially correlated fluctuations",
+     "authors": "Janni Harju et al.",
+     "source": "Science Advances",
+     "date": "2026-11-18",
+     "url": "https://doi.org/10.1126/sciadv.aei5536",
+     "start": 108.3
+    },
     {
      "title": "YAP1-induced super-enhancer rewiring mediates gene-environment-driven malignant reprogramming and metastatic ecosystem formation in head and neck cancer",
      "authors": "M. Higashihara et al.",
@@ -34,14 +104,6 @@
      "date": "2026-11-01",
      "url": "https://doi.org/10.1016/j.isci.2026.118155",
      "start": 67.4
-    },
-    {
-     "title": "Chromatin loci move coherently due to spatially correlated fluctuations",
-     "authors": "Janni Harju et al.",
-     "source": "Science Advances",
-     "date": "2026-11-18",
-     "url": "https://doi.org/10.1126/sciadv.aei5536",
-     "start": 108.3
     }
    ]
   }

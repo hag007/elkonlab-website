@@ -1,0 +1,102 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "486bde62-d7ba-389f-b8a0-2ccef6744ef0",
+  "dc1a2a5c-90ca-3e89-b1ef-a9d7962f5ac0"
+ ],
+ "topic": "Integrated risk prediction",
+ "slug": "integrated-risk-prediction",
+ "date": "2026-11-25",
+ "title": "Integrated risk prediction · Wednesday, November 25",
+ "seconds": 163.9,
+ "drive": "https://drive.google.com/open?id=1wQ7WKCLf_ZEnpxvoHsjamtP3afzQ9p0s",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Wednesday, November 25."
+  },
+  {
+   "t": 7.42,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction, with two UK Biobank studies that pair polygenic scores with clinical information."
+  },
+  {
+   "t": 15.6,
+   "s": "B",
+   "text": "The first is from the Fahed lab in Frontiers in Neurology. It asks whether traumatic brain injury raises later cardiometabolic risk on its own, or only reflects inherited susceptibility."
+  },
+  {
+   "t": 29.26,
+   "s": "A",
+   "text": "Among about 487 thousand participants, 4,309 had an incident brain injury, which the authors modeled as a time-varying exposure in Cox models. Injury was independently associated with coronary artery disease, hypertension, type 2 diabetes and high cholesterol."
+  },
+  {
+   "t": 49.79,
+   "s": "B",
+   "text": "The joint effects of injury and polygenic scores were largely additive. Among survivors, outcome-specific scores were associated with every outcome, most strongly for coronary disease and diabetes."
+  },
+  {
+   "t": 64.2,
+   "s": "A",
+   "text": "A combined cardiometabolic meta-score had a hazard ratio of 1.19 for post-injury risk in UK Biobank. It replicated in the Mass General Brigham Biobank with a hazard ratio of 1.15."
+  },
+  {
+   "t": 78.91,
+   "s": "B",
+   "text": "The external replication is reassuring. Still, the injured group is only a few thousand people and the effect sizes are modest."
+  },
+  {
+   "t": 87.54,
+   "s": "A",
+   "text": "The second paper, from the He lab in Diabetes, Obesity and Metabolism, combines a coronary polygenic score with the estimated glucose disposal rate. That's an insulin-resistance marker built from waist circumference, hypertension and hemoglobin A1c."
+  },
+  {
+   "t": 104.38,
+   "s": "B",
+   "text": "The authors studied both first and recurrent coronary disease over a median follow-up of 13.8 years. People with the highest glucose disposal rate and a low polygenic score had the lowest risk, with hazard ratios of 0.25 for incident and 0.67 for recurrent disease."
+  },
+  {
+   "t": 127.11,
+   "s": "A",
+   "text": "The two factors also interacted for incident disease. But adding both to conventional risk factors raised the C-index by only 0.017 for incident and 0.005 for recurrent disease."
+  },
+  {
+   "t": 141.86,
+   "s": "B",
+   "text": "So the gain in prediction is small, and since both studies rely mainly on UK Biobank, it's worth testing them in other cohorts."
+  },
+  {
+   "t": 151.29,
+   "s": "A",
+   "text": "Our takeaway: polygenic scores add consistent but modest information on top of clinical factors, whether the added risk comes from a brain injury or from insulin resistance."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Integrated risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/integrated-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Genetic susceptibility and risk of cardiometabolic diseases after traumatic brain injury",
+     "authors": "Sandro Marini et al.",
+     "source": "Frontiers in Neurology",
+     "date": "2026-11-09",
+     "url": "https://doi.org/10.3389/fneur.2026.1975194",
+     "start": 15.6
+    },
+    {
+     "title": "Estimated Glucose Disposal Rate, Genetic Susceptibility and Risks of Incident and Recurrent Coronary Artery Disease: Evidence From the UK Biobank Study",
+     "authors": "Qingyong Zeng et al.",
+     "source": "Diabetes, Obesity and Metabolism",
+     "date": "2026",
+     "url": "https://doi.org/10.1111/dom.71568",
+     "start": 87.5
+    }
+   ]
+  }
+ ]
+}

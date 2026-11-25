@@ -11,6 +11,63 @@
  "title": "Resources: GWASs · Sunday, November 22",
  "seconds": 126.1,
  "drive": "https://drive.google.com/open?id=1SkF3trx6geNuYGFtr7qnq8VSUYrGFHWD",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: GWASs, for Sunday, November 22."
+  },
+  {
+   "t": 7.22,
+   "s": "A",
+   "text": "Let's turn to Resources: GWASs, where there's a big new endometriosis study from the Setia-Verma lab in Nature Genetics."
+  },
+  {
+   "t": 15.12,
+   "s": "B",
+   "text": "It's part of the Global Biobank Meta-analysis Initiative, with over one million participants. About thirty-two percent of them are of non-European ancestry, which is unusually diverse for this phenotype."
+  },
+  {
+   "t": 29.49,
+   "s": "A",
+   "text": "The question is basic. Endometriosis affects up to one in ten women, and its genetics and mechanisms are still only partly known. The authors also built new case definitions that rely on procedure confirmation, not just diagnosis codes."
+  },
+  {
+   "t": 45.52,
+   "s": "B",
+   "text": "That matters because biobank case labels for endometriosis are notoriously noisy. With those definitions they found fifty-eight risk regions, and twenty-seven of them had not been reported before."
+  },
+  {
+   "t": 59.09,
+   "s": "A",
+   "text": "Some of the loci showed up only in African and admixed American populations. That's a concrete payoff from the ancestry diversity. A European-only meta-analysis would have missed them."
+  },
+  {
+   "t": 70.03,
+   "s": "B",
+   "text": "Still, I'd want to see those ancestry-specific signals replicated. The non-European groups are smaller, so the evidence for each locus could be thinner."
+  },
+  {
+   "t": 79.57,
+   "s": "A",
+   "text": "Fair point. They then searched for genetically driven comorbidities and found dozens of associations, some with known risk factors and some with previously uncharacterized ones."
+  },
+  {
+   "t": 91.08,
+   "s": "B",
+   "text": "And in prioritized cellular contexts, they saw gene expression change with endometriosis status. Adding further multiomic layers, they implicated three hundred fourteen genes as possible therapeutic targets."
+  },
+  {
+   "t": 106.11,
+   "s": "A",
+   "text": "That's a long list, so treat it as a ranked starting point for follow-up, not a set of validated targets."
+  },
+  {
+   "t": 112.49,
+   "s": "B",
+   "text": "The takeaway: diverse, well-phenotyped biobank meta-analyses are finding new endometriosis biology, and this one is likely to become a standard reference resource."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: GWASs",

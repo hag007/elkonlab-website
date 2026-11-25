@@ -16,6 +16,73 @@
  "title": "Bioinformatics tools & pipelines · Saturday, November 21",
  "seconds": 165.9,
  "drive": "https://drive.google.com/open?id=1KOkHBMtUG2k_hYWQt1uKwkH1XQ_V8jp_",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Saturday, November 21."
+  },
+  {
+   "t": 8.16,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where six new papers all aim to make analyses easier to run and repeat."
+  },
+  {
+   "t": 16.53,
+   "s": "B",
+   "text": "The one closest to our own work is MitoArc, a bioRxiv preprint from the Haldar lab. It's a Nextflow workflow for calling human mitochondrial variants from short reads, handling the circular reference and nuclear copies of mitochondrial DNA, called NUMTs."
+  },
+  {
+   "t": 34.59,
+   "s": "A",
+   "text": "It runs GATK Mutect2 and mutserve2 side by side, and reports haplogroups, contamination and NUMT evidence. The benchmark used 18 synthetic datasets at depths from 100 to 5000 times coverage."
+  },
+  {
+   "t": 48.59,
+   "s": "B",
+   "text": "Requiring confident mitochondrial mapping removed 33 NUMT-driven false positives, but recall dropped from 0.894 to 0.796."
+  },
+  {
+   "t": 61.36,
+   "s": "A",
+   "text": "And because the data were synthetic, with no sequencing-error model, how it performs on real data is still an open question."
+  },
+  {
+   "t": 69.2,
+   "s": "B",
+   "text": "Next is nf-core pairgenomealign, a bioRxiv preprint from the Luscombe lab. It's a community pipeline for pairwise whole-genome alignment built on the LAST suite."
+  },
+  {
+   "t": 80.72,
+   "s": "A",
+   "text": "It packs many genomes aligned to one target into a single file that genome browsers display directly, and the authors report performance competitive with established aligners."
+  },
+  {
+   "t": 92.06,
+   "s": "B",
+   "text": "Third is Sparrowhawk, from the Lees lab, also on bioRxiv. It turns methods into browser apps that run locally through WebAssembly, so there's no installation, and sensitive data never leaves your machine."
+  },
+  {
+   "t": 106.32,
+   "s": "A",
+   "text": "For genomic epidemiology, its new lightweight tools for assembly, resistance gene annotation and taxonomic identification closely match existing pipelines."
+  },
+  {
+   "t": 117.14,
+   "s": "B",
+   "text": "Briefly, the others. DGIdb, from the Wagner lab in Nucleic Acids Research, adds three new drug-gene interaction sources, Python and R clients, and versioned releases."
+  },
+  {
+   "t": 129.93,
+   "s": "A",
+   "text": "PDAC BioPortal, a bioRxiv preprint from the Vlashi lab, brings together bulk, single-nucleus and spatial transcriptomics of pancreatic cancer, with a natural-language assistant. And VPHYL, a bioRxiv preprint from the Srivastava lab, is a Shiny app that converts Nanopore 16S output into phyloseq or BIOM objects for people who don't program."
+  },
+  {
+   "t": 153.77,
+   "s": "B",
+   "text": "The takeaway: these tools make analyses easier to share and repeat, but as MitoArc shows, every pipeline default is a trade-off worth understanding."
+  }
+ ],
  "chapters": [
   {
    "title": "Bioinformatics tools & pipelines",

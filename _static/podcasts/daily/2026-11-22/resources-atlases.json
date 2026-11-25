@@ -11,6 +11,53 @@
  "title": "Resources: Atlases · Sunday, November 22",
  "seconds": 116.8,
  "drive": "https://drive.google.com/open?id=1X-sciTayrXhTHQbeZtBTN2KwHACOdMmV",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Atlases, for Sunday, November 22."
+  },
+  {
+   "t": 7.12,
+   "s": "A",
+   "text": "Let's turn to Resources: Atlases."
+  },
+  {
+   "t": 9.82,
+   "s": "B",
+   "text": "Just one paper today, from the Liu lab in Nucleic Acids Research. It's called the Longevity and Aging Cell Atlas, or LACA. The question is why some species live so much longer than others, and what that looks like at the level of single cells."
+  },
+  {
+   "t": 25.89,
+   "s": "A",
+   "text": "The authors brought together single-cell transcriptomic datasets from one hundred thirty-four species and matched each one to that species' maximum lifespan. That comes to over one hundred forty-eight million cells across one hundred ninety annotated cell types."
+  },
+  {
+   "t": 41.79,
+   "s": "B",
+   "text": "On top of the data there's a toolbox for comparing longevity genes across species and for correlating both genes and cell types with lifespan. It also includes a single-cell atlas of centenarians and a multi-omics atlas of human immune aging."
+  },
+  {
+   "t": 59.23,
+   "s": "A",
+   "text": "There's also a knowledge graph built from curated longevity knowledge bases, and a retrieval-augmented research agent to help interpret results. The authors say it's meant to be usable without much computational expertise."
+  },
+  {
+   "t": 72.93,
+   "s": "B",
+   "text": "For us, the immune aging atlas could help us interpret genetic findings for age-related traits. But it's worth being careful with cross-species correlations with lifespan, because species are related by evolution and the datasets come from different studies with different protocols."
+  },
+  {
+   "t": 91.48,
+   "s": "A",
+   "text": "Agreed. The abstract describes the resource but doesn't report specific biological findings, so a correlation from these tools should be a starting hypothesis that you then check independently."
+  },
+  {
+   "t": 104.06,
+   "s": "B",
+   "text": "So the takeaway is that LACA offers a very large cross-species single-cell view of lifespan, and it's most useful for generating hypotheses, not for confirming them."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: Atlases",

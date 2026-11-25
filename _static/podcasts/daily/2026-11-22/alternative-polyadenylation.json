@@ -16,12 +16,100 @@
  "title": "Alternative polyadenylation · Sunday, November 22",
  "seconds": 181.5,
  "drive": "https://drive.google.com/open?id=1cwCoFdJH0iFYPSuNAvY58T5iF7SfK7PE",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Alternative polyadenylation, for Sunday, November 22."
+  },
+  {
+   "t": 7.46,
+   "s": "A",
+   "text": "Let's turn to Alternative polyadenylation, where long reads and isoform usage take center stage today."
+  },
+  {
+   "t": 14.55,
+   "s": "B",
+   "text": "First, a bioRxiv preprint from the Masamha lab. Using mantle cell lymphoma as a model, they combined short and long read RNA sequencing to catalogue alternatively polyadenylated and alternatively spliced transcripts."
+  },
+  {
+   "t": 30.84,
+   "s": "A",
+   "text": "Two disease genes, SOX11 and ATM, express short 3 prime UTR isoforms. But the short-read analysis found no widespread global 3 prime UTR shortening, a useful counterpoint to the usual cancer narrative."
+  },
+  {
+   "t": 46.23,
+   "s": "B",
+   "text": "Both canonical and non-canonical polyadenylation signals were used, and the authors verified specific ones experimentally. Long reads also revealed splice variants in genes like PTEN and EZH2."
+  },
+  {
+   "t": 60.47,
+   "s": "A",
+   "text": "Second, from the Gu lab in BMC Cancer: Nanopore long-read sequencing of paired liver cancer tumor and adjacent tissue, before and after incomplete radiofrequency ablation, analyzing expression, transcript usage and APA together."
+  },
+  {
+   "t": 77.41,
+   "s": "B",
+   "text": "Incomplete ablation reshaped the APA landscape. Oncogenes like SAE1 and SPINK1 showed 3 prime UTR changes that may stabilize transcripts and help them escape microRNAs."
+  },
+  {
+   "t": 92.76,
+   "s": "A",
+   "text": "The caveat is only five patients, and microRNA escape is a hypothesis that still needs functional testing."
+  },
+  {
+   "t": 100.3,
+   "s": "B",
+   "text": "Third, a bioRxiv atlas from the Wang lab mapping age-associated transcript usage in mouse brain, liver and adipose, in natural aging and in Ercc1 progeroid mice."
+  },
+  {
+   "t": 113.81,
+   "s": "A",
+   "text": "Only about 37 to 43 percent of isoform switches altered predicted coding sequence, so most look regulatory. And 3 prime UTRs lengthened with age in brain but shortened in adipose."
+  },
+  {
+   "t": 126.83,
+   "s": "B",
+   "text": "Quickly, three more. The Bouschet lab in iScience shows three-week mouse brain organoids reproduce most of the neural splicing and polyA site events seen in vivo."
+  },
+  {
+   "t": 138.94,
+   "s": "A",
+   "text": "A Tao lab preprint on bioRxiv reports a circular RNA that pulls the repressor PUM2 away from the Nt3 3 prime UTR, driving diabetic neuropathic pain in mice."
+  },
+  {
+   "t": 152.2,
+   "s": "B",
+   "text": "And a Roy lab preprint on Research Square predicts that colorectal cancer risk variants in 3 prime UTRs disrupt microRNA sites, checked in 453 Hispanic All of Us participants, though so far only computationally."
+  },
+  {
+   "t": 169.57,
+   "s": "A",
+   "text": "The takeaway: long reads are sharpening APA maps, and 3 prime UTR length changes look context specific rather than following one universal shortening rule."
+  }
+ ],
  "chapters": [
   {
    "title": "Alternative polyadenylation",
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/alternative-polyadenylation/papers.html",
    "papers": [
+    {
+     "title": "Leveraging short and long-read sequencing to comprehensively characterize alternatively polyadenylated and alternatively spliced transcripts",
+     "authors": "M Gupta et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-04",
+     "url": "https://doi.org/10.64898/2026.11.03.763780",
+     "start": 14.6
+    },
+    {
+     "title": "The RNA and protein landscapes of mouse brain organoids",
+     "authors": "AC Fromaget et al.",
+     "source": "iScience",
+     "date": "2026-11-01",
+     "url": "https://doi.org/10.1016/j.isci.2026.118144",
+     "start": 126.8
+    },
     {
      "title": "In Silico Prioritization of GWAS-Derived 3' UTR MicroRNA-Binding Variants at Colorectal Cancer Risk Loci Detected in Hispanic Patients from the All of Us Research Program",
      "authors": "SS Ahmad et al.",
@@ -47,28 +135,12 @@
      "start": 138.9
     },
     {
-     "title": "The RNA and protein landscapes of mouse brain organoids",
-     "authors": "AC Fromaget et al.",
-     "source": "iScience",
-     "date": "2026-11-01",
-     "url": "https://doi.org/10.1016/j.isci.2026.118144",
-     "start": 126.8
-    },
-    {
      "title": "Deciphering the mechanisms of transcriptome remodeling in residual HCC recurrence post-radiofrequency ablation via long-read sequencing",
      "authors": "J Li et al.",
      "source": "BMC Cancer",
      "date": "2026-08-26",
      "url": "https://doi.org/10.1186/s12885-026-16842-1",
      "start": 60.5
-    },
-    {
-     "title": "Leveraging short and long-read sequencing to comprehensively characterize alternatively polyadenylated and alternatively spliced transcripts",
-     "authors": "M Gupta et al.",
-     "source": "bioRxiv",
-     "date": "2026-11-04",
-     "url": "https://doi.org/10.64898/2026.11.03.763780",
-     "start": 14.6
     }
    ]
   }

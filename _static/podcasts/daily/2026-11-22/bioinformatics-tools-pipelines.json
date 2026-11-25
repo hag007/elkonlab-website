@@ -13,6 +13,63 @@
  "title": "Bioinformatics tools & pipelines · Sunday, November 22",
  "seconds": 151.5,
  "drive": "https://drive.google.com/open?id=1vSNdTbJjQyncNbAuhJ9kOITVCeSPd5CC",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Sunday, November 22."
+  },
+  {
+   "t": 8.01,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where all three new papers try to lower the barrier to an analysis that is usually painful."
+  },
+  {
+   "t": 16.87,
+   "s": "B",
+   "text": "The first is RNAcomp2D, from the Stegmayer lab, in Bioinformatics. Every RNA secondary structure predictor has its own interface, language and computing needs. That makes it hard to compare several methods on one sequence."
+  },
+  {
+   "t": 33.18,
+   "s": "A",
+   "text": "So the authors put classical thermodynamic methods and recent deep learning models in containers behind one web server. You enter a sequence or pick one from RNAcentral, and all predictions appear side by side, with a reference structure when one exists."
+  },
+  {
+   "t": 49.49,
+   "s": "B",
+   "text": "Keep in mind it's a comparison tool, not a benchmark, so it makes no claim about which predictor is more accurate. New methods can be added as the field moves."
+  },
+  {
+   "t": 59.91,
+   "s": "A",
+   "text": "Next is VEGABrain, a bioRxiv preprint from the Coelho lab. It maps bulk RNA-seq onto cortical and subcortical surfaces of the human brain across five developmental windows, from the first trimester to adulthood."
+  },
+  {
+   "t": 74.68,
+   "s": "B",
+   "text": "Besides single-gene maps, it offers precomputed enrichment scores for about nineteen thousand gene sets, including Gene Ontology, Reactome and KEGG, summarized by region and developmental window. You can also upload your own gene list."
+  },
+  {
+   "t": 91.82,
+   "s": "A",
+   "text": "It needs no installation. But it's still a preprint, and with bulk input, the regional maps are only as fine-grained as the samples underneath."
+  },
+  {
+   "t": 100.36,
+   "s": "B",
+   "text": "The last one is pyGENIE, from the Gerstein lab, also in Bioinformatics. AACR Project GENIE holds more than two hundred sixty-eight thousand samples, yet analyzing it often means writing your own code around complicated flat files."
+  },
+  {
+   "t": 117.16,
+   "s": "A",
+   "text": "pyGENIE puts clinical and genomic queries, tumor mutational burden and mutational signature tools behind one Python interface that returns pandas DataFrames. In a lung adenocarcinoma case study, it reproduced known mutation frequencies, co-mutation patterns and signatures with roughly ten times less code."
+  },
+  {
+   "t": 138.26,
+   "s": "B",
+   "text": "In short, all three tools wrap scattered methods or data in one interface, making analyses easier to reproduce, though they don't add new biological findings on their own."
+  }
+ ],
  "chapters": [
   {
    "title": "Bioinformatics tools & pipelines",

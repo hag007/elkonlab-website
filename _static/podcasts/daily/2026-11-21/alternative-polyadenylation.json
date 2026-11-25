@@ -13,12 +13,72 @@
  "title": "Alternative polyadenylation · Saturday, November 21",
  "seconds": 180.2,
  "drive": "https://drive.google.com/open?id=1OSdJX00lPALaH64A8QzA4baLapBbZWND",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Alternative polyadenylation, for Saturday, November 21."
+  },
+  {
+   "t": 7.54,
+   "s": "A",
+   "text": "Let's turn to alternative polyadenylation, with three papers on how untranslated regions set protein output."
+  },
+  {
+   "t": 15.06,
+   "s": "B",
+   "text": "The first, from the Gandellini lab in the Journal of Experimental and Clinical Cancer Research, asks whether APA reshapes NFYA, the regulatory subunit of the transcription factor NF-Y, in prostate cancer. Re-annotating the gene, the authors found four functional three prime UTR isoforms, one predominant."
+  },
+  {
+   "t": 38.17,
+   "s": "A",
+   "text": "Tumours showed pervasive shortening of that UTR, tracking grade, metastasis, higher NF-YA protein and proliferation. Lengthening, seen with quiescence or enzalutamide, instead lowered protein, through reduced messenger RNA stability, impaired translation and nuclear retention, not microRNA repression."
+  },
+  {
+   "t": 59.7,
+   "s": "B",
+   "text": "The proof of concept: forcing lengthening with CRISPR deletion or antisense oligonucleotides cut NF-YA levels and suppressed aggressive traits in vitro and in vivo. It's one gene in one cancer, so it shows feasibility of gene-specific APA targeting, not efficacy."
+  },
+  {
+   "t": 79.21,
+   "s": "A",
+   "text": "The second paper, from the Inga lab in iScience, asks about germline variation. Comparing total and polysome-associated messenger RNA, the authors found common SNPs that change ribosome loading but not transcript level."
+  },
+  {
+   "t": 94.09,
+   "s": "B",
+   "text": "Their lead hit, rs1053639, sits in the UTR of DDIT4, a negative regulator of mTORC1. In edited cells, the two alleles differ in binding the protein RBMX, changing localisation, translation and protein output, and downstream mTORC1 repression, autophagy, competitive fitness and drug response. Genotype also associated with colorectal cancer outcome, which needs replication across cohorts and ancestries."
+  },
+  {
+   "t": 129.92,
+   "s": "A",
+   "text": "The third, from the Greenstein lab in Development, moves to the other end of the message. In C. elegans, let-7 only modestly represses lin-41 through two three prime UTR sites, and the authors find an independent layer: a five prime exon carrying a seven amino acid upstream open reading frame."
+  },
+  {
+   "t": 150.19,
+   "s": "B",
+   "text": "Editing showed the uORF's sequence doesn't matter; its translation and the five prime UTR structure limit initiation at the main start codon. Together with let-7, that keeps LIN-41 at levels compatible with normal development."
+  },
+  {
+   "t": 167.63,
+   "s": "A",
+   "text": "So across cancer, germline variation and worm development, the same lesson: untranslated regions, not transcript abundance, set how much protein a cell actually makes."
+  }
+ ],
  "chapters": [
   {
    "title": "Alternative polyadenylation",
    "start": 0,
    "page": "https://hag007.github.io/elkonlab-website/topics/alternative-polyadenylation/papers.html",
    "papers": [
+    {
+     "title": "Translation of a small upstream open reading frame functions as a rheostat for the regulation of lin-41 by the Let-7 microRNA in Caenorhabditis elegans",
+     "authors": "Caroline A Spike et al.",
+     "source": "Development (Cambridge, England)",
+     "date": "2026-11-05",
+     "url": "https://doi.org/10.1242/dev.206149",
+     "start": 38.2
+    },
     {
      "title": "Mapping the NFYA 3'UTR landscape identifies alternative polyadenylation as a targetable vulnerability in prostate cancer",
      "authors": "Giulia Pagani et al.",
@@ -34,14 +94,6 @@
      "date": "2026-10-06",
      "url": "https://doi.org/10.1016/j.isci.2026.117707",
      "start": 79.2
-    },
-    {
-     "title": "Translation of a small upstream open reading frame functions as a rheostat for the regulation of lin-41 by the Let-7 microRNA in Caenorhabditis elegans",
-     "authors": "Caroline A Spike et al.",
-     "source": "Development (Cambridge, England)",
-     "date": "2026-11-05",
-     "url": "https://doi.org/10.1242/dev.206149",
-     "start": 38.2
     }
    ]
   }
