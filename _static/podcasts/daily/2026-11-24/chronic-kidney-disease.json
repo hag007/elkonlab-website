@@ -12,6 +12,58 @@
  "title": "Chronic Kidney Disease · Tuesday, November 24",
  "seconds": 136.8,
  "drive": "https://drive.google.com/open?id=1FWRLCiKeHQBTVGk1PBmLcRo9lmPpOtuj",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Chronic Kidney Disease, for Tuesday, November 24."
+  },
+  {
+   "t": 7.05,
+   "s": "A",
+   "text": "Let's turn to Chronic Kidney Disease, where we have two new papers: one is a method, the other a review."
+  },
+  {
+   "t": 13.33,
+   "s": "B",
+   "text": "The method is Kidzoi, a bioRxiv preprint from the Lee lab. It takes Borzoi, a large pretrained sequence-to-function model, and specializes it to kidney cell types without training from scratch."
+  },
+  {
+   "t": 27.08,
+   "s": "A",
+   "text": "They use transfer learning on single-nucleus chromatin accessibility data from human kidney. In proximal tubule cells, it improves regulatory variant effect prediction by up to 23 percent in AUROC over existing models."
+  },
+  {
+   "t": 41.85,
+   "s": "B",
+   "text": "The genetics payoff is that it prioritizes fine-mapped GWAS variants for eGFR and shows which cell type each variant likely acts in. They also found that 32 to 64 kilobases of flanking sequence captures most of the information."
+  },
+  {
+   "t": 59.59,
+   "s": "A",
+   "text": "A multi-task model matched the single-task ones at much lower computational cost. Remember it's a preprint, and the abstract doesn't say how many donors or which ancestries were used."
+  },
+  {
+   "t": 71.14,
+   "s": "B",
+   "text": "The second paper is a review in Nature Reviews Nephrology from the Kwak lab. It treats diabetic kidney disease as heterogeneous, not one uniform complication of high blood glucose."
+  },
+  {
+   "t": 84.33,
+   "s": "A",
+   "text": "A key point is that not all kidney disease in people with diabetes is diabetic kidney disease, and telling them apart changes management. The authors survey genomic, proteomic and metabolomic signatures, polygenic scores, data-driven clustering and single-cell kidney atlases as ways to define disease endotypes."
+  },
+  {
+   "t": 105.31,
+   "s": "B",
+   "text": "They're open about the obstacles: validation, equitable ancestry representation and clinical implementation. And Kidzoi's cell-type-resolved variant interpretation is exactly the kind of tool that could link risk loci to those atlases."
+  },
+  {
+   "t": 121.94,
+   "s": "A",
+   "text": "The takeaway is that kidney genetics is shifting from lists of associated loci toward cell-type-specific mechanisms and finer subtypes of disease, but the work still needs validation across diverse populations."
+  }
+ ],
  "chapters": [
   {
    "title": "Chronic Kidney Disease",

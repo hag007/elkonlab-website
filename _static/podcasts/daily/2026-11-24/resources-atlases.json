@@ -11,6 +11,48 @@
  "title": "Resources: Atlases · Tuesday, November 24",
  "seconds": 124.5,
  "drive": "https://drive.google.com/open?id=1LppmMZjK-2KD48BkR68PaOwrsrjAVhGQ",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Atlases, for Tuesday, November 24."
+  },
+  {
+   "t": 7.27,
+   "s": "A",
+   "text": "Let's turn to Resources: Atlases, where today we have one new database, and it works at the level of transcript isoforms rather than genes."
+  },
+  {
+   "t": 16.22,
+   "s": "B",
+   "text": "It's from the Acharya lab, published in Nucleic Acids Research, and it's called MIsoTEx. The question is simple. Alternative splicing produces isoforms with different tissue patterns, but few resources describe where each isoform is expressed, how consistent its abundance is, and how abundant it is compared with other isoforms."
+  },
+  {
+   "t": 39.61,
+   "s": "A",
+   "text": "For data, the authors used RNA-seq from GTEx, ARCHS4 and newly curated SRA datasets, keeping only normal adult tissue samples. They classified about one hundred forty-seven thousand protein-coding isoforms across human, mouse and rat."
+  },
+  {
+   "t": 56.92,
+   "s": "B",
+   "text": "Isoforms detected everywhere are split into uniformly abundant or variably abundant. Tissue-associated ones are called predominant, exclusive, poor or absent in a tissue, with five relative-abundance subclasses and confidence scores on the tissue calls."
+  },
+  {
+   "t": 75.42,
+   "s": "A",
+   "text": "For us, the useful part is interpreting variants that affect splicing. A gene-level atlas can say a gene is expressed broadly, while the relevant isoform might be restricted to one tissue. You can also search by ortholog across species or upload your own data to find candidate control isoforms."
+  },
+  {
+   "t": 94.27,
+   "s": "B",
+   "text": "One caveat is validation. Independent RNA-seq, RT-PCR and published datasets supported only aspects of the framework, not the whole classification. And the reference isoforms it identifies are candidates that still need testing in the lab."
+  },
+  {
+   "t": 112.52,
+   "s": "A",
+   "text": "So the takeaway is that MIsoTEx brings tissue atlases down to the isoform level, which helps with splicing questions, but treat its classes as hypotheses to check."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: Atlases",

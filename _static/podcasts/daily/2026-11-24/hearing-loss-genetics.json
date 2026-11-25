@@ -11,6 +11,48 @@
  "title": "Hearing loss genetics · Tuesday, November 24",
  "seconds": 102.6,
  "drive": "https://drive.google.com/open?id=1Lmf3AYcPRPwYfg7iw2eJuXg5GGbRxchH",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Hearing loss genetics, for Tuesday, November 24."
+  },
+  {
+   "t": 6.97,
+   "s": "A",
+   "text": "Let's turn to Hearing loss genetics, with one paper today, from the Shin lab in eLife."
+  },
+  {
+   "t": 12.55,
+   "s": "B",
+   "text": "It builds on a recent finding that TMC1 and TMC2, core parts of the hair cell transduction channel, also act as lipid scramblases. Scrambling breaks the normal lipid asymmetry between the membrane's inner and outer leaflets, so the authors asked whether a flippase works in the opposite direction to restore it."
+  },
+  {
+   "t": 34.59,
+   "s": "A",
+   "text": "In mouse they found two candidates: the P4-ATPase ATP8B1 and its chaperone TMEM30B. Both are selectively expressed in outer hair cells, enriched in stereocilia, and upregulated once transduction and hearing begin."
+  },
+  {
+   "t": 50.26,
+   "s": "B",
+   "text": "Knocking out either one raised auditory brainstem response thresholds, exposed phosphatidylserine on the cell surface, and caused rapid outer hair cell degeneration. On that basis the authors propose TMEM30B as a new deafness gene."
+  },
+  {
+   "t": 67.36,
+   "s": "A",
+   "text": "The logic is appealing: transduction itself keeps scrambling the membrane, so outer hair cells need constant repair to survive."
+  },
+  {
+   "t": 75.45,
+   "s": "B",
+   "text": "One caution is that this is all mouse work. The deafness gene claim rests on knockout phenotypes, and the abstract reports no human families or variants, so human genetic evidence is the obvious next step."
+  },
+  {
+   "t": 89.65,
+   "s": "A",
+   "text": "The takeaway: hearing depends not only on the transduction proteins but on the membrane around them, and keeping that membrane's lipids asymmetric is essential for outer hair cell survival."
+  }
+ ],
  "chapters": [
   {
    "title": "Hearing loss genetics",

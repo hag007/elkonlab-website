@@ -13,6 +13,68 @@
  "title": "Rare variant analysis · Tuesday, November 24",
  "seconds": 176.5,
  "drive": "https://drive.google.com/open?id=1tS4vWVEpa1pHA5YAwYrjsX-0-XiPpRFi",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Rare variant analysis, for Tuesday, November 24."
+  },
+  {
+   "t": 7.1,
+   "s": "A",
+   "text": "Let's turn to Rare variant analysis. Today we have three preprints, all on medRxiv."
+  },
+  {
+   "t": 12.38,
+   "s": "B",
+   "text": "The first, from the Yang lab, asks which genes besides the mismatch repair genes carry rare variants that raise endometrial cancer risk. The authors ran gene-level burden tests in 2,675 cases and about 160,000 controls from UK Biobank and the 100,000 Genomes Project. They tested protein-truncating variants and deleterious missense variants separately."
+  },
+  {
+   "t": 41.49,
+   "s": "A",
+   "text": "The known genes came out strongly. For truncating variants, the relative risk was about 37 for MSH6, 52 for MLH1 and 13 for MSH2, and for missense variants in PTEN it was about 10."
+  },
+  {
+   "t": 55.89,
+   "s": "B",
+   "text": "Nineteen more genes reached exome-wide significance in the truncating analysis, including PHKG2 at a relative risk near 30, and eight more in the missense analysis. But the confidence intervals are wide, and the authors call these candidates that need replication."
+  },
+  {
+   "t": 74.74,
+   "s": "A",
+   "text": "The second, from the Bachmann-Gagescu lab, tuned the Exomiser prioritization tool to find monogenic forms of a common disease, kidney stones. They used exomes from 701 cases and 200 controls."
+  },
+  {
+   "t": 89.23,
+   "s": "B",
+   "text": "With the tuned settings, Exomiser ranked 94 percent of the known gold-standard gene and patient pairs in its top five. It also nominated 62 new candidate genes, mostly involved in ion homeostasis."
+  },
+  {
+   "t": 104.92,
+   "s": "A",
+   "text": "They checked those genes with gene-level rare-variant enrichment in a larger in-house cohort and in UK Biobank, and ABCC6 had the strongest support. Ranking variants patient by patient and testing burden across a biobank complement each other well."
+  },
+  {
+   "t": 121.27,
+   "s": "B",
+   "text": "The third, from the Padilla lab, compares 87 sporadic early-onset Alzheimer's cases with late-onset cases and controls. They used GWAS, SKAT gene tests and polygenic scores."
+  },
+  {
+   "t": 134.55,
+   "s": "A",
+   "text": "The only strong signals were at the APOE locus. The epsilon four allele was carried by 52 percent of early-onset cases versus 20 percent of controls, and their polygenic risk fell between that of controls and late-onset cases."
+  },
+  {
+   "t": 149.75,
+   "s": "B",
+   "text": "Rare variants in APP, PSEN1, PSEN2 and known modifier genes were not enriched, which suggests an overlap with late-onset disease. But with only 87 cases, a modest rare-variant contribution could easily be missed."
+  },
+  {
+   "t": 166.87,
+   "s": "A",
+   "text": "The takeaway: rare-variant studies are turning up many candidate genes, and only replication in larger samples will show which are real."
+  }
+ ],
  "chapters": [
   {
    "title": "Rare variant analysis",

@@ -11,6 +11,53 @@
  "title": "Resources: Biobanks · Tuesday, November 24",
  "seconds": 113.6,
  "drive": "https://drive.google.com/open?id=1KeBa-55BTNT1gkkD76UNUnbYGi4NVH8E",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Biobanks, for Tuesday, November 24."
+  },
+  {
+   "t": 7.24,
+   "s": "A",
+   "text": "Let's turn to Resources: Biobanks."
+  },
+  {
+   "t": 9.85,
+   "s": "B",
+   "text": "We have one paper today, from the Gaziano lab in PLoS One. It asks how the VA Million Veteran Program actually got to one million participants, and what that full cohort looks like."
+  },
+  {
+   "t": 23.13,
+   "s": "A",
+   "text": "Between 2022 and 2023 they ran what they call the Million Milestone Campaign, a surround sound model combining recruitment calls, paper mailings, enroll by mail invitations, mass emails and digital ads. They contacted more than six and a half million Veterans and enrolled about one hundred ten thousand."
+  },
+  {
+   "t": 44.6,
+   "s": "B",
+   "text": "The interesting part is that efficiency and volume pointed in different directions. Calls had the highest enrollment rate, at thirteen point seven percent, compared with under one percent for email. But email brought in the most people, about forty seven thousand, or forty three percent of all enrollments."
+  },
+  {
+   "t": 64.7,
+   "s": "A",
+   "text": "So the cheap, low yield channel won on sheer reach. They also compared the new enrollees with the roughly nine hundred thousand earlier ones and found only small demographic differences."
+  },
+  {
+   "t": 75.74,
+   "s": "B",
+   "text": "The cumulative cohort is about one point zero two million people and resembles the wider VA patient population. That sounds reassuring, but it is largely male, so for sex specific analyses it's a real limitation compared with general population biobanks."
+  },
+  {
+   "t": 95.19,
+   "s": "A",
+   "text": "Its strength is the linkage to VA health records, which makes it a big resource for genetic studies of disease outcomes."
+  },
+  {
+   "t": 102.58,
+   "s": "B",
+   "text": "The takeaway is that the Million Veteran Program now offers a million linked genomes and records, but users should keep in mind who is in the cohort."
+  }
+ ],
  "chapters": [
   {
    "title": "Resources: Biobanks",

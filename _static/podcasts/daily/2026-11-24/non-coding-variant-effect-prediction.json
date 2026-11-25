@@ -12,6 +12,58 @@
  "title": "Non-coding variant effect prediction · Tuesday, November 24",
  "seconds": 147.0,
  "drive": "https://drive.google.com/open?id=1kHMHKW899KJyhca56zdLpUJsK1bKTYpd",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Non-coding variant effect prediction, for Tuesday, November 24."
+  },
+  {
+   "t": 7.82,
+   "s": "A",
+   "text": "Let's turn to non-coding variant effect prediction, where both new papers are bioRxiv preprints about scoring variants."
+  },
+  {
+   "t": 15.4,
+   "s": "B",
+   "text": "The first comes from the Hassanien lab. It looks at non-canonical splicing variants, which sit outside the conserved dinucleotides at splice junctions and are hard to interpret. A disruption score alone doesn't tell you the splice outcome or how uncertain the call is."
+  },
+  {
+   "t": 32.63,
+   "s": "A",
+   "text": "Their framework, SpliceVarMech, compares wild-type and mutant sequences, generates candidate splice outcomes with discrete sequence diffusion, and uses Bayesian inference to give disruption probabilities with credible intervals, plus the predicted mechanism."
+  },
+  {
+   "t": 49.02,
+   "s": "B",
+   "text": "On 31 validated variants from male infertility genes, it reached an AUROC of 1.0, against 0.62 for SpliceAI, the best of 16 tools. Fine-tuning on BRCA1 saturation genome editing data raised discrimination from 0.72 to 0.84 on 203 held-out variants."
+  },
+  {
+   "t": 75.4,
+   "s": "A",
+   "text": "That perfect score comes from just 31 variants, and the authors note calibration was only checked in-sample. The BRCA1 result is the more convincing test."
+  },
+  {
+   "t": 85.86,
+   "s": "B",
+   "text": "The second paper, from the Haldar lab, benchmarks six genomic foundation models on about 7,000 ClinVar variants in ten limb-girdle muscular dystrophy genes, comparing frozen embeddings, fine-tuning and context lengths."
+  },
+  {
+   "t": 102.27,
+   "s": "A",
+   "text": "Evo2 led, with an MCC of 0.86 and an AUROC of 0.96 at 501 base pairs of context. Longer context helped five of the six models, but fine-tuning helped only three and hurt the other three."
+  },
+  {
+   "t": 117.49,
+   "s": "B",
+   "text": "The native scores from GPN-Star and AlphaGenome did even better, with MCCs around 0.93 and 0.94. But the labels track annotation category quite strongly, and clinical usefulness hasn't been tested."
+  },
+  {
+   "t": 134.35,
+   "s": "A",
+   "text": "So the takeaway is that sequence context and careful adaptation matter, but in both papers the benchmarks are still too small or too label-biased to show these tools are ready for the clinic."
+  }
+ ],
  "chapters": [
   {
    "title": "Non-coding variant effect prediction",

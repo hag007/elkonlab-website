@@ -11,6 +11,48 @@
  "title": "Integrated risk prediction · Tuesday, November 24",
  "seconds": 112.6,
  "drive": "https://drive.google.com/open?id=1rOltn3wLxYs8B6UekxBiMQ5KKxr0IbTs",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Tuesday, November 24."
+  },
+  {
+   "t": 7.35,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction, with a new medRxiv preprint from the Breen lab on major depressive disorder."
+  },
+  {
+   "t": 14.97,
+   "s": "B",
+   "text": "The question is whether combining family history, polygenic scores, childhood trauma and background factors predicts lifetime depression better than any subset of them."
+  },
+  {
+   "t": 26.57,
+   "s": "A",
+   "text": "They used two cohorts: GLAD plus, with about ten thousand cases, and UK Biobank, with about forty-one thousand. Depression was defined from DSM-5 based online assessments, and they fit elastic net and XGBoost models within and across cohorts."
+  },
+  {
+   "t": 43.41,
+   "s": "B",
+   "text": "The combined models reached an AUC of 0.83 in GLAD plus and 0.74 in UK Biobank. The striking result is that family history beat the polygenic scores in both cohorts: 0.74 versus 0.66 in GLAD plus, and 0.65 versus 0.60 in UK Biobank."
+  },
+  {
+   "t": 68.85,
+   "s": "A",
+   "text": "External validation held up, with AUCs between 0.71 and 0.82, and the models explained up to 27 percent of the variance in the number of depressive episodes."
+  },
+  {
+   "t": 81.63,
+   "s": "B",
+   "text": "A few caveats. It's a preprint, both cohorts are from the UK, and ancestry is captured only by genetic principal components. GLAD plus cases are also recruited differently, which may explain its higher AUC."
+  },
+  {
+   "t": 97.15,
+   "s": "A",
+   "text": "The takeaway is that for depression, simple clinical information like family history and childhood trauma still predicts better than current polygenic scores, so genomic risk models should build on that information, not replace it."
+  }
+ ],
  "chapters": [
   {
    "title": "Integrated risk prediction",

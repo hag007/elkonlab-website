@@ -16,6 +16,73 @@
  "title": "Bioinformatics tools & pipelines · Tuesday, November 24",
  "seconds": 173.8,
  "drive": "https://drive.google.com/open?id=1hoNUj3gExuuNPPd4pRNu_c6VLq2YqnyZ",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Tuesday, November 24."
+  },
+  {
+   "t": 8.16,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where today's theme is reproducible analysis at scale."
+  },
+  {
+   "t": 15.04,
+   "s": "B",
+   "text": "First, a Research Square preprint from the Wang lab benchmarks four callers for mitochondrial DNA variants from short-read genomes: MitoHPC, mtSwirl, mity and mtDNA-Server 2, using 1000 Genomes data and simulations across diverse haplogroups."
+  },
+  {
+   "t": 35.68,
+   "s": "A",
+   "text": "MitoHPC and mtSwirl performed best, especially in non-European populations, and MitoHPC is easier to set up. mity was best at low-frequency variants but weaker on indels. mtDNA-Server 2 was most sensitive but had more false positives."
+  },
+  {
+   "t": 53.78,
+   "s": "B",
+   "text": "The authors then built a workflow called MARVel on MitoHPC, adding quality control and interactive variant curation. In an ataxia cohort it recovered known pathogenic variants and flagged new candidates."
+  },
+  {
+   "t": 69.72,
+   "s": "A",
+   "text": "It's a preprint, and those candidates need validation, but the diverse benchmark makes it useful for large cohorts."
+  },
+  {
+   "t": 77.3,
+   "s": "B",
+   "text": "Next, a bioRxiv preprint from the Hitz lab describes the IGVF Data Portal. It holds over 240 terabytes of results on genomic variation and function, available through a browser, an API and agentic tools."
+  },
+  {
+   "t": 93.31,
+   "s": "A",
+   "text": "It's a resource paper, but for labs interpreting non-coding variants, it's a natural place to look for functional evidence."
+  },
+  {
+   "t": 100.89,
+   "s": "B",
+   "text": "Third, the Tully lab presents NanoHIV-DR, a Nextflow workflow for HIV drug resistance from Nanopore data. It runs from raw files to clinician-readable reports and detects mutations below the consensus."
+  },
+  {
+   "t": 116.97,
+   "s": "A",
+   "text": "The abstract reports no performance numbers, so accuracy still has to be shown. Nextflow is a recurring thread. In Nucleic Acids Research, the Finn lab's MGnify version 6 moves its microbiome pipelines to Nextflow and adds viral and mobilome annotation."
+  },
+  {
+   "t": 133.89,
+   "s": "B",
+   "text": "In the same journal, the Winkelman lab's VEuPathDB update reports over 2,600 datasets and containerized pipelines. It also describes surviving on community funding after losing its federal grant."
+  },
+  {
+   "t": 150.11,
+   "s": "A",
+   "text": "And in the Journal of Cell Science, the Naba lab's MatriSpace maps extracellular matrix gene expression in spatial transcriptomics, as an R package and a no-code web app."
+  },
+  {
+   "t": 161.49,
+   "s": "B",
+   "text": "The takeaway: containerized workflows and no-code tools are becoming standard, but you still need careful benchmarks like the mitochondrial one to know which tool to trust."
+  }
+ ],
  "chapters": [
   {
    "title": "Bioinformatics tools & pipelines",

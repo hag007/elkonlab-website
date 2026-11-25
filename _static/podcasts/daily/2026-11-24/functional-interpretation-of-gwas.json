@@ -12,6 +12,53 @@
  "title": "Functional interpretation of GWAS · Tuesday, November 24",
  "seconds": 167.5,
  "drive": "https://drive.google.com/open?id=1vddZaPFf4p-HoHDsH2Mcu98jtECcLOXb",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Tuesday, November 24."
+  },
+  {
+   "t": 8.03,
+   "s": "A",
+   "text": "Let's turn to functional interpretation of GWAS. Both papers today are resources for getting from an associated locus to a mechanism."
+  },
+  {
+   "t": 16.7,
+   "s": "B",
+   "text": "The first is a bioRxiv preprint from the Hitz lab describing the IGVF Catalog, a knowledge graph from the Impact of Genomic Variation on Function consortium. It integrates 657 consortium datasets, including reporter assays, CRISPR perturbation screens, coding variant assays and predictive enhancer-gene models, with public GWAS, QTL, linkage disequilibrium and annotation data."
+  },
+  {
+   "t": 46.11,
+   "s": "A",
+   "text": "The scale is large: nearly 3 billion nodes and more than 8.6 billion edges, which carry effect sizes, significance and biological context. You can query it through a web portal, Python and R clients, an API, and a Model Context Protocol server for language-model agents."
+  },
+  {
+   "t": 65.57,
+   "s": "B",
+   "text": "The case studies show how it works in practice. The authors resolve a FOXA1-dependent enhancer variant that regulates CAMK1D at a type 2 diabetes locus. They also separate a coding mechanism at GCKR from a regulatory one at HNF1A for liver traits, and link vascular elements perturbed by CRISPR interference to CDKN2A, CDKN2B and NOS3 in coronary artery disease."
+  },
+  {
+   "t": 96.49,
+   "s": "A",
+   "text": "Keep in mind that it's a preprint, and those are showcase loci rather than a systematic benchmark. The second paper, from the Huang lab in Nucleic Acids Research, is CellColocDB, which approaches the same problem through colocalization."
+  },
+  {
+   "t": 111.71,
+   "s": "B",
+   "text": "They ran coloc on 2805 GWAS covering 1201 traits against 316 bulk, sorted-cell and single-cell QTL contexts. Coloc-SuSiE and SMR with HEIDI add supporting evidence, and the top SNPs are linked to fine-mapping results from seven methods."
+  },
+  {
+   "t": 133.86,
+   "s": "A",
+   "text": "The release holds about 1.6 million colocalizations with a posterior probability of a shared variant of at least 0.8, searchable by disease, gene, locus or cell context. Colocalization shows a shared signal, not causality, so experimental data like IGVF's complement it well."
+  },
+  {
+   "t": 153.54,
+   "s": "B",
+   "text": "The takeaway is that variant-to-function evidence now comes in resources you can query, and combining colocalization with perturbation data is a practical path from loci to mechanisms."
+  }
+ ],
  "chapters": [
   {
    "title": "Functional interpretation of GWAS",

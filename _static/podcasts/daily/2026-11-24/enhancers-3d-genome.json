@@ -13,6 +13,68 @@
  "title": "Enhancers & 3D genome · Tuesday, November 24",
  "seconds": 174.1,
  "drive": "https://drive.google.com/open?id=1YeNaKfPzYMgwKhIiBzhggrSiPEcdI7Ah",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Tuesday, November 24."
+  },
+  {
+   "t": 7.71,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome, with three bioRxiv preprints today."
+  },
+  {
+   "t": 13.35,
+   "s": "B",
+   "text": "First, from the Biswas lab: can perturbation data beat co-expression for building regulatory networks in triple-negative breast cancer? The authors combine enhancer-targeting CRISPR interference Perturb-seq data from MDA-MB-231 cells with ENCODE transcription factor binding as prior information."
+  },
+  {
+   "t": 35.52,
+   "s": "A",
+   "text": "On held-out CRISPRi results, the area under the precision-recall curve was about zero point eight seven, versus zero point six three for GENIE3 and zero point six eight for co-expression. Central regulators include CTCF, EP300, MYC and AP-1 factors, and their signatures were associated with survival."
+  },
+  {
+   "t": 57.51,
+   "s": "B",
+   "text": "The caveats: it's a single cell line, the survival cohorts are modest, and the proposed epigenetic combination treatments were only simulated, so they're candidates for experimental validation."
+  },
+  {
+   "t": 71.13,
+   "s": "A",
+   "text": "Second, from the Su lab: what makes human cortical progenitors different? The authors compare time-resolved paired single-nucleus RNA and ATAC profiles from human, macaque and mouse fetal cortex, and find programs enriched in human outer radial glia, including the gene RHOJ."
+  },
+  {
+   "t": 89.35,
+   "s": "B",
+   "text": "The highlight is an enhancer inside a RHOJ intron. The human version is more active in reporter assays than other primates' versions, partly due to a human-specific change in an AP-1 motif. Deleting it in human cortical organoids lowered RHOJ expression and impaired growth."
+  },
+  {
+   "t": 109.88,
+   "s": "A",
+   "text": "So AP-1 shows up twice today, in a tumor network and in human brain evolution."
+  },
+  {
+   "t": 115.4,
+   "s": "B",
+   "text": "Third, a methods paper from the Matera lab on normalizing CUT and RUN and CUT and Tag data without spike-ins, for perturbations that change a chromatin mark genome-wide. Their method, BASIN, uses reproducible background in IgG controls as an internal reference to scale each sample."
+  },
+  {
+   "t": 137.76,
+   "s": "A",
+   "text": "It stayed stable across a more than hundred-fold range of input cells, and detected the genome-wide loss of H3 K36 trimethylation in Drosophila Set2 mutants, which standard read-depth normalization hid."
+  },
+  {
+   "t": 152.58,
+   "s": "B",
+   "text": "One limitation: the ready-made reference panel only covers Drosophila, so other organisms need a custom panel."
+  },
+  {
+   "t": 160.78,
+   "s": "A",
+   "text": "The takeaway: perturbations, from CRISPRi screens to enhancer deletions, are becoming the standard test for regulatory claims, and measuring their effects well depends on careful normalization."
+  }
+ ],
  "chapters": [
   {
    "title": "Enhancers & 3D genome",
