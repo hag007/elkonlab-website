@@ -1,0 +1,49 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "30f59afe-d92c-331b-877c-9ad02a410af9",
+  "b7c0469f-b206-358f-a4d8-a46cf9a31f20",
+  "d7fabc2d-c041-37bb-af77-b7307e763c49"
+ ],
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-25",
+ "title": "Functional interpretation of GWAS · Wednesday, November 25",
+ "seconds": 193.6,
+ "drive": "https://drive.google.com/open?id=126me8y0oIj2e8JqhOPPNVXaPV01pUoPu",
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "Beyond Abundance: Integrated Splicing and Expression Quantitative Trait Loci Refine Causal Gene Mapping in IBD",
+     "authors": "Emma Yu-Chen Huang et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.22.768449",
+     "start": 18.2
+    },
+    {
+     "title": "Functional interrogation of osteoarthritis-associated regulatory variants and effector genes",
+     "authors": "Ana Piedade et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.23.768666",
+     "start": 131.4
+    },
+    {
+     "title": "Multi-layer colocalization prioritizes adipose RNA regulatory features beyond gene expression at type 2 diabetes loci",
+     "authors": "Yuelong Chen et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.23.768771",
+     "start": 78.2
+    }
+   ]
+  }
+ ]
+}
