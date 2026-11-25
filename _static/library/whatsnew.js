@@ -1,7 +1,10 @@
 // "What's new?" on the landing pages: papers published in the last data-days days (90 by default), newest first,
-// at most data-max of them (10). Computed in the viewer's browser from papers.json, so the window stays current
-// between rebuilds. <div id="whats-new" data-days="90" data-max="10" data-fallback="3" [data-folder="<topic>"]>;
-// data-folder limits it to one topic. With no new papers it shows the latest few instead.
+// at most data-max of them (10), as cards: a figure (openly licensed papers), the lab, journal and date, a synopsis,
+// and links: the paper's card on its topic's Papers page (highlighted), the podcast moment, the PDF and files,
+// Manage, and 👤 lab members (a small window on the library server, password). Computed in the viewer's browser
+// from feed.json, so the window stays current between rebuilds.
+// <div id="whats-new" data-days="90" data-max="10" data-fallback="3" [data-folder="<topic>"]>; data-folder limits it
+// to one topic. With no new papers it shows the latest few instead.
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
@@ -49,36 +52,67 @@
     return url ? srv(url, "wn-edit", "Manage 🔒", "This paper in the topic's paper manager: move, remove, lab members (library server, password)") : "";
   };
 
+  const clock = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
+  const LICENSES = { cc_by: "CC BY", "cc-by": "CC BY", cc_by_nc: "CC BY-NC", "cc-by-nc": "CC BY-NC", cc_by_sa: "CC BY-SA",
+                     "cc-by-sa": "CC BY-SA", cc_by_nc_sa: "CC BY-NC-SA", "cc-by-nc-sa": "CC BY-NC-SA", cc0: "CC0" };
+  // Its card on the topic's Papers page (this page's topic, or else its first), highlighted for 3 seconds there.
+  const cardLink = (p) => `${site}topics/${slug(topic && p.topics.includes(topic) ? topic : p.topics[0] || "")}/papers.html#paper-${encodeURIComponent(p.id)}`;
+  const memberBadges = (names) => names.map(n => `<span class="pl-badge pl-k-member">${esc(n)}</span>`).join("");
+
   function item(p) {
-    const date = new Date(p.pub_date + "T00:00:00");
-    const fresh = Date.now() - date < 2 * DAY;
-    const authors = p.authors.length > 2 ? p.authors[0] + " et al." : p.authors.join(", ");
     const preprint = p.badges.some(b => b.label === "Preprint");
-    const topics = p.folders.filter(f => f !== "Unfiled" && f !== topic).map(f =>
+    const fresh = Date.now() - new Date(p.date + "T00:00:00") < 2 * DAY;
+    const highlights = p.badges.filter(b => b.kind === "highlight").map(b => `<span class="pl-badge pl-k-highlight">${esc(b.label)}</span>`).join("");
+    const topics = p.topics.filter(f => f !== topic).map(f =>
       `<a class="pl-badge wn-topic wn-c${color[f] ?? 0}" href="${site}topics/${slug(f)}/papers.html">${esc(f.split("/").pop())}</a>`).join("");
-    const title = p.doi ? `<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title);
-    return `<li class="wn-item">
-      <div class="wn-head"><span class="wn-tag${fresh ? " hot" : ""}">${fresh ? "Breaking" : preprint ? "New preprint" : "New paper"}</span>
-        <span class="wn-when">${esc(p.source)} · ${ago(date)}</span></div>
-      <div class="wn-title">${title}</div>
-      <div class="wn-gist">${esc(p.summary)}</div>
-      <div class="wn-foot"><span class="wn-authors">${esc(authors)}</span>${topics}<span class="wn-files">${[
-        p.pdf_url && srv(p.pdf_url, "wn-pdf", "PDF 🔒", "Opens on the library server (password)"),
-        suppLinks(p),
-        manageLink(p),
-        p.files_url && (p.has_pdf ? srv(filesLink(p), "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
-                                  : srv(filesLink(p), "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
-      ].filter(Boolean).join("")}</span></div>
+    const fig = p.figure ? `<a class="wn-fig" href="${esc(site + p.figure)}" target="_blank" rel="noopener" title="Open the figure">
+        <img src="${esc(site + p.figure)}" alt="A figure from “${esc(p.title)}”" loading="lazy"></a>
+        <div class="wn-credit">Figure from the paper${LICENSES[p.license] ? ` (${LICENSES[p.license]})` : ""}</div>` : "";
+    const listen = p.episode ? `<a class="wn-listen" href="${site}podcast.html?d=${esc(p.episode.d)}&t=${esc(p.episode.t)}${
+      p.episode.at != null ? `&at=${p.episode.at}" title="Plays from where this paper is discussed">🎧 Listen (${clock(p.episode.at)})`
+                           : `">🎧 Listen`}</a>` : "";
+    return `<li class="wn-item wn-card${p.figure ? "" : " nofig"}" data-id="${esc(p.id)}">
+      ${fig}
+      <div class="wn-body">
+        <div class="wn-head"><span class="wn-tag${fresh ? " hot" : ""}">${fresh ? "Breaking" : preprint ? "New preprint" : "New paper"}</span>
+          <span class="wn-when">${esc(p.source)} · ${ago(new Date(p.date + "T00:00:00"))}</span></div>
+        <div class="wn-title"><a href="${esc(cardLink(p))}" title="This paper on its topic's Papers page">${esc(p.title)}</a></div>
+        <div class="wn-lab">${esc((p.lab || "").replace(/^the /, "The "))}${highlights}<span class="wn-members" data-id="${esc(p.id)}">${memberBadges(p.members || [])}</span></div>
+        <div class="wn-gist">${esc(p.synopsis)}</div>
+        <div class="wn-foot">${topics}<span class="wn-files">${[
+          listen,
+          p.pdf_url && srv(p.pdf_url, "wn-pdf", "PDF 🔒", "Opens on the library server (password)"),
+          suppLinks(p),
+          p.files_url && (p.has_pdf ? srv(filesLink(p), "wn-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
+                                    : srv(filesLink(p), "wn-pdf", "+ Add PDF", "Upload a PDF on the library server (password)")),
+          manageLink(p),
+          p.assign_url && `<button type="button" class="wn-assign" data-url="${esc(p.assign_url)}" title="Lab members: add or remove (library server, password)">👤 Lab members</button>`,
+        ].filter(Boolean).join("")}</span></div>
+      </div>
     </li>`;
   }
 
+  // 👤: lab members in a small window on the library server (it asks for the password); when saved there, it tells
+  // this page, and the card's badges change at once (the website itself follows after the sync).
+  root.addEventListener("click", (e) => {
+    const b = e.target.closest(".wn-assign");
+    if (!b) return;
+    const w = window.open(b.dataset.url, "pl-members", "popup,width=460,height=560");
+    if (!w) location.href = b.dataset.url;  // popups blocked: open it here
+  });
+  window.addEventListener("message", (e) => {
+    const d = e.data || {};
+    if (d.type !== "pl-members" || !root.querySelector(`.wn-assign[data-url^="${e.origin}/"]`)) return;  // (from the library server only)
+    root.querySelectorAll(`.wn-members[data-id="${CSS.escape(d.id)}"]`).forEach(el => { el.innerHTML = memberBadges(d.members || []); });
+  });
+
   // no-cache: always ask the server whether the list changed (a quick 304 when it did not).
-  fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(papers => {
-    [...new Set(papers.flatMap(p => p.folders))].filter(f => f !== "Unfiled").sort().forEach((f, i) => color[f] = i % 8);
-    const dated = papers.filter(p => (!topic || p.folders.includes(topic)) && /^\d{4}-\d{2}-\d{2}$/.test(p.pub_date || ""))
-      .sort((a, b) => b.pub_date.localeCompare(a.pub_date));
+  fetch(base + "feed.json", { cache: "no-cache" }).then(r => r.json()).then(papers => {
+    [...new Set(papers.flatMap(p => p.topics))].sort().forEach((f, i) => color[f] = i % 8);
+    const dated = papers.filter(p => (!topic || p.topics.includes(topic)) && /^\d{4}-\d{2}-\d{2}$/.test(p.date || ""))
+      .sort((a, b) => b.date.localeCompare(a.date) || (b.added || "").localeCompare(a.added || ""));
     const cutoff = Date.now() - days * DAY;
-    const recent = dated.filter(p => new Date(p.pub_date + "T00:00:00") >= cutoff && new Date(p.pub_date) <= Date.now() + DAY);
+    const recent = dated.filter(p => new Date(p.date + "T00:00:00") >= cutoff && new Date(p.date) <= Date.now() + DAY);
     const list = recent.length ? recent.slice(0, max) : dated.slice(0, fallback);
     root.innerHTML = `<div class="wn-bar"><span class="wn-pulse"></span><b>What's new?</b>
         <span class="wn-sub">${recent.length ? `${recent.length} paper${recent.length === 1 ? "" : "s"} published in the last ${days} days` +

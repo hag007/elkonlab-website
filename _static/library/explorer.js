@@ -94,6 +94,7 @@
     const files = [p.pdf_url && srv(p.pdf_url, "pl-pdf", "PDF 🔒", "Opens on the library server (password)"),
                    suppLinks(p),
                    manageLink(p, locked, "pl-edit"),
+                   p.assign_url && `<button type="button" class="pl-assign" data-url="${esc(p.assign_url)}" title="Lab members: add or remove (library server, password)">👤 Lab members</button>`,
                    p.files_url && (p.has_pdf ? srv(filesLink(p), "pl-edit", "Edit files", "Replace the PDF or add supplementary files (password)")
                                              : srv(filesLink(p), "pl-pdf", "+ Add PDF", "Upload a PDF on the library server (password)"))
                   ].filter(Boolean).join("");
@@ -101,7 +102,7 @@
                    p.pmid && `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed</a>`,
                    p.arxiv && `<a href="https://arxiv.org/abs/${esc(p.arxiv)}" target="_blank" rel="noopener">arXiv</a>`].filter(Boolean).join("");
     const snip = snippet(p.abstract, terms);
-    return `<div class="pl-card">
+    return `<div class="pl-card" id="paper-${esc(p.id)}">
       <h3>${p.doi ? `<a href="https://doi.org/${encodeURI(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title)}</h3>
       <div class="pl-meta">${esc(meta)}</div>
       <div>${hl.map(b => badge(b)).join("")}${locked ? "" : p.folders.map(f => folderBadge(f)).join("")}${rest.map(b => badge(b)).join("")}</div>
@@ -204,6 +205,39 @@
   });
 
   // no-cache: always ask the server whether the list changed (a quick 304 when it did not).
-  fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); })
+  // #paper-<id> (the landing pages' cards link here): scroll to that paper and highlight it for 3 seconds.
+  function showLinked() {
+    const id = decodeURIComponent(location.hash.replace(/^#paper-/, ""));
+    if (!location.hash.startsWith("#paper-")) return;
+    let el = document.getElementById(`paper-${id}`);
+    if (!el && papers.some(p => p.id === id)) {  // hidden by a filter or search: show everything
+      Object.assign(state, { q: "", author: "", journal: "", yFrom: "", yTo: "", minIf: "", folder: locked || "" });
+      state.badges.clear();
+      render();
+      el = document.getElementById(`paper-${id}`);
+    }
+    if (!el) return;
+    el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    el.classList.add("pl-flash");
+    setTimeout(() => el.classList.remove("pl-flash"), 3000);
+  }
+  window.addEventListener("hashchange", showLinked);
+
+  // 👤: lab members in a small window on the library server (it asks for the password); when saved there, it tells
+  // this page and the paper's badges change at once (the website itself follows after the sync).
+  root.addEventListener("click", (e) => {
+    const b = e.target.closest(".pl-assign");
+    if (!b) return;
+    const w = window.open(b.dataset.url, "pl-members", "popup,width=460,height=560");
+    if (!w) location.href = b.dataset.url;
+  });
+  window.addEventListener("message", (e) => {
+    const d = e.data || {}, p = papers.find(x => x.id === d.id);
+    if (d.type !== "pl-members" || !p || !(p.assign_url || "").startsWith(e.origin + "/")) return;  // (the library server only)
+    p.badges = p.badges.filter(b => b.kind !== "member").concat((d.members || []).map(n => ({ label: n, kind: "member" })));
+    render();
+  });
+
+  fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); showLinked(); })
     .catch(() => { root.querySelector(".pl-list").textContent = "Could not load the paper list."; });
 })();

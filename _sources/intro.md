@@ -5,7 +5,7 @@ topic badges and links to each paper.
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3"></div>
-<script src="_static/library/whatsnew.js?v=a076bb3a"></script>
+<script src="_static/library/whatsnew.js?v=0d6d521b"></script>
 ```
 
 - **Topics** (left menu): one page per Mendeley folder.
