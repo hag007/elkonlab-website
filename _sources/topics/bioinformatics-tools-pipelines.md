@@ -12,5 +12,5 @@
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Bioinformatics tools &amp; pipelines"></div>
-<script src="../_static/library/whatsnew.js?v=b58296b8"></script>
+<script src="../_static/library/whatsnew.js?v=fdb69e0f"></script>
 ```

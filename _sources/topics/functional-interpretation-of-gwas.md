@@ -18,5 +18,5 @@
 
 ```{raw} html
 <div id="whats-new" data-days="90" data-max="10" data-fallback="3" data-folder="Functional interpretation of GWAS"></div>
-<script src="../_static/library/whatsnew.js?v=b58296b8"></script>
+<script src="../_static/library/whatsnew.js?v=fdb69e0f"></script>
 ```

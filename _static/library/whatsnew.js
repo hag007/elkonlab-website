@@ -17,6 +17,47 @@ if (!window.plSidebarFix) {
   }, true);
 }
 
+// Every page: the 👤 lab-members dialog. The editor itself is a small window on the library server (the website
+// can't show the server's http page inside its https pages, not even in an iframe); this centres that window over the
+// page and dims the page behind a panel until the window is saved or closed. The window sends {type: "pl-members",
+// id, members} when saved: the pages update the paper's badges themselves (whatsnew.js below, explorer.js).
+window.plMembersDialog = window.plMembersDialog || function (url, title) {
+  document.querySelector(".pl-mdlg")?.remove();
+  const W = 480, H = 600;
+  const left = Math.max(0, (window.screenX || 0) + (window.outerWidth - W) / 2);
+  const top = Math.max(0, (window.screenY || 0) + (window.outerHeight - H) / 2);
+  const win = window.open(url, "pl-members", `popup,width=${W},height=${H},left=${Math.round(left)},top=${Math.round(top)}`);
+  if (!win) { location.href = url; return; }  // popups blocked: open it in this tab
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+  const box = document.createElement("div");
+  box.className = "pl-mdlg";
+  box.innerHTML = `<div class="pl-mdlg-panel" role="dialog" aria-modal="true" aria-labelledby="pl-mdlg-h">
+      <div class="pl-mdlg-icon" aria-hidden="true">👤</div>
+      <h2 id="pl-mdlg-h">Lab members</h2>
+      <p class="pl-mdlg-title">${esc(title || "")}</p>
+      <p class="pl-mdlg-text">Choose them in the window that just opened. The first time, it asks for the library
+        password.</p>
+      <div class="pl-mdlg-row"><button type="button" class="pl-mdlg-show">Show the window</button>
+        <button type="button" class="pl-mdlg-cancel">Cancel</button></div>
+    </div>`;
+  document.body.appendChild(box);
+  const origin = new URL(url, location.href).origin;
+  const close = () => { clearInterval(poll); window.removeEventListener("message", saved); document.removeEventListener("keydown", key); box.remove(); };
+  const saved = (e) => {
+    if (e.origin !== origin || (e.data || {}).type !== "pl-members") return;
+    box.querySelector(".pl-mdlg-panel").innerHTML = `<div class="pl-mdlg-done" aria-live="polite">✓ Saved</div>`;
+    setTimeout(close, 700);
+  };
+  const key = (e) => { if (e.key === "Escape") { win.close(); close(); } };
+  const poll = setInterval(() => { if (win.closed) close(); }, 400);  // closed without saving
+  window.addEventListener("message", saved);
+  document.addEventListener("keydown", key);
+  box.querySelector(".pl-mdlg-show").onclick = () => win.focus();
+  box.querySelector(".pl-mdlg-cancel").onclick = () => { win.close(); close(); };
+  box.addEventListener("click", (e) => { if (e.target === box) win.focus(); });
+  box.querySelector(".pl-mdlg-show").focus();
+};
+
 (function () {
   const root = document.getElementById("whats-new");
   if (!root) return;
@@ -108,15 +149,17 @@ if (!window.plSidebarFix) {
   // 👤: lab members in a small window on the library server (it asks for the password); when saved there, it tells
   // this page, and the card's badges change at once (the website itself follows after the sync).
   root.addEventListener("click", (e) => {
-    const b = e.target.closest(".wn-assign");
+    const b = e.target.closest(".wn-assign[data-url]");
     if (!b) return;
-    const w = window.open(b.dataset.url, "pl-members", "popup,width=460,height=560");
-    if (!w) location.href = b.dataset.url;  // popups blocked: open it here
+    window.plMembersDialog(b.dataset.url, b.closest(".wn-card")?.querySelector(".wn-title")?.textContent.trim());
   });
   window.addEventListener("message", (e) => {
     const d = e.data || {};
     if (d.type !== "pl-members" || !root.querySelector(`.wn-assign[data-url^="${e.origin}/"]`)) return;  // (from the library server only)
-    root.querySelectorAll(`.wn-members[data-id="${CSS.escape(d.id)}"]`).forEach(el => { el.innerHTML = memberBadges(d.members || []); });
+    root.querySelectorAll(`.wn-members[data-id="${CSS.escape(d.id)}"]`).forEach(el => {
+      el.innerHTML = memberBadges(d.members || []);
+      el.classList.remove("pl-updated"); void el.offsetWidth; el.classList.add("pl-updated");  // a short highlight
+    });
   });
 
   // no-cache: always ask the server whether the list changed (a quick 304 when it did not).

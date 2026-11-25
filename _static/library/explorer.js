@@ -228,14 +228,16 @@
   root.addEventListener("click", (e) => {
     const b = e.target.closest(".pl-assign");
     if (!b) return;
-    const w = window.open(b.dataset.url, "pl-members", "popup,width=460,height=560");
-    if (!w) location.href = b.dataset.url;
+    if (window.plMembersDialog) window.plMembersDialog(b.dataset.url, b.closest(".pl-card")?.querySelector("h3")?.textContent.trim());
+    else window.open(b.dataset.url, "pl-members", "popup,width=480,height=600");
   });
   window.addEventListener("message", (e) => {
     const d = e.data || {}, p = papers.find(x => x.id === d.id);
     if (d.type !== "pl-members" || !p || !(p.assign_url || "").startsWith(e.origin + "/")) return;  // (the library server only)
     p.badges = p.badges.filter(b => b.kind !== "member").concat((d.members || []).map(n => ({ label: n, kind: "member" })));
     render();
+    document.getElementById(`paper-${d.id}`)?.classList.add("pl-flash");  // a short highlight on the updated paper
+    setTimeout(() => document.getElementById(`paper-${d.id}`)?.classList.remove("pl-flash"), 1500);
   });
 
   fetch(base + "papers.json", { cache: "no-cache" }).then(r => r.json()).then(data => { papers = data.map(prepare); fillChoices(); render(); showLinked(); })
