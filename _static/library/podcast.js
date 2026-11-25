@@ -51,6 +51,7 @@
       <label class="pl-pod-auto"><input type="checkbox" id="pod-auto" checked> Play the next episode in the list automatically</label>
       <div class="pl-pod-resume" id="pod-resume" hidden></div>
       <div class="pl-pod-error" id="pod-error" hidden></div>
+      <div id="pod-notes"></div>
       <section class="pl-pod-filters" id="pod-filters" aria-label="Filter the episodes" hidden>
         <div class="pl-pod-frow"><span class="pl-pod-flabel" id="f-days-l">Days</span>
           <div class="pl-pod-days"><div class="pl-pod-chips" id="f-days" role="group" aria-labelledby="f-days-l"></div>
@@ -65,7 +66,6 @@
           ${Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select></label>
       </div>
       <ol class="pl-pod-list" id="pod-list"></ol>
-      <div id="pod-notes"></div>
       <p class="pl-pod-foot"><a id="pod-download" href="#" download>Download (MP3)</a><span id="pod-drive"></span>
         · Keys: space play/pause, ← → skip, N next in the list</p>
       <div id="pod-others"></div>
