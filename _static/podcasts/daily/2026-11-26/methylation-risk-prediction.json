@@ -1,0 +1,102 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "0110f69d-5c99-3ce1-8bd6-ac35f1e6ae65",
+  "f57516a5-9e8c-3a58-be16-e7d31e7d5442"
+ ],
+ "topic": "Methylation risk prediction",
+ "slug": "methylation-risk-prediction",
+ "date": "2026-11-26",
+ "title": "Methylation risk prediction · Thursday, November 26",
+ "seconds": 122.2,
+ "drive": "https://drive.google.com/open?id=1-9Dm7r_M16bm4kWfG48GxAWFMBd3NxLW",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Methylation risk prediction, for Thursday, November 26."
+  },
+  {
+   "t": 7.56,
+   "s": "A",
+   "text": "Let's turn to Methylation risk prediction, where both new papers ask which epigenetic age measure you should trust."
+  },
+  {
+   "t": 14.48,
+   "s": "B",
+   "text": "The first is a meta-analysis from the Murgatroyd lab in Molecular Psychiatry. It pools seventeen studies, about ten thousand nine hundred people, to compare how eight DNA methylation clocks relate to adverse childhood experiences."
+  },
+  {
+   "t": 30.98,
+   "s": "A",
+   "text": "The clocks did not behave alike. GrimAge and DunedinPACE showed the strongest and most consistent age acceleration, but only DunedinPACE held up across strata."
+  },
+  {
+   "t": 41.34,
+   "s": "B",
+   "text": "So the authors argue that clock choice matters in stress-related risk research. A study's result could partly reflect which clock it happened to pick."
+  },
+  {
+   "t": 50.52,
+   "s": "A",
+   "text": "One caution: the summary doesn't describe the strata or the populations, so we can't say much about ancestry or how much the included studies differed."
+  },
+  {
+   "t": 60.21,
+   "s": "B",
+   "text": "The second paper is a bioRxiv preprint from the Gladyshev lab. It introduces LongReadClock, a set of epigenetic clocks for individual blood cell types."
+  },
+  {
+   "t": 71.53,
+   "s": "A",
+   "text": "They don't sort cells. Instead they run long-read whole-genome sequencing on bulk blood, assign each read to a cell type in silico, and estimate age to within roughly three to six years."
+  },
+  {
+   "t": 83.25,
+   "s": "B",
+   "text": "And the cell-type age deviations carry different signals. Myeloid age was associated with blood pressure and heart rate, while NK-cell age was associated with asthma."
+  },
+  {
+   "t": 94.86,
+   "s": "A",
+   "text": "That pairs well with the meta-analysis. If bulk clocks disagree, a cell-resolved readout might be one way to work out why."
+  },
+  {
+   "t": 102.25,
+   "s": "B",
+   "text": "Still, it's a preprint, and the summary gives no cohort size or replication, so treat those associations as leads, not established risk markers."
+  },
+  {
+   "t": 113.25,
+   "s": "A",
+   "text": "The takeaway: methylation age isn't one number, and both the clock and the cell type you measure shape the risk signal you find."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Methylation risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/methylation-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Epigenetic clocks and adverse childhood experiences: a meta-analysis",
+     "authors": "Joseph Morgan et al.",
+     "source": "Molecular Psychiatry",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.1038/s41380-026-03857-0",
+     "start": 14.5
+    },
+    {
+     "title": "Measuring Cell Type Resolved Aging Through Long-Read Sequencing",
+     "authors": "Yinjie Wu et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.64898/2026.11.22.768438",
+     "start": 60.2
+    }
+   ]
+  }
+ ]
+}

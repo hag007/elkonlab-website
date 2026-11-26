@@ -1,0 +1,102 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "85097d2b-ea0c-3899-9086-d36b07ded7d7",
+  "d596b486-21f0-37b9-a420-f22f950b09aa"
+ ],
+ "topic": "Integrated risk prediction",
+ "slug": "integrated-risk-prediction",
+ "date": "2026-11-26",
+ "title": "Integrated risk prediction · Thursday, November 26",
+ "seconds": 144.7,
+ "drive": "https://drive.google.com/open?id=1lEGJ44YQOy8sLDudKFd0Frr3_mZU0Yd3",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Thursday, November 26."
+  },
+  {
+   "t": 7.54,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction, where genetic scores are combined with other kinds of data."
+  },
+  {
+   "t": 13.65,
+   "s": "B",
+   "text": "The first paper comes from the Mirzaei lab, in the British Journal of Nutrition. The question was whether a three-SNP genetic risk score interacts with a lifestyle risk score to affect cardiometabolic markers and lifetime risk of atherosclerotic cardiovascular disease."
+  },
+  {
+   "t": 32.62,
+   "s": "A",
+   "text": "And the cohort is small. It's two hundred fifty-six Iranian women with overweight or obesity, so this is clearly exploratory work."
+  },
+  {
+   "t": 40.93,
+   "s": "B",
+   "text": "Right, and the outcome reflects that. Some of the gene-by-lifestyle interactions were nominally significant, but none survived Bonferroni correction. The authors themselves call for replication in larger cohorts."
+  },
+  {
+   "t": 54.93,
+   "s": "A",
+   "text": "A three-variant score also captures only a small part of polygenic risk. So I'd treat this as a starting point for building hypotheses, not as evidence that the interaction is real."
+  },
+  {
+   "t": 66.29,
+   "s": "B",
+   "text": "The second paper is at the opposite end on scale. It's from the Plym lab in JAMA Network Open, and it uses fifty-nine thousand and sixty-seven men from the Stockholm3 prostate cancer screening trial."
+  },
+  {
+   "t": 79.93,
+   "s": "A",
+   "text": "They asked whether genetic risk adds to PSA for long-term prostate cancer risk. They grouped men by baseline PSA, family history and a two-hundred-thirty-two-variant polygenic risk score."
+  },
+  {
+   "t": 92.51,
+   "s": "B",
+   "text": "Among men with a PSA of one nanogram per milliliter or higher, the top polygenic score quintile roughly tripled the ten-year risk of clinically significant cancer. It was also linked to higher prostate cancer mortality, with a hazard ratio of two point seven one."
+  },
+  {
+   "t": 110.97,
+   "s": "A",
+   "text": "That supports layering genetics on top of PSA-based screening. One caution is that this is a Swedish screening population, so how well it transfers to other ancestries still needs testing."
+  },
+  {
+   "t": 122.35,
+   "s": "B",
+   "text": "Put side by side, the two papers show how much sample size and score breadth matter when you're looking for added value from genetics."
+  },
+  {
+   "t": 131.19,
+   "s": "A",
+   "text": "The takeaway is that well-powered polygenic scores can add real risk information to clinical markers like PSA, while small studies of gene-by-lifestyle interaction still need replication."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Integrated risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/integrated-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Interaction between 3-SNP genetic risk score and lifestyle risk score on cardiovascular risk factors and the risk of lifetime ASCVD among overweight and obese women",
+     "authors": "Sahand Tehrani Fateh et al.",
+     "source": "Br J Nutr",
+     "date": "2026",
+     "url": "https://doi.org/10.1017/s0007114526108599",
+     "start": 13.7
+    },
+    {
+     "title": "Polygenic Risk Scores and PSA Levels for Risk of Prostate Cancer and Related Mortality",
+     "authors": "Margaux Mariaz et al.",
+     "source": "JAMA Netw Open",
+     "date": "2026",
+     "url": "https://doi.org/10.1001/jamanetworkopen.2026.46318",
+     "start": 66.3
+    }
+   ]
+  }
+ ]
+}

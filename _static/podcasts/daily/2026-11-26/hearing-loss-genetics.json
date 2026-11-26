@@ -1,0 +1,78 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "f87181df-51ba-3a05-a4eb-e7446d106ad9"
+ ],
+ "topic": "Hearing loss genetics",
+ "slug": "hearing-loss-genetics",
+ "date": "2026-11-26",
+ "title": "Hearing loss genetics · Thursday, November 26",
+ "seconds": 107.3,
+ "drive": "https://drive.google.com/open?id=1YM1jXs0yT5kAOpdpAuyD_bHToPBSXqR2",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Hearing loss genetics, for Thursday, November 26."
+  },
+  {
+   "t": 7.14,
+   "s": "A",
+   "text": "Let's turn to Hearing loss genetics, where we have one paper today, a review from the Lu lab in Communications Medicine on GJB2-related deafness and gene therapy."
+  },
+  {
+   "t": 18.35,
+   "s": "B",
+   "text": "GJB2 encodes Connexin26, and its mutations are the most common cause of nonsyndromic hearing loss. The review asks why phenotypes range so widely, from congenital deafness to late-onset progressive loss."
+  },
+  {
+   "t": 34.46,
+   "s": "A",
+   "text": "Drawing mainly on mouse models, the authors propose two mechanisms. Profound congenital deafness would come from disrupted cochlear development, while milder late-onset loss would come from impaired active cochlear mechanics."
+  },
+  {
+   "t": 48.38,
+   "s": "B",
+   "text": "That matters for therapy, because a developmental defect may close the treatment window early, while a mechanical deficit might be rescued later in life."
+  },
+  {
+   "t": 58.95,
+   "s": "A",
+   "text": "And the therapy picture is sobering. Preclinical Connexin26 gene therapy can restore the protein, but it hasn't yet meaningfully restored hearing."
+  },
+  {
+   "t": 68.11,
+   "s": "B",
+   "text": "So getting the protein back isn't getting function back. And since this review rests largely on mouse work, how well it carries over to patients with specific variants is still open."
+  },
+  {
+   "t": 79.73,
+   "s": "A",
+   "text": "The authors' priorities speak to that: knock-in mouse models for specific mutations and better delivery vectors, which could also clarify genotype-phenotype links for clinical variant interpretation."
+  },
+  {
+   "t": 92.68,
+   "s": "B",
+   "text": "The takeaway is that GJB2 deafness may involve two separate mechanisms, and gene therapy will have to restore hearing, not just Connexin26 expression, before it can help patients."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Hearing loss genetics",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/hearing-loss-genetics/papers.html",
+   "papers": [
+    {
+     "title": "Mechanisms and gene therapy of GJB2 related deafness",
+     "authors": "Hong-Bo Zhao and X Lu",
+     "source": "Communications Medicine",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.1038/s43856-026-01996-7",
+     "start": 7.1
+    }
+   ]
+  }
+ ]
+}

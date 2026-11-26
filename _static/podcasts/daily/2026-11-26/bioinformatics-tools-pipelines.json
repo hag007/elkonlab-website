@@ -1,0 +1,111 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "4b482ca1-372b-3005-81d5-da47de40c28c",
+  "97f3890d-e9a3-30ab-80ed-4139e6b82349",
+  "d359248c-506d-3288-8101-7ade754d9c09"
+ ],
+ "topic": "Bioinformatics tools & pipelines",
+ "slug": "bioinformatics-tools-pipelines",
+ "date": "2026-11-26",
+ "title": "Bioinformatics tools & pipelines · Thursday, November 26",
+ "seconds": 154.1,
+ "drive": "https://drive.google.com/open?id=1woZv8haF4Qxdhu_xAvymrnFev8-T2ktV",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Thursday, November 26."
+  },
+  {
+   "t": 8.33,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where today we have three papers about making complex analyses easier to run and to reproduce."
+  },
+  {
+   "t": 18.0,
+   "s": "B",
+   "text": "The first is from the Rawlinson lab in NAR Genomics and Bioinformatics. It's called vartracker, and it combines pathogen samples sequenced over time into one evolutionary picture, a job that's slow and error-prone by hand."
+  },
+  {
+   "t": 33.97,
+   "s": "A",
+   "text": "It accepts raw reads, aligned BAM files, or variant call files, annotates the variants, and labels each one as new or original, and as transient or persistent across the time series."
+  },
+  {
+   "t": 47.14,
+   "s": "B",
+   "text": "It also records provenance for reproducibility and makes static and interactive figures. It should work for any pathogen with a reference genome, but it's only been tested on SARS-CoV-2 and RSV-A."
+  },
+  {
+   "t": 60.82,
+   "s": "A",
+   "text": "The second paper is from the Hong lab in Molecular Ecology Resources. OmicsNCyc is a single-command pipeline, with a Shiny web app, that takes metagenome or metatranscriptome reads to summary statistics and plots for microbial nitrogen-cycle genes."
+  },
+  {
+   "t": 77.79,
+   "s": "B",
+   "text": "It's built on a curated database, NCycTaxDB, covering seventy-one genes in six functional modules. Across different environments, the read-based approach picked up low-abundance genes that assembly-based methods missed."
+  },
+  {
+   "t": 93.35,
+   "s": "A",
+   "text": "The catch is that results depend on how complete and accurate that database is."
+  },
+  {
+   "t": 98.16,
+   "s": "B",
+   "text": "The third paper is from the Kang lab in Genes and Genomics. SurvStudio runs locally through a web browser. It combines survival analysis, tests of whether molecular markers add anything beyond clinical variables, and a comparison of nine machine learning and deep learning survival models."
+  },
+  {
+   "t": 117.92,
+   "s": "A",
+   "text": "It checks inputs and model assumptions. On public cancer cohorts, IDH and 1p19q status improved glioma prediction in external cohorts, and the authors showed that miscoding the event variable can badly distort survival estimates."
+  },
+  {
+   "t": 134.25,
+   "s": "B",
+   "text": "That's the strongest argument for built-in checks, and it echoes vartracker's provenance tracking. Both tools protect users from quiet mistakes."
+  },
+  {
+   "t": 143.5,
+   "s": "A",
+   "text": "So the takeaway is that the most useful pipelines don't just automate the analysis, they also record what was done and catch the errors people tend to miss."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Bioinformatics tools & pipelines",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
+   "papers": [
+    {
+     "title": "vartracker: an end-to-end tool for pathogen longitudinal variant analysis and visualization",
+     "authors": "Charles S P Foster and William D Rawlinson",
+     "source": "NAR genomics and bioinformatics",
+     "date": "2026-09-28",
+     "url": "https://doi.org/10.1093/nargab/lqag143",
+     "start": 18.0
+    },
+    {
+     "title": "OmicsNCyc: An Integrated Pipeline for Fast Analysis of Nitrogen Cycle Functional Genes With a Curated Database",
+     "authors": "Baoshan Zhang et al.",
+     "source": "Molecular ecology resources",
+     "date": "2026-11-01",
+     "url": "https://doi.org/10.1111/1755-0998.70240",
+     "start": 60.8
+    },
+    {
+     "title": "SurvStudio for browser-based survival analysis and model comparison in cancer genomics",
+     "authors": "Jihye Park et al.",
+     "source": "Genes & genomics",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1007/s13258-026-01823-2",
+     "start": 98.2
+    }
+   ]
+  }
+ ]
+}

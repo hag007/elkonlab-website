@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "19703245-46a1-3f40-a767-abcaf04194ce",
+  "792a4b84-80d2-3718-bdeb-b91dbdcc7b28"
+ ],
+ "topic": "Biological network analysis",
+ "slug": "biological-network-analysis",
+ "date": "2026-11-26",
+ "title": "Biological network analysis · Thursday, November 26",
+ "seconds": 155.2,
+ "drive": "https://drive.google.com/open?id=1pUmh5gpnHJIIvd0Rl_pNSsW4Q9UyqyJ1",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Biological network analysis, for Thursday, November 26."
+  },
+  {
+   "t": 8.01,
+   "s": "A",
+   "text": "Let's turn to Biological network analysis, where we have two papers today."
+  },
+  {
+   "t": 12.86,
+   "s": "B",
+   "text": "The first is a preprint on Research Square from the Wang lab. It asks whether network-guided modelling can find gene modules in acute myeloid leukemia whose network connections actually help predict clinical outcome."
+  },
+  {
+   "t": 27.59,
+   "s": "A",
+   "text": "They fit a network-based linear discriminant model over KEGG pathway genes in the BEAT-AML cohort, and it selected two hundred genes grouped into seven modules. Then comes the interesting part, a kind of virtual perturbation: they removed network edges and re-tested prediction in seven validation cohorts."
+  },
+  {
+   "t": 47.52,
+   "s": "B",
+   "text": "When they cut the edges that the top module had recruited through the network, predictive AUC dropped more than it did for matched controls. So the connections seem to carry information, not just the genes."
+  },
+  {
+   "t": 60.87,
+   "s": "A",
+   "text": "That module also showed AML-specific CRISPR dependency and myeloid localization, which is useful biological support. Still, it is a preprint, and the summary doesn't say how large the drop in AUC was, so I'd want to see the effect sizes."
+  },
+  {
+   "t": 77.17,
+   "s": "B",
+   "text": "The second paper, from the Yang lab in the Journal of Visualized Experiments, goes from GWAS loci to mechanism in epilepsy, across eight epilepsy phenotypes."
+  },
+  {
+   "t": 88.92,
+   "s": "A",
+   "text": "They layered fine-mapping, brain eQTL colocalization, SMR and TWAS together with bulk RNA-seq from one hundred sixty-two samples, CITE-seq data, and predefined metabolic and immune gene modules. All of this evidence went into a gene-module network that can be traced back to its sources."
+  },
+  {
+   "t": 108.89,
+   "s": "B",
+   "text": "They prioritized eight genes, and the top tier includes RMI1, TVP23B, ARHGEF15 and TTC21B. The strongest module link connected reduced oxidative phosphorylation with microglial activation and IL1 signaling."
+  },
+  {
+   "t": 128.91,
+   "s": "A",
+   "text": "Keep in mind that these are prioritizations from integrated association evidence, not functional validation, and the transcriptomic sample is modest."
+  },
+  {
+   "t": 138.73,
+   "s": "B",
+   "text": "The takeaway: in both papers the network structure itself is the evidence, whether edges carry prognostic signal in leukemia or modules link epilepsy risk genes to mitochondrial and inflammatory biology."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Biological network analysis",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/biological-network-analysis/papers.html",
+   "papers": [
+    {
+     "title": "Network-guided discovery and virtual perturbation identify clinically associated gene modules in acute myeloid leukemia",
+     "authors": "Yanming Li et al.",
+     "source": "Research Square",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.21203/rs.3.rs-11749320/v1",
+     "start": 12.9
+    },
+    {
+     "title": "Integration of GWAS and Transcriptomic Data Links RMI1, ARHGEF15, TTC21B, and HAGH to Mitochondrial-Neuroinflammatory Coupling in Epilepsy",
+     "authors": "Kaiwei Li et al.",
+     "source": "Journal of Visualized Experiments",
+     "date": "2026-11-17",
+     "url": "https://doi.org/10.3791/75037",
+     "start": 77.2
+    }
+   ]
+  }
+ ]
+}

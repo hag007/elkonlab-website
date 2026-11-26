@@ -1,0 +1,125 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "82ed1943-aaa6-3596-892f-20e00b00a869",
+  "8722d476-fc1a-32e8-baa4-508b2f006873",
+  "c05b3937-a842-39e2-a2db-759f0f851d83",
+  "c6362986-0819-3d72-ade6-8ada8a424186"
+ ],
+ "topic": "Chronic Kidney Disease",
+ "slug": "chronic-kidney-disease",
+ "date": "2026-11-26",
+ "title": "Chronic Kidney Disease · Thursday, November 26",
+ "seconds": 190.2,
+ "drive": "https://drive.google.com/open?id=1Od2Exu0S9QPmIthPV0tUHLl1Q_F463lB",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Chronic Kidney Disease, for Thursday, November 26."
+  },
+  {
+   "t": 7.18,
+   "s": "A",
+   "text": "Let's turn to Chronic Kidney Disease, where we have four new papers."
+  },
+  {
+   "t": 11.22,
+   "s": "B",
+   "text": "The largest is from the Hung lab in Kidney International. They ran a proteome-wide Mendelian randomization, using cis protein QTLs for 2,807 plasma proteins, against eGFR, incident CKD, kidney failure and eGFR slope in up to 464,631 Million Veteran Program participants."
+  },
+  {
+   "t": 37.45,
+   "s": "A",
+   "text": "They found 93 proteins, 12 of them robust, including UMOD, ANGPTL3, INHBC and GSTA1. They then mapped these across nine CKD subtypes and 1,020 phecodes."
+  },
+  {
+   "t": 49.4,
+   "s": "B",
+   "text": "About a third were druggable, which nominated, for example, IL-1 blockade for diabetic kidney disease. These are leads that need trials, not proof of benefit."
+  },
+  {
+   "t": 61.08,
+   "s": "A",
+   "text": "Next, a cautionary paper from the Herrington lab in Nephrology Dialysis Transplantation. The authors tested an eGFR polygenic score in UK Biobank and in three CKD cohorts, SHARP, CRIC and EMPA-KIDNEY."
+  },
+  {
+   "t": 76.24,
+   "s": "B",
+   "text": "In UK Biobank a high score predicted faster eGFR decline and more kidney progression. In the CKD cohorts, the association reversed."
+  },
+  {
+   "t": 87.17,
+   "s": "A",
+   "text": "The authors attribute that to collider bias. When a cohort is enrolled because people already have the disease, genetic risk and other causes of disease become entangled, so the score's apparent effect can flip."
+  },
+  {
+   "t": 100.17,
+   "s": "B",
+   "text": "So kidney scores should not be applied naively to populations selected for prevalent disease. That warning also applies to genetic analyses in patient-only cohorts more broadly."
+  },
+  {
+   "t": 112.61,
+   "s": "A",
+   "text": "Third, from the MacLeod lab in Human Molecular Genetics, Olink measurements of circulating APOL1 in 43,587 UK Biobank participants. G1, G2 and E150K all had dose-dependent effects on APOL1 levels, and G2 had the largest effect."
+  },
+  {
+   "t": 133.57,
+   "s": "B",
+   "text": "Several independent cis-regulatory variants also changed APOL1 levels, and they may explain ancestry-related differences beyond the risk genotype. It fits well with the protein-centred view of the Hung paper, though plasma levels may not reflect what happens in kidney tissue."
+  },
+  {
+   "t": 152.35,
+   "s": "A",
+   "text": "Finally, a medRxiv preprint from the Koiwa lab sequenced the whole genome in 108 Japanese patients who started dialysis by age 50, after excluding obvious polycystic kidney disease, and found a monogenic diagnosis in 9.3 percent, spread across clinical labels like diabetic kidney disease and glomerulonephritis."
+  },
+  {
+   "t": 175.62,
+   "s": "B",
+   "text": "The takeaway is that kidney genetics is turning genetic signals into proteins, drug targets and diagnoses, but how a study selects and labels its patients still shapes what those signals mean."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Chronic Kidney Disease",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/chronic-kidney-disease/papers.html",
+   "papers": [
+    {
+     "title": "Hidden Monogenic Diagnoses in Young-Onset Dialysis After Exclusion of Clinically Apparent Polycystic Kidney Disease",
+     "authors": "Reiji Takami et al.",
+     "source": "medRxiv",
+     "date": "2026-10-19",
+     "url": "https://doi.org/10.64898/2026.10.17.26365780",
+     "start": 152.3
+    },
+    {
+     "title": "Coding, modifier, and regulatory effects shape circulating APOL1 levels",
+     "authors": "Walt E Adamson et al.",
+     "source": "Human molecular genetics",
+     "date": "2026-09-11",
+     "url": "https://doi.org/10.1093/hmg/ddag087",
+     "start": 112.6
+    },
+    {
+     "title": "Impact of selection bias on the association of kidney function polygenic scores with CKD progression in populations with CKD",
+     "authors": "Killian Donovan et al.",
+     "source": "Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association",
+     "date": "2026-10-05",
+     "url": "https://doi.org/10.1093/ndt/gfag224",
+     "start": 11.2
+    },
+    {
+     "title": "Proteome- and phenome-wide studies identify circulating protein drivers of kidney diseases",
+     "authors": "Jefferson L Triozzi et al.",
+     "source": "Kidney international",
+     "date": "2026-11-01",
+     "url": "https://doi.org/10.1016/j.kint.2026.10.030",
+     "start": 11.2
+    }
+   ]
+  }
+ ]
+}

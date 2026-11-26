@@ -1,0 +1,129 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "27ef2214-bd55-3f46-a380-0630a429fa9b",
+  "85ad0603-092f-3a4c-bd00-143d91a47c71",
+  "d2f4682f-935b-302a-9fb5-6247d16a5129",
+  "d5a80ce4-aba2-3690-8646-68a215796eea",
+  "e81bbb92-a453-31e8-b27d-b0a17142399e"
+ ],
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-26",
+ "title": "Functional interpretation of GWAS · Thursday, November 26",
+ "seconds": 175.2,
+ "drive": "https://drive.google.com/open?id=1sOh1mxzPn38X8A9JxLL8Xj8bd4rlZamO",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Thursday, November 26."
+  },
+  {
+   "t": 8.18,
+   "s": "A",
+   "text": "Let's turn to Functional interpretation of GWAS, where several new papers ask how risk variants reach genes and cell states."
+  },
+  {
+   "t": 16.15,
+   "s": "B",
+   "text": "First, a medRxiv preprint from the Dyke lab asks whether the heritability of gene expression in single cells shifts with cell state."
+  },
+  {
+   "t": 25.2,
+   "s": "A",
+   "text": "Their method, scHINT, splits expression heritability into a main genetic part and a genotype by cell-state part. In brain single-nucleus data, the cell-state part was common and on average larger than the main part. It was also concentrated in constrained genes and disease heritability."
+  },
+  {
+   "t": 43.88,
+   "s": "B",
+   "text": "In a cell-state-aware TWAS, it found sixty-eight percent more disease risk genes than a standard TWAS, including TREM2. It's still a preprint, and it uses brain data only."
+  },
+  {
+   "t": 56.41,
+   "s": "A",
+   "text": "The Wang lab, in Advanced Science, extends TWAS differently. Their method, GRNTWAS, adds trans variants chosen through gene regulatory networks. It predicted expression better and prioritized well-supported genes across twelve neuropsychiatric traits."
+  },
+  {
+   "t": 72.97,
+   "s": "B",
+   "text": "Next, a bioRxiv preprint from the Lee lab links enhancers to target genes within each cell type. Their method, CREMAP, learns shared technical and biological variation from single-cell multiome data and removes it before testing each peak-gene pair."
+  },
+  {
+   "t": 91.05,
+   "s": "A",
+   "text": "The idea is that adjusting for sample covariates can also remove real genetic effects. On CRISPRi and fine-mapped eQTL benchmarks, it beat existing methods in two cell lines and thirteen cell types."
+  },
+  {
+   "t": 104.86,
+   "s": "B",
+   "text": "Third, a bioRxiv preprint from the Lettre lab used a pangenome reference to genotype about six hundred forty-six thousand structural variants in two thousand one hundred seventy-three CARTaGENE participants."
+  },
+  {
+   "t": 120.21,
+   "s": "A",
+   "text": "Conditioning on known small variants, they found ninety-nine structural variant eQTLs, and forty-one replicated in the thousand Genomes data. Two thirds are in strong LD with Open Targets credible sets, making them candidate causal variants, though LD alone can't prove causality."
+  },
+  {
+   "t": 139.05,
+   "s": "B",
+   "text": "Finally, a bioRxiv preprint from the Pang lab studied an alcohol use disorder locus in microglia. Knocking out or editing the variant rs7307261 in iPSC-derived microglia stopped ethanol from inducing CD163 and changed phagocytosis."
+  },
+  {
+   "t": 162.76,
+   "s": "A",
+   "text": "The takeaway is that interpreting GWAS increasingly means modelling cell context, from cell state down to enhancer-gene links within each cell type, rather than averaging it away."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "Single-Cell Gene Expression Heritability Informed by Genotype x Cell-Context Interactions",
+     "authors": "Lida Wang et al.",
+     "source": "medRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.23.26368758",
+     "start": 16.1
+    },
+    {
+     "title": "A method to disentangle enhancer-gene interactions from latent factors in single-cell multi-omics data",
+     "authors": "Ngoc Duc Nguyen et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768923",
+     "start": 73.0
+    },
+    {
+     "title": "Allele-specific open chromatin analysis revealed allelic bias of alcohol-induced gene expression in human microglia",
+     "authors": "Xindi Li et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.23.768544",
+     "start": 139.1
+    },
+    {
+     "title": "A pangenomic approach identifies new structural variants associated with gene expression in the CARTaGENE cohort",
+     "authors": "Rose Laflamme et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768960",
+     "start": 104.9
+    },
+    {
+     "title": "Hierarchical Gene Regulatory Networks Improve Gene Prioritization in TWAS by Constraining Trans-Regulatory Search",
+     "authors": "Shixian Wang et al.",
+     "source": "Advanced Science",
+     "date": "2026",
+     "url": "https://doi.org/10.1002/advs.79015",
+     "start": 43.9
+    }
+   ]
+  }
+ ]
+}

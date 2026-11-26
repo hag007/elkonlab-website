@@ -1,0 +1,120 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "43d46068-f845-3683-93e1-08f20c9bc1c9",
+  "46b15dcd-38d1-3c12-9d98-7707d77a57df",
+  "5a4454f7-d179-3b60-9f76-34babc8c402a",
+  "9127ed70-be85-37ac-bba1-331da8b079ba"
+ ],
+ "topic": "Enhancers & 3D genome",
+ "slug": "enhancers-3d-genome",
+ "date": "2026-11-26",
+ "title": "Enhancers & 3D genome · Thursday, November 26",
+ "seconds": 169.3,
+ "drive": "https://drive.google.com/open?id=1NGANC1cAqC5ewLhU-bQKFTg3xpdSsUkd",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Thursday, November 26."
+  },
+  {
+   "t": 7.86,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome."
+  },
+  {
+   "t": 10.9,
+   "s": "B",
+   "text": "First, from the Farley lab in Nature Genetics: how does the arrangement of transcription factor binding sites, the syntax, control enhancer activity and tissue specificity? They tested 460,800 arrangements of ETS and GATA sites in Ciona embryos."
+  },
+  {
+   "t": 30.94,
+   "s": "A",
+   "text": "They used whole-embryo reporter assays, plus a new single-cell, whole-embryo version called SEMPRA. Only 18 percent of arrangements were active, and flipping a single site could switch an enhancer on."
+  },
+  {
+   "t": 43.19,
+   "s": "B",
+   "text": "The key result is about specificity. Syntaxes whose activity depends on where high- and low-affinity sites sit keep enhancers tissue-specific, while robust syntaxes give broadly active enhancers."
+  },
+  {
+   "t": 57.17,
+   "s": "A",
+   "text": "It's one enhancer with two factors in Ciona, so whether this generalizes to mammals is open. Still, it suggests small changes in site order can matter for variant interpretation."
+  },
+  {
+   "t": 68.34,
+   "s": "B",
+   "text": "That links to the Dougherty lab paper in Nature Methods. Standard MPRAs mix enhancer effects with effects on RNA stability, so their method, ISOMPRA, reads pre-spliced RNA for transcription, and spliced RNA, corrected for transcription, for three prime UTR driven stability."
+  },
+  {
+   "t": 89.87,
+   "s": "A",
+   "text": "Benchmarked on predicted enhancers and UTRs carrying autism mutations, it showed that ignoring either layer gives many false positives and false negatives. It also works in specific cell types in the mouse brain in vivo."
+  },
+  {
+   "t": 104.54,
+   "s": "B",
+   "text": "Third, from the Inoue lab in Cell Reports: single-cell RNA and ATAC multiome of bone marrow stromal cells in mouse myeloid malignancy models. They found a previously unknown Foxc1-regulated enhancer downstream of Cxcl12, open only in healthy LepR-high cells."
+  },
+  {
+   "t": 126.18,
+   "s": "A",
+   "text": "Deleting it reduced Cxcl12 and impaired support of normal blood formation, a clean path from accessibility to a causal knockout. It's mouse only, so human relevance still needs testing."
+  },
+  {
+   "t": 138.86,
+   "s": "B",
+   "text": "Briefly, a Wei lab review in Acta Biochimica et Biophysica Sinica traces chromatin interaction profiling from footprinting to single-cell multi-omics. It argues that pairing single-cell data with perturbations can causally link 3D architecture to transcription."
+  },
+  {
+   "t": 158.69,
+   "s": "A",
+   "text": "The takeaway: what an enhancer does depends on fine binding-site grammar and on which molecular layer you measure, so perturbation tests remain essential."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Enhancers & 3D genome",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
+   "papers": [
+    {
+     "title": "Exhaustive rearrangement of an enhancer reveals that dependency-syntax encodes tissue specificity",
+     "authors": "Joe J Solvason et al.",
+     "source": "Nature genetics",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1038/s41588-026-02838-x",
+     "start": 10.9
+    },
+    {
+     "title": "ISOMPRA enables the disambiguation of transcriptional and post-transcriptional effects of genetic variants",
+     "authors": "Anthony D Fischer et al.",
+     "source": "Nature methods",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1038/s41592-026-03302-8",
+     "start": 68.3
+    },
+    {
+     "title": "Evolution, application and clinical significance of profiling chromatin interactions at a genome-wide scale",
+     "authors": "Qianqian Qian et al.",
+     "source": "Acta biochimica et biophysica Sinica",
+     "date": "2026-09-29",
+     "url": "https://doi.org/10.3724/abbs.2026165",
+     "start": 138.9
+    },
+    {
+     "title": "Single-cell multiomics analysis reveals Cxcl12 enhancer inactivation in LepRhigh-MSCs driving niche dysfunction in murine myeloid malignancies",
+     "authors": "Yasutaka Hayashi et al.",
+     "source": "Cell reports",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1016/j.celrep.2026.118365",
+     "start": 104.5
+    }
+   ]
+  }
+ ]
+}
