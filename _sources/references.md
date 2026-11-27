@@ -1,6 +1,6 @@
 # References
 
-576 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+578 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -69,17 +69,19 @@
 20. Martin Kircher, Daniela M Witten, Preti Jain, et al.. A general framework for estimating the relative pathogenicity of human genetic variants. *Nat Genet*. 2014. doi: [10.1038/ng.2892](https://doi.org/10.1038/ng.2892) PMID: [24487276](https://pubmed.ncbi.nlm.nih.gov/24487276/)
 21. Dongwon Lee, David U Gorkin, Maggie Baker, et al.. A method to predict the impact of regulatory variants from DNA sequence. *Nat Genet*. 2015. doi: [10.1038/ng.3331](https://doi.org/10.1038/ng.3331)
 22. Johannes Linder, Divyanshi Srivastava, Han Yuan, et al.. Predicting RNA-seq coverage from DNA sequence as a unifying model of gene regulation. *Nat Genet*. 2025. doi: [10.1038/s41588-024-02053-6](https://doi.org/10.1038/s41588-024-02053-6) PMID: [39779956](https://pubmed.ncbi.nlm.nih.gov/39779956/)
-23. Eric Nguyen, Michael Poli, Matthew G. Durrant, et al.. Sequence modeling and design from molecular to genome scale with Evo. *Science*. 2024. doi: [10.1126/science.ado9336](https://doi.org/10.1126/science.ado9336) PMID: [39541441](https://pubmed.ncbi.nlm.nih.gov/39541441/)
-24. Anusri Pampari, Anna Shcherbina, Evgeny Z. Kvon, et al.. ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants. *bioRxiv*. 2024. doi: [10.1101/2024.12.25.630221](https://doi.org/10.1101/2024.12.25.630221)
-25. Alexander Rakowski, Christoph Lippert. Multiple instance fine-mapping: Predicting causal regulatory variants with a deep sequence model. *PLoS genetics*. 2026. doi: [10.1371/journal.pgen.1012208](https://doi.org/10.1371/journal.pgen.1012208) PMID: [42371957](https://pubmed.ncbi.nlm.nih.gov/42371957/)
-26. Alexander Sasse, Bernard Ng, Anna E. Spiro, et al.. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. *Nat Genet*. 2023. doi: [10.1038/s41588-023-01524-6](https://doi.org/10.1038/s41588-023-01524-6) PMID: [38036778](https://pubmed.ncbi.nlm.nih.gov/38036778/)
-27. Divyanshi Srivastava, Anya Korsakova, Qingbo Wang, et al.. Borzoi-informed fine mapping improves causal variant prioritization in complex trait GWAS. *bioRxiv*. 2025. doi: [10.1101/2025.07.09.663936](https://doi.org/10.1101/2025.07.09.663936)
-28. Michael Sweeney, Hyun Min Kang. Practical utility of sequence-to-omics models for improving the reproducibility of genetic fine-mapping. *bioRxiv*. 2026. doi: [10.64898/2026.02.04.703796](https://doi.org/10.64898/2026.02.04.703796) PMID: [41676556](https://pubmed.ncbi.nlm.nih.gov/41676556/)
-29. Moustafa Zein, Aboul Ella Hassanien. SpliceVarMech: A causal generative framework for mechanistic interpretation of non-canonical splicing variants. *bioRxiv*. 2026. doi: [10.64898/2026.11.19.767866](https://doi.org/10.64898/2026.11.19.767866)
-30. Yan Zeng, Qinfeng Liu, Guisheng Liao, et al.. EditFinder: A Sequence-Based Model for A-to-I RNA Editing Identification and Characterization of Genetic Variant Effects. *bioRxiv*. 2026. doi: [10.64898/2026.11.23.768754](https://doi.org/10.64898/2026.11.23.768754)
-31. Tony Zeng, Yang I Li. Predicting RNA splicing from DNA sequence using Pangolin. *Genome Biol*. 2022. doi: [10.1186/s13059-022-02664-4](https://doi.org/10.1186/s13059-022-02664-4)
-32. Yu Zhang, Da Lin, Ying Chen, et al.. Limited cross-model agreement in predicted RNA effects of complete non-reference human insertions. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11548505/v1](https://doi.org/10.21203/rs.3.rs-11548505/v1)
-33. Jian Zhou, Olga G Troyanskaya. Predicting effects of noncoding variants with deep learning–based sequence model. *Nat Methods*. 2015. doi: [10.1038/nmeth.3547](https://doi.org/10.1038/nmeth.3547) PMID: [26301843](https://pubmed.ncbi.nlm.nih.gov/26301843/)
+23. Anirudha M, Ashwin Acharya, Rajashree Shettar, et al.. RABANT: Lottery Ticket Compression of Genomic Transformers for Clinically Oriented Variant Pathogenicity Classification. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11639937/v1](https://doi.org/10.21203/rs.3.rs-11639937/v1)
+24. Eric Nguyen, Michael Poli, Matthew G. Durrant, et al.. Sequence modeling and design from molecular to genome scale with Evo. *Science*. 2024. doi: [10.1126/science.ado9336](https://doi.org/10.1126/science.ado9336) PMID: [39541441](https://pubmed.ncbi.nlm.nih.gov/39541441/)
+25. Anusri Pampari, Anna Shcherbina, Evgeny Z. Kvon, et al.. ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants. *bioRxiv*. 2024. doi: [10.1101/2024.12.25.630221](https://doi.org/10.1101/2024.12.25.630221)
+26. Alexander Rakowski, Christoph Lippert. Multiple instance fine-mapping: Predicting causal regulatory variants with a deep sequence model. *PLoS genetics*. 2026. doi: [10.1371/journal.pgen.1012208](https://doi.org/10.1371/journal.pgen.1012208) PMID: [42371957](https://pubmed.ncbi.nlm.nih.gov/42371957/)
+27. Alexander Sasse, Bernard Ng, Anna E. Spiro, et al.. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. *Nat Genet*. 2023. doi: [10.1038/s41588-023-01524-6](https://doi.org/10.1038/s41588-023-01524-6) PMID: [38036778](https://pubmed.ncbi.nlm.nih.gov/38036778/)
+28. Divyanshi Srivastava, Anya Korsakova, Qingbo Wang, et al.. Borzoi-informed fine mapping improves causal variant prioritization in complex trait GWAS. *bioRxiv*. 2025. doi: [10.1101/2025.07.09.663936](https://doi.org/10.1101/2025.07.09.663936)
+29. Michael Sweeney, Hyun Min Kang. Practical utility of sequence-to-omics models for improving the reproducibility of genetic fine-mapping. *bioRxiv*. 2026. doi: [10.64898/2026.02.04.703796](https://doi.org/10.64898/2026.02.04.703796) PMID: [41676556](https://pubmed.ncbi.nlm.nih.gov/41676556/)
+30. Caleb The-Tjoean, Hamid Alinejad-Rokny, Irina Voineagu. Benchmarking sequence-to-function models and mapping enhancer–gene interactions with E2GScore. *bioRxiv*. 2026. doi: [10.64898/2026.11.24.769033](https://doi.org/10.64898/2026.11.24.769033)
+31. Moustafa Zein, Aboul Ella Hassanien. SpliceVarMech: A causal generative framework for mechanistic interpretation of non-canonical splicing variants. *bioRxiv*. 2026. doi: [10.64898/2026.11.19.767866](https://doi.org/10.64898/2026.11.19.767866)
+32. Yan Zeng, Qinfeng Liu, Guisheng Liao, et al.. EditFinder: A Sequence-Based Model for A-to-I RNA Editing Identification and Characterization of Genetic Variant Effects. *bioRxiv*. 2026. doi: [10.64898/2026.11.23.768754](https://doi.org/10.64898/2026.11.23.768754)
+33. Tony Zeng, Yang I Li. Predicting RNA splicing from DNA sequence using Pangolin. *Genome Biol*. 2022. doi: [10.1186/s13059-022-02664-4](https://doi.org/10.1186/s13059-022-02664-4)
+34. Yu Zhang, Da Lin, Ying Chen, et al.. Limited cross-model agreement in predicted RNA effects of complete non-reference human insertions. *Research Square*. 2026. doi: [10.21203/rs.3.rs-11548505/v1](https://doi.org/10.21203/rs.3.rs-11548505/v1)
+35. Jian Zhou, Olga G Troyanskaya. Predicting effects of noncoding variants with deep learning–based sequence model. *Nat Methods*. 2015. doi: [10.1038/nmeth.3547](https://doi.org/10.1038/nmeth.3547) PMID: [26301843](https://pubmed.ncbi.nlm.nih.gov/26301843/)
 
 ## Fine mapping
 
