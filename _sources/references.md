@@ -1,6 +1,6 @@
 # References
 
-606 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
+607 papers. {download}`Download all as BibTeX <_static/library/references.bib>`
 
 ## Functional interpretation of GWAS
 
@@ -494,12 +494,13 @@
 7. The All of Us Research Program Genomics Investigators, Manuscript Writing Group, Alexander G. Bick, et al.. Genomic data in the All of Us Research Program. *Nature*. 2024. doi: [10.1038/s41586-023-06957-x](https://doi.org/10.1038/s41586-023-06957-x) PMID: [38374255](https://pubmed.ncbi.nlm.nih.gov/38374255/)
 8. The All of Us Research Program Investigators. The “All of Us” Research Program. *N Engl J Med*. 2019. doi: [10.1056/nejmsr1809937](https://doi.org/10.1056/nejmsr1809937) PMID: [31412182](https://pubmed.ncbi.nlm.nih.gov/31412182/)
 9. Konrad J. Karczewski, Laurent C. Francioli, Grace Tiao, et al.. The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature*. 2020. doi: [10.1038/s41586-020-2308-7](https://doi.org/10.1038/s41586-020-2308-7) PMID: [32461654](https://pubmed.ncbi.nlm.nih.gov/32461654/)
-10. Mitja I. Kurki, Juha Karjalainen, Priit Palta, et al.. FinnGen provides genetic insights from a well-phenotyped isolated population. *Nature*. 2023. doi: [10.1038/s41586-022-05473-8](https://doi.org/10.1038/s41586-022-05473-8) PMID: [36653562](https://pubmed.ncbi.nlm.nih.gov/36653562/)
-11. Akiko Nagai, Makoto Hirata, Yoichiro Kamatani, et al.. Overview of the BioBank Japan Project: Study design and profile. *Journal of Epidemiology*. 2017. doi: [10.1016/j.je.2016.12.005](https://doi.org/10.1016/j.je.2016.12.005) PMID: [28189464](https://pubmed.ncbi.nlm.nih.gov/28189464/)
-12. Cathie Sudlow, John Gallacher, Naomi Allen, et al.. UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age. *PLoS Med*. 2015. doi: [10.1371/journal.pmed.1001779](https://doi.org/10.1371/journal.pmed.1001779) PMID: [25826379](https://pubmed.ncbi.nlm.nih.gov/25826379/)
-13. Daniel Taliun, Daniel N. Harris, Michael D. Kessler, et al.. Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program. *Nature*. 2021. doi: [10.1038/s41586-021-03205-y](https://doi.org/10.1038/s41586-021-03205-y) PMID: [33568819](https://pubmed.ncbi.nlm.nih.gov/33568819/)
-14. Bharathram Uppili, Ankit Mukherjee, Sanjay Deshpande, et al.. GI-DB: a comprehensive variant database for exploring the extensive genetic diversity of the Indian population. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1179](https://doi.org/10.1093/nar/gkag1179) PMID: [43053325](https://pubmed.ncbi.nlm.nih.gov/43053325/)
-15. SB Whitbourne, AR Williams, JVV Brewer, et al.. Overview of recruitment strategies to reach the million milestone and characterization of the Million Veteran Program cohort. *PLoS One*. 2026. doi: [10.1371/journal.pone.0362460](https://doi.org/10.1371/journal.pone.0362460) PMID: [43071672](https://pubmed.ncbi.nlm.nih.gov/43071672/)
+10. Mikaella Kontopoulou, Maria Xenophontos, Carsten Werner Lederer, et al.. Analyzing Globin Gene Variation in gnomAD: Implications for Variant Interpretation in Hemoglobinopathies. *International Journal of Molecular Sciences*. 2026. doi: [10.3390/ijms272210255](https://doi.org/10.3390/ijms272210255) PMID: [43091882](https://pubmed.ncbi.nlm.nih.gov/43091882/)
+11. Mitja I. Kurki, Juha Karjalainen, Priit Palta, et al.. FinnGen provides genetic insights from a well-phenotyped isolated population. *Nature*. 2023. doi: [10.1038/s41586-022-05473-8](https://doi.org/10.1038/s41586-022-05473-8) PMID: [36653562](https://pubmed.ncbi.nlm.nih.gov/36653562/)
+12. Akiko Nagai, Makoto Hirata, Yoichiro Kamatani, et al.. Overview of the BioBank Japan Project: Study design and profile. *Journal of Epidemiology*. 2017. doi: [10.1016/j.je.2016.12.005](https://doi.org/10.1016/j.je.2016.12.005) PMID: [28189464](https://pubmed.ncbi.nlm.nih.gov/28189464/)
+13. Cathie Sudlow, John Gallacher, Naomi Allen, et al.. UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age. *PLoS Med*. 2015. doi: [10.1371/journal.pmed.1001779](https://doi.org/10.1371/journal.pmed.1001779) PMID: [25826379](https://pubmed.ncbi.nlm.nih.gov/25826379/)
+14. Daniel Taliun, Daniel N. Harris, Michael D. Kessler, et al.. Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program. *Nature*. 2021. doi: [10.1038/s41586-021-03205-y](https://doi.org/10.1038/s41586-021-03205-y) PMID: [33568819](https://pubmed.ncbi.nlm.nih.gov/33568819/)
+15. Bharathram Uppili, Ankit Mukherjee, Sanjay Deshpande, et al.. GI-DB: a comprehensive variant database for exploring the extensive genetic diversity of the Indian population. *Nucleic Acids Research*. 2026. doi: [10.1093/nar/gkag1179](https://doi.org/10.1093/nar/gkag1179) PMID: [43053325](https://pubmed.ncbi.nlm.nih.gov/43053325/)
+16. SB Whitbourne, AR Williams, JVV Brewer, et al.. Overview of recruitment strategies to reach the million milestone and characterization of the Million Veteran Program cohort. *PLoS One*. 2026. doi: [10.1371/journal.pone.0362460](https://doi.org/10.1371/journal.pone.0362460) PMID: [43071672](https://pubmed.ncbi.nlm.nih.gov/43071672/)
 
 ## Resources: GWASs
 
