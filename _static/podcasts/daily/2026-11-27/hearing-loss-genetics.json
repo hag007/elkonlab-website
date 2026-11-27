@@ -1,0 +1,83 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "49595b52-dfbc-386a-8858-b5402ea970b7"
+ ],
+ "topic": "Hearing loss genetics",
+ "slug": "hearing-loss-genetics",
+ "date": "2026-11-27",
+ "title": "Hearing loss genetics · Friday, November 27",
+ "seconds": 105.9,
+ "drive": "https://drive.google.com/open?id=1phLIWcZdxiN-oN1EloShT81i0UxjnqNu",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Hearing loss genetics, for Friday, November 27."
+  },
+  {
+   "t": 7.1,
+   "s": "A",
+   "text": "Let's turn to hearing loss genetics, where we have one new preprint today."
+  },
+  {
+   "t": 11.48,
+   "s": "B",
+   "text": "It's from the Alsina lab, posted on bioRxiv. The question is what sall1a does in the inner ear. It's the zebrafish counterpart of SALL1, the gene behind Townes-Brocks syndrome."
+  },
+  {
+   "t": 23.74,
+   "s": "A",
+   "text": "They first looked at timing. In hair cells, sall1a turns on after Pou4f3 and Gfi1, two well-known factors in hair-cell development. So it acts downstream of the early specification program."
+  },
+  {
+   "t": 36.99,
+   "s": "B",
+   "text": "That fits with what they found when they knocked it out with CRISPR. Hair cells are still specified, but they don't mature properly."
+  },
+  {
+   "t": 44.53,
+   "s": "A",
+   "text": "The mutants have fewer active hair cells and lose expression of mature hair-cell genes. At the whole-animal level they show balance defects and a weaker startle response."
+  },
+  {
+   "t": 54.67,
+   "s": "B",
+   "text": "So the defect shows up at the cellular, molecular and behavioral levels, which makes the maturation story more convincing. It also suggests a possible mechanism for the inner-ear side of Townes-Brocks syndrome."
+  },
+  {
+   "t": 68.74,
+   "s": "A",
+   "text": "A few cautions, though. This is a preprint and hasn't been peer reviewed, and we only have the summary to go on, so we can't say anything about effect sizes or how many fish they studied."
+  },
+  {
+   "t": 80.16,
+   "s": "B",
+   "text": "It's also a zebrafish model. Zebrafish hair cells are a powerful system, but whether mammalian SALL1 plays the same maturation role still needs to be tested directly."
+  },
+  {
+   "t": 92.12,
+   "s": "A",
+   "text": "The takeaway: sall1a seems to act after hair cells are specified, as a switch for their maturation, which gives Townes-Brocks hearing loss a plausible developmental explanation to test in mammals."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Hearing loss genetics",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/hearing-loss-genetics/papers.html",
+   "papers": [
+    {
+     "title": "Sall1a, a transcription factor responsible for the Townes-Brocks syndrome, is involved in hair cell maturation",
+     "authors": "Nerea Montedeoca et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.20.768075",
+     "start": 11.5
+    }
+   ]
+  }
+ ]
+}

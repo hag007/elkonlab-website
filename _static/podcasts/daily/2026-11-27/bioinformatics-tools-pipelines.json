@@ -1,0 +1,180 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "10ae91da-c6c8-3dad-86d7-60b00df43d44",
+  "29c44a42-78eb-3ec5-81a4-bb7b981817b1",
+  "2a85a404-3826-33c8-a561-579d5e37641e",
+  "42f8eaf5-2b2b-38f1-8242-2f0df780fce2",
+  "6ac4fd9d-49be-31eb-8895-d766c5697944",
+  "b25fd156-02d1-3921-a7f3-24ece713e4c8",
+  "bf6e8733-83ab-3a4f-a4f0-6a00a61d74eb",
+  "fab0018e-eb8c-32d5-9163-db7cd0d1fe05",
+  "fbc4144b-33e9-37cf-b1a6-8b02c0a35a2f"
+ ],
+ "topic": "Bioinformatics tools & pipelines",
+ "slug": "bioinformatics-tools-pipelines",
+ "date": "2026-11-27",
+ "title": "Bioinformatics tools & pipelines · Friday, November 27",
+ "seconds": 199.4,
+ "drive": "https://drive.google.com/open?id=1IAd6koeXv8yvEole2YHHWcoI7jo5djbw",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Friday, November 27."
+  },
+  {
+   "t": 8.23,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where speed and reproducibility run through everything today."
+  },
+  {
+   "t": 15.47,
+   "s": "B",
+   "text": "First, BRISANCE, a bioRxiv preprint from the Santos lab. It's a Nextflow pipeline built on NVIDIA Parabricks that calls somatic single-nucleotide variants and indels from tumor-normal whole genomes."
+  },
+  {
+   "t": 30.18,
+   "s": "A",
+   "text": "On the HG008 pancreatic cancer reference, runtime fell from 219 hours to 11, about a twenty-fold speedup over CPU. Its calls overlapped with DRAGEN by about 74 percent."
+  },
+  {
+   "t": 44.37,
+   "s": "B",
+   "text": "That means roughly a quarter of calls differ, and it rests on a single reference sample in a preprint. Still, the configuration-based interface is aimed at reproducible runs."
+  },
+  {
+   "t": 55.82,
+   "s": "A",
+   "text": "Next, ProReT from the Cao lab, published in Bioinformatics. It's an R package for drug repurposing that compares disease and drug signatures as coordinated transcriptional programs instead of single genes."
+  },
+  {
+   "t": 69.73,
+   "s": "B",
+   "text": "Across 25 disease views and 1,728 compounds, the programs kept drugs with the same mechanism together and beat generic dimensionality-reduction baselines. In multiple myeloma it ranked established proteasome inhibitors highly, and that held in an independent cohort."
+  },
+  {
+   "t": 90.67,
+   "s": "A",
+   "text": "Recovering known drugs is a sanity check rather than discovery, but the independent cohort is encouraging."
+  },
+  {
+   "t": 97.57,
+   "s": "B",
+   "text": "Third, Xen-Spat from the Crosby lab in Genes, for Xenium-type spatial data. It keeps one set of cell-type labels across four colocalization analyses, such as the Morisita index and hotspot detection."
+  },
+  {
+   "t": 111.96,
+   "s": "A",
+   "text": "In six HER2-positive breast cancer biopsies, macrophages were enriched near tumor cells in every sample, and it reproduced a published MMP11 regional difference in an independent dataset. Six biopsies is a small set, though."
+  },
+  {
+   "t": 127.45,
+   "s": "B",
+   "text": "Briefly, the rest. RNAdecayCafe, from the Simon lab in Genome Research, is an atlas of RNA half-lives from 11 human cell lines, with all the data processed the same way."
+  },
+  {
+   "t": 141.56,
+   "s": "A",
+   "text": "The Rivas lab's RNAhub2 preprint uses prefiltering and genome compression to extend structural RNA homology search to about 5,000 eukaryotic species."
+  },
+  {
+   "t": 153.82,
+   "s": "B",
+   "text": "Geneslator, from the Alaimo lab in BMC Bioinformatics, handles gene identifier conversion and ortholog mapping across eight model organisms."
+  },
+  {
+   "t": 165.41,
+   "s": "A",
+   "text": "And three more bioRxiv preprints: MEAM-OWL from the Tsugama lab links promoter motifs to expression in the browser, PAannotate from the Bollyky lab explores 5,821 Pseudomonas aeruginosa transcriptomes, and StarCrew from the Vogan lab characterizes cargo genes in fungal Starship elements."
+  },
+  {
+   "t": 187.46,
+   "s": "B",
+   "text": "The takeaway: these tools gain most from consistent processing, but many are tested on small benchmarks, so check the validation before you rely on them."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Bioinformatics tools & pipelines",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
+   "papers": [
+    {
+     "title": "BRISANCE: A GPU-Accelerated Pipeline for Somatic Short-Variant Detection in Whole-Genome Sequencing Data",
+     "authors": "Murilo Porfirio de Aguiar et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768872",
+     "start": 15.5
+    },
+    {
+     "title": "RNAhub2: prefiltering and compression enable scalable structure-based RNA discovery",
+     "authors": "Agata Kilar et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768864",
+     "start": 141.6
+    },
+    {
+     "title": "MEAM-OWL for browser-based analysis of motif enrichment and associations with gene expression",
+     "authors": "Xin Jin et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.17.767221",
+     "start": 165.4
+    },
+    {
+     "title": "PAannotate: Software for Exploring Pseudomonas aeruginosa Gene-Expression Associations from Transcriptomic Data",
+     "authors": "Robert William Targ and Paul Bollyky",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768722",
+     "start": 165.4
+    },
+    {
+     "title": "Geneslator: an R package for comprehensive gene identifier conversion and annotation",
+     "authors": "Giulia Cavallaro et al.",
+     "source": "BMC Bioinformatics",
+     "date": "2026-09-02",
+     "url": "https://doi.org/10.1186/s12859-026-06617-7",
+     "start": 153.8
+    },
+    {
+     "title": "The RNAdecayCafe atlas of RNA half-life estimates across multiple human cell lines",
+     "authors": "Isaac W Vock et al.",
+     "source": "Genome Research",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1101/gr.282756.126",
+     "start": 127.5
+    },
+    {
+     "title": "StarCrew: A pipeline for exploratory analysis of Starship cargo",
+     "authors": "Andres Felipe Lizcano Salas et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.19.767472",
+     "start": 165.4
+    },
+    {
+     "title": "Xen-Spat: An Analysis Pipeline for Imaging-Based Spatial Transcriptomic Data to Quantify Cellular Colocalization in the Tumor Microenvironment",
+     "authors": "J Joseph et al.",
+     "source": "Genes (Basel)",
+     "date": "2026-10-25",
+     "url": "https://doi.org/10.3390/genes17111333",
+     "start": 97.6
+    },
+    {
+     "title": "ProReT: Context-dependent transcriptional program spaces for interpretable transcriptomic drug repurposing",
+     "authors": "Jiazhi Ren et al.",
+     "source": "Bioinformatics",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1093/bioinformatics/btag866",
+     "start": 55.8
+    }
+   ]
+  }
+ ]
+}

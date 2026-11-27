@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "7beead17-32cb-3ac9-9a8b-8dd0115ba216",
+  "996cb073-1d10-313a-b83b-8f9f1dba2613"
+ ],
+ "topic": "Non-coding variant effect prediction",
+ "slug": "non-coding-variant-effect-prediction",
+ "date": "2026-11-27",
+ "title": "Non-coding variant effect prediction · Friday, November 27",
+ "seconds": 139.2,
+ "drive": "https://drive.google.com/open?id=1BoxIY54RlFU2cSaw2k2AG2ksS6T7SQBG",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Non-coding variant effect prediction, for Friday, November 27."
+  },
+  {
+   "t": 7.88,
+   "s": "A",
+   "text": "Let's turn to non-coding variant effect prediction, where two new preprints use large sequence models in quite different ways."
+  },
+  {
+   "t": 15.44,
+   "s": "B",
+   "text": "The first is from the Badarinath lab, posted on Research Square. They ask whether a big genomic language model can be made small enough to use for clinical variant scoring."
+  },
+  {
+   "t": 26.59,
+   "s": "A",
+   "text": "They started from Nucleotide Transformer version two, the 100 million parameter model, and pruned it with lottery-ticket rewinding. They then used it to classify variants by comparing the reference and alternate alleles, on about 217 thousand variants drawn from ClinVar, dbSNP, gnomAD and cBioPortal."
+  },
+  {
+   "t": 48.06,
+   "s": "B",
+   "text": "With half the weights removed, it did as well as the full model, with an AUROC of about 88. It also beat a model of similar size trained from scratch."
+  },
+  {
+   "t": 58.79,
+   "s": "A",
+   "text": "It's a preprint, though, and those variant sources overlap a lot, so I'd want to see how the training and test variants were split before trusting that number for clinical use."
+  },
+  {
+   "t": 68.68,
+   "s": "B",
+   "text": "The second preprint, from the Voineagu lab on bioRxiv, introduces E2GScore. It's a common way to pull enhancer-to-gene predictions out of sequence-to-function models."
+  },
+  {
+   "t": 81.15,
+   "s": "A",
+   "text": "The authors tested seven models against CRISPR interference screens in K562 cells and in astrocytes. AlphaGenome versions one and two did best, matching or beating predictors that rely on experimental data."
+  },
+  {
+   "t": 96.47,
+   "s": "B",
+   "text": "They also found that input gradients, which are cheap to compute, worked as well as in silico mutagenesis. Then they used AlphaGenome one to build E2GMap, a genome-wide set of enhancer-gene scores across 454 human biosamples."
+  },
+  {
+   "t": 115.23,
+   "s": "A",
+   "text": "The validation covers only two cell contexts, so the other biosamples rest on the model alone. Still, both papers point to the same practical goal of making these models cheaper to run."
+  },
+  {
+   "t": 126.93,
+   "s": "B",
+   "text": "The takeaway is that pruning and gradient tricks can make large sequence models practical, but each claim still needs validation in more cell types and on independent data."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Non-coding variant effect prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/non-coding-variant-effect-prediction/papers.html",
+   "papers": [
+    {
+     "title": "RABANT: Lottery Ticket Compression of Genomic Transformers for Clinically Oriented Variant Pathogenicity Classification",
+     "authors": "Anirudha M et al.",
+     "source": "Research Square",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.21203/rs.3.rs-11639937/v1",
+     "start": 15.4
+    },
+    {
+     "title": "Benchmarking sequence-to-function models and mapping enhancer–gene interactions with E2GScore",
+     "authors": "Caleb The-Tjoean et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.24.769033",
+     "start": 68.7
+    }
+   ]
+  }
+ ]
+}

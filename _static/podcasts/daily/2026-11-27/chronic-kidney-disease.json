@@ -1,0 +1,78 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "294fa744-855c-385f-9eb3-7df675f2adcb"
+ ],
+ "topic": "Chronic Kidney Disease",
+ "slug": "chronic-kidney-disease",
+ "date": "2026-11-27",
+ "title": "Chronic Kidney Disease · Friday, November 27",
+ "seconds": 116.2,
+ "drive": "https://drive.google.com/open?id=1h0DQXauhKNRq7suYerZrEybaq14TWMmr",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Chronic Kidney Disease, for Friday, November 27."
+  },
+  {
+   "t": 7.07,
+   "s": "A",
+   "text": "Let's turn to Chronic Kidney Disease, where we have one new preprint today."
+  },
+  {
+   "t": 11.45,
+   "s": "B",
+   "text": "It comes from the Liu lab and is posted on Research Square. They ask which genes, through their expression levels, might causally influence chronic kidney disease risk, and they use transcriptome-wide Mendelian randomization to answer it."
+  },
+  {
+   "t": 26.84,
+   "s": "A",
+   "text": "The instruments are blood cis-eQTLs for 15,285 expression traits, tested against chronic kidney disease outcomes in FinnGen. The interesting design choice is what they call locus-aware: instead of reporting every significant gene separately, they group correlated hits into loci so the same signal isn't counted twice."
+  },
+  {
+   "t": 49.42,
+   "s": "B",
+   "text": "That matters, because nearby genes often share eQTLs and inflate the apparent number of discoveries. Here 28 significant expression traits collapsed into just nine loci, and most of those sit in the MHC region."
+  },
+  {
+   "t": 65.11,
+   "s": "A",
+   "text": "Outside the MHC, two genes, ANKUB1 and RSAD2, also colocalized, which makes them the cleaner candidates to follow up. The MHC is famously hard to interpret, with its dense linkage disequilibrium and extreme diversity."
+  },
+  {
+   "t": 81.35,
+   "s": "B",
+   "text": "Some caveats. Replication in CKDGen went in the same direction but was weak, the expression data come from blood rather than kidney tissue, and this is a preprint that hasn't been peer reviewed."
+  },
+  {
+   "t": 95.19,
+   "s": "A",
+   "text": "The authors themselves say the candidates need functional follow-up, ideally in kidney cell types."
+  },
+  {
+   "t": 101.4,
+   "s": "B",
+   "text": "The takeaway: grouping correlated hits into loci gives a more honest count of signals, but ANKUB1 and RSAD2 still need confirmation in kidney tissue before anyone treats them as causal."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Chronic Kidney Disease",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/chronic-kidney-disease/papers.html",
+   "papers": [
+    {
+     "title": "Locus-aware transcriptome-wide Mendelian randomization prioritizes candidate loci and expression traits for chronic kidney disease",
+     "authors": "Wenda Wu et al.",
+     "source": "Research Square",
+     "date": "2026-10-22",
+     "url": "https://doi.org/10.21203/rs.3.rs-11185479/v1",
+     "start": 11.4
+    }
+   ]
+  }
+ ]
+}

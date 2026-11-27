@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "3cd70d72-01d5-3dbc-b3bd-c0708e4de7e6",
+  "6d3f4978-b488-391e-ba8d-329ddb220c05"
+ ],
+ "topic": "Resources: Atlases",
+ "slug": "resources-atlases",
+ "date": "2026-11-27",
+ "title": "Resources: Atlases · Friday, November 27",
+ "seconds": 135.0,
+ "drive": "https://drive.google.com/open?id=1Bwmvqn4aeHe0_FQ6Fx642FJnlRd3YYVg",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Atlases, for Friday, November 27."
+  },
+  {
+   "t": 7.33,
+   "s": "A",
+   "text": "Let's turn to Resources: Atlases, where we have two preprints, both on bioRxiv."
+  },
+  {
+   "t": 12.95,
+   "s": "B",
+   "text": "The first is BRIDGE, from the Qin lab. It goes after a familiar problem with GTEx: most donors are missing many tissues, and the gaps are worst in tissues that are hard to sample, like brain and heart."
+  },
+  {
+   "t": 26.63,
+   "s": "A",
+   "text": "Their approach is contrastive learning. The model imputes expression that is specific to both the donor and the tissue, so the goal is individual variation, not just a tissue average."
+  },
+  {
+   "t": 37.99,
+   "s": "B",
+   "text": "According to the summary, it recovers that individual variation better than earlier methods, and the biggest gains are in the least accessible tissues. The authors also release a fully imputed GTEx version eleven tensor of donor by tissue by gene expression."
+  },
+  {
+   "t": 56.47,
+   "s": "A",
+   "text": "That could be a useful resource for things like tissue-specific expression models. One caution: imputed values aren't measurements, and since we only have a summary, we can't say how big the improvements are."
+  },
+  {
+   "t": 68.41,
+   "s": "B",
+   "text": "Agreed. The second paper is CyteArc, from the Dhapola lab. It lets you analyze and integrate public single-cell atlases where they are stored remotely, without downloading them."
+  },
+  {
+   "t": 80.51,
+   "s": "A",
+   "text": "It scales to about one hundred million cells on ordinary CPUs and uses much less memory and disk than other tools. Analysis steps are saved and linked, so a finished cloud atlas can serve as a live reference for annotating new data."
+  },
+  {
+   "t": 95.5,
+   "s": "B",
+   "text": "It also comes with CyteBase, a repository of more than one hundred sixty million single-cell and spatial profiles. As a demonstration, the authors screened over thirty million blood cells and found rare circulating progenitors whose expansion tracks COVID-19 severity."
+  },
+  {
+   "t": 114.92,
+   "s": "A",
+   "text": "That's a strong showcase, but it's a preprint, and the COVID finding would need independent replication before anyone builds on it."
+  },
+  {
+   "t": 122.78,
+   "s": "B",
+   "text": "Taken together, both papers make existing atlases more useful, one by filling in missing tissues and the other by making huge collections searchable where they're stored."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Resources: Atlases",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-atlases/papers.html",
+   "papers": [
+    {
+     "title": "BRIDGE: inter-tissue imputation with contrastive learning improves recovery of donor-specific gene expression",
+     "authors": "Jingbo Yang et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768988",
+     "start": 12.9
+    },
+    {
+     "title": "CyteArc: in-place analysis and reuse of remote atlases at 100-million-cell scale",
+     "authors": "Gautam Ahuja et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768888",
+     "start": 68.4
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "34635c79-6c54-3235-be05-de1b0cd89e49",
+  "f47d0d6a-a484-3ab2-873c-1492dea8d567"
+ ],
+ "topic": "Methylation risk prediction",
+ "slug": "methylation-risk-prediction",
+ "date": "2026-11-27",
+ "title": "Methylation risk prediction · Friday, November 27",
+ "seconds": 154.2,
+ "drive": "https://drive.google.com/open?id=1k-JHc6GpnaDNsXDi5At-RJl9NrjItHP9",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Methylation risk prediction, for Friday, November 27."
+  },
+  {
+   "t": 7.46,
+   "s": "A",
+   "text": "Let's turn to methylation risk prediction, where both of today's papers lean on epigenetic clocks."
+  },
+  {
+   "t": 13.83,
+   "s": "B",
+   "text": "The first is from the Adair lab, in PLoS One. They asked whether combining several clocks gives a better picture of how adiposity relates to biological age acceleration than any single clock does."
+  },
+  {
+   "t": 28.23,
+   "s": "A",
+   "text": "What clocks did they combine, and how?"
+  },
+  {
+   "t": 30.57,
+   "s": "B",
+   "text": "Six of them: Horvath, Hannum, PhenoAge, GrimAge, DNA methylation telomere length, and DunedinPACE, in both standard and principal-component versions. They used factor analysis to merge these into one composite age-acceleration score called FactorAge, and applied it to 1,745 young adults in the Cebu Longitudinal Health and Nutrition Survey in the Philippines."
+  },
+  {
+   "t": 58.87,
+   "s": "A",
+   "text": "And body mass index, waist circumference, and waist-to-height ratio were all positively associated with the composite scores. Across the individual clocks, waist-to-height ratio showed the strongest links."
+  },
+  {
+   "t": 71.25,
+   "s": "B",
+   "text": "It's good to see a large, young, non-European cohort here. One caution is that a composite score is harder to interpret biologically than a single clock, and this is one cohort, so replication elsewhere would help."
+  },
+  {
+   "t": 86.04,
+   "s": "A",
+   "text": "The second paper is from the Ayas lab, in Chest. The question was whether more severe night-time oxygen desaturation in people with suspected sleep apnea goes with faster biological aging."
+  },
+  {
+   "t": 98.66,
+   "s": "B",
+   "text": "They profiled blood methylation on the EPIC array in 1,364 adults from a Canadian sleep network. A higher oxygen desaturation index was independently associated with PhenoAge acceleration and with faster DunedinPACE, but not with the first-generation clocks."
+  },
+  {
+   "t": 119.57,
+   "s": "A",
+   "text": "That pattern lines up with the first paper's rationale. The clocks trained on health outcomes or pace of aging pick up exposures that the clocks trained on chronological age miss."
+  },
+  {
+   "t": 130.27,
+   "s": "B",
+   "text": "The authors suggest these clocks could serve as biomarkers of morbidity related to sleep apnea. Since these are associations, longitudinal data would be needed before treating them as predictive."
+  },
+  {
+   "t": 143.31,
+   "s": "A",
+   "text": "So the takeaway is that which clock you choose matters, and the second-generation clocks seem to carry most of the signal linking methylation to modifiable risk."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Methylation risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/methylation-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Greater than the sum of its parts: Combining epigenetic clocks to characterize the association of biological age acceleration and adiposity in young Filipino adults",
+     "authors": "RS Voloshchuk et al.",
+     "source": "PLoS One",
+     "date": "2026",
+     "url": "https://doi.org/10.1371/journal.pone.0347070",
+     "start": 13.8
+    },
+    {
+     "title": "Epigenetic Aging and Severity of Nocturnal Intermittent Hypoxia",
+     "authors": "I Ostrovski et al.",
+     "source": "Chest",
+     "date": "2026",
+     "url": "https://doi.org/10.1016/j.chest.2026.11.010",
+     "start": 86.0
+    }
+   ]
+  }
+ ]
+}

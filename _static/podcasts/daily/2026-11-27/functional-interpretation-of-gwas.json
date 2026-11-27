@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "431648fb-962b-37d5-baec-d5d852df6322",
+  "6e0ef511-7708-3952-90ac-14e1a57e6933"
+ ],
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-27",
+ "title": "Functional interpretation of GWAS · Friday, November 27",
+ "seconds": 168.8,
+ "drive": "https://drive.google.com/open?id=1GIZ5q8QiQ_eJF3zNlMkMT9d8-dXjqVO1",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Friday, November 27."
+  },
+  {
+   "t": 8.08,
+   "s": "A",
+   "text": "Let's turn to functional interpretation of GWAS, where both new papers try to pin risk loci to specific cell states or tissues."
+  },
+  {
+   "t": 16.41,
+   "s": "B",
+   "text": "The first is a preprint on Research Square from the Wu lab. It asks which immune cell states carry the inherited effects on serum IgA levels and on IgA nephropathy risk."
+  },
+  {
+   "t": 28.0,
+   "s": "A",
+   "text": "They colocalized single-cell eQTLs from the OneK1K cohort, covering 24 immune subsets, with GWAS of serum IgA and of IgA nephropathy. They also used Mendelian randomization and found that higher IgA raises the risk of IgA nephropathy."
+  },
+  {
+   "t": 46.21,
+   "s": "B",
+   "text": "All 21 colocalizations fell in the HLA region. The cell-state pattern is the interesting part: class two genes colocalized only in antigen-presenting states such as naive B cells and dendritic cells, while class one genes colocalized in memory B cells, plasmablasts and regulatory T cells."
+  },
+  {
+   "t": 68.38,
+   "s": "A",
+   "text": "That split fits the textbook roles of class one and class two, which is reassuring. Still, HLA colocalization is notoriously hard because of extended linkage disequilibrium, and this has not yet been peer reviewed."
+  },
+  {
+   "t": 82.53,
+   "s": "B",
+   "text": "Agreed. The second paper, from the Liao lab in Endocrine, looks for genes behind the two main subtypes of primary aldosteronism, aldosterone-producing adenoma and bilateral hyperplasia."
+  },
+  {
+   "t": 97.18,
+   "s": "A",
+   "text": "They ran genome-wide Mendelian randomization with adrenal-specific eQTLs, then supported the hits with colocalization, pathway analysis and single-nucleus RNA sequencing. They report 168 candidate causal genes, enriched in aldosterone synthesis and lipid metabolism."
+  },
+  {
+   "t": 117.67,
+   "s": "B",
+   "text": "FBN2 stood out for the adenoma subtype and is expressed in aldosterone-producing cells. RXFP2 stood out for bilateral hyperplasia, where it shares causal variants with the trait."
+  },
+  {
+   "t": 131.41,
+   "s": "A",
+   "text": "Both papers use the same playbook: match the eQTLs to the relevant tissue or cell state, then layer colocalization on top of Mendelian randomization. For the aldosteronism work, the summary doesn't say how large the subtype GWAS were, so 168 genes should be read as candidates, not established causal genes."
+  },
+  {
+   "t": 153.33,
+   "s": "B",
+   "text": "The takeaway: eQTLs resolved by cell state and tissue are turning GWAS signals into testable mechanisms, but colocalization still needs functional follow-up before anyone calls a gene causal."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "Cell-state-resolved HLA class II regulation of serum IgA and its causal link to IgA nephropathy",
+     "authors": "Haoqi Shi and Jianhua Wu",
+     "source": "Research Square",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.21203/rs.3.rs-11731147/v1",
+     "start": 16.4
+    },
+    {
+     "title": "Unveiling the genetic architecture of primary aldosteronism: a multi-omics investigation into subtype-specific insights",
+     "authors": "Lede Lin et al.",
+     "source": "Endocrine",
+     "date": "2026",
+     "url": "https://doi.org/10.1007/s12020-026-04895-y",
+     "start": 82.5
+    }
+   ]
+  }
+ ]
+}

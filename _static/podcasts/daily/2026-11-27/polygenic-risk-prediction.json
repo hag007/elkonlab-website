@@ -1,0 +1,92 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "29e6c392-029f-3fa9-855f-1dfd7d77df44",
+  "b46ad2a7-bf5a-3392-aefc-5e0e7fc1ee71"
+ ],
+ "topic": "Polygenic risk prediction",
+ "slug": "polygenic-risk-prediction",
+ "date": "2026-11-27",
+ "title": "Polygenic risk prediction · Friday, November 27",
+ "seconds": 140.4,
+ "drive": "https://drive.google.com/open?id=1K5xSenjNEuA42iSqntjPJzYHhYBxz2tw",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Polygenic risk prediction, for Friday, November 27."
+  },
+  {
+   "t": 7.44,
+   "s": "A",
+   "text": "Let's turn to Polygenic risk prediction. Both of today's papers ask how far a score built from common variants can really take us."
+  },
+  {
+   "t": 15.51,
+   "s": "B",
+   "text": "The first comes from the Liang lab and appears in Metabolism. The authors used genomic structural equation modeling on European genome-wide association studies of seven cardiometabolic traits. They modeled one shared liability factor with cardiac, vascular and metabolic sub-factors."
+  },
+  {
+   "t": 35.89,
+   "s": "A",
+   "text": "That shared factor had 328 associated variants. In UK Biobank, people in the top decile of a polygenic score for that factor had two point eight fold higher risk than people in the bottom decile."
+  },
+  {
+   "t": 49.43,
+   "s": "B",
+   "text": "The twist is the comparison with proteins. A plasma proteomic risk score predicted better than the polygenic score, with an area under the curve of zero point seven four versus zero point six eight. Adding the genetic score to the proteomic score added little."
+  },
+  {
+   "t": 67.04,
+   "s": "A",
+   "text": "Keep in mind that the genetic data here are all from European ancestry. So we don't know how well the shared factor score transfers to other populations."
+  },
+  {
+   "t": 76.33,
+   "s": "B",
+   "text": "Transfer is exactly the issue in the second paper, from the Kuo lab in the Journal of Epidemiology and Global Health. The authors tested sixty-four published breast cancer polygenic scores from the PGS Catalog in twelve thousand four hundred eighty Taiwanese hospital patients."
+  },
+  {
+   "t": 95.81,
+   "s": "A",
+   "text": "They also built a combined meta score. A genetic algorithm picked high-impact variants from across all the published scores. In the discovery data the meta score beat most of them, with an area under the curve of zero point six nine."
+  },
+  {
+   "t": 109.86,
+   "s": "B",
+   "text": "But in independent validation it fell to zero point five four, barely above chance. A drop like that looks a lot like overfitting during variant selection. The authors take it as a sign that scores need population-specific tuning."
+  },
+  {
+   "t": 125.67,
+   "s": "A",
+   "text": "So the takeaway is that polygenic scores carry real signal, but their gains are modest, depend on ancestry and careful validation, and can be matched or beaten by direct molecular measurements like proteomics."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Polygenic risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/polygenic-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Multivariate genome-wide association study of cardiometabolic diseases reveals shared genetic architecture and enhances risk prediction through integrated polygenic and proteomic risk scores",
+     "authors": "X Li et al.",
+     "source": "Metabolism",
+     "date": "2026",
+     "url": "https://doi.org/10.1016/j.metabol.2026.156854",
+     "start": 15.5
+    },
+    {
+     "title": "Comparative Analysis of Multiple Polygenic Risk Scores for Predicting Breast Cancer",
+     "authors": "T H Chen et al.",
+     "source": "Journal of Epidemiology and Global Health",
+     "date": "2026-09-25",
+     "url": "https://doi.org/10.1007/s44197-026-00647-3",
+     "start": 76.3
+    }
+   ]
+  }
+ ]
+}
