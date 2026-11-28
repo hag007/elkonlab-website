@@ -1,0 +1,152 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "21ff186f-6f47-3dd1-9233-5f443c0d0fe6",
+  "2e15cb10-9437-33c2-aa81-112a5e38d5f8",
+  "3de1d18c-02f3-3bed-869e-e4e69585e08b",
+  "62ae58d4-3d06-30b2-be8c-4a068e437cd8",
+  "6ebb730e-ba6b-3784-b140-d1f45376e156",
+  "b2217132-3fd5-330a-a813-9b0c4a5ac6c2",
+  "ffd92077-df27-328a-ab1c-3e509362bd36"
+ ],
+ "topic": "Bioinformatics tools & pipelines",
+ "slug": "bioinformatics-tools-pipelines",
+ "date": "2026-11-28",
+ "title": "Bioinformatics tools & pipelines · Saturday, November 28",
+ "seconds": 184.3,
+ "drive": "https://drive.google.com/open?id=1L_qgs9Vm32yNQYJZwWb6SsvDWj9rcNT5",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Bioinformatics tools & pipelines, for Saturday, November 28."
+  },
+  {
+   "t": 8.12,
+   "s": "A",
+   "text": "Let's turn to Bioinformatics tools and pipelines, where this week's theme is making analyses easier to reproduce."
+  },
+  {
+   "t": 15.64,
+   "s": "B",
+   "text": "First, from the Ioannidis lab in Molecular Biology and Evolution, there's snputils. It's an open-source Python library that handles genotype, ancestry, phenotype and IBD data in one framework."
+  },
+  {
+   "t": 30.07,
+   "s": "A",
+   "text": "It targets the usual chain of command-line tools and scripts that is hard to maintain and reproduce. It covers QC, merging, population statistics, ancestry masking, PCA, admixture simulation and mapping, and GWAS at biobank scale."
+  },
+  {
+   "t": 46.25,
+   "s": "B",
+   "text": "In benchmarks it read data faster and ran much faster than established tools. Its PCA, allele-frequency and admixture-mapping results matched theirs. The summary gives no exact speedups, so it's worth checking those benchmarks before you switch."
+  },
+  {
+   "t": 62.55,
+   "s": "A",
+   "text": "Next is a bioRxiv preprint from the Idogawa lab that compares three generations of TCGA RNA-seq processing: legacy RSEM, GDC version one and GDC version two. Their static browser shows a gene's expression in five cancer cohorts under all three."
+  },
+  {
+   "t": 81.42,
+   "s": "B",
+   "text": "Under the GDC pipelines, genes with no exonic sequence of their own drop to zero, because reads that match more than one gene are thrown away. One example is TREX1, which is covered by ATRIP."
+  },
+  {
+   "t": 96.04,
+   "s": "A",
+   "text": "The good news is that you can predict which genes are affected from the annotation alone. So before you read a zero as silence, check your gene list."
+  },
+  {
+   "t": 104.61,
+   "s": "B",
+   "text": "Third, a preprint from the Lee lab called mRNAspect does real-time quality control of therapeutic mRNA with Nanopore direct RNA sequencing. Modified N1-methylpseudouridine distorts the signal, and their fine-tuned basecaller cut the error rate from 20.1 to 7.2 percent on held-out constructs."
+  },
+  {
+   "t": 129.26,
+   "s": "A",
+   "text": "Their poly-A correction also brought modified and unmodified tail estimates within 1.8 nucleotides of each other. Also on Nanopore, the Ozsahin lab's ONTOLOGY preprint pairs freeze-dried indexed PCR plates with a graphical interface for barcoding and metabarcoding."
+  },
+  {
+   "t": 148.0,
+   "s": "B",
+   "text": "In BMC Bioinformatics, the Rohr lab brings microscopy image analysis into Galaxy. The Heitkam lab's RepeatViewer preprint is a graphical tool for curating transposable elements."
+  },
+  {
+   "t": 161.38,
+   "s": "A",
+   "text": "And in STAR Protocols, the Currie lab walks through the influential R and Python ecosystem for network-based ranking of omics features, with Shiny apps for people who don't code."
+  },
+  {
+   "t": 172.91,
+   "s": "B",
+   "text": "The takeaway is that these tools make analysis easier, but the TCGA comparison shows that a pipeline's choices can quietly change your results."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Bioinformatics tools & pipelines",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/bioinformatics-tools-pipelines/papers.html",
+   "papers": [
+    {
+     "title": "snputils: A High-Performance Python Library for Genetic Variation and Population Structure",
+     "authors": "David Bonet et al.",
+     "source": "Molecular Biology and Evolution",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.1093/molbev/msag291",
+     "start": 15.6
+    },
+    {
+     "title": "ONTOLOGY™: Streamlined DNA Barcoding and Metabarcoding on Nanopore",
+     "authors": "Paul Hebert et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.23.768700",
+     "start": 129.3
+    },
+    {
+     "title": "Web-based analysis of microscopy images with Galaxy Image Analysis",
+     "authors": "Leonid Kostrykin et al.",
+     "source": "BMC Bioinformatics",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.1186/s12859-026-06755-y",
+     "start": 148.0
+    },
+    {
+     "title": "mRNAspect: Real-Time Quality Control of Therapeutic mRNA with N 1 -Methylpseudouridine Bias Correction Using Nanopore Direct RNA Sequencing",
+     "authors": "Sua Lee",
+     "source": "bioRxiv",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.64898/2026.11.24.768843",
+     "start": 62.5
+    },
+    {
+     "title": "RepeatViewer: a platform for explorative analysis of repetitive DNAs",
+     "authors": "Jiangzhao Qian et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.23.768287",
+     "start": 148.0
+    },
+    {
+     "title": "Protocol for network influence analysis and omics feature prioritization using the influential R and Python ecosystem",
+     "authors": "Adrian Salavaty et al.",
+     "source": "STAR Protocols",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.1016/j.xpro.2026.105005",
+     "start": 161.4
+    },
+    {
+     "title": "TCGA Expression Explorer: a three-generation comparison of TCGA RNA-seq reveals pipeline-dependent loss of genes without unique exonic sequence",
+     "authors": "Shoichiro Tange and Masashi Idogawa",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.25.769128",
+     "start": 62.5
+    }
+   ]
+  }
+ ]
+}

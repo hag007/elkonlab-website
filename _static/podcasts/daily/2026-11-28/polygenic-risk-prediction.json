@@ -1,0 +1,73 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "cc58f191-1b07-37d7-a8b3-44ea9deb58c2"
+ ],
+ "topic": "Polygenic risk prediction",
+ "slug": "polygenic-risk-prediction",
+ "date": "2026-11-28",
+ "title": "Polygenic risk prediction · Saturday, November 28",
+ "seconds": 106.3,
+ "drive": "https://drive.google.com/open?id=1ryuJgnO5Bzkg5187Mq-RTv5FNTpjRob5",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Polygenic risk prediction, for Saturday, November 28."
+  },
+  {
+   "t": 7.37,
+   "s": "A",
+   "text": "Let's turn to Polygenic risk prediction. There's one new paper today, a preprint on bioRxiv from the Lee lab. It asks which linkage disequilibrium reference panel to use when a GWAS mixes ancestries."
+  },
+  {
+   "t": 20.37,
+   "s": "B",
+   "text": "The problem is a familiar one. A multi-ancestry meta-analysis contains a blend of LD patterns that no single reference panel matches. So people usually run PRS-CS with the panel for the majority ancestry."
+  },
+  {
+   "t": 35.89,
+   "s": "A",
+   "text": "The authors' method, PRS-LDmix, builds LD panels for each ancestry from a reference of thirty-two thousand nine hundred fifty-three people across twenty-nine populations. It then averages those panels by the cohort's ancestry proportions. The result goes straight into PRS-CS as the LD input."
+  },
+  {
+   "t": 55.57,
+   "s": "B",
+   "text": "They tested it in simulations that mixed European ancestry with African, East Asian or South Asian ancestry. The mixed panel matched the true LD more closely. Once the ancestries were balanced, it also gave more accurate scores than the majority-ancestry panel."
+  },
+  {
+   "t": 73.79,
+   "s": "A",
+   "text": "One caveat: it wasn't always better than just using the other ancestry's own panel. So how much it helps depends on the mix."
+  },
+  {
+   "t": 81.35,
+   "s": "B",
+   "text": "And all of this is simulation in a preprint. I'd want to see it on real admixed cohorts and real traits before changing a pipeline. Still, it's cheap to try, because it drops straight into PRS-CS."
+  },
+  {
+   "t": 94.95,
+   "s": "A",
+   "text": "The takeaway: matching the LD reference to a cohort's actual ancestry mix looks promising for diverse cohorts, but it still needs testing on real data."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Polygenic risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/polygenic-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "PRS-LDmix: ancestry-mixed linkage disequilibrium reference panels for polygenic risk prediction in diverse and admixed cohorts",
+     "authors": "Grace Koo and Donghyung Lee",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.24.767901",
+     "start": 7.4
+    }
+   ]
+  }
+ ]
+}

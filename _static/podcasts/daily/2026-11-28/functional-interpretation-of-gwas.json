@@ -1,0 +1,83 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "f1fcd3d0-c697-3182-935f-4b653ea44e41"
+ ],
+ "topic": "Functional interpretation of GWAS",
+ "slug": "functional-interpretation-of-gwas",
+ "date": "2026-11-28",
+ "title": "Functional interpretation of GWAS · Saturday, November 28",
+ "seconds": 110.9,
+ "drive": "https://drive.google.com/open?id=1QrYgzFqHc0mBb48-WibzyAmyQK6ILd_T",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Functional interpretation of GWAS, for Saturday, November 28."
+  },
+  {
+   "t": 8.01,
+   "s": "A",
+   "text": "Let's turn to Functional interpretation of GWAS. We have one preprint today, from the Li lab on medRxiv, about pelvic organ prolapse and bone mineral density."
+  },
+  {
+   "t": 18.17,
+   "s": "B",
+   "text": "The question comes from an odd result. Genome-wide Mendelian randomization found no causal link between the two traits, so the authors asked whether they might still share genetic signals at particular loci."
+  },
+  {
+   "t": 31.96,
+   "s": "A",
+   "text": "They took prolapse loci from FinnGen and tested each one for colocalization with estimated bone mineral density. The standout was the SMAD7 locus on chromosome 18q21.1, where the posterior probability of a shared signal was 0.98."
+  },
+  {
+   "t": 49.21,
+   "s": "B",
+   "text": "That sounds conclusive, but fine-mapping complicated it. The region broke into two separate causal signals, so one colocalization number doesn't capture everything going on there."
+  },
+  {
+   "t": 61.14,
+   "s": "A",
+   "text": "Then they tried to tie the signal to a gene. Blood and immune eQTL panels, plus GTEx vagina and uterus, showed no cis-eQTL effect on SMAD7."
+  },
+  {
+   "t": 71.84,
+   "s": "B",
+   "text": "So the gene and the direction of effect are still open, which the title says outright. The authors argue that answering it needs QTL data from pelvic-floor tissue."
+  },
+  {
+   "t": 82.79,
+   "s": "A",
+   "text": "A few caveats. It's a preprint, the prolapse loci come from a single Finnish cohort, and the bone trait is an estimate, not a direct density scan."
+  },
+  {
+   "t": 92.27,
+   "s": "B",
+   "text": "It's still a useful example. A null genome-wide causal test doesn't rule out sharing at a single locus."
+  },
+  {
+   "t": 99.6,
+   "s": "A",
+   "text": "The takeaway: a strong colocalization is where interpretation starts, and without data from the relevant tissue, the gene and mechanism remain open questions."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Functional interpretation of GWAS",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/functional-interpretation-of-gwas/papers.html",
+   "papers": [
+    {
+     "title": "Locus-restricted genetic overlap between pelvic organ prolapse and estimated bone mineral density at 18q21.1 (SMAD7), with unresolved regulatory direction",
+     "authors": "S He et al.",
+     "source": "medRxiv",
+     "date": "2026-11-27",
+     "url": "https://doi.org/10.64898/2026.11.24.26368921",
+     "start": 8.0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "21f3beec-d406-35ee-b661-37981090a33f",
+  "2d79f70a-1d3c-3fc4-a5ee-801a74e0bda0",
+  "349a0170-7638-3c86-9a42-42fcc89ed506",
+  "75cf43b6-5566-32f1-ace2-4672a4339248",
+  "98b8d404-8c12-35b2-a16a-cce3fd9597ff",
+  "ebcea07a-21ac-3897-901d-858643e0db79"
+ ],
+ "topic": "Hearing loss genetics",
+ "slug": "hearing-loss-genetics",
+ "date": "2026-11-28",
+ "title": "Hearing loss genetics · Saturday, November 28",
+ "seconds": 162.2,
+ "drive": "https://drive.google.com/open?id=1Ssx1eEFgOODbW-xQoPXqntLB2Bm5o-ur",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Hearing loss genetics, for Saturday, November 28."
+  },
+  {
+   "t": 7.01,
+   "s": "A",
+   "text": "Let's turn to Hearing loss genetics, where this week's papers are mostly about finding the right gene for the right family."
+  },
+  {
+   "t": 14.17,
+   "s": "B",
+   "text": "The largest one is from the Usami lab in Genes. A 158-gene panel in 18,475 Japanese patients found 29 patients from 22 families with candidate variants in P2RX2, the rare DFNA41 gene."
+  },
+  {
+   "t": 34.29,
+   "s": "A",
+   "text": "Most carried the same variant, c.1057G>A, a founder mutation. The loss started late, worsened over time, was often asymmetric, and may be linked to noise."
+  },
+  {
+   "t": 45.88,
+   "s": "B",
+   "text": "Because it's a founder allele, the yield will probably be lower outside Japan. And the noise link is only possible, not firm yet."
+  },
+  {
+   "t": 54.77,
+   "s": "A",
+   "text": "Next, from the Wang lab in the Journal of Translational Medicine. Exome sequencing of 83 Chinese families with dominant nonsyndromic hearing loss found POU4F3 variants in 9 of them, about 11 percent, all fully penetrant."
+  },
+  {
+   "t": 70.8,
+   "s": "B",
+   "text": "The surprise is that 60 percent of carriers had tinnitus, often before any measurable hearing loss. Truncating variants caused earlier, more severe loss. It's a small sample, but the authors argue POU4F3 should be prioritized on East Asian panels."
+  },
+  {
+   "t": 88.66,
+   "s": "A",
+   "text": "The third paper, from the Sun lab in the International Journal of Molecular Sciences, looks at recessive TMC1 patients with only one pathogenic variant after panel testing. Whole-genome sequencing found seven splice-altering variants and two recurrent deletions spanning exons 9 to 10."
+  },
+  {
+   "t": 107.87,
+   "s": "B",
+   "text": "That workflow, whole-genome sequencing then minigene and gap-PCR tests, could work for other recessive genes. A panel can easily miss deletions like those."
+  },
+  {
+   "t": 119.06,
+   "s": "A",
+   "text": "Three shorter ones. The Fu lab, in Genes, reports a homozygous LMX1A nonsense variant in a child from a consanguineous Yemeni family, though causality isn't proven."
+  },
+  {
+   "t": 131.08,
+   "s": "B",
+   "text": "The Dossena lab, in Biomolecules, proposes SCD5 as a candidate gene for enlarged vestibular aqueduct, based on a single patient. And the He lab, in Biomedicines, found only four small cohorts on mitochondrial variants and cisplatin ototoxicity, so that question is under-studied."
+  },
+  {
+   "t": 153.02,
+   "s": "A",
+   "text": "The takeaway is that deeper sequencing of large, ancestry-specific cohorts keeps finding causes that standard panels miss."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Hearing loss genetics",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/hearing-loss-genetics/papers.html",
+   "papers": [
+    {
+     "title": "Homozygous LMX1A c.937C>T (p.Arg313Ter) Variant Associated with Congenital Severe-to-Profound Sensorineural Hearing Loss: Clinical and Genetic Analysis of a Consanguineous Yemeni Family",
+     "authors": "Fuzhi Lin et al.",
+     "source": "Genes (Basel)",
+     "date": "2026-10-30",
+     "url": "https://doi.org/10.3390/genes17111373",
+     "start": 119.1
+    },
+    {
+     "title": "Hearing Loss and Enlarged Vestibular Aqueduct (EVA) in a Patient Negative for Canonical EVA Genes: Potential Role of SCD5",
+     "authors": "Raffaella Liuni et al.",
+     "source": "Biomolecules",
+     "date": "2026-10-26",
+     "url": "https://doi.org/10.3390/biom16111563",
+     "start": 131.1
+    },
+    {
+     "title": "Mitochondrial DNA Variation and Platinum-Induced Ototoxicity in Humans: A Systematic Evidence Map and Research Agenda",
+     "authors": "Jie Shi et al.",
+     "source": "Biomedicines",
+     "date": "2026-11-12",
+     "url": "https://doi.org/10.3390/biomedicines14112608",
+     "start": 131.1
+    },
+    {
+     "title": "POU4F3 variants are prevalent in Chinese patients with autosomal dominant non-syndromic hearing loss and concurrent tinnitus",
+     "authors": "Qiujing Zhang et al.",
+     "source": "J Transl Med",
+     "date": "2026-09-04",
+     "url": "https://doi.org/10.1186/s12967-026-08915-3",
+     "start": 54.8
+    },
+    {
+     "title": "Clinical Characteristics of Hearing Loss Caused by P2RX2 Gene Variants",
+     "authors": "Shogo Oyamada et al.",
+     "source": "Genes (Basel)",
+     "date": "2026-11-05",
+     "url": "https://doi.org/10.3390/genes17111397",
+     "start": 14.2
+    },
+    {
+     "title": "Whole-Genome Sequencing Reveals Hidden TMC1 Alleles (Splice-Altering Variants and Intragenic Deletions) in Monoallelic Hearing Loss",
+     "authors": "Junjie Cao et al.",
+     "source": "Int J Mol Sci",
+     "date": "2026-11-20",
+     "url": "https://doi.org/10.3390/ijms272210489",
+     "start": 88.7
+    }
+   ]
+  }
+ ]
+}

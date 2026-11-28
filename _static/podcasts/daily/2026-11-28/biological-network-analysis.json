@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "1db3f3b5-d577-3d4a-8a95-0de7086c2f72",
+  "8ca47f0e-6567-3292-bc34-28e6ac1f84a7"
+ ],
+ "topic": "Biological network analysis",
+ "slug": "biological-network-analysis",
+ "date": "2026-11-28",
+ "title": "Biological network analysis · Saturday, November 28",
+ "seconds": 140.4,
+ "drive": "https://drive.google.com/open?id=1Or4XE4nac1annagLG9_nNo1tfIMuSiNo",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Biological network analysis, for Saturday, November 28."
+  },
+  {
+   "t": 7.82,
+   "s": "A",
+   "text": "Let's turn to Biological network analysis."
+  },
+  {
+   "t": 10.96,
+   "s": "B",
+   "text": "The first paper is from the Chan lab, in the International Journal of Molecular Sciences, and it's about spinal and bulbar muscular atrophy. The question is which pathways might sit downstream of the mutant androgen receptor that drives the disease."
+  },
+  {
+   "t": 27.7,
+   "s": "A",
+   "text": "They built two curated networks in Ingenuity Pathway Analysis. One starts from canonical androgen receptor and disease molecules, and the other from gene sets that respond to the mutant receptor. Then they grew the network outward from nodes that hadn't been assigned to a pathway."
+  },
+  {
+   "t": 44.2,
+   "s": "B",
+   "text": "That expansion pointed to glucocorticoid receptor signaling as the pathway with the strongest overlap. Biologically that makes sense, since the two are closely related nuclear receptors."
+  },
+  {
+   "t": 56.96,
+   "s": "A",
+   "text": "The caveat matters, though. When they ran gene set enrichment on motor neuron data, the support was only exploratory and didn't survive permutation testing. So the authors present it as a hypothesis, not a finding."
+  },
+  {
+   "t": 70.52,
+   "s": "B",
+   "text": "The second paper raises a related question about how much a network is driving a result. It's DIGEST, from the Li lab in the Journal of Cheminformatics, and it ranks links between chemicals and diseases using a heterogeneous graph transformer."
+  },
+  {
+   "t": 87.64,
+   "s": "A",
+   "text": "The graph combines chemical structure, chemical-gene and protein-protein interaction networks, genetic susceptibility and single-cell expression. In osteoarthritis, with about fifty-two hundred chemicals and twenty-four thousand eight hundred genes, it reached an AUROC of zero point eight six under scaffold splits."
+  },
+  {
+   "t": 106.93,
+   "s": "B",
+   "text": "Scaffold splits are a fairly strict test, so that number looks good. But when they removed the chemical-gene network edges, performance fell to chance."
+  },
+  {
+   "t": 116.39,
+   "s": "A",
+   "text": "So the predictions depend mostly on how well connected things are in the network, and less on chemistry or expression. That's a well-known risk, because well-studied genes and compounds pick up more edges."
+  },
+  {
+   "t": 128.6,
+   "s": "B",
+   "text": "The takeaway from both papers is that networks are good at suggesting hypotheses, but we should check how much the result depends on the network's structure before we trust it."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Biological network analysis",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/biological-network-analysis/papers.html",
+   "papers": [
+    {
+     "title": "Network-Based Analysis Nominates Glucocorticoid Receptor Signaling as a Candidate Pathway in Mutant Androgen Receptor-Responsive SBMA Biology",
+     "authors": "Tsung-Pin Pai et al.",
+     "source": "International journal of molecular sciences",
+     "date": "2026-11-15",
+     "url": "https://doi.org/10.3390/ijms272210256",
+     "start": 11.0
+    },
+    {
+     "title": "DIGEST: a multimodal heterogeneous graph learning framework for disease-contextualized chemical prioritization",
+     "authors": "M D Nie et al.",
+     "source": "Journal of cheminformatics",
+     "date": "2026-11-24",
+     "url": "https://doi.org/10.1186/s13321-026-01346-8",
+     "start": 70.5
+    }
+   ]
+  }
+ ]
+}

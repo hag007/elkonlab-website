@@ -1,0 +1,83 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "5ec9f79c-7ea2-3a07-b7b5-d12f7794643d"
+ ],
+ "topic": "Non-coding variant effect prediction",
+ "slug": "non-coding-variant-effect-prediction",
+ "date": "2026-11-28",
+ "title": "Non-coding variant effect prediction · Saturday, November 28",
+ "seconds": 109.4,
+ "drive": "https://drive.google.com/open?id=13V8wiMXmTUJ9BFYaD5NldRODA4cMqKmh",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Non-coding variant effect prediction, for Saturday, November 28."
+  },
+  {
+   "t": 7.86,
+   "s": "A",
+   "text": "Let's turn to Non-coding variant effect prediction. One new preprint today, from the Gerstein lab, posted on bioRxiv."
+  },
+  {
+   "t": 15.57,
+   "s": "B",
+   "text": "It's called HapAdapter. It starts from a basic limitation: DNA foundation models are trained on the haploid reference genome, so they struggle to use a person's full diploid genome when predicting what a variant does."
+  },
+  {
+   "t": 30.64,
+   "s": "A",
+   "text": "So the question is whether you can retrofit a pretrained model to handle both haplotypes. How do the authors do it?"
+  },
+  {
+   "t": 37.43,
+   "s": "B",
+   "text": "They add a small Siamese adapter head on top of a pretrained model, here DNABERT-2 and AlphaGenome. The adapter takes diploid personal-genome context and predicts allele-specific effects, so the large model itself stays as it is."
+  },
+  {
+   "t": 54.19,
+   "s": "A",
+   "text": "And the result, across nine assays, is that it roughly doubled DNABERT-2's above-chance AUROC and roughly tripled AlphaGenome's for telling allele-specific effects apart."
+  },
+  {
+   "t": 64.99,
+   "s": "B",
+   "text": "Notice the phrase above chance. That is gain over the 0.5 baseline, so a tripling can still leave a modest absolute AUROC. The summary doesn't give the absolute values."
+  },
+  {
+   "t": 77.14,
+   "s": "A",
+   "text": "Good caveat. It's also a preprint, and we don't have the abstract, so we can't say which assays or individuals were used, or how well it generalizes to new people."
+  },
+  {
+   "t": 87.34,
+   "s": "B",
+   "text": "Still, a light adapter protocol is a practical way to reuse costly foundation models for personal genomes."
+  },
+  {
+   "t": 95.27,
+   "s": "A",
+   "text": "Takeaway: a small diploid-aware adapter clearly improves allele-specific prediction from foundation models, but we need absolute performance numbers and peer review before judging how big the gain really is."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Non-coding variant effect prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/non-coding-variant-effect-prediction/papers.html",
+   "papers": [
+    {
+     "title": "HapAdapter: A Transfer Learning Protocol for DNA Foundation Models Adapted to Diploid Personal Epigenomes",
+     "authors": "Joel Rozowsky et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-27",
+     "url": "https://doi.org/10.64898/2026.11.25.769310",
+     "start": 7.9
+    }
+   ]
+  }
+ ]
+}

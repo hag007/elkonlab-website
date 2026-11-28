@@ -1,0 +1,83 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "44634f24-6d31-3745-8ce3-072197fc17ef"
+ ],
+ "topic": "Resources: Biobanks",
+ "slug": "resources-biobanks",
+ "date": "2026-11-28",
+ "title": "Resources: Biobanks · Saturday, November 28",
+ "seconds": 109.6,
+ "drive": "https://drive.google.com/open?id=1kYLWs_xW-LFnz3IT9qo0b5Z-X1i4hXKZ",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Resources: Biobanks, for Saturday, November 28."
+  },
+  {
+   "t": 7.18,
+   "s": "A",
+   "text": "Let's turn to Resources: Biobanks, with one paper on how a reference panel upgrade changes variant interpretation."
+  },
+  {
+   "t": 15.0,
+   "s": "B",
+   "text": "This one is from the Kountouris lab, in the International Journal of Molecular Sciences. They ask how moving from gnomAD version two point one point one to version four point one changes the population frequency evidence used to classify alpha and beta globin variants under the ACMG and AMP rules."
+  },
+  {
+   "t": 37.68,
+   "s": "A",
+   "text": "That matters for hemoglobinopathies, where allele frequency is often the deciding evidence. What did they actually do?"
+  },
+  {
+   "t": 44.97,
+   "s": "B",
+   "text": "They pulled globin variants from both releases, harmonized them, matched them to ClinVar, and applied the frequency thresholds set by the hemoglobinopathy expert panel."
+  },
+  {
+   "t": 56.77,
+   "s": "A",
+   "text": "And the headline is scale. Version four point one holds about four times as many globin variants, and most of them are seen in only one ancestry group."
+  },
+  {
+   "t": 66.55,
+   "s": "B",
+   "text": "The authors say the newer release gives better frequency evidence for rare variants. For variants found in both releases, classifications mostly agree, with under one percent in conflict."
+  },
+  {
+   "t": 79.0,
+   "s": "A",
+   "text": "The caveat I'd flag is that ancestry-restricted variants lean heavily on how well each group is sampled, so a variant seen in one group may just reflect who was sequenced."
+  },
+  {
+   "t": 89.78,
+   "s": "B",
+   "text": "Agreed, and the summary doesn't say which ancestries drive the new variants, so labs should check group-specific counts before reclassifying anything."
+  },
+  {
+   "t": 99.6,
+   "s": "A",
+   "text": "Takeaway: the larger gnomAD release adds lots of new rare globin variants while leaving most existing classifications unchanged."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Resources: Biobanks",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/resources-biobanks/papers.html",
+   "papers": [
+    {
+     "title": "Analyzing Globin Gene Variation in gnomAD: Implications for Variant Interpretation in Hemoglobinopathies",
+     "authors": "Mikaella Kontopoulou et al.",
+     "source": "International Journal of Molecular Sciences",
+     "date": "2026-11-15",
+     "url": "https://doi.org/10.3390/ijms272210255",
+     "start": 15.0
+    }
+   ]
+  }
+ ]
+}

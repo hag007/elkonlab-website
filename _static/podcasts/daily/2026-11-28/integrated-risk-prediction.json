@@ -1,0 +1,78 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "37e6eb4b-c5ad-3190-8de3-04fa0ba25fc0"
+ ],
+ "topic": "Integrated risk prediction",
+ "slug": "integrated-risk-prediction",
+ "date": "2026-11-28",
+ "title": "Integrated risk prediction · Saturday, November 28",
+ "seconds": 117.4,
+ "drive": "https://drive.google.com/open?id=17DNzVtXW6Zqr6MQMQtlt6R-VxeUglI7t",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Integrated risk prediction, for Saturday, November 28."
+  },
+  {
+   "t": 7.37,
+   "s": "A",
+   "text": "Let's turn to integrated risk prediction, where today we have one paper that combines a single variant, age, and polygenic background."
+  },
+  {
+   "t": 16.04,
+   "s": "B",
+   "text": "It comes from the Kiryluk lab, published in JCI Insight. They focus on the T62P variant in uromodulin, the UMOD gene, which is an intermediate-risk variant for chronic kidney disease. Its penetrance is variable, and they wanted to know why."
+  },
+  {
+   "t": 34.27,
+   "s": "A",
+   "text": "The sample is big. They pooled 882,306 people from UK Biobank, All of Us, and MyCode, then tested whether the effect of T62P interacts with age and with a polygenic score for kidney disease."
+  },
+  {
+   "t": 50.51,
+   "s": "B",
+   "text": "Both turned out to modify penetrance. The striking number is for carriers in the top polygenic quintile, who had about five-fold higher risk of chronic kidney disease than the population average."
+  },
+  {
+   "t": 63.49,
+   "s": "A",
+   "text": "They also went beyond association. In tubular cell models, the mutant protein was retained in the endoplasmic reticulum and caused cellular stress, and that stress increased as the cells aged."
+  },
+  {
+   "t": 76.17,
+   "s": "B",
+   "text": "So the cell work gives a plausible mechanism for why age matters in the population data. One caution is that the summary doesn't break results down by ancestry, and that matters for polygenic scores, which often transfer poorly across populations."
+  },
+  {
+   "t": 92.93,
+   "s": "A",
+   "text": "Good point. Also, the five-fold figure is compared with the population average, not with noncarriers in the same quintile, so it's worth reading the full paper before you quote it as an interaction effect size."
+  },
+  {
+   "t": 105.88,
+   "s": "B",
+   "text": "The takeaway: a variant's risk can depend heavily on age and polygenic background, so combining both could make carrier risk estimates more personal."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Integrated risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/integrated-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Uromodulin T62P variant causes kidney tubular stress and injury modulated by age and polygenic risk",
+     "authors": "Atlas Khan et al.",
+     "source": "JCI Insight",
+     "date": "2026",
+     "url": "https://doi.org/10.1172/jci.insight.211749",
+     "start": 16.0
+    }
+   ]
+  }
+ ]
+}

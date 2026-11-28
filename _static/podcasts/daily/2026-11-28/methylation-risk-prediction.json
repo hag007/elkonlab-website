@@ -1,0 +1,97 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "d92ee0cd-0cd5-388e-9eae-565c9a07cfe5",
+  "fbc74e85-88f8-3588-9f66-4ff173506090"
+ ],
+ "topic": "Methylation risk prediction",
+ "slug": "methylation-risk-prediction",
+ "date": "2026-11-28",
+ "title": "Methylation risk prediction · Saturday, November 28",
+ "seconds": 134.5,
+ "drive": "https://drive.google.com/open?id=1krFrCY2oPEBfVz9TJrTOthQIcWkkOpBe",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Methylation risk prediction, for Saturday, November 28."
+  },
+  {
+   "t": 7.35,
+   "s": "A",
+   "text": "Let's turn to Methylation risk prediction. Today neither paper predicts a specific disease. Both use blood methylation markers of ageing and health instead."
+  },
+  {
+   "t": 16.62,
+   "s": "B",
+   "text": "The first is from the Muniz-Terrera lab, in Geroscience. They asked whether eating fruit, vegetables and fish relates to methylation markers of ageing and health in Generation Scotland, with dietary data on up to about eighty-seven hundred people."
+  },
+  {
+   "t": 33.61,
+   "s": "A",
+   "text": "The outcomes included GrimAge, PhenoAge, methylation-estimated telomere length, an interleukin six proxy and one hundred and nine protein EpiScores, all tested cross-sectionally."
+  },
+  {
+   "t": 45.84,
+   "s": "B",
+   "text": "Several food-biomarker links survived correction for multiple testing. But the authors say they need checking in other cohorts and over time. A single snapshot of diet can't show which way the effect runs, or rule out other lifestyle factors."
+  },
+  {
+   "t": 62.21,
+   "s": "A",
+   "text": "The second paper is from the Wang lab, in Clinical Epigenetics, on perceived psychological stress. They compared blood methylation in one hundred ninety-five young, healthy Chinese women, grouped by their Perceived Stress Scale scores."
+  },
+  {
+   "t": 76.62,
+   "s": "B",
+   "text": "An epigenome-wide scan found four CpGs associated with stress. The high-stress group also showed suggestive acceleration on a methylation-based facial age clock and on PhenoAge."
+  },
+  {
+   "t": 90.3,
+   "s": "A",
+   "text": "I'd underline suggestive. With fewer than two hundred people, those hits need replication, and a cohort of young women of one ancestry may not generalise."
+  },
+  {
+   "t": 100.21,
+   "s": "B",
+   "text": "There's a nice link, though. PhenoAge shows up in both, once as an outcome of diet and once of stress. It's becoming a common yardstick for exposures."
+  },
+  {
+   "t": 110.63,
+   "s": "A",
+   "text": "Which raises a question. Do these clocks capture real disease risk, or just track lifestyle and mood measured at one point in time?"
+  },
+  {
+   "t": 118.47,
+   "s": "B",
+   "text": "So here's the takeaway. Methylation clocks are picking up signals of diet and stress, but both studies measured people only once, and only follow-up studies that replicate the results could make these clocks into risk tools."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Methylation risk prediction",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/methylation-risk-prediction/papers.html",
+   "papers": [
+    {
+     "title": "Associations between fruit, vegetable and fish and epigenetic markers of ageing and protein EpiScores in Generation Scotland",
+     "authors": "Sarah Gregory et al.",
+     "source": "Geroscience",
+     "date": "2026",
+     "url": "https://doi.org/10.1007/s11357-026-02654-5",
+     "start": 16.6
+    },
+    {
+     "title": "Perceived psychological stress is associated with blood DNA methylation differences and suggestive epigenetic aging signatures in young healthy women",
+     "authors": "Wenran Cui et al.",
+     "source": "Clinical Epigenetics",
+     "date": "2026-09-04",
+     "url": "https://doi.org/10.1186/s13148-026-02233-7",
+     "start": 62.2
+    }
+   ]
+  }
+ ]
+}

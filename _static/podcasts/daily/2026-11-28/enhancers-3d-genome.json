@@ -1,0 +1,151 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "1b3c8516-59dd-3bac-97b5-bdb958a5b9ea",
+  "28d4cb28-7968-33c3-aee5-dac6e6a636f7",
+  "2c45b9fe-5474-31e3-88ac-59761daa7ea8",
+  "2ed7524d-23a9-3e47-a73d-90a9ef3562ec",
+  "89b5f9b0-5b84-38a3-98f3-f016d9831659",
+  "962292be-4864-34f4-a25f-259d1356ce50",
+  "97905d2e-3bbb-35db-a3f8-e64800a98bad",
+  "e409ca69-7673-3ae9-97bd-8590d99eea88"
+ ],
+ "topic": "Enhancers & 3D genome",
+ "slug": "enhancers-3d-genome",
+ "date": "2026-11-28",
+ "title": "Enhancers & 3D genome · Saturday, November 28",
+ "seconds": 173.1,
+ "drive": "https://drive.google.com/open?id=1doQG7uIDdDxpNL53JPq_jzWUUZgzQUAL",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Enhancers & 3D genome, for Saturday, November 28."
+  },
+  {
+   "t": 7.67,
+   "s": "A",
+   "text": "Let's turn to Enhancers and 3D genome, starting with timing. From the Achinger-Kawecka lab in Nucleic Acids Research: when androgen hits prostate cancer cells, what happens first, receptor binding, enhancer marks, or chromatin contacts?"
+  },
+  {
+   "t": 23.23,
+   "s": "B",
+   "text": "They tracked a multi-omics time course of androgen stimulation. The receptor binds promoters within five minutes, but at elements already marked by FOXA1, H3K27ac appears before the receptor arrives."
+  },
+  {
+   "t": 39.41,
+   "s": "A",
+   "text": "And 3D contacts are briefly disrupted rather than strengthened. Silencing receptor-linked contacts with CRISPR inhibition shut off distal target genes, so those loops are functional. It's one cell-line system, but the fine timing makes the ordering convincing."
+  },
+  {
+   "t": 55.65,
+   "s": "B",
+   "text": "Next, a Dekker lab bioRxiv preprint asks how much chromosome folding varies between cells, using single-cell Hi-C, modeling, FISH and RNA-seq across stem cell to hepatocyte differentiation."
+  },
+  {
+   "t": 70.96,
+   "s": "A",
+   "text": "Variability tracks compartment status and position in the nucleus. Pluripotent cells fold their genomes and express genes more variably, while differentiated cells are more consistent. It hasn't been peer reviewed yet."
+  },
+  {
+   "t": 84.17,
+   "s": "B",
+   "text": "A natural companion is Dory, from the Zang lab in Genome Biology, a statistical method for comparing groups of imaging-based chromatin traces. It picked up compartment switches and promoter-enhancer contacts linked to expression changes."
+  },
+  {
+   "t": 101.12,
+   "s": "A",
+   "text": "For the genetics crowd, the Jiang lab in Frontiers in Immunology looked up juvenile idiopathic arthritis variants from an earlier reporter assay in eQTL data. They were eQTLs across many immune cell types, linking each to candidate genes, though that doesn't establish causality."
+  },
+  {
+   "t": 120.5,
+   "s": "B",
+   "text": "Briefly, a few more. The Girgis lab in BMC Genomics presents EnhancerDetector, an interpretable network trained on human sequence that transfers to mouse and fly, and five of six predicted enhancers worked in transgenic flies."
+  },
+  {
+   "t": 137.64,
+   "s": "A",
+   "text": "The Rada-Iglesias lab in Nature Communications shows KMT2B keeps young LINE-1 elements active as enhancers of nearby genes. And two tumor preprints: the Jadhav lab finds SOX17 working with beta-catenin to switch on enhancers in intestinal adenomas, and the Ory lab finds super-enhancer profiles that separate osteosarcomas by metastatic capacity."
+  },
+  {
+   "t": 163.33,
+   "s": "B",
+   "text": "The takeaway: enhancer-gene links are becoming testable in time, in single cells, and at the level of individual variants."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Enhancers & 3D genome",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/enhancers-3d-genome/papers.html",
+   "papers": [
+    {
+     "title": "Differential analysis of image-based chromatin tracing data with Dory",
+     "authors": "Z Ma et al.",
+     "source": "Genome Biology",
+     "date": "2026-09-03",
+     "url": "https://doi.org/10.1186/s13059-026-04264-y",
+     "start": 84.2
+    },
+    {
+     "title": "EnhancerDetector: enhancer discovery from human to fly via interpretable deep learning",
+     "authors": "LM Solis et al.",
+     "source": "BMC Genomics",
+     "date": "2026-09-01",
+     "url": "https://doi.org/10.1186/s12864-026-13262-0",
+     "start": 120.5
+    },
+    {
+     "title": "Androgen stimulation rapidly reorganizes temporal 3D genome and epigenome states to trigger AR-mediated transcription in prostate cancer",
+     "authors": "EM Campbell et al.",
+     "source": "Nucleic Acids Research",
+     "date": "2026-11-23",
+     "url": "https://doi.org/10.1093/nar/gkag1197",
+     "start": 7.7
+    },
+    {
+     "title": "Pluripotent and differentiated cells display distinct genomic and nuclear landscapes of genome folding variability",
+     "authors": "X Huo et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-17",
+     "url": "https://doi.org/10.64898/2026.11.16.766639",
+     "start": 55.6
+    },
+    {
+     "title": "KMT2B facilitates long-range gene regulation through LINE1 elements",
+     "authors": "LZ Shahidian et al.",
+     "source": "Nature Communications",
+     "date": "2026-10-12",
+     "url": "https://doi.org/10.1038/s41467-026-78645-z",
+     "start": 137.6
+    },
+    {
+     "title": "Dynamic Transcription Factor Coupling Shapes Adaptive Enhancer Programs Driving Tumour Cell Heterogeneity and Growth",
+     "authors": "S Sharma et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.24.769040",
+     "start": 137.6
+    },
+    {
+     "title": "Combining a massively parallel reporter assay and human data to elucidate genetic mechanisms driving risk for juvenile idiopathic arthritis",
+     "authors": "JN Jarvis et al.",
+     "source": "Frontiers in Immunology",
+     "date": "2026-11-11",
+     "url": "https://doi.org/10.3389/fimmu.2026.1979717",
+     "start": 101.1
+    },
+    {
+     "title": "Active super-enhancers related genes profiling for the identification of key actors of osteosarcoma metastatic dissemination",
+     "authors": "M Lavaud et al.",
+     "source": "bioRxiv",
+     "date": "2026-11-26",
+     "url": "https://doi.org/10.64898/2026.11.25.769090",
+     "start": 137.6
+    }
+   ]
+  }
+ ]
+}

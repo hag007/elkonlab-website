@@ -1,0 +1,78 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "58918ae6-624c-3da1-a0c6-a6b46431cc61"
+ ],
+ "topic": "Chronic Kidney Disease",
+ "slug": "chronic-kidney-disease",
+ "date": "2026-11-28",
+ "title": "Chronic Kidney Disease · Saturday, November 28",
+ "seconds": 119.1,
+ "drive": "https://drive.google.com/open?id=1rjcQmKPmBga_mmXvzXwFkg7PBScNJFxd",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Chronic Kidney Disease, for Saturday, November 28."
+  },
+  {
+   "t": 7.03,
+   "s": "A",
+   "text": "Let's turn to Chronic Kidney Disease, with one preprint today on metabolic memory in diabetic kidney disease."
+  },
+  {
+   "t": 14.44,
+   "s": "B",
+   "text": "This comes from the Sandholm lab, posted on medRxiv. The question is whether years of high blood glucose leave a lasting mark on DNA methylation, and whether that mark helps explain why some people with type 1 diabetes go on to develop kidney disease."
+  },
+  {
+   "t": 32.22,
+   "s": "A",
+   "text": "They studied 1,245 people with type 1 diabetes from Finland and from the UK and Ireland. They found 17 CpG sites linked to long-term cumulative hyperglycaemia, and the strongest was at TXNIP."
+  },
+  {
+   "t": 47.63,
+   "s": "B",
+   "text": "What's interesting is that these methylation signals stayed stable even when short-term glucose changed. That's what you would expect from a molecular record of past exposure, not just a snapshot of current control."
+  },
+  {
+   "t": 61.72,
+   "s": "A",
+   "text": "Then they used Mendelian randomization, which suggested that methylation at a CpG in KLF11 has a causal effect on diabetic kidney disease. Kidney chromatin accessibility data and KLF11 expression back that up."
+  },
+  {
+   "t": 77.9,
+   "s": "B",
+   "text": "A few cautions. It's a preprint, the cohorts are of European ancestry, and with Mendelian randomization on methylation, instrument strength and pleiotropy are worth checking. The summary also doesn't say whether the findings replicated independently."
+  },
+  {
+   "t": 95.32,
+   "s": "A",
+   "text": "Still, tying a methylation mark to kidney regulatory data is a good way to move from association toward mechanism."
+  },
+  {
+   "t": 103.07,
+   "s": "B",
+   "text": "The takeaway: cumulative hyperglycaemia seems to leave stable methylation marks, and the one at KLF11 may be a causal epigenetic link between past glucose exposure and diabetic kidney disease."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Chronic Kidney Disease",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/chronic-kidney-disease/papers.html",
+   "papers": [
+    {
+     "title": "Long-Term Impact of Cumulative Hyperglycaemia on DNA Methylation and its Role in Diabetic Kidney Disease",
+     "authors": "Xiaoqi Luo et al.",
+     "source": "medRxiv",
+     "date": "2026-09-03",
+     "url": "https://doi.org/10.64898/2026.08.31.26361614",
+     "start": 14.4
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "kind": "daily",
+ "voice": "5",
+ "version": "5",
+ "papers": [
+  "1a821293-9afd-33a7-b47c-eea363c283f4",
+  "7bd16fd6-5ea9-3ebe-ac16-ec94880176c4",
+  "e0c84fb0-ab0f-3244-bb95-81417fd668c6",
+  "f81f50e0-5477-3a0f-aed0-a4abf3325049"
+ ],
+ "topic": "Single-cell omics & GWAS integration",
+ "slug": "single-cell-omics-gwas-integration",
+ "date": "2026-11-28",
+ "title": "Single-cell omics & GWAS integration · Saturday, November 28",
+ "seconds": 175.7,
+ "drive": "https://drive.google.com/open?id=1cwlyniRwPoceGf2lyG3NHJmHFEOyZ5fd",
+ "transcript": [
+  {
+   "t": 0.0,
+   "s": "A",
+   "text": "This is the Paper Library daily on Single-cell omics & GWAS integration, for Saturday, November 28."
+  },
+  {
+   "t": 8.42,
+   "s": "A",
+   "text": "Let's turn to single-cell omics and GWAS integration, where today's papers move from asking which cell type to asking which cell state."
+  },
+  {
+   "t": 16.96,
+   "s": "B",
+   "text": "The headline paper is from the Stitziel lab in Nature, on the non-coding risk for coronary artery disease. The authors profiled coronary arteries from 44 donors with single-nucleus multiome and mapped 11,269 chromatin accessibility QTLs."
+  },
+  {
+   "t": 37.07,
+   "s": "A",
+   "text": "Variant effects changed across smooth muscle cell states, and with Hi-C, CRISPR interference and Perturb-seq, the paper goes past annotation to perturbation."
+  },
+  {
+   "t": 47.04,
+   "s": "B",
+   "text": "It names AMOTL2 as a smooth muscle-specific disease gene, and points to extracellular matrix remodelling as a core program. Forty-four donors is modest, though, so those state-dependent effects need replication."
+  },
+  {
+   "t": 62.36,
+   "s": "A",
+   "text": "The Parker lab paper in Nature Communications is much larger: 281 skeletal muscle biopsies. The authors split single-nucleus ATAC fragments into nucleosome-free regions and phased nucleosomes to sharpen the mapping."
+  },
+  {
+   "t": 77.5,
+   "s": "B",
+   "text": "They map about 76 thousand nucleosome-free region QTLs and 25 thousand nucleosome QTLs, with 1,528 cases where accessibility likely drives nucleosome positioning. Hundreds colocalize with GWAS signals for grip strength, atrial fibrillation and fasting insulin."
+  },
+  {
+   "t": 100.63,
+   "s": "A",
+   "text": "So both papers refine what a chromatin QTL means, by cell state or by fragment structure. Turning to immune cells, the Liu lab in Genes combined OneK1K single-cell eQTLs from 20 immune subsets with an asthma GWAS of about 122 thousand cases."
+  },
+  {
+   "t": 120.25,
+   "s": "B",
+   "text": "Using SMR and colocalization, they report 46 genes tied to specific cell subsets. At 17q21, ORMDL3 colocalizes in B cells, while GSDMB colocalizes in NK cells and CD8 effector memory T cells."
+  },
+  {
+   "t": 139.33,
+   "s": "A",
+   "text": "Half of those genes have tractability evidence, but nothing was perturbed, so the cell-type assignments are statistical inferences, not tested mechanisms."
+  },
+  {
+   "t": 149.15,
+   "s": "B",
+   "text": "Briefly, the Ma lab in Brain Sciences built a 325 thousand nucleus substantia nigra atlas and ranked microglia as the cell type most linked to Parkinson's risk."
+  },
+  {
+   "t": 162.34,
+   "s": "A",
+   "text": "The takeaway is that GWAS integration is moving from naming a cell type to pinning risk on specific cell states and programs, and experimental perturbation is what makes those claims convincing."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Single-cell omics & GWAS integration",
+   "start": 0,
+   "page": "https://hag007.github.io/elkonlab-website/topics/single-cell-omics-gwas-integration/papers.html",
+   "papers": [
+    {
+     "title": "Single-cell variant-to-enhancer-to-gene map for coronary artery disease",
+     "authors": "Junedh M Amrute et al.",
+     "source": "Nature",
+     "date": "2026-11-25",
+     "url": "https://doi.org/10.1038/s41586-026-11275-z",
+     "start": 17.0
+    },
+    {
+     "title": "Genetic integration reveals causal effects of chromatin accessibility on nucleosome positioning across diverse muscle cells",
+     "authors": "Xiaoou Wang et al.",
+     "source": "Nature communications",
+     "date": "2026-10-28",
+     "url": "https://doi.org/10.1038/s41467-026-78760-x",
+     "start": 62.4
+    },
+    {
+     "title": "Cell-Type-Resolved Mendelian Randomization, Colocalization and Druggability of Asthma Using Single-Cell Immune eQTL",
+     "authors": "Piao Zhang et al.",
+     "source": "Genes",
+     "date": "2026-11-15",
+     "url": "https://doi.org/10.3390/genes17111434",
+     "start": 100.6
+    },
+    {
+     "title": "Integrating Substantia Nigra Single-Nucleus Transcriptomics with GWAS Prioritizes Microglia and Reveals State-Specific Regulon Dysregulation in Parkinson's Disease",
+     "authors": "Ziyu Chen et al.",
+     "source": "Brain sciences",
+     "date": "2026-11-10",
+     "url": "https://doi.org/10.3390/brainsci16111226",
+     "start": 149.2
+    }
+   ]
+  }
+ ]
+}
